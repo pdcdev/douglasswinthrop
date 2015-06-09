@@ -1,0 +1,237 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*font-family:'FrutigerLTW01-45Light';
+font-family:'FrutigerLTW01-46LightIt';
+font-family:'FrutigerLTW01-55Roman';
+font-family:'FrutigerLTW01-56Italic';
+font-family:'Frutiger LT W01_65 Bold';
+font-family:'FrutigerLTW01-66BoldIta';
+font-family:'FrutigerLTW01-75Black';
+font-family:'FrutigerLTW01-76BlackIt';
+font-family:'FrutigerLTW01-95UltraBl';
+font-family:'FrutigerLTW01-47LightCn';
+font-family:'FrutigerLTW01-48LightCn';
+font-family:'FrutigerLTW01-67BoldCn';
+font-family:'FrutigerLTW01-68BoldCnI';
+font-family:'FrutigerLTW01-87ExtraBk';
+font-family:'FrutigerLTW01-88XBkCnIt';
+font-family:'Frutiger LT W04_45 Light';
+font-family:'Frutiger LT W04_46 Ligh1459266';
+font-family:'Frutiger LT W04_55 Roman';
+font-family:'Frutiger LT W04_56 Italic';
+font-family:'Frutiger LT W04_65 Bold';
+font-family:'Frutiger LT W04_66 Bold Italic';
+font-family:'Frutiger LT W04_75 Black';
+font-family:'Frutiger LT W04_76 Blac1459278';
+font-family:'Frutiger LT W04_95 Ultra Black';
+font-family:'Frutiger LT W04_47 Light Cond';
+font-family:'Frutiger LT W04_67 Bold Cond';
+font-family:'Frutiger LT W04_77 Black Cond';
+font-family:'Frutiger LT W04_87 X Bl1459298';*/
+/*function do_something(data, colors) {
+   do something with "data" and "colors"
+}
+var list_of_stuff = [1,2,3,4];
+
+do_something(list_of_stuff, "blue");*/
+body {
+  font-family: "FrutigerLTW01-55Roman"; }
+
+.vertical_center_parent, .page_banner div.overlay div.inner_banner div {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  /*justify-content: center;*/ }
+
+.global_pad, .page_banner div.overlay div.inner_banner, section.people, footer div.inner_footer {
+  padding: 2em 40px; }
+  @media screen and (max-width: 768px) {
+    .global_pad, .page_banner div.overlay div.inner_banner, section.people, footer div.inner_footer {
+      padding: 2em 40px; } }
+  @media screen and (max-width: 480px) {
+    .global_pad, .page_banner div.overlay div.inner_banner, section.people, footer div.inner_footer {
+      padding: 2em 30px; } }
+
+.sidepad, .inner_header {
+  padding: 0 40px; }
+  @media screen and (max-width: 768px) {
+    .sidepad, .inner_header {
+      padding: 0 40px; } }
+  @media screen and (max-width: 480px) {
+    .sidepad, .inner_header {
+      padding: 0 30px; } }
+
+header div.inner_header {
+  *zoom: 1;
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  height: 60px; }
+  header div.inner_header:before, header div.inner_header:after {
+    content: " ";
+    display: table; }
+  header div.inner_header:after {
+    clear: both; }
+  header div.inner_header h1 {
+    display: block;
+    float: left;
+    margin-right: 2.32558%;
+    width: 31.78295%;
+    line-height: 60px;
+    font-family: "FrutigerLTW01-67BoldCn";
+    font-size: 1.5rem;
+    color: #004fb1; }
+    header div.inner_header h1:last-child {
+      margin-right: 0; }
+  header div.inner_header nav ol {
+    display: block;
+    float: left;
+    margin-right: 2.32558%;
+    width: 65.89147%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    header div.inner_header nav ol:last-child {
+      margin-right: 0; }
+    header div.inner_header nav ol li {
+      font-family: "FrutigerLTW01-47LightCn";
+      line-height: 60px;
+      text-transform: uppercase;
+      color: #a3a9ac;
+      font-size: 1rem; }
+
+.page_banner {
+  background-color: #eee;
+  position: relative;
+  height: 350px;
+  background: url("../images/our_firm.jpg") center center no-repeat;
+  background-size: cover; }
+  .page_banner div.overlay {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 175px;
+    background-color: rgba(0, 79, 177, 0.6); }
+    .page_banner div.overlay div.inner_banner {
+      *zoom: 1;
+      max-width: 75em;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      height: 100%; }
+      .page_banner div.overlay div.inner_banner:before, .page_banner div.overlay div.inner_banner:after {
+        content: " ";
+        display: table; }
+      .page_banner div.overlay div.inner_banner:after {
+        clear: both; }
+      .page_banner div.overlay div.inner_banner div {
+        height: 100%; }
+        .page_banner div.overlay div.inner_banner div p {
+          display: block;
+          float: left;
+          margin-right: 2.32558%;
+          width: 48.83721%;
+          font-family: "FrutigerLTW01-47LightCn";
+          color: white;
+          font-size: 2.25rem; }
+          .page_banner div.overlay div.inner_banner div p:last-child {
+            margin-right: 0; }
+          @media screen and (max-width: 768px) {
+            .page_banner div.overlay div.inner_banner div p {
+              font-size: 2.25rem; } }
+          @media screen and (max-width: 480px) {
+            .page_banner div.overlay div.inner_banner div p {
+              font-size: 2.125rem; } }
+          @media screen and (max-width: 768px) {
+            .page_banner div.overlay div.inner_banner div p {
+              display: block;
+              float: left;
+              margin-right: 4.7619%;
+              width: 100%; }
+              .page_banner div.overlay div.inner_banner div p:last-child {
+                margin-right: 0; } }
+
+section.people {
+  *zoom: 1;
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto; }
+  section.people:before, section.people:after {
+    content: " ";
+    display: table; }
+  section.people:after {
+    clear: both; }
+  section.people div.person {
+    display: block;
+    float: left;
+    margin-right: 2.32558%;
+    width: 23.25581%;
+    background-color: #eee;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    position: relative; }
+    section.people div.person:last-child {
+      margin-right: 0; }
+    section.people div.person:nth-child(4n) {
+      margin-right: 0; }
+    section.people div.person:nth-child(4n+1) {
+      clear: left; }
+    @media screen and (max-width: 768px) {
+      section.people div.person {
+        display: block;
+        float: left;
+        margin-right: 4.7619%;
+        width: 47.61905%; }
+        section.people div.person:last-child {
+          margin-right: 0; }
+        section.people div.person:nth-child(2n) {
+          margin-right: 0; }
+        section.people div.person:nth-child(2n+1) {
+          clear: left; } }
+    @media screen and (max-width: 480px) {
+      section.people div.person {
+        display: block;
+        float: left;
+        margin-right: 10%;
+        width: 100%; }
+        section.people div.person:last-child {
+          margin-right: 0; } }
+    section.people div.person div.person_name {
+      position: absolute;
+      height: 40px;
+      bottom: 0;
+      background-color: rgba(0, 79, 177, 0.6);
+      width: 100%;
+      padding: 0 1em; }
+      section.people div.person div.person_name p {
+        line-height: 40px;
+        color: white;
+        font-size: 1rem;
+        font-family: "FrutigerLTW01-47LightCn"; }
+        @media screen and (max-width: 768px) {
+          section.people div.person div.person_name p {
+            font-size: 1rem; } }
+        @media screen and (max-width: 480px) {
+          section.people div.person div.person_name p {
+            font-size: 0.9375rem; } }
+
+footer {
+  background-color: #eee; }
+  footer div.inner_footer {
+    *zoom: 1;
+    max-width: 75em;
+    margin-left: auto;
+    margin-right: auto; }
+    footer div.inner_footer:before, footer div.inner_footer:after {
+      content: " ";
+      display: table; }
+    footer div.inner_footer:after {
+      clear: both; }

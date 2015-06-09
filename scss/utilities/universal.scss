@@ -1,0 +1,39 @@
+$small:  "small";
+$medium: "medium";
+$large:  "large";
+
+@mixin type( $size: $small-text, $color: inherit) {
+    color: $color;
+    @if $size == "small" {
+        font-size: $small-text;
+        @include media($tablet) {
+            font-size: $small-text-tablet;
+        }
+        @include media($mobile) {
+            font-size: $small-text-mobile;
+        }
+    } @else if $size == "medium" {
+        font-size: $medium-text;
+        @include media($tablet) {
+            font-size: $medium-text-tablet;
+        }
+        @include media($mobile) {
+            font-size: $medium-text-mobile;
+        }
+    } @else if $size == "large" {
+        font-size: $large-text;
+        @include media($tablet) {
+            font-size: $large-text-tablet;
+        }
+        @include media($mobile) {
+            font-size: $large-text-mobile;
+        }
+    }
+}
+
+/*function do_something(data, colors) {
+   do something with "data" and "colors"
+}
+var list_of_stuff = [1,2,3,4];
+
+do_something(list_of_stuff, "blue");*/
