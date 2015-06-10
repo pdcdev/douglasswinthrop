@@ -85,10 +85,12 @@ header div.inner_header {
     width: 31.7829457364%;
     line-height: 60px;
     font-family: "FrutigerLTW01-67BoldCn";
-    font-size: 1.5rem;
-    color: #004FB1; }
+    font-size: 1.5rem; }
     header div.inner_header h1:last-child {
       margin-right: 0; }
+    header div.inner_header h1 a {
+      text-decoration: none;
+      color: #004FB1; }
   header div.inner_header nav ol {
     float: left;
     display: block;
@@ -106,6 +108,8 @@ header div.inner_header {
       text-transform: uppercase;
       color: #A3A9AC;
       font-size: 1rem; }
+      header div.inner_header nav ol li a {
+        text-decoration: none; }
 
 .page_banner {
   background-color: #eee;

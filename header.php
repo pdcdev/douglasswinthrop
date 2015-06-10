@@ -10,14 +10,14 @@
 <body>
     <header>
         <div class="inner_header">
-            <h1>Douglass Winthrop</h1>
+            <h1><a href ="index.php">Douglass Winthrop</a></h1>
             <nav class="main-nav">
                 <ol>
-                    <li>Our Firmsgsdfsd</li>
-                    <li>Our Value</li>
-                    <li>People</li>
-                    <li>Letters</li>
-                    <li>Contact</li>
+                    <li><a href ="people.php">Our Firm</a></li>
+                    <li><a href ="people.php">Our Value</a></li>
+                    <li><a href ="people.php">People</a></li>
+                    <li><a href ="people.php">Letters</a></li>
+                    <li><a href ="people.php">Contact</a></li>
                 </ol>
             </nav>
         </div>

@@ -47,7 +47,10 @@ header {
             line-height: 60px;
             font-family: $frutigerBoldCond;
             font-size: 1.5rem;
-            color: $blue;
+            a {
+                text-decoration: none;
+                color: $blue;
+            }
         }
         nav {
             ol {
@@ -62,6 +65,10 @@ header {
                     text-transform: uppercase;
                     color: $gray;
                     font-size: 1rem;
+                    a {
+                        text-decoration: none;
+                    }
+                    
                 }
             }
         }
