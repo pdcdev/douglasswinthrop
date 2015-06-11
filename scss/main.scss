@@ -278,16 +278,28 @@ section.people {
     }
 }
 
-section.history {
+section.firm {
     @include outer-container;
     @extend .global_pad;
-    background-color: pink;
     h2.title {
         @include span-columns(3);
-        @include type($medium, #000);
+        @include type($small, $blue);
     }
-    div.description {
-        @include span-columns(8);
+    div {
+        padding-bottom: 5%;
+        div.description {
+            @include span-columns(8);
+            p.sub-header {
+                @include type($small, #004FB1);
+                line-height: 20px;
+                font-family: $frutigerRoman;
+            }
+            p.following {
+                line-height: 20px;
+                @include type($small, $gray);
+                font-family: $frutigerLightCond;
+            }
+        } 
     }
 }
 
@@ -304,8 +316,14 @@ section.history {
 
 footer {
     background-color: #eee;
+    font-family: $frutigerLightCond;
     div.inner_footer {
         @include outer-container;
+        div.inner_footer {
+            address {
+                @include type($small, #004FB1);  
+            }
+        }
         @extend .global_pad;
         address {
 

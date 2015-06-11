@@ -51,13 +51,13 @@ body {
   align-items: center;
   /*justify-content: center;*/ }
 
-.global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.overlay div.inner_banner, .page_banner_history div.overlay div.inner_banner, section.people, section.history, footer div.inner_footer {
+.global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.overlay div.inner_banner, .page_banner_history div.overlay div.inner_banner, section.people, section.firm, footer div.inner_footer {
   padding: 2em 40px; }
   @media screen and (max-width: 768px) {
-    .global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.overlay div.inner_banner, .page_banner_history div.overlay div.inner_banner, section.people, section.history, footer div.inner_footer {
+    .global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.overlay div.inner_banner, .page_banner_history div.overlay div.inner_banner, section.people, section.firm, footer div.inner_footer {
       padding: 2em 40px; } }
   @media screen and (max-width: 480px) {
-    .global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.overlay div.inner_banner, .page_banner_history div.overlay div.inner_banner, section.people, section.history, footer div.inner_footer {
+    .global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.overlay div.inner_banner, .page_banner_history div.overlay div.inner_banner, section.people, section.firm, footer div.inner_footer {
       padding: 2em 30px; } }
 
 .sidepad, .inner_header {
@@ -401,37 +401,60 @@ section.people {
           section.people div.person div.person_name p {
             font-size: 0.9375rem; } }
 
-section.history {
+section.firm {
   max-width: 75em;
   margin-left: auto;
-  margin-right: auto;
-  background-color: pink; }
-  section.history::after {
+  margin-right: auto; }
+  section.firm::after {
     clear: both;
     content: "";
     display: table; }
-  section.history h2.title {
+  section.firm h2.title {
     float: left;
     display: block;
     margin-right: 2.3255813953%;
     width: 23.2558139535%;
-    color: #000;
-    font-size: 1.25rem; }
-    section.history h2.title:last-child {
+    color: #004FB1;
+    font-size: 1rem; }
+    section.firm h2.title:last-child {
       margin-right: 0; }
     @media screen and (max-width: 768px) {
-      section.history h2.title {
-        font-size: 1.125rem; } }
-    @media screen and (max-width: 480px) {
-      section.history h2.title {
+      section.firm h2.title {
         font-size: 1rem; } }
-  section.history div.description {
-    float: left;
-    display: block;
-    margin-right: 2.3255813953%;
-    width: 65.8914728682%; }
-    section.history div.description:last-child {
-      margin-right: 0; }
+    @media screen and (max-width: 480px) {
+      section.firm h2.title {
+        font-size: 0.9375rem; } }
+  section.firm div {
+    padding-bottom: 5%; }
+    section.firm div div.description {
+      float: left;
+      display: block;
+      margin-right: 2.3255813953%;
+      width: 65.8914728682%; }
+      section.firm div div.description:last-child {
+        margin-right: 0; }
+      section.firm div div.description p.sub-header {
+        color: #004FB1;
+        font-size: 1rem;
+        line-height: 20px;
+        font-family: "FrutigerLTW01-55Roman", helvetica, sans serif; }
+        @media screen and (max-width: 768px) {
+          section.firm div div.description p.sub-header {
+            font-size: 1rem; } }
+        @media screen and (max-width: 480px) {
+          section.firm div div.description p.sub-header {
+            font-size: 0.9375rem; } }
+      section.firm div div.description p.following {
+        line-height: 20px;
+        color: #A3A9AC;
+        font-size: 1rem;
+        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+        @media screen and (max-width: 768px) {
+          section.firm div div.description p.following {
+            font-size: 1rem; } }
+        @media screen and (max-width: 480px) {
+          section.firm div div.description p.following {
+            font-size: 0.9375rem; } }
 
 #map-canvas {
   min-height: 640px;
@@ -441,7 +464,8 @@ section.history {
   max-width: none; }
 
 footer {
-  background-color: #eee; }
+  background-color: #eee;
+  font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
   footer div.inner_footer {
     max-width: 75em;
     margin-left: auto;
@@ -450,3 +474,12 @@ footer {
       clear: both;
       content: "";
       display: table; }
+    footer div.inner_footer div.inner_footer address {
+      color: #004FB1;
+      font-size: 1rem; }
+      @media screen and (max-width: 768px) {
+        footer div.inner_footer div.inner_footer address {
+          font-size: 1rem; } }
+      @media screen and (max-width: 480px) {
+        footer div.inner_footer div.inner_footer address {
+          font-size: 0.9375rem; } }
