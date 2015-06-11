@@ -7,6 +7,7 @@
 body {
     font-family: $frutigerRoman;
 }
+
 .vertical_center_parent {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -144,7 +145,7 @@ header {
 .page_banner_letters {
     background-color: #eee;
     position: relative;
-    height: 350px;
+    height: 400px;
     background: url('../images/letters.jpg') center center no-repeat;
     background-size: cover;
     div.overlay {
@@ -164,7 +165,7 @@ header {
                 p {
                     @include span-columns(6);
                     font-family: $frutigerLightCond;
-                    @include type($small, #fff);
+                    @include type($large, #fff);
                     @include media($tablet) {
                         @include span-columns(6);
                     }
@@ -174,13 +175,10 @@ header {
     }
 }
 
-
-
-
-.page_banner {
+.page_banner_firm {
     background-color: #eee;
     position: relative;
-    height: 350px;
+    height: 400px;
     background: url('../images/our_firm.jpg') center center no-repeat;
     background-size: cover;
     div.overlay {
@@ -209,6 +207,41 @@ header {
         }
     }
 }
+
+
+.page_banner_history {
+    background-color: #eee;
+    position: relative;
+    height: 400px;
+    background: url('../images/history.jpg') center center no-repeat;
+    background-size: cover;
+    div.overlay {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        height: 175px;
+        background-color: rgba($blue, 0.6);
+        div.inner_banner {
+            @include outer-container;
+            @extend .global_pad;
+            position: relative;
+            height: 100%;
+            div {
+                height: 100%;
+                @extend .vertical_center_parent;
+                p {
+                    @include span-columns(6);
+                    font-family: $frutigerLightCond;
+                    @include type($large, #fff);
+                    @include media($tablet) {
+                        @include span-columns(6);
+                    }
+                }
+            }
+        }
+    }
+}
+
 section.people {
     @include outer-container;
     @extend .global_pad;
@@ -244,6 +277,31 @@ section.people {
         }
     }
 }
+
+section.history {
+    @include outer-container;
+    @extend .global_pad;
+    background-color: pink;
+    h2.title {
+        @include span-columns(3);
+        @include type($medium, #000);
+    }
+    div.description {
+        @include span-columns(8);
+    }
+}
+
+
+
+#map-canvas {
+    min-height: 640px;
+    width: 100%;
+}
+
+.gmnoprint img {
+    max-width: none;
+}
+
 footer {
     background-color: #eee;
     div.inner_footer {

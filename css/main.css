@@ -41,7 +41,7 @@ do_something(list_of_stuff, "blue");*/
 body {
   font-family: "FrutigerLTW01-55Roman", helvetica, sans serif; }
 
-.vertical_center_parent, .page_banner_home div.overlay_home div.inner_banner_home div, .page_banner_letters div.overlay div.inner_banner div, .page_banner div.overlay div.inner_banner div {
+.vertical_center_parent, .page_banner_home div.overlay_home div.inner_banner_home div, .page_banner_letters div.overlay div.inner_banner div, .page_banner_firm div.overlay div.inner_banner div, .page_banner_history div.overlay div.inner_banner div {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -51,13 +51,13 @@ body {
   align-items: center;
   /*justify-content: center;*/ }
 
-.global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner div.overlay div.inner_banner, section.people, footer div.inner_footer {
+.global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.overlay div.inner_banner, .page_banner_history div.overlay div.inner_banner, section.people, section.history, footer div.inner_footer {
   padding: 2em 40px; }
   @media screen and (max-width: 768px) {
-    .global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner div.overlay div.inner_banner, section.people, footer div.inner_footer {
+    .global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.overlay div.inner_banner, .page_banner_history div.overlay div.inner_banner, section.people, section.history, footer div.inner_footer {
       padding: 2em 40px; } }
   @media screen and (max-width: 480px) {
-    .global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner div.overlay div.inner_banner, section.people, footer div.inner_footer {
+    .global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.overlay div.inner_banner, .page_banner_history div.overlay div.inner_banner, section.people, section.history, footer div.inner_footer {
       padding: 2em 30px; } }
 
 .sidepad, .inner_header {
@@ -195,7 +195,7 @@ header {
 .page_banner_letters {
   background-color: #eee;
   position: relative;
-  height: 350px;
+  height: 400px;
   background: url("../images/letters.jpg") center center no-repeat;
   background-size: cover; }
   .page_banner_letters div.overlay {
@@ -223,15 +223,15 @@ header {
           width: 48.8372093023%;
           font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
           color: #fff;
-          font-size: 1rem; }
+          font-size: 2.25rem; }
           .page_banner_letters div.overlay div.inner_banner div p:last-child {
             margin-right: 0; }
           @media screen and (max-width: 768px) {
             .page_banner_letters div.overlay div.inner_banner div p {
-              font-size: 1rem; } }
+              font-size: 2.25rem; } }
           @media screen and (max-width: 480px) {
             .page_banner_letters div.overlay div.inner_banner div p {
-              font-size: 0.9375rem; } }
+              font-size: 2.125rem; } }
           @media screen and (max-width: 768px) {
             .page_banner_letters div.overlay div.inner_banner div p {
               float: left;
@@ -241,31 +241,31 @@ header {
               .page_banner_letters div.overlay div.inner_banner div p:last-child {
                 margin-right: 0; } }
 
-.page_banner {
+.page_banner_firm {
   background-color: #eee;
   position: relative;
-  height: 350px;
+  height: 400px;
   background: url("../images/our_firm.jpg") center center no-repeat;
   background-size: cover; }
-  .page_banner div.overlay {
+  .page_banner_firm div.overlay {
     width: 100%;
     position: absolute;
     bottom: 0;
     height: 175px;
     background-color: rgba(0, 79, 177, 0.6); }
-    .page_banner div.overlay div.inner_banner {
+    .page_banner_firm div.overlay div.inner_banner {
       max-width: 75em;
       margin-left: auto;
       margin-right: auto;
       position: relative;
       height: 100%; }
-      .page_banner div.overlay div.inner_banner::after {
+      .page_banner_firm div.overlay div.inner_banner::after {
         clear: both;
         content: "";
         display: table; }
-      .page_banner div.overlay div.inner_banner div {
+      .page_banner_firm div.overlay div.inner_banner div {
         height: 100%; }
-        .page_banner div.overlay div.inner_banner div p {
+        .page_banner_firm div.overlay div.inner_banner div p {
           float: left;
           display: block;
           margin-right: 2.3255813953%;
@@ -273,21 +273,70 @@ header {
           font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
           color: #fff;
           font-size: 2.25rem; }
-          .page_banner div.overlay div.inner_banner div p:last-child {
+          .page_banner_firm div.overlay div.inner_banner div p:last-child {
             margin-right: 0; }
           @media screen and (max-width: 768px) {
-            .page_banner div.overlay div.inner_banner div p {
+            .page_banner_firm div.overlay div.inner_banner div p {
               font-size: 2.25rem; } }
           @media screen and (max-width: 480px) {
-            .page_banner div.overlay div.inner_banner div p {
+            .page_banner_firm div.overlay div.inner_banner div p {
               font-size: 2.125rem; } }
           @media screen and (max-width: 768px) {
-            .page_banner div.overlay div.inner_banner div p {
+            .page_banner_firm div.overlay div.inner_banner div p {
               float: left;
               display: block;
               margin-right: 4.7619047619%;
               width: 100%; }
-              .page_banner div.overlay div.inner_banner div p:last-child {
+              .page_banner_firm div.overlay div.inner_banner div p:last-child {
+                margin-right: 0; } }
+
+.page_banner_history {
+  background-color: #eee;
+  position: relative;
+  height: 400px;
+  background: url("../images/history.jpg") center center no-repeat;
+  background-size: cover; }
+  .page_banner_history div.overlay {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 175px;
+    background-color: rgba(0, 79, 177, 0.6); }
+    .page_banner_history div.overlay div.inner_banner {
+      max-width: 75em;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      height: 100%; }
+      .page_banner_history div.overlay div.inner_banner::after {
+        clear: both;
+        content: "";
+        display: table; }
+      .page_banner_history div.overlay div.inner_banner div {
+        height: 100%; }
+        .page_banner_history div.overlay div.inner_banner div p {
+          float: left;
+          display: block;
+          margin-right: 2.3255813953%;
+          width: 48.8372093023%;
+          font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
+          color: #fff;
+          font-size: 2.25rem; }
+          .page_banner_history div.overlay div.inner_banner div p:last-child {
+            margin-right: 0; }
+          @media screen and (max-width: 768px) {
+            .page_banner_history div.overlay div.inner_banner div p {
+              font-size: 2.25rem; } }
+          @media screen and (max-width: 480px) {
+            .page_banner_history div.overlay div.inner_banner div p {
+              font-size: 2.125rem; } }
+          @media screen and (max-width: 768px) {
+            .page_banner_history div.overlay div.inner_banner div p {
+              float: left;
+              display: block;
+              margin-right: 4.7619047619%;
+              width: 100%; }
+              .page_banner_history div.overlay div.inner_banner div p:last-child {
                 margin-right: 0; } }
 
 section.people {
@@ -351,6 +400,45 @@ section.people {
         @media screen and (max-width: 480px) {
           section.people div.person div.person_name p {
             font-size: 0.9375rem; } }
+
+section.history {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: pink; }
+  section.history::after {
+    clear: both;
+    content: "";
+    display: table; }
+  section.history h2.title {
+    float: left;
+    display: block;
+    margin-right: 2.3255813953%;
+    width: 23.2558139535%;
+    color: #000;
+    font-size: 1.25rem; }
+    section.history h2.title:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      section.history h2.title {
+        font-size: 1.125rem; } }
+    @media screen and (max-width: 480px) {
+      section.history h2.title {
+        font-size: 1rem; } }
+  section.history div.description {
+    float: left;
+    display: block;
+    margin-right: 2.3255813953%;
+    width: 65.8914728682%; }
+    section.history div.description:last-child {
+      margin-right: 0; }
+
+#map-canvas {
+  min-height: 640px;
+  width: 100%; }
+
+.gmnoprint img {
+  max-width: none; }
 
 footer {
   background-color: #eee; }

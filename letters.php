@@ -8,5 +8,5 @@
             </div>
         </div>
     </aside>
-    <p>letters</p>
+    <p>history</p>
 <?php include 'footer.php'; ?>

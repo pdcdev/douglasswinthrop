@@ -1,5 +1,5 @@
 <?php include 'header.php'; ?>
-    <aside class="page_banner">
+    <aside class="page_banner_firm">
         <div class="overlay">
             <div class="inner_banner">
                 <div>
