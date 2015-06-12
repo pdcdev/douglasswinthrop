@@ -9,5 +9,5 @@
         </div>
     </aside>
     <p>contact</p>
-    <div id="map-canvas"></div>
+    <!-- <div id="map-canvas"></div> -->
 <?php include 'footer.php'; ?>

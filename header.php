@@ -13,16 +13,18 @@
     <header>
         <div class="inner_header">
             <h1><a href ="index.php">Douglass Winthrop</a></h1>
+            <div class="menuIcon">
+                <h1><a href="#menuExpand">Menu</a></h1>
+            </div>
             <nav class="main-nav">
-                <ol>
+                 <ul>
                     <li><a href ="firm.php">Our Firm</a></li>
                     <li><a href ="value.php">Our Value</a></li>
-                    <!-- <li><a href ="history.php">History</a></li> -->
                     <li><a href ="people.php">People</a></li>
                     <li><a href ="letters.php">Letters</a></li>
                     <li><a href ="contact.php">Contact</a></li>
 
-                </ol>
+                </ul>
             </nav>
         </div>
     </header>

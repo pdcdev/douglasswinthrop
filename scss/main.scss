@@ -6,6 +6,7 @@
 
 body {
     font-family: $frutigerRoman;
+
 }
 
 .vertical_center_parent {
@@ -38,7 +39,17 @@ body {
 }
 .inner_header {
     @extend .sidepad;
+    h1 {
+        a {
+            @include media($tablet) {
+                @include span-columns(10);
+            }
+        }
+    }
 }
+
+
+
 header {
     z-index: 999;
     position: relative;
@@ -56,9 +67,12 @@ header {
                 color: $blue;
             }
         }
-        nav {
-            ol {
-                @include span-columns(8);
+        nav.main-nav {
+            ul {
+                margin:0;
+                @include media($tablet) {
+                    @include span-columns(8);
+                }
                 list-style: none;
                 display: flex;
                 flex-direction: row;
@@ -77,6 +91,70 @@ header {
         }
     }
 }
+
+.menuIcon {
+    display: none;
+    width: 100%;
+    text-align: center;
+    a {
+        &:hover {
+        color: #999;
+    }  
+      width: 100%;
+      display: inline-block;
+      color: $blue;
+      text-decoration: none;
+      img {
+        vertical-align: middle;
+      }
+    }
+  }
+@media only screen and (max-width: 767px) {
+    #menuExpand {
+
+    }
+  .inner_header {
+    .main-nav {
+      max-height: 0;
+      overflow: hidden;
+      float: none;
+      text-align: center;
+      width: 100%;
+      @include transition(max-height 0.5s);
+      &.menuOpen {
+        max-height: 1000px;
+        @include transition(max-height 0.5s);
+      }
+    ul {
+      li {
+        background-color: #eee;
+        display: block;
+        
+        font-family: $frutigerLightCond;
+        line-height: 60px;
+        a {
+          &:hover {
+          color: #999;
+          }  
+          color: $blue;
+          text-shadow: #848484 0px 1px 2px;
+          padding: 5% 0;
+          width: 100%;
+          }
+        }
+      }
+    }
+    .menuIcon {
+        display: inline-block;
+            @include span-columns(3);
+        float: right;
+        }
+    }
+}
+ 
+/*.expand {
+    display: block !important; 
+}*/
 
 .page_banner_home {
     z-index: 0;
@@ -102,19 +180,40 @@ header {
                 height: 100%;
                 @extend .vertical_center_parent;
                 div {
+                    
                     p {
-                        display: block;
-                        @include span-columns(6);
+                        @include span-columns(4);
+                        @include shift(0);
+                        margin-top: 1em;
+                        margin-bottom: 1em;
+                        position: relative;
                         font-family: $frutigerLightCond;
                         @include type($large, #fff);
                         @include media($tablet) {
-                            @include span-columns(6);
+                            @include span-columns(3);
                         }
+                        @include media($mobile) {
+                            @include span-columns(12);
+                            background-color: red;
+                        }
+
                     }
                     .intro {
+
+                        @include span-columns(4);
+                        @include shift(2);
                         height: auto;
-                        @include span-columns(3);
-                        @include shift(1);
+                        margin-top: 1em;
+                        margin-bottom: 1em;
+                        position: relative;
+                        @include media($tablet) {
+                            @include span-columns(3);
+                        }
+                        @include media($mobile) {
+                            display: none;
+                            @include span-columns(12);
+                            }
+                        }
                         ol {
                             li {
                                 font-family: $frutigerLightCond;
@@ -141,7 +240,7 @@ header {
             }
         }
     }
-}
+
 .page_banner_letters {
     background-color: #eee;
     position: relative;
@@ -165,9 +264,10 @@ header {
                 p {
                     @include span-columns(6);
                     font-family: $frutigerLightCond;
-                    @include type($large, #fff);
+                    font-size: 20pt; 
+                    color: #fff;
                     @include media($tablet) {
-                        @include span-columns(6);
+                    @include span-columns(4);
                     }
                 }
             }
@@ -198,10 +298,14 @@ header {
                 p {
                     @include span-columns(6);
                     font-family: $frutigerLightCond;
-                    @include type($large, #fff);
+                    font-size: 20pt; 
+                    color: #fff;
                     @include media($tablet) {
-                        @include span-columns(6);
+                        @include span-columns(4);
+
                     }
+                    @include media($mobile) {
+                        @include span-columns(4);                    }
                 }
             }
         }
@@ -209,38 +313,6 @@ header {
 }
 
 
-.page_banner_history {
-    background-color: #eee;
-    position: relative;
-    height: 400px;
-    background: url('../images/history.jpg') center center no-repeat;
-    background-size: cover;
-    div.overlay {
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        height: 175px;
-        background-color: rgba($blue, 0.6);
-        div.inner_banner {
-            @include outer-container;
-            @extend .global_pad;
-            position: relative;
-            height: 100%;
-            div {
-                height: 100%;
-                @extend .vertical_center_parent;
-                p {
-                    @include span-columns(6);
-                    font-family: $frutigerLightCond;
-                    @include type($large, #fff);
-                    @include media($tablet) {
-                        @include span-columns(6);
-                    }
-                }
-            }
-        }
-    }
-}
 
 section.people {
     @include outer-container;
@@ -258,6 +330,7 @@ section.people {
         }
         @include media($mobile) {
             @include span-columns(3);
+            @include omega(4n);
         }
         img.person_headshot {
 

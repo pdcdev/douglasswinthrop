@@ -1,0 +1,1 @@
+$(function(){$("a[href=#menuExpand]").click(function(n){$(".main-nav").toggleClass("menuOpen"),n.preventDefault()})});

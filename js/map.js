@@ -37,7 +37,7 @@ var map;
             }, {
                 featureType: "poi",
                 stylers: [{
-                    color: blue
+                    color: lightgray
                 }]
             }, {
                 featureType: "road",
@@ -179,7 +179,7 @@ var map;
         position: loc,
         map: map,
         title:"Piscatello Design Centre",
-        icon: 'http://imgur.com/cqfbqNS',
+        icon: 'http://i.imgur.com/cqfbqNS.png?1',
     });
 
     map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
