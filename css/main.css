@@ -126,7 +126,8 @@ header {
         font-size: 1rem; }
         header div.inner_header nav.main-nav ul li a {
           text-decoration: none;
-          margin-bottom: 50px; }
+          margin-bottom: 50px;
+          padding-bottom: 17px; }
         header div.inner_header nav.main-nav ul li a:visited {
           color: #004FB1; }
         header div.inner_header nav.main-nav ul li a:hover {
@@ -544,22 +545,28 @@ section.people {
           clear: left; } }
     section.people div.person div.person_name {
       position: absolute;
-      height: 40px;
+      height: 60px;
       bottom: 0;
       background-color: rgba(0, 79, 177, 0.6);
       width: 100%;
       padding: 0 1em; }
-      section.people div.person div.person_name p {
+      section.people div.person div.person_name h1 {
         line-height: 40px;
+        color: #fff;
         color: #fff;
         font-size: 1rem;
         font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
         @media screen and (max-width: 768px) {
-          section.people div.person div.person_name p {
+          section.people div.person div.person_name h1 {
             font-size: 1rem; } }
         @media screen and (max-width: 480px) {
-          section.people div.person div.person_name p {
+          section.people div.person div.person_name h1 {
             font-size: 0.9375rem; } }
+      section.people div.person div.person_name p {
+        line-height: 5px;
+        color: #fff;
+        font-size: 10pt;
+        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
 
 section.initial {
   max-width: 75em;
@@ -690,7 +697,7 @@ section.letters {
       color: #A3A9AC;
       text-decoration: none; }
     section.letters div.letter-list a:hover {
-      text-decoration: underline; }
+      color: #004FB1; }
     @media screen and (max-width: 768px) {
       section.letters div.letter-list {
         float: left;

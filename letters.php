@@ -13,11 +13,11 @@
     </div>
     </section>
     <section class="letters">
-        <div class="letter-list">
-            <a href="#" target="_blank">April 2015</a>
-            <a href="#" target="_blank">January 2015</a>
-            <a href="#" target="_blank">October 2015</a>
-            <a href="#" target="_blank">July 2015</a>
-        </div>
-    </section>
+    <div class="letter-list">
+        <a href="#" target="_blank">April 2015</a>
+        <a href="#" target="_blank">January 2015</a>
+        <a href="#" target="_blank">October 2015</a>
+        <a href="#" target="_blank">July 2015</a>
+    </div>
+</section>
 <?php include 'footer.php'; ?>

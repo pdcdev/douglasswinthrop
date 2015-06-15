@@ -71,7 +71,7 @@ header {
             ul {
                 margin:0;
                 @include media($tablet) {
-                    @include span-columns(8);
+                @include span-columns(8);
                 }
                 list-style: none;
                 display: flex;
@@ -86,6 +86,7 @@ header {
                     a {
                         text-decoration: none;
                         margin-bottom: 50px;
+                        padding-bottom: 17px;
                     }
                     a:visited {
                         color: $blue;
@@ -422,14 +423,21 @@ section.people {
         }
         div.person_name {
             position: absolute;
-            height: 40px;
+            height: 60px;
             bottom: 0;
             background-color: rgba($blue, 0.6);
             width: 100%;
             @include pad(0 1em);
-            p {
+            h1 {
                 line-height: 40px;
+                color: #fff;
                 @include type($small, #fff);
+                font-family: $frutigerLightCond;
+            }
+            p {
+                line-height: 5px;
+                color:#fff;
+                font-size: 10pt;
                 font-family: $frutigerLightCond;
             }
         }
@@ -500,7 +508,7 @@ section.letters {
             text-decoration: none;
         }
         a:hover {
-            text-decoration: underline;
+            color: $blue;
         }
         @include media($tablet) {
             @include span-columns(3);
