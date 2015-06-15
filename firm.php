@@ -8,7 +8,7 @@
             </div>
         </div>
     </aside>
-    <section class="firm">
+    <section class="initial">
         <div>
             <h2 class="title"> About </h2>
             <div class="description">

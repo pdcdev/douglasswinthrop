@@ -194,6 +194,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/people.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 49052,
+		"inputAbbreviatedPath": "\/images\/people.jpg",
+		"outputAbbreviatedPath": "\/images\/people.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/people\/BowdyTrain_Headshot.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -201,6 +212,17 @@
 		"initialSize": 26555,
 		"inputAbbreviatedPath": "\/images\/people\/BowdyTrain_Headshot.jpg",
 		"outputAbbreviatedPath": "\/images\/people\/BowdyTrain_Headshot.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/value.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 75547,
+		"inputAbbreviatedPath": "\/images\/value.jpg",
+		"outputAbbreviatedPath": "\/images\/value.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

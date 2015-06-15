@@ -3,11 +3,13 @@
             <address>
                 New York
                 535 Fifth Avenue, 22nd Floor
-                New York, NY 10017
+                New York, NY 1001
             </address>
-            <div>
+            <div class="numbers">
+                <p class ="numbers" style="font-size: 14px;">
                 Telephone: 212 557 7680
                 Telefax: 212 557 7683
+                </p>
             </div>
         </div>
     </footer>

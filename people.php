@@ -1,7 +1,14 @@
 <?php include 'header.php'; ?>
-    <aside class="page_banner_letters">
-        
+    <aside class="page_banner_people">
+        <div class="overlay">
+            <div class="inner_banner">
+                <div>
+                    <p>Our People</p>
+                </div>
+            </div>
+        </div>
     </aside>
+
     <section class="people">
         <div class="person">
             <img class="person_headshot" src="images/people/BowdyTrain_Headshot.jpg">
