@@ -1,13 +1,20 @@
 <?php include 'header.php'; ?>
-    <aside class="page_banner_people">
-        <!-- <div class="overlay">
-            <div class="inner_banner">
-                <div>
-                    <p>Our People</p>
-                </div>
-            </div>
-        </div> -->
+    <aside class="page_banner_robert">
+        
     </aside>
+    
+    <section class="initial">
+    <div>
+        <h2 class="title"> Robert Douglass </h2>
+        <div class="description">
+            <p class="sub-header">
+            Robert is a principal in Douglass Winthrop Advisors LLC. Previously, he was a Managing Director at Morgens, Waterfall, Vintiadis & Company, a New York investment management company, where he managed proprietary equity partnerships. Prior to MWV, Robert was a Managing Director with Trainer, Wortham & Company, where he managed growth equities for high net worth individuals and the Trainer, Wortham Emerging Growth Fund. Prior to TW, Robert was affiliated with Warburg, Pincus Counsellors and Salomon Brothers Inc.
+            Robert received an MBA from the Amos Tuck School of Business Administration in 1991, an MSc. from the London School of Economics in 1989, and a BA from Dartmouth College in 1986.
+            </p>
+        </div>
+    </div>
+    </section>
+
 
     <section class="people">
         <div class="person">
@@ -131,4 +138,5 @@
         </div>
 
     </section>
+   
 <?php include 'footer.php'; ?>

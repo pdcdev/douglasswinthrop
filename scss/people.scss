@@ -1,0 +1,63 @@
+@import "bourbon/bourbon";
+@import "grid-settings";
+@import "neat/neat";
+@import "utilities/variables";
+@import "utilities/universal";
+
+
+.vertical_center_parent {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    /*justify-content: center;*/
+}
+.global_pad {
+    @include pad(2em $desk);
+    @include media($tablet) {
+        @include pad(2em $tab);
+    }
+    @include media($mobile) {
+        @include pad(2em $mob);
+    }
+}
+.sidepad {
+    @include pad(0 $desk);
+    @include media($tablet) {
+        @include pad(0 $tab);
+    }
+    @include media($mobile) {
+        @include pad(0 $mob);
+    }
+}
+.inner_header {
+    @extend .sidepad;
+    h1 {
+        a {
+            @include media($tablet) {
+                @include span-columns(10);
+            }
+        }
+    }
+}
+
+.page_banner_robert {
+    @include outer-container;
+    background-color: #eee;
+    position: relative;
+    height: 500px;
+    margin: 0 auto;
+    background: url('../images/people/single/robert-banner.jpg') center center no-repeat;
+    background-size: cover;
+    @include media($mobile) {
+        background: url('../images/people/single/robert-banner.jpg') no-repeat;
+        background-size: 100%;
+        height: 190px;
+    }
+
+}
+
+

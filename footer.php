@@ -5,11 +5,14 @@
                 535 Fifth Avenue, 22nd Floor
                 New York, NY 1001
             </address>
-            <div class="numbers">
-                <p class ="numbers" style="font-size: 14px;">
-                Telephone: 212 557 7680
+            <address>
+                Telephone: 212 557 7680<br>
                 Telefax: 212 557 7683
-                </p>
+            </address>
+            <br>
+            <address style="font-size:10px;">All rights reserved &copy; Douglass Winthrop<br>
+                Designed by Picatello Design Centre
+            </address>
             </div>
         </div>
     </footer>

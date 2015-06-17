@@ -1,0 +1,96 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/*font-family:'FrutigerLTW01-45Light';
+font-family:'FrutigerLTW01-46LightIt';
+font-family:'FrutigerLTW01-55Roman';
+font-family:'FrutigerLTW01-56Italic';
+font-family:'Frutiger LT W01_65 Bold';
+font-family:'FrutigerLTW01-66BoldIta';
+font-family:'FrutigerLTW01-75Black';
+font-family:'FrutigerLTW01-76BlackIt';
+font-family:'FrutigerLTW01-95UltraBl';
+font-family:'FrutigerLTW01-47LightCn';
+font-family:'FrutigerLTW01-48LightCn';
+font-family:'FrutigerLTW01-67BoldCn';
+font-family:'FrutigerLTW01-68BoldCnI';
+font-family:'FrutigerLTW01-87ExtraBk';
+font-family:'FrutigerLTW01-88XBkCnIt';
+font-family:'Frutiger LT W04_45 Light';
+font-family:'Frutiger LT W04_46 Ligh1459266';
+font-family:'Frutiger LT W04_55 Roman';
+font-family:'Frutiger LT W04_56 Italic';
+font-family:'Frutiger LT W04_65 Bold';
+font-family:'Frutiger LT W04_66 Bold Italic';
+font-family:'Frutiger LT W04_75 Black';
+font-family:'Frutiger LT W04_76 Blac1459278';
+font-family:'Frutiger LT W04_95 Ultra Black';
+font-family:'Frutiger LT W04_47 Light Cond';
+font-family:'Frutiger LT W04_67 Bold Cond';
+font-family:'Frutiger LT W04_77 Black Cond';
+font-family:'Frutiger LT W04_87 X Bl1459298';*/
+/*function do_something(data, colors) {
+   do something with "data" and "colors"
+}
+var list_of_stuff = [1,2,3,4];
+
+do_something(list_of_stuff, "blue");*/
+.vertical_center_parent {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  /*justify-content: center;*/ }
+
+.global_pad {
+  padding: 2em 40px; }
+  @media screen and (max-width: 768px) {
+    .global_pad {
+      padding: 2em 40px; } }
+  @media screen and (max-width: 480px) {
+    .global_pad {
+      padding: 2em 30px; } }
+
+.sidepad, .inner_header {
+  padding: 0 40px; }
+  @media screen and (max-width: 768px) {
+    .sidepad, .inner_header {
+      padding: 0 40px; } }
+  @media screen and (max-width: 480px) {
+    .sidepad, .inner_header {
+      padding: 0 30px; } }
+
+@media screen and (max-width: 768px) {
+  .inner_header h1 a {
+    float: left;
+    display: block;
+    margin-right: 4.7619047619%;
+    width: 169.8412698413%; }
+    .inner_header h1 a:last-child {
+      margin-right: 0; } }
+
+.page_banner_robert {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eee;
+  position: relative;
+  height: 500px;
+  margin: 0 auto;
+  background: url("../images/people/single/robert-banner.jpg") center center no-repeat;
+  background-size: cover; }
+  .page_banner_robert::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 480px) {
+    .page_banner_robert {
+      background: url("../images/people/single/robert-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 190px; } }

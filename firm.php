@@ -8,6 +8,13 @@
             </div>
         </div>
     </aside>
+    <div class="overlay-mobile">
+        <div class="inner_banner-mobile">
+            <div>
+                <p>Commited to providing our clients with responsive service and proactive management of their financial affairs.</p>
+            </div>
+        </div>
+    </div>
     <section class="initial">
         <div>
             <h2 class="title"> About </h2>

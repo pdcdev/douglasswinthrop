@@ -53,7 +53,7 @@ body {
 header {
     z-index: 999;
     position: relative;
-    background-color: #fff;
+    background-color: $blue;
     div.inner_header {
         @include outer-container;
         height: 60px;
@@ -62,9 +62,13 @@ header {
             line-height: 60px;
             font-family: $frutigerBoldCond;
             font-size: 1.5rem;
+
             a {
                 text-decoration: none;
-                color: $blue;
+                color: white;
+            }
+            @include media($mobile){
+                font-size: 1rem;
             }
         }
         nav.main-nav {
@@ -77,22 +81,27 @@ header {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
+
                 li {
+                    @include span-columns(2);
                     font-family: $frutigerLightCond;
-                    line-height: 60px;
-                    text-transform: uppercase;
-                    color: $gray;
+                    /*line-height: 60px;*/
                     font-size: 1rem;
+                    margin-top: 20px;
+                    border-bottom: 1px solid #5e9eec;
+                    display: inline-block;
                     a {
+                        width: 50px;
+                        color: #5e9eec;
                         text-decoration: none;
-                        margin-bottom: 50px;
-                        padding-bottom: 17px;
+                        padding-bottom: 5px;
+                        
                     }
                     a:visited {
-                        color: $blue;
+                        
                     }
                     a:hover {
-                        border-bottom: 4px solid $blue;
+                        color: #fff;
 
                     }
                 }
@@ -108,6 +117,11 @@ header {
     display: none;
     width: 100%;
     text-align: center;
+    h1 {
+        a{
+            font-family: $frutigerLightCond;
+        }
+    }
     a {
         &:hover {
         color: #999;
@@ -123,7 +137,6 @@ header {
   }
 @media only screen and (max-width: 767px) {
     #menuExpand {
-
     }
   .inner_header {
     .main-nav {
@@ -139,30 +152,23 @@ header {
       }
     ul {
       li {
-        @include span-columns(12);
-        background-color: #eee;
+        @include span-columns(3);
+        background-color: #fff;
         display: block;
         font-family: $frutigerLightCond;
         line-height: 60px;
-        a {
-          &:hover {
-          color: #999;
-          }  
-          color: $blue;
-          padding: 5% 0;
-          width: 100%;
-          }
+        border-bottom: 1px solid #fff;
         }
       }
     }
     .menuIcon {
-        display: inline-block;
-            @include span-columns(3);
+        @include span-columns(3);
         float: right;
         }
     }
 }
- 
+
+
 /*.expand {
     display: block !important; 
 }*/
@@ -252,46 +258,19 @@ header {
         }
     }
 
+
+
 .page_banner_letters {
     background-color: #eee;
     position: relative;
-    height: 400px;
+    height: 500px;
     background: url('../images/letters.jpg') center center no-repeat;
     background-size: cover;
-    div.overlay {
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        height: 175px;
-        background-color: rgba($blue, 0.6);
-        div.inner_banner {
-            @include outer-container;
-            @extend .global_pad;
-            position: relative;
-            height: 100%;
-            div {
-                height: 100%;
-                @extend .vertical_center_parent;
-                p {
-                    @include span-columns(6);
-                    font-family: $frutigerLightCond;
-                    font-size: 20pt; 
-                    color: #fff;
-                    @include media($tablet) {
-                    @include span-columns(4);
-                    }
-                }
-            }
-        }
+    @include media($mobile) {
+        background: url('../images/letters.jpg') no-repeat;
+        background-size: 100%;
+        height: 190px;
     }
-}
-
-.page_banner_firm {
-    background-color: #eee;
-    position: relative;
-    height: 400px;
-    background: url('../images/our_firm.jpg') center center no-repeat;
-    background-size: cover;
     div.overlay {
         width: 100%;
         position: absolute;
@@ -313,7 +292,63 @@ header {
                     color: #fff;
                     @include media($tablet) {
                         @include span-columns(4);
+                    }
+                }
+            }
+        }
+    }
+}
 
+div.overlay-mobile {
+    display: none;
+}
+@media (max-width: 480px) {
+    div.overlay-mobile {
+        div.inner_banner-mobile {
+            height: 175px;
+            padding: 10%;
+            background-color: rgba($blue, 0.6);
+        }
+    }
+}
+
+.page_banner_firm {
+    background-color: #eee;
+    position: relative;
+    width:100%;
+    height: 500px;
+    background: url('../images/our_firm.jpg') center center no-repeat;
+    background-size: cover;
+    @include media($mobile) {
+        height: 190px;
+        background: url('../images/our_firm.jpg') no-repeat;
+        background-size: 100%;
+    }
+    div.overlay {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        height: 175px;
+        background-color: rgba($blue, 0.6);
+        @include media($mobile) {
+            display:none;
+        }
+        div.inner_banner {
+            @include outer-container;
+            @extend .global_pad;
+            position: relative;
+            height: 100%;
+            div {
+                height: 100%;
+                @extend .vertical_center_parent;
+                p {
+                    @include span-columns(6);
+                    font-family: $frutigerLightCond;
+                    font-size: 20pt; 
+                    color: #fff;
+                    @include media($tablet) {
+                        @include span-columns(4);
+                        font-size: 15pt; 
                     }
                     @include media($mobile) {
                         @include span-columns(4);
@@ -327,9 +362,13 @@ header {
 .page_banner_value {
     background-color: #eee;
     position: relative;
-    height: 400px;
+    height: 500px;
     background: url('../images/value.jpg') center center no-repeat;
     background-size: cover;
+    @include media($mobile) {
+        background: url('../images/value.jpg') no-repeat;
+        background-size: 100%;   
+    }
     div.overlay {
         width: 100%;
         position: absolute;
@@ -365,8 +404,46 @@ header {
 .page_banner_people {
     background-color: #eee;
     position: relative;
-    height: 400px;
+    height: 500px;
     background: url('../images/people.jpg') center center no-repeat;
+    background-size: cover;
+    background-position: 0px -30px;
+    div.overlay {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        height: 175px;
+        background-color: rgba($blue, 0.6);
+        div.inner_banner {
+            @include outer-container;
+            @extend .global_pad;
+            position: relative;
+            height: 100%;
+            div {
+                height: 100%;
+                @extend .vertical_center_parent;
+                p {
+                    @include span-columns(6);
+                    font-family: $frutigerLightCond;
+                    font-size: 20pt; 
+                    color: #fff;
+                    @include media($tablet) {
+                        @include span-columns(4);
+
+                    }
+                    @include media($mobile) {
+                        @include span-columns(4);
+                    }
+                }
+            }
+        }
+    }
+}
+.page_banner_contact {
+    background-color: #eee;
+    position: relative;
+    height: 500px;
+    background: url('../images/contact.jpg') center center no-repeat;
     background-size: cover;
     div.overlay {
         width: 100%;
@@ -400,6 +477,7 @@ header {
     }
 }
 
+
 section.people {
     @include outer-container;
     @extend .global_pad;
@@ -418,9 +496,11 @@ section.people {
             @include span-columns(3);
             @include omega(4n);
         }
-        img.person_headshot {
-
+        
+        img.person_headshot:hover {
+           
         }
+
         div.person_name {
             position: absolute;
             height: 60px;
@@ -440,6 +520,19 @@ section.people {
                 font-size: 10pt;
                 font-family: $frutigerLightCond;
             }
+            p:hover {
+                opacity: 1;
+            }
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+            a:hover{
+                
+            }
+        }
+        div.person_name:hover {
+            background-color: rgba(black, 0.6);
         }
     }
 }
@@ -447,10 +540,15 @@ section.people {
 section.initial {
     @include outer-container;
     @extend .global_pad;
+    /*@include media ($mobile){
+        margin-top: 200px;
+    }*/
     h2.title {
         @include span-columns(3);
         @include type($small, $blue);
+        font-family: $frutigerLightCond;
     }
+
     div {
         padding-bottom: 5%;
         div.description {
@@ -459,7 +557,7 @@ section.initial {
             p.sub-header {
                 @include type($small, #004FB1);
                 line-height: 20px;
-                font-family: $frutigerRoman;
+                font-family: $frutigerLightCond;
             }
             p.following {
                 line-height: 20px;
@@ -495,6 +593,7 @@ section.detail-layout-value {
         }
     }
 }
+
 section.letters {
     @include outer-container;
     @extend .global_pad;
@@ -527,6 +626,137 @@ section.letters {
     } 
 }
 
+section.initial_contact {
+    @include outer-container;
+    @extend .global_pad;
+    h2.contact {
+        @include span-columns(3);
+        color: $blue;
+    }
+}
+
+section.contact-list {
+    @include outer-container;
+    @extend .global_pad;
+    div.one-contact {
+        @include span-columns(4);
+        @include omega(3n);
+        margin-top: 1em;
+        margin-bottom: 1em;
+        position: relative;
+        h3 {
+            margin-bottom: 14px;
+        }
+        p {
+            @include type($small, $gray);
+            font-family: $frutigerLightCond;
+        }
+        a {
+            text-decoration: none;
+            color: $gray;
+        }
+        a:hover {
+            color: $blue;
+        }
+        @include media($tablet) {
+            @include span-columns(5);
+        }
+        @include media($mobile) {
+            @include span-columns(3);
+            
+        }
+    }
+}
+
+/*.page_banner_contact-2{
+    background-color: #eee;
+    position: relative;
+    height: 500px;
+    background: url('../images/contact-cities.jpg') center center no-repeat;
+    background-size: 100%;
+    background-position: absolute;
+    bottom: 0;
+    @include media($mobile) {
+        display: none;
+    }
+    div.overlay {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        height: 40px;
+        background-color: rgba($blue, 0.6);
+        div.inner_banner {
+            @include outer-container;
+            @extend .global_pad;
+            position: relative;
+            height: 100%;
+            div {
+                height: 100%;
+                @extend .vertical_center_parent;
+                p {
+                    @include span-columns(6);
+                    font-family: $frutigerLightCond;
+                    font-size: 20pt; 
+                    color: #fff;
+                    @include media($tablet) {
+                        @include span-columns(4);
+
+                    }
+                    @include media($mobile) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}*/
+
+section.contact {
+    @include outer-container;
+    @extend .global_pad;
+    div.locations {
+        @include span-columns(4);
+        /*@include omega(4n);*/
+        background-color: #eee;
+        margin: 0;
+        max-width: 80em; 
+        margin-top: 1em;
+        margin-bottom: 1em;
+        position: relative;
+        @include media($tablet) {
+            @include span-columns(4);
+            @include omega(1n);
+        }
+        @include media($mobile) {
+            @include span-columns(3);
+            @include omega(4n);
+        }
+        img.city {
+
+        }
+        div.city_name {
+            position: absolute;
+            height: 160px;
+            bottom: 0;
+            background-color: rgba($blue, 0.6);
+            width: 100%;
+            @include pad(0 1em);
+            h1 {
+                line-height: 55px;
+                color: #fff;
+                @include type($small, #fff);
+                font-family: $frutigerLightCond;
+            }
+            p.contact {
+                line-height: 20px;
+                color:#fff;
+                font-size: 10pt;
+                font-family: $frutigerLightCond;
+            }
+        }
+    }
+}
+
 
 #map-canvas {
     min-height: 640px;
@@ -546,15 +776,14 @@ footer {
         div.inner_footer {
             @include type($small, $gray);
             font-size: 14px;
-            address {
-            }
         }
         @extend .global_pad;
         address {
             @include span-columns(8);
             margin-bottom: 10px;
             font-size: 14px;
-        }   
+            line-height: 20px;
+        }  
     }
 }   
 
