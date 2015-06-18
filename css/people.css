@@ -75,6 +75,76 @@ do_something(list_of_stuff, "blue");*/
     .inner_header h1 a:last-child {
       margin-right: 0; } }
 
+h2.title-person-single {
+  color: #004FB1;
+  font-size: 1rem;
+  float: left;
+  display: block;
+  margin-right: 2.3255813953%;
+  width: 23.2558139535%;
+  font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+  @media screen and (max-width: 768px) {
+    h2.title-person-single {
+      font-size: 1rem; } }
+  @media screen and (max-width: 480px) {
+    h2.title-person-single {
+      font-size: 0.9375rem; } }
+  h2.title-person-single:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    h2.title-person-single {
+      float: left;
+      display: block;
+      margin-right: 4.7619047619%;
+      width: 204.7619047619%;
+      padding-bottom: 2em; }
+      h2.title-person-single:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 480px) {
+    h2.title-person-single {
+      float: left;
+      display: block;
+      margin-right: 10%;
+      width: 100%;
+      padding-bottom: 2em; }
+      h2.title-person-single:last-child {
+        margin-right: 0; } }
+
+div.description-person-single {
+  float: left;
+  display: block;
+  margin-right: 2.3255813953%;
+  width: 65.8914728682%;
+  color: #004FB1;
+  font-size: 1rem;
+  font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+  div.description-person-single:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    div.description-person-single {
+      font-size: 1rem; } }
+  @media screen and (max-width: 480px) {
+    div.description-person-single {
+      font-size: 0.9375rem; } }
+  @media screen and (max-width: 768px) {
+    div.description-person-single {
+      float: left;
+      display: block;
+      margin-right: 4.7619047619%;
+      width: 100%;
+      padding-bottom: 2em; }
+      div.description-person-single:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 480px) {
+    div.description-person-single {
+      float: left;
+      display: block;
+      margin-right: 10%;
+      width: 100%;
+      padding-bottom: 2em; }
+      div.description-person-single:last-child {
+        margin-right: 0; } }
+
 .page_banner_robert {
   max-width: 75em;
   margin-left: auto;
@@ -92,5 +162,25 @@ do_something(list_of_stuff, "blue");*/
   @media screen and (max-width: 480px) {
     .page_banner_robert {
       background: url("../images/people/single/robert-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 190px; } }
+
+.page_banner_jay {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eee;
+  position: relative;
+  height: 500px;
+  margin: 0 auto;
+  background: url("../images/people/single/jay-banner.jpg") center center no-repeat;
+  background-size: cover; }
+  .page_banner_jay::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 480px) {
+    .page_banner_jay {
+      background: url("../images/people/single/jay-banner.jpg") no-repeat;
       background-size: 100%;
       height: 190px; } }

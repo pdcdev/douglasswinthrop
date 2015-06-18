@@ -51,13 +51,13 @@ body {
   align-items: center;
   /*justify-content: center;*/ }
 
-.global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.overlay div.inner_banner, .page_banner_value div.overlay div.inner_banner, .page_banner_people div.overlay div.inner_banner, .page_banner_contact div.overlay div.inner_banner, section.people, section.initial, section.detail-layout-value, section.letters, section.initial_contact, section.contact-list, section.contact, footer div.inner_footer {
+.global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.overlay div.inner_banner, .page_banner_value div.overlay div.inner_banner, .page_banner_people div.overlay div.inner_banner, .page_banner_contact div.overlay div.inner_banner, section.people, section.people-single, section.initial, section.detail-layout-value, section.letters, section.initial_contact, section.contact-list, section.contact, footer div.inner_footer {
   padding: 2em 40px; }
   @media screen and (max-width: 768px) {
-    .global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.overlay div.inner_banner, .page_banner_value div.overlay div.inner_banner, .page_banner_people div.overlay div.inner_banner, .page_banner_contact div.overlay div.inner_banner, section.people, section.initial, section.detail-layout-value, section.letters, section.initial_contact, section.contact-list, section.contact, footer div.inner_footer {
+    .global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.overlay div.inner_banner, .page_banner_value div.overlay div.inner_banner, .page_banner_people div.overlay div.inner_banner, .page_banner_contact div.overlay div.inner_banner, section.people, section.people-single, section.initial, section.detail-layout-value, section.letters, section.initial_contact, section.contact-list, section.contact, footer div.inner_footer {
       padding: 2em 40px; } }
   @media screen and (max-width: 480px) {
-    .global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.overlay div.inner_banner, .page_banner_value div.overlay div.inner_banner, .page_banner_people div.overlay div.inner_banner, .page_banner_contact div.overlay div.inner_banner, section.people, section.initial, section.detail-layout-value, section.letters, section.initial_contact, section.contact-list, section.contact, footer div.inner_footer {
+    .global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.overlay div.inner_banner, .page_banner_value div.overlay div.inner_banner, .page_banner_people div.overlay div.inner_banner, .page_banner_contact div.overlay div.inner_banner, section.people, section.people-single, section.initial, section.detail-layout-value, section.letters, section.initial_contact, section.contact-list, section.contact, footer div.inner_footer {
       padding: 2em 30px; } }
 
 .sidepad, .inner_header {
@@ -143,9 +143,9 @@ header {
         margin-right: 2.3255813953%;
         width: 14.7286821705%;
         font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
-        /*line-height: 60px;*/
+        line-height: 40px;
         font-size: 1rem;
-        margin-top: 20px;
+        margin: 5px 0 20px 0;
         border-bottom: 1px solid #5e9eec;
         display: inline-block; }
         header div.inner_header nav.main-nav ul li:last-child {
@@ -415,7 +415,7 @@ div.overlay-mobile {
     .page_banner_firm {
       height: 190px;
       background: url("../images/our_firm.jpg") no-repeat;
-      background-size: 100%; } }
+      background-size: 115%; } }
   .page_banner_firm div.overlay {
     width: 100%;
     position: absolute;
@@ -474,13 +474,17 @@ div.overlay-mobile {
   @media screen and (max-width: 480px) {
     .page_banner_value {
       background: url("../images/value.jpg") no-repeat;
-      background-size: 100%; } }
+      background-size: 100%;
+      height: 190px; } }
   .page_banner_value div.overlay {
     width: 100%;
     position: absolute;
     bottom: 0;
     height: 175px;
     background-color: rgba(0, 79, 177, 0.6); }
+    @media screen and (max-width: 480px) {
+      .page_banner_value div.overlay {
+        display: none; } }
     .page_banner_value div.overlay div.inner_banner {
       max-width: 75em;
       margin-left: auto;
@@ -527,6 +531,11 @@ div.overlay-mobile {
   background: url("../images/people.jpg") center center no-repeat;
   background-size: cover;
   background-position: 0px -30px; }
+  @media screen and (max-width: 480px) {
+    .page_banner_people {
+      height: 190px;
+      background: url("../images/people.jpg") no-repeat;
+      background-size: 100%; } }
   .page_banner_people div.overlay {
     width: 100%;
     position: absolute;
@@ -578,6 +587,11 @@ div.overlay-mobile {
   height: 500px;
   background: url("../images/contact.jpg") center center no-repeat;
   background-size: cover; }
+  @media screen and (max-width: 480px) {
+    .page_banner_contact {
+      height: 190px;
+      background: url("../images/contact.jpg") no-repeat;
+      background-size: 100%; } }
   .page_banner_contact div.overlay {
     width: 100%;
     position: absolute;
@@ -702,6 +716,82 @@ section.people {
     section.people div.person div.person_name:hover {
       background-color: rgba(0, 0, 0, 0.6); }
 
+/* ----------------------------- Single person people grid - mobile -----*/
+section.people-single {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto; }
+  section.people-single::after {
+    clear: both;
+    content: "";
+    display: table; }
+  section.people-single div.person-single {
+    float: left;
+    display: block;
+    margin-right: 2.3255813953%;
+    width: 23.2558139535%;
+    background-color: #eee;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    position: relative; }
+    section.people-single div.person-single:last-child {
+      margin-right: 0; }
+    section.people-single div.person-single:nth-child(4n) {
+      margin-right: 0; }
+    section.people-single div.person-single:nth-child(4n+1) {
+      clear: left; }
+    @media screen and (max-width: 768px) {
+      section.people-single div.person-single {
+        float: left;
+        display: block;
+        margin-right: 4.7619047619%;
+        width: 47.619047619%; }
+        section.people-single div.person-single:last-child {
+          margin-right: 0; }
+        section.people-single div.person-single:nth-child(2n) {
+          margin-right: 0; }
+        section.people-single div.person-single:nth-child(2n+1) {
+          clear: left; } }
+    section.people-single div.person-single div.person_name-single {
+      position: absolute;
+      height: 60px;
+      bottom: 0;
+      background-color: rgba(0, 79, 177, 0.6);
+      width: 100%;
+      padding: 0 1em; }
+      section.people-single div.person-single div.person_name-single h1 {
+        line-height: 35px;
+        color: #fff;
+        color: #fff;
+        font-size: 1rem;
+        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+        @media screen and (max-width: 768px) {
+          section.people-single div.person-single div.person_name-single h1 {
+            font-size: 1rem; } }
+        @media screen and (max-width: 480px) {
+          section.people-single div.person-single div.person_name-single h1 {
+            font-size: 0.9375rem; } }
+        @media screen and (max-width: 768px) {
+          section.people-single div.person-single div.person_name-single h1 {
+            line-height: 25px;
+            font-size: 10pt; } }
+      section.people-single div.person-single div.person_name-single p {
+        line-height: 20px;
+        color: #fff;
+        font-size: 10pt;
+        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+        @media screen and (max-width: 768px) {
+          section.people-single div.person-single div.person_name-single p {
+            line-height: 15px;
+            font-size: 9pt; } }
+      section.people-single div.person-single div.person_name-single p:hover {
+        opacity: 1; }
+      section.people-single div.person-single div.person_name-single a {
+        color: #fff;
+        text-decoration: none; }
+    section.people-single div.person-single div.person_name:hover {
+      background-color: rgba(0, 0, 0, 0.6); }
+
 section.initial {
   max-width: 75em;
   margin-left: auto;
@@ -728,6 +818,22 @@ section.initial {
         font-size: 1rem; } }
     @media screen and (max-width: 480px) {
       section.initial h2.title {
+        font-size: 0.9375rem; } }
+  section.initial h2.people {
+    float: left;
+    display: block;
+    margin-right: 2.3255813953%;
+    width: 23.2558139535%;
+    color: #004FB1;
+    font-size: 1rem;
+    font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+    section.initial h2.people:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      section.initial h2.people {
+        font-size: 1rem; } }
+    @media screen and (max-width: 480px) {
+      section.initial h2.people {
         font-size: 0.9375rem; } }
   section.initial div {
     padding-bottom: 5%; }
@@ -822,18 +928,27 @@ section.letters {
     content: "";
     display: table; }
   section.letters div.letter-list {
+    color: #A3A9AC;
+    font-size: 1rem;
+    font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
     float: left;
     display: block;
     margin-right: 2.3255813953%;
     width: 65.8914728682%;
     margin-left: 34.1085271318%; }
+    @media screen and (max-width: 768px) {
+      section.letters div.letter-list {
+        font-size: 1rem; } }
+    @media screen and (max-width: 480px) {
+      section.letters div.letter-list {
+        font-size: 0.9375rem; } }
     section.letters div.letter-list:last-child {
       margin-right: 0; }
     section.letters div.letter-list a {
       margin-right: 20px;
       display: inline-block;
-      color: #A3A9AC;
-      text-decoration: none; }
+      text-decoration: none;
+      color: #A3A9AC; }
     section.letters div.letter-list a:hover {
       color: #004FB1; }
     @media screen and (max-width: 768px) {
@@ -872,18 +987,35 @@ section.initial_contact {
     display: block;
     margin-right: 2.3255813953%;
     width: 23.2558139535%;
-    color: #004FB1; }
+    color: #004FB1;
+    font-size: 1rem;
+    font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
     section.initial_contact h2.contact:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      section.initial_contact h2.contact {
+        font-size: 1rem; } }
+    @media screen and (max-width: 480px) {
+      section.initial_contact h2.contact {
+        font-size: 0.9375rem; } }
 
 section.contact-list {
   max-width: 75em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  color: #004FB1;
+  font-size: 1rem;
+  font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
   section.contact-list::after {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (max-width: 768px) {
+    section.contact-list {
+      font-size: 1rem; } }
+  @media screen and (max-width: 480px) {
+    section.contact-list {
+      font-size: 0.9375rem; } }
   section.contact-list div.one-contact {
     float: left;
     display: block;
@@ -902,8 +1034,7 @@ section.contact-list {
       margin-bottom: 14px; }
     section.contact-list div.one-contact p {
       color: #A3A9AC;
-      font-size: 1rem;
-      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+      font-size: 1rem; }
       @media screen and (max-width: 768px) {
         section.contact-list div.one-contact p {
           font-size: 1rem; } }
@@ -912,7 +1043,14 @@ section.contact-list {
           font-size: 0.9375rem; } }
     section.contact-list div.one-contact a {
       text-decoration: none;
-      color: #A3A9AC; }
+      color: #A3A9AC;
+      font-size: 1rem; }
+      @media screen and (max-width: 768px) {
+        section.contact-list div.one-contact a {
+          font-size: 1rem; } }
+      @media screen and (max-width: 480px) {
+        section.contact-list div.one-contact a {
+          font-size: 0.9375rem; } }
     section.contact-list div.one-contact a:hover {
       color: #004FB1; }
     @media screen and (max-width: 768px) {
@@ -977,11 +1115,20 @@ section.contact-list {
 section.contact {
   max-width: 75em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  color: #004FB1;
+  font-size: 1rem;
+  font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
   section.contact::after {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (max-width: 768px) {
+    section.contact {
+      font-size: 1rem; } }
+  @media screen and (max-width: 480px) {
+    section.contact {
+      font-size: 0.9375rem; } }
   section.contact div.locations {
     float: left;
     display: block;

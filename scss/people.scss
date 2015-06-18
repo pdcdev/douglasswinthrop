@@ -44,6 +44,34 @@
     }
 }
 
+h2.title-person-single {
+    @include type($small, $blue);
+    @include span-columns(3);
+    font-family: $frutigerLightCond;
+    @include media($tablet) {
+        @include span-columns(12);
+        padding-bottom: 2em;
+    }
+    @include media($mobile) {
+        @include span-columns(3);
+        padding-bottom: 2em;
+    }
+}
+
+div.description-person-single {
+    @include span-columns(8);
+    @include type($small, $blue);
+    font-family: $frutigerLightCond;
+    @include media($tablet) {
+        @include span-columns(6);
+        padding-bottom: 2em;
+    }
+    @include media($mobile) {
+        @include span-columns(3);
+        padding-bottom: 2em;
+    }
+}
+
 .page_banner_robert {
     @include outer-container;
     background-color: #eee;
@@ -60,4 +88,19 @@
 
 }
 
+.page_banner_jay {
+    @include outer-container;
+    background-color: #eee;
+    position: relative;
+    height: 500px;
+    margin: 0 auto;
+    background: url('../images/people/single/jay-banner.jpg') center center no-repeat;
+    background-size: cover;
+    @include media($mobile) {
+        background: url('../images/people/single/jay-banner.jpg') no-repeat;
+        background-size: 100%;
+        height: 190px;
+    }
+
+}
 
