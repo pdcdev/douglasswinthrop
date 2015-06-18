@@ -4,16 +4,19 @@
         <div class="overlay_home">
             <div class="inner_banner_home">
                 <div>
-                    <div>
-                        <p>Investment advisors to individuals, families, trusts and endowments.</p>
-                        <div class="intro">
+                    <ul>
+                        <li class="left">
+                            <p>Investment advisors to individuals, families, trusts and endowments.</p>
+                        </li>
+                        
+                        <li class="intro">
                             <ol>
                                 <li><a href ="people.php">Our People</a></li>
                                 <li><a href ="value.php">Value Proposition</a></li>
                                 <li><a href ="contact.php">Get In Touch</a></li>
                             </ol>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>    
             </div>
         </div>

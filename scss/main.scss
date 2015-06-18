@@ -73,15 +73,20 @@ header {
         }
         nav.main-nav {
             ul {
+                @include span-columns(8);
                 margin:0;
                 @include media($tablet) {
-                @include span-columns(8);
+                    @include span-columns(5);
+                    background-color: #fff;
+                }
+                @include media($tablet) {
+                    @include span-columns(6);
+                    background-color: #fff;
                 }
                 list-style: none;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-
                 li {
                     @include span-columns(2);
                     font-family: $frutigerLightCond;
@@ -90,6 +95,14 @@ header {
                     margin-top: 20px;
                     border-bottom: 1px solid #5e9eec;
                     display: inline-block;
+                    @include media($tablet) {
+                        @include span-columns(6);
+                        display: block;
+                    }
+                    @include media($mobile) {
+                        @include span-columns(3);
+                        display: block;
+                    }
                     a {
                         width: 50px;
                         color: #5e9eec;
@@ -176,6 +189,7 @@ header {
 .page_banner_home {
     z-index: 0;
     background-color: #eee;
+    padding-top: 1em;
     width: 100%;
     height:100%;
     position: absolute;
@@ -196,58 +210,66 @@ header {
             div {
                 height: 100%;
                 @extend .vertical_center_parent;
-                div {
-                    
-                    p {
+                ul {
+                    li.left {
+                        height: auto;
                         @include span-columns(4);
-                        @include shift(0);
-                        margin-top: 1em;
-                        margin-bottom: 1em;
-                        position: relative;
-                        font-family: $frutigerLightCond;
-                        @include type($large, #fff);
-                        @include media($tablet) {
-                            @include span-columns(3);
+                        p {
+                            margin-top: 0 0 1em 0;
+                            font-family: $frutigerLightCond;
+                            @include type($large, #fff);
+                            @include media($tablet) {
+                                @include span-columns(7);
+                            }
+                            @include media($mobile) {
+                                @include span-columns(8);
+                                font-size: 30px;
+                                padding: 0 0 1em 0;
+                            }
                         }
-                        @include media($mobile) {
-                            @include span-columns(12);
-                            background-color: red;
-                        }
-
                     }
-                    .intro {
-
+                    
+                    li.intro {
                         @include span-columns(4);
                         @include shift(2);
                         height: auto;
-                        margin-top: 1em;
-                        margin-bottom: 1em;
-                        position: relative;
                         @include media($tablet) {
                             @include span-columns(3);
                         }
                         @include media($mobile) {
-                            display: none;
-                            @include span-columns(12);
+                            @include span-columns(2);
+                            padding-top: 2em;
                             }
                         }
                         ol {
+                            
                             li {
                                 font-family: $frutigerLightCond;
-                                line-height: 60px;
+                                margin: 0 0 1em 0;
                                 text-transform: uppercase;
                                 color: $gray;
                                 font-size: 1.25rem;
                                 list-style: none;
+                                @include media($mobile) {
+                                    background-color: #fff;
+                                    line-height: 50px;
+                                    text-align: center;
+                                }
                                 &:after {
                                     content:"\e802";
                                     float: right;
                                     font-family: fontello;
                                     color: #fff;
+                                    @include media($mobile) {
+                                        display: none;
+                                    }
                                 }
                                 a {
                                     color: #fff;
                                     text-decoration: none;
+                                    @include media($mobile) {
+                                    color: #5e9eec;
+                                    }
                                 }
                             }
 
