@@ -159,6 +159,11 @@ div.description-person-single {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (max-width: 768px) {
+    .page_banner_robert {
+      background: url("../images/people/single/robert-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 300px; } }
   @media screen and (max-width: 480px) {
     .page_banner_robert {
       background: url("../images/people/single/robert-banner.jpg") no-repeat;
@@ -179,6 +184,11 @@ div.description-person-single {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (max-width: 768px) {
+    .page_banner_jay {
+      background: url("../images/people/single/jay-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 300px; } }
   @media screen and (max-width: 480px) {
     .page_banner_jay {
       background: url("../images/people/single/jay-banner.jpg") no-repeat;

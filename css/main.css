@@ -141,7 +141,7 @@ header {
           float: left;
           display: block;
           margin-right: 10%;
-          width: 210%;
+          width: 100%;
           background-color: #fff; }
           header div.inner_header nav.main-nav ul:last-child {
             margin-right: 0; } }
@@ -226,11 +226,11 @@ header {
         display: block;
         margin-right: 2.3255813953%;
         width: 23.2558139535%;
-        float: left;
         background-color: #fff;
         display: block;
+        text-align: center;
         font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
-        line-height: 60px;
+        line-height: 50px;
         border-bottom: 1px solid #fff; }
         .inner_header .main-nav ul li:last-child {
           margin-right: 0; }
@@ -310,7 +310,7 @@ header {
                 margin-right: 10%;
                 width: 283.3333333333%;
                 font-size: 30px;
-                padding: 2em 0 1em 2em; }
+                padding-top: 2em; }
                 .page_banner_home div.overlay_home div.inner_banner_home div ul li.left p:last-child {
                   margin-right: 0; } }
             @media screen and (max-width: 320px) {
@@ -319,6 +319,7 @@ header {
                 display: block;
                 margin-right: 10%;
                 width: 283.3333333333%;
+                padding-left: 2em;
                 font-size: 20px; }
                 .page_banner_home div.overlay_home div.inner_banner_home div ul li.left p:last-child {
                   margin-right: 0; } }
@@ -564,6 +565,11 @@ div.overlay-mobile {
   background: url("../images/people.jpg") center center no-repeat;
   background-size: cover;
   background-position: 0px -30px; }
+  @media screen and (max-width: 768px) {
+    .page_banner_people {
+      background: url("../images/people/single/jay-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 300px; } }
   @media screen and (max-width: 480px) {
     .page_banner_people {
       height: 190px;
@@ -922,7 +928,16 @@ section.detail-layout-value {
     section.detail-layout-value div.detail:nth-child(3n+1) {
       clear: left; }
     section.detail-layout-value div.detail h3 {
+      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
+      color: #004FB1;
+      font-size: 1rem;
       margin-bottom: 14px; }
+      @media screen and (max-width: 768px) {
+        section.detail-layout-value div.detail h3 {
+          font-size: 1rem; } }
+      @media screen and (max-width: 480px) {
+        section.detail-layout-value div.detail h3 {
+          font-size: 0.9375rem; } }
     section.detail-layout-value div.detail p {
       color: #A3A9AC;
       font-size: 1rem;

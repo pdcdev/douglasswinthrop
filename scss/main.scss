@@ -83,7 +83,7 @@ header {
                     background-color: #fff;
                 }
                 @include media($mobile) {
-                    @include span-columns(6);
+                    @include span-columns(3);
                     background-color: #fff;
                 }
                 list-style: none;
@@ -159,7 +159,6 @@ header {
       max-height: 0;
       overflow: hidden;
       width: 100%;
-
       margin: 0 auto;
       @include transition(max-height 0.5s);
       &.menuOpen {
@@ -170,12 +169,15 @@ header {
         @include span-columns(2);
       li {
         @include span-columns(3);
-        float: left;
         background-color: #fff;
         display: block;
+        text-align: center;
         font-family: $frutigerLightCond;
-        line-height: 60px;
+        line-height: 50px;
         border-bottom: 1px solid #fff;
+        }
+        @include media($mobile){
+
         }
       }
     }
@@ -236,10 +238,11 @@ header {
                             @include media($mobile) {
                                 @include span-columns(8);
                                 font-size: 30px;
-                                padding: 2em 0 1em 2em;
+                                padding-top: 2em;
                             }
                             @include media($tiny) {
                                 @include span-columns(8);
+                                padding-left: 2em;
                                 font-size: 20px;
                                 
                             }
@@ -458,6 +461,11 @@ div.overlay-mobile {
     background: url('../images/people.jpg') center center no-repeat;
     background-size: cover;
     background-position: 0px -30px;
+    @include media($tablet) {
+        background: url('../images/people/single/jay-banner.jpg') no-repeat;
+        background-size: 100%;
+        height: 300px;
+    }
     @include media($mobile) {
         height: 190px;
         background: url('../images/people.jpg') no-repeat;
@@ -669,6 +677,8 @@ section.initial {
         @include span-columns(3);
         @include type($small, $blue);
         font-family: $frutigerLightCond;
+        @include media ($tablet) {
+        }
     }
     h2.people {
         @include span-columns(3);
@@ -681,6 +691,8 @@ section.initial {
         div.description {
             @include span-columns(8);
             @include shift(1);
+            @include media ($tablet) {
+            }
             p.sub-header {
                 @include type($small, #004FB1);
                 line-height: 20px;
@@ -705,6 +717,8 @@ section.detail-layout-value {
         margin-bottom: 1em;
         position: relative;
         h3 {
+            font-family: $frutigerLightCond;
+            @include type($small, $blue);
             margin-bottom: 14px;
         }
         p {
