@@ -70,6 +70,9 @@ header {
             @include media($mobile){
                 font-size: 1rem;
             }
+            @include media($tiny){
+                @include span-columns(2);
+            }
         }
         nav.main-nav {
             ul {
@@ -79,7 +82,7 @@ header {
                     @include span-columns(5);
                     background-color: #fff;
                 }
-                @include media($tablet) {
+                @include media($mobile) {
                     @include span-columns(6);
                     background-color: #fff;
                 }
@@ -140,7 +143,7 @@ header {
         color: #999;
     }  
       width: 100%;
-      display: inline-block;
+      display: block;
       color: $blue;
       text-decoration: none;
       img {
@@ -155,17 +158,19 @@ header {
     .main-nav {
       max-height: 0;
       overflow: hidden;
-      float: none;
-      text-align: center;
       width: 100%;
+
+      margin: 0 auto;
       @include transition(max-height 0.5s);
       &.menuOpen {
-        max-height: 1000px;
+        max-height: 600px;
         @include transition(max-height 0.5s);
       }
     ul {
+        @include span-columns(2);
       li {
         @include span-columns(3);
+        float: left;
         background-color: #fff;
         display: block;
         font-family: $frutigerLightCond;
@@ -177,6 +182,9 @@ header {
     .menuIcon {
         @include span-columns(3);
         float: right;
+        }
+        @include media($tiny){
+            
         }
     }
 }
@@ -207,6 +215,9 @@ header {
             @extend .global_pad;
             position: relative;
             height: 100%;
+            @include media($tiny) {
+                padding: 3em 0;
+            }
             div {
                 height: 100%;
                 @extend .vertical_center_parent;
@@ -220,11 +231,17 @@ header {
                             @include type($large, #fff);
                             @include media($tablet) {
                                 @include span-columns(7);
+
                             }
                             @include media($mobile) {
                                 @include span-columns(8);
                                 font-size: 30px;
-                                padding: 0 0 1em 0;
+                                padding: 2em 0 1em 2em;
+                            }
+                            @include media($tiny) {
+                                @include span-columns(8);
+                                font-size: 20px;
+                                
                             }
                         }
                     }
@@ -246,16 +263,20 @@ header {
                             li {
                                 font-family: $frutigerLightCond;
                                 margin: 0 0 1em 0;
-                                text-transform: uppercase;
                                 color: $gray;
                                 font-size: 1.25rem;
                                 list-style: none;
+                                text-align: center;
+                                background-color: #fff;
+                                line-height: 50px;
                                 @include media($mobile) {
-                                    background-color: #fff;
-                                    line-height: 50px;
-                                    text-align: center;
                                 }
-                                &:after {
+                                @include media($tiny) {
+                                    line-height: 40px;
+                                    margin-bottom: 1em;
+                                    font-size: 20px;
+                                }
+                                /*&:after {
                                     content:"\e802";
                                     float: right;
                                     font-family: fontello;
@@ -263,12 +284,15 @@ header {
                                     @include media($mobile) {
                                         display: none;
                                     }
-                                }
+                                }*/
                                 a {
-                                    color: #fff;
                                     text-decoration: none;
+                                    color: #5e9eec;
                                     @include media($mobile) {
                                     color: #5e9eec;
+                                    }
+                                    @include media($tiny) {
+                                        font-size: 15px;
                                     }
                                 }
                             }
@@ -640,9 +664,7 @@ section.people-single {
 section.initial {
     @include outer-container;
     @extend .global_pad;
-    /*@include media ($mobile){
-        margin-top: 200px;
-    }*/
+    padding-bottom: 0;
     h2.title {
         @include span-columns(3);
         @include type($small, $blue);

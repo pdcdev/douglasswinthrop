@@ -107,6 +107,14 @@ header {
       @media screen and (max-width: 480px) {
         header div.inner_header h1 {
           font-size: 1rem; } }
+      @media screen and (max-width: 320px) {
+        header div.inner_header h1 {
+          float: left;
+          display: block;
+          margin-right: 10%;
+          width: 63.3333333333%; }
+          header div.inner_header h1:last-child {
+            margin-right: 0; } }
     header div.inner_header nav.main-nav ul {
       float: left;
       display: block;
@@ -128,12 +136,12 @@ header {
           background-color: #fff; }
           header div.inner_header nav.main-nav ul:last-child {
             margin-right: 0; } }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 480px) {
         header div.inner_header nav.main-nav ul {
           float: left;
           display: block;
-          margin-right: 4.7619047619%;
-          width: 100%;
+          margin-right: 10%;
+          width: 210%;
           background-color: #fff; }
           header div.inner_header nav.main-nav ul:last-child {
             margin-right: 0; } }
@@ -184,7 +192,7 @@ header {
     font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
   .menuIcon a {
     width: 100%;
-    display: inline-block;
+    display: block;
     color: #004FB1;
     text-decoration: none; }
     .menuIcon a:hover {
@@ -196,29 +204,36 @@ header {
   .inner_header .main-nav {
     max-height: 0;
     overflow: hidden;
-    float: none;
-    text-align: center;
     width: 100%;
+    margin: 0 auto;
     -webkit-transition: max-height 0.5s;
     -moz-transition: max-height 0.5s;
     transition: max-height 0.5s; }
     .inner_header .main-nav.menuOpen {
-      max-height: 1000px;
+      max-height: 600px;
       -webkit-transition: max-height 0.5s;
       -moz-transition: max-height 0.5s;
       transition: max-height 0.5s; }
-    .inner_header .main-nav ul li {
+    .inner_header .main-nav ul {
       float: left;
       display: block;
       margin-right: 2.3255813953%;
-      width: 23.2558139535%;
-      background-color: #fff;
-      display: block;
-      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
-      line-height: 60px;
-      border-bottom: 1px solid #fff; }
-      .inner_header .main-nav ul li:last-child {
+      width: 14.7286821705%; }
+      .inner_header .main-nav ul:last-child {
         margin-right: 0; }
+      .inner_header .main-nav ul li {
+        float: left;
+        display: block;
+        margin-right: 2.3255813953%;
+        width: 23.2558139535%;
+        float: left;
+        background-color: #fff;
+        display: block;
+        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
+        line-height: 60px;
+        border-bottom: 1px solid #fff; }
+        .inner_header .main-nav ul li:last-child {
+          margin-right: 0; }
   .inner_header .menuIcon {
     float: left;
     display: block;
@@ -256,6 +271,9 @@ header {
         clear: both;
         content: "";
         display: table; }
+      @media screen and (max-width: 320px) {
+        .page_banner_home div.overlay_home div.inner_banner_home {
+          padding: 3em 0; } }
       .page_banner_home div.overlay_home div.inner_banner_home div {
         height: 100%; }
         .page_banner_home div.overlay_home div.inner_banner_home div ul li.left {
@@ -292,7 +310,16 @@ header {
                 margin-right: 10%;
                 width: 283.3333333333%;
                 font-size: 30px;
-                padding: 0 0 1em 0; }
+                padding: 2em 0 1em 2em; }
+                .page_banner_home div.overlay_home div.inner_banner_home div ul li.left p:last-child {
+                  margin-right: 0; } }
+            @media screen and (max-width: 320px) {
+              .page_banner_home div.overlay_home div.inner_banner_home div ul li.left p {
+                float: left;
+                display: block;
+                margin-right: 10%;
+                width: 283.3333333333%;
+                font-size: 20px; }
                 .page_banner_home div.overlay_home div.inner_banner_home div ul li.left p:last-child {
                   margin-right: 0; } }
         .page_banner_home div.overlay_home div.inner_banner_home div ul li.intro {
@@ -324,29 +351,35 @@ header {
         .page_banner_home div.overlay_home div.inner_banner_home div ul ol li {
           font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
           margin: 0 0 1em 0;
-          text-transform: uppercase;
           color: #A3A9AC;
           font-size: 1.25rem;
-          list-style: none; }
-          @media screen and (max-width: 480px) {
+          list-style: none;
+          text-align: center;
+          background-color: #fff;
+          line-height: 50px;
+          /*&:after {
+              content:"\e802";
+              float: right;
+              font-family: fontello;
+              color: #fff;
+              @include media($mobile) {
+                  display: none;
+              }
+          }*/ }
+          @media screen and (max-width: 320px) {
             .page_banner_home div.overlay_home div.inner_banner_home div ul ol li {
-              background-color: #fff;
-              line-height: 50px;
-              text-align: center; } }
-          .page_banner_home div.overlay_home div.inner_banner_home div ul ol li:after {
-            content: "\e802";
-            float: right;
-            font-family: fontello;
-            color: #fff; }
-            @media screen and (max-width: 480px) {
-              .page_banner_home div.overlay_home div.inner_banner_home div ul ol li:after {
-                display: none; } }
+              line-height: 40px;
+              margin-bottom: 1em;
+              font-size: 20px; } }
           .page_banner_home div.overlay_home div.inner_banner_home div ul ol li a {
-            color: #fff;
-            text-decoration: none; }
+            text-decoration: none;
+            color: #5e9eec; }
             @media screen and (max-width: 480px) {
               .page_banner_home div.overlay_home div.inner_banner_home div ul ol li a {
                 color: #5e9eec; } }
+            @media screen and (max-width: 320px) {
+              .page_banner_home div.overlay_home div.inner_banner_home div ul ol li a {
+                font-size: 15px; } }
 
 .page_banner_letters {
   background-color: #eee;
@@ -796,9 +829,7 @@ section.initial {
   max-width: 75em;
   margin-left: auto;
   margin-right: auto;
-  /*@include media ($mobile){
-      margin-top: 200px;
-  }*/ }
+  padding-bottom: 0; }
   section.initial::after {
     clear: both;
     content: "";
