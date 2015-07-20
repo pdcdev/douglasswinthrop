@@ -21,8 +21,8 @@
             </div>
             <nav class="main-nav">
                  <ul>
-                    <li><a href ="firm.php">Our Firm</a></li>
-                    <li><a href ="value.php">Our Value</a></li>
+                    <li><a href ="firm.php">About</a></li>
+                    <li><a href ="value.php">Value</a></li>
                     <li><a href ="people.php">People</a></li>
                     <li><a href ="letters.php">Letters</a></li>
                     <li><a href ="contact.php">Contact</a></li>

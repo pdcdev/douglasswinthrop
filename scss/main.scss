@@ -20,7 +20,7 @@ body {
     /*justify-content: center;*/
 }
 .global_pad {
-    @include pad(2em $desk);
+    @include pad(1.5em $desk);
     @include media($tablet) {
         @include pad(2em $tab);
     }
@@ -54,18 +54,19 @@ header {
     z-index: 999;
     position: relative;
     background-color: $blue;
+    border-bottom: 1px solid #5e9eec;
     div.inner_header {
         @include outer-container;
         height: 60px;
         h1 {
-            @include span-columns(4);
+            @include span-columns(6);
             line-height: 60px;
             font-family: $frutigerBoldCond;
-            font-size: 1.5rem;
+            font-size: 1em;
 
             a {
                 text-decoration: none;
-                color: white;
+                color: #b2b2b2;
             }
             @include media($mobile){
                 font-size: 1rem;
@@ -76,7 +77,7 @@ header {
         }
         nav.main-nav {
             ul {
-                @include span-columns(8);
+                @include span-columns(6);
                 margin:0;
                 @include media($tablet) {
                     @include span-columns(5);
@@ -92,11 +93,9 @@ header {
                 justify-content: space-between;
                 li {
                     @include span-columns(2);
-                    font-family: $frutigerLightCond;
-                    line-height: 40px;
-                    font-size: 1rem;
-                    margin: 5px 0 20px 0;
-                    border-bottom: 1px solid #5e9eec;
+                    font-family: $frutigerBoldCond;
+                    font-size: 1em;
+                    margin: 20px 0 5px 0;
                     display: inline-block;
                     @include media($tablet) {
                         @include span-columns(6);
@@ -108,16 +107,15 @@ header {
                     }
                     a {
                         width: 50px;
-                        color: #5e9eec;
+                        color: #b2b2b2;
                         text-decoration: none;
-                        padding-bottom: 5px;
-                        
+                        padding-bottom: 5px; 
                     }
                     a:visited {
                         
                     }
                     a:hover {
-                        color: #fff;
+                        color: #2775F6;
 
                     }
                 }
@@ -226,7 +224,7 @@ header {
                 ul {
                     li.left {
                         height: auto;
-                        @include span-columns(4);
+                        @include span-columns(6);
                         p {
                             margin-top: 0 0 1em 0;
                             font-family: $frutigerLightCond;
@@ -250,8 +248,8 @@ header {
                     }
                     
                     li.intro {
-                        @include span-columns(4);
-                        @include shift(2);
+                        @include span-columns(6);
+                        
                         height: auto;
                         @include media($tablet) {
                             @include span-columns(3);
@@ -364,46 +362,56 @@ div.overlay-mobile {
 .page_banner_firm {
     background-color: #eee;
     position: relative;
-    width:100%;
-    height: 500px;
-    background: url('../images/our_firm.jpg') center center no-repeat;
-    background-size: cover;
-    @include media($mobile) {
-        height: 190px;
-        background: url('../images/our_firm.jpg') no-repeat;
-        background-size: 115%;
-    }
-    div.overlay {
+    div.intro-box {
         width: 100%;
-        position: absolute;
-        bottom: 0;
-        height: 175px;
-        background-color: rgba($blue, 0.6);
+        height: 185px;
+        background-color: $blue;
         @include media($mobile) {
             display:none;
         }
         div.inner_banner {
             @include outer-container;
             @extend .global_pad;
+            padding-top: 5%;
             position: relative;
             height: 100%;
+            div.page-name {
+                @include span-columns(6);
+                h1 {
+                    font-family: $frutigerBoldCond;
+                    font-size: 1.5em; 
+                    color: #b2b2b2;
+                }
+            }
             div {
-                height: 100%;
-                @extend .vertical_center_parent;
                 p {
-                    @include span-columns(6);
+                    @include span-columns(5);
                     font-family: $frutigerLightCond;
-                    font-size: 20pt; 
-                    color: #fff;
+                    font-size: 1.5em; 
+                    color: #b2b2b2;
                     @include media($tablet) {
                         @include span-columns(4);
-                        font-size: 15pt; 
+                        font-size: 1em; 
                     }
                     @include media($mobile) {
                         @include span-columns(4);
                     }
                 }
             }
+        }
+    }
+    div.actual-banner {
+        position: relative;
+        display: block;
+        height: 250px;
+        background: url('../images/DW_About.jpg') center center no-repeat;
+        background-size: 100%;
+        background-position: top;
+
+            @include media($mobile) {
+            height: 190px;
+            background: url('../images/DW_About.jpg') no-repeat;
+            background-size: 115%;
         }
     }
 }
@@ -670,42 +678,67 @@ section.people-single {
 }
 
 section.initial {
+    
     @include outer-container;
     @extend .global_pad;
+    @include omega(2);
     padding-bottom: 0;
     h2.title {
-        @include span-columns(3);
-        @include type($small, $blue);
+        padding-bottom: 30px;
+        font-size: 1.5em;
+        color: #b2b2b2;
         font-family: $frutigerLightCond;
         @include media ($tablet) {
         }
     }
     h2.people {
         @include span-columns(3);
-        @include type($small, $blue);
+        @include type($small, #b2b2b2);
         font-family: $frutigerLightCond;
     }
+    div.band-container-gray {
+        background-color: #eee;
+        width: 100%;
+        height: auto;
+        div.block {
+            @include span-columns(12);
+            padding-bottom: 30px;
 
-    div {
-        padding-bottom: 5%;
-        div.description {
-            @include span-columns(8);
-            @include shift(1);
-            @include media ($tablet) {
-            }
-            p.sub-header {
-                @include type($small, #004FB1);
-                line-height: 20px;
-                font-family: $frutigerLightCond;
-            }
-            p.following {
-                line-height: 20px;
-                @include type($small, $gray);
-                font-family: $frutigerLightCond;
-            }
-        } 
-    }
+            div.description {
+                p.description-text-left {
+                    @include span-columns(5);
+                    @include type($small, #b2b2b2);
+                    line-height: 20px;
+                    padding-bottom: 30px;
+                    font-family: $frutigerLightCond;
+                     @include media($mobile) {
+                        @include span-columns(3);
+                        
+                    }
+                }
+                p.description-text-right {
+                    @include span-columns(5);
+                    @include shift(1);
+                    @include type($small, #b2b2b2);
+                    line-height: 20px;
+                    padding-bottom: 30px;
+                    font-family: $frutigerLightCond;
+                     @include media($mobile) {
+                        @include span-columns(3);
+                        @include shift(0);
+                        
+                    }
+                }
+            } 
+        }
+    } 
 }
+
+
+        
+       
+
+
 
 section.detail-layout-value {
     @include outer-container;
@@ -813,48 +846,6 @@ section.contact-list {
     }
 }
 
-/*.page_banner_contact-2{
-    background-color: #eee;
-    position: relative;
-    height: 500px;
-    background: url('../images/contact-cities.jpg') center center no-repeat;
-    background-size: 100%;
-    background-position: absolute;
-    bottom: 0;
-    @include media($mobile) {
-        display: none;
-    }
-    div.overlay {
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        height: 40px;
-        background-color: rgba($blue, 0.6);
-        div.inner_banner {
-            @include outer-container;
-            @extend .global_pad;
-            position: relative;
-            height: 100%;
-            div {
-                height: 100%;
-                @extend .vertical_center_parent;
-                p {
-                    @include span-columns(6);
-                    font-family: $frutigerLightCond;
-                    font-size: 20pt; 
-                    color: #fff;
-                    @include media($tablet) {
-                        @include span-columns(4);
-
-                    }
-                    @include media($mobile) {
-                        display: none;
-                    }
-                }
-            }
-        }
-    }
-}*/
 
 section.contact {
     @include outer-container;
@@ -915,24 +906,29 @@ section.contact {
 }
 
 footer {
-    margin-top: 5%;
-    background-color: #eee;
+
+    background-color: #000;
+    width: 100%;
+    height: auto;
     font-family: $frutigerLightCond;
     div.inner_footer {
-        @include outer-container;
-        div.inner_footer {
-            @include type($small, $gray);
-            font-size: 14px;
-        }
-        @extend .global_pad;
-        address {
-            @include span-columns(8);
-            margin-bottom: 10px;
-            font-size: 14px;
-            line-height: 20px;
-        }  
+            @include outer-container;
+            @extend .global_pad;
+            ul {
+                @include span-columns(12);
+                li.copyright {
+                    @include span-columns(6);
+                }
+                li {
+                    @include span-columns(3);
+                    display: inline-block;
+                    font-size: 1em;
+                    color: #b2b2b2;
+                }
+            }   
+        } 
     }
-}   
+  
 
 
 

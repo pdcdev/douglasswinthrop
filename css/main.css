@@ -41,7 +41,7 @@ do_something(list_of_stuff, "blue");*/
 body {
   font-family: "FrutigerLTW01-55Roman", helvetica, sans serif; }
 
-.vertical_center_parent, .page_banner_home div.overlay_home div.inner_banner_home div, .page_banner_letters div.overlay div.inner_banner div, .page_banner_firm div.overlay div.inner_banner div, .page_banner_value div.overlay div.inner_banner div, .page_banner_people div.overlay div.inner_banner div, .page_banner_contact div.overlay div.inner_banner div {
+.vertical_center_parent, .page_banner_home div.overlay_home div.inner_banner_home div, .page_banner_letters div.overlay div.inner_banner div, .page_banner_value div.overlay div.inner_banner div, .page_banner_people div.overlay div.inner_banner div, .page_banner_contact div.overlay div.inner_banner div {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -51,13 +51,13 @@ body {
   align-items: center;
   /*justify-content: center;*/ }
 
-.global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.overlay div.inner_banner, .page_banner_value div.overlay div.inner_banner, .page_banner_people div.overlay div.inner_banner, .page_banner_contact div.overlay div.inner_banner, section.people, section.people-single, section.initial, section.detail-layout-value, section.letters, section.initial_contact, section.contact-list, section.contact, footer div.inner_footer {
-  padding: 2em 40px; }
+.global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.intro-box div.inner_banner, .page_banner_value div.overlay div.inner_banner, .page_banner_people div.overlay div.inner_banner, .page_banner_contact div.overlay div.inner_banner, section.people, section.people-single, section.initial, section.detail-layout-value, section.letters, section.initial_contact, section.contact-list, section.contact, footer div.inner_footer {
+  padding: 1.5em 40px; }
   @media screen and (max-width: 768px) {
-    .global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.overlay div.inner_banner, .page_banner_value div.overlay div.inner_banner, .page_banner_people div.overlay div.inner_banner, .page_banner_contact div.overlay div.inner_banner, section.people, section.people-single, section.initial, section.detail-layout-value, section.letters, section.initial_contact, section.contact-list, section.contact, footer div.inner_footer {
+    .global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.intro-box div.inner_banner, .page_banner_value div.overlay div.inner_banner, .page_banner_people div.overlay div.inner_banner, .page_banner_contact div.overlay div.inner_banner, section.people, section.people-single, section.initial, section.detail-layout-value, section.letters, section.initial_contact, section.contact-list, section.contact, footer div.inner_footer {
       padding: 2em 40px; } }
   @media screen and (max-width: 480px) {
-    .global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.overlay div.inner_banner, .page_banner_value div.overlay div.inner_banner, .page_banner_people div.overlay div.inner_banner, .page_banner_contact div.overlay div.inner_banner, section.people, section.people-single, section.initial, section.detail-layout-value, section.letters, section.initial_contact, section.contact-list, section.contact, footer div.inner_footer {
+    .global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.intro-box div.inner_banner, .page_banner_value div.overlay div.inner_banner, .page_banner_people div.overlay div.inner_banner, .page_banner_contact div.overlay div.inner_banner, section.people, section.people-single, section.initial, section.detail-layout-value, section.letters, section.initial_contact, section.contact-list, section.contact, footer div.inner_footer {
       padding: 2em 30px; } }
 
 .sidepad, .inner_header {
@@ -81,7 +81,8 @@ body {
 header {
   z-index: 999;
   position: relative;
-  background-color: #004FB1; }
+  background-color: #004FB1;
+  border-bottom: 1px solid #5e9eec; }
   header div.inner_header {
     max-width: 75em;
     margin-left: auto;
@@ -95,15 +96,15 @@ header {
       float: left;
       display: block;
       margin-right: 2.3255813953%;
-      width: 31.7829457364%;
+      width: 48.8372093023%;
       line-height: 60px;
       font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
-      font-size: 1.5rem; }
+      font-size: 1em; }
       header div.inner_header h1:last-child {
         margin-right: 0; }
       header div.inner_header h1 a {
         text-decoration: none;
-        color: white; }
+        color: #b2b2b2; }
       @media screen and (max-width: 480px) {
         header div.inner_header h1 {
           font-size: 1rem; } }
@@ -119,7 +120,7 @@ header {
       float: left;
       display: block;
       margin-right: 2.3255813953%;
-      width: 65.8914728682%;
+      width: 48.8372093023%;
       margin: 0;
       list-style: none;
       display: flex;
@@ -150,11 +151,9 @@ header {
         display: block;
         margin-right: 2.3255813953%;
         width: 14.7286821705%;
-        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
-        line-height: 40px;
-        font-size: 1rem;
-        margin: 5px 0 20px 0;
-        border-bottom: 1px solid #5e9eec;
+        font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
+        font-size: 1em;
+        margin: 20px 0 5px 0;
         display: inline-block; }
         header div.inner_header nav.main-nav ul li:last-child {
           margin-right: 0; }
@@ -178,11 +177,11 @@ header {
               margin-right: 0; } }
         header div.inner_header nav.main-nav ul li a {
           width: 50px;
-          color: #5e9eec;
+          color: #b2b2b2;
           text-decoration: none;
           padding-bottom: 5px; }
         header div.inner_header nav.main-nav ul li a:hover {
-          color: #fff; }
+          color: #2775F6; }
 
 .menuIcon {
   display: none;
@@ -281,7 +280,7 @@ header {
           float: left;
           display: block;
           margin-right: 2.3255813953%;
-          width: 31.7829457364%; }
+          width: 48.8372093023%; }
           .page_banner_home div.overlay_home div.inner_banner_home div ul li.left:last-child {
             margin-right: 0; }
           .page_banner_home div.overlay_home div.inner_banner_home div ul li.left p {
@@ -327,8 +326,7 @@ header {
           float: left;
           display: block;
           margin-right: 2.3255813953%;
-          width: 31.7829457364%;
-          margin-left: 17.0542635659%;
+          width: 48.8372093023%;
           height: auto; }
           .page_banner_home div.overlay_home div.inner_banner_home div ul li.intro:last-child {
             margin-right: 0; }
@@ -440,64 +438,75 @@ div.overlay-mobile {
     background-color: rgba(0, 79, 177, 0.6); } }
 .page_banner_firm {
   background-color: #eee;
-  position: relative;
-  width: 100%;
-  height: 500px;
-  background: url("../images/our_firm.jpg") center center no-repeat;
-  background-size: cover; }
-  @media screen and (max-width: 480px) {
-    .page_banner_firm {
-      height: 190px;
-      background: url("../images/our_firm.jpg") no-repeat;
-      background-size: 115%; } }
-  .page_banner_firm div.overlay {
+  position: relative; }
+  .page_banner_firm div.intro-box {
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    height: 175px;
-    background-color: rgba(0, 79, 177, 0.6); }
+    height: 185px;
+    background-color: #004FB1; }
     @media screen and (max-width: 480px) {
-      .page_banner_firm div.overlay {
+      .page_banner_firm div.intro-box {
         display: none; } }
-    .page_banner_firm div.overlay div.inner_banner {
+    .page_banner_firm div.intro-box div.inner_banner {
       max-width: 75em;
       margin-left: auto;
       margin-right: auto;
+      padding-top: 5%;
       position: relative;
       height: 100%; }
-      .page_banner_firm div.overlay div.inner_banner::after {
+      .page_banner_firm div.intro-box div.inner_banner::after {
         clear: both;
         content: "";
         display: table; }
-      .page_banner_firm div.overlay div.inner_banner div {
-        height: 100%; }
-        .page_banner_firm div.overlay div.inner_banner div p {
-          float: left;
-          display: block;
-          margin-right: 2.3255813953%;
-          width: 48.8372093023%;
-          font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
-          font-size: 20pt;
-          color: #fff; }
-          .page_banner_firm div.overlay div.inner_banner div p:last-child {
-            margin-right: 0; }
-          @media screen and (max-width: 768px) {
-            .page_banner_firm div.overlay div.inner_banner div p {
-              float: left;
-              display: block;
-              margin-right: 4.7619047619%;
-              width: 65.0793650794%;
-              font-size: 15pt; }
-              .page_banner_firm div.overlay div.inner_banner div p:last-child {
-                margin-right: 0; } }
-          @media screen and (max-width: 480px) {
-            .page_banner_firm div.overlay div.inner_banner div p {
-              float: left;
-              display: block;
-              margin-right: 10%;
-              width: 136.6666666667%; }
-              .page_banner_firm div.overlay div.inner_banner div p:last-child {
-                margin-right: 0; } }
+      .page_banner_firm div.intro-box div.inner_banner div.page-name {
+        float: left;
+        display: block;
+        margin-right: 2.3255813953%;
+        width: 48.8372093023%; }
+        .page_banner_firm div.intro-box div.inner_banner div.page-name:last-child {
+          margin-right: 0; }
+        .page_banner_firm div.intro-box div.inner_banner div.page-name h1 {
+          font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
+          font-size: 1.5em;
+          color: #b2b2b2; }
+      .page_banner_firm div.intro-box div.inner_banner div p {
+        float: left;
+        display: block;
+        margin-right: 2.3255813953%;
+        width: 40.3100775194%;
+        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
+        font-size: 1.5em;
+        color: #b2b2b2; }
+        .page_banner_firm div.intro-box div.inner_banner div p:last-child {
+          margin-right: 0; }
+        @media screen and (max-width: 768px) {
+          .page_banner_firm div.intro-box div.inner_banner div p {
+            float: left;
+            display: block;
+            margin-right: 4.7619047619%;
+            width: 65.0793650794%;
+            font-size: 1em; }
+            .page_banner_firm div.intro-box div.inner_banner div p:last-child {
+              margin-right: 0; } }
+        @media screen and (max-width: 480px) {
+          .page_banner_firm div.intro-box div.inner_banner div p {
+            float: left;
+            display: block;
+            margin-right: 10%;
+            width: 136.6666666667%; }
+            .page_banner_firm div.intro-box div.inner_banner div p:last-child {
+              margin-right: 0; } }
+  .page_banner_firm div.actual-banner {
+    position: relative;
+    display: block;
+    height: 250px;
+    background: url("../images/DW_About.jpg") center center no-repeat;
+    background-size: 100%;
+    background-position: top; }
+    @media screen and (max-width: 480px) {
+      .page_banner_firm div.actual-banner {
+        height: 190px;
+        background: url("../images/DW_About.jpg") no-repeat;
+        background-size: 115%; } }
 
 .page_banner_value {
   background-color: #eee;
@@ -840,28 +849,19 @@ section.initial {
     clear: both;
     content: "";
     display: table; }
+  section.initial:nth-child(2) {
+    margin-right: 0; }
   section.initial h2.title {
-    float: left;
-    display: block;
-    margin-right: 2.3255813953%;
-    width: 23.2558139535%;
-    color: #004FB1;
-    font-size: 1rem;
+    padding-bottom: 30px;
+    font-size: 1.5em;
+    color: #b2b2b2;
     font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
-    section.initial h2.title:last-child {
-      margin-right: 0; }
-    @media screen and (max-width: 768px) {
-      section.initial h2.title {
-        font-size: 1rem; } }
-    @media screen and (max-width: 480px) {
-      section.initial h2.title {
-        font-size: 0.9375rem; } }
   section.initial h2.people {
     float: left;
     display: block;
     margin-right: 2.3255813953%;
     width: 23.2558139535%;
-    color: #004FB1;
+    color: #b2b2b2;
     font-size: 1rem;
     font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
     section.initial h2.people:last-child {
@@ -872,38 +872,72 @@ section.initial {
     @media screen and (max-width: 480px) {
       section.initial h2.people {
         font-size: 0.9375rem; } }
-  section.initial div {
-    padding-bottom: 5%; }
-    section.initial div div.description {
+  section.initial div.band-container-gray {
+    background-color: #eee;
+    width: 100%;
+    height: auto; }
+    section.initial div.band-container-gray div.block {
       float: left;
       display: block;
       margin-right: 2.3255813953%;
-      width: 65.8914728682%;
-      margin-left: 8.5271317829%; }
-      section.initial div div.description:last-child {
+      width: 100%;
+      padding-bottom: 30px; }
+      section.initial div.band-container-gray div.block:last-child {
         margin-right: 0; }
-      section.initial div div.description p.sub-header {
-        color: #004FB1;
+      section.initial div.band-container-gray div.block div.description p.description-text-left {
+        float: left;
+        display: block;
+        margin-right: 2.3255813953%;
+        width: 40.3100775194%;
+        color: #b2b2b2;
         font-size: 1rem;
         line-height: 20px;
+        padding-bottom: 30px;
         font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+        section.initial div.band-container-gray div.block div.description p.description-text-left:last-child {
+          margin-right: 0; }
         @media screen and (max-width: 768px) {
-          section.initial div div.description p.sub-header {
+          section.initial div.band-container-gray div.block div.description p.description-text-left {
             font-size: 1rem; } }
         @media screen and (max-width: 480px) {
-          section.initial div div.description p.sub-header {
+          section.initial div.band-container-gray div.block div.description p.description-text-left {
             font-size: 0.9375rem; } }
-      section.initial div div.description p.following {
-        line-height: 20px;
-        color: #A3A9AC;
+        @media screen and (max-width: 480px) {
+          section.initial div.band-container-gray div.block div.description p.description-text-left {
+            float: left;
+            display: block;
+            margin-right: 10%;
+            width: 100%; }
+            section.initial div.band-container-gray div.block div.description p.description-text-left:last-child {
+              margin-right: 0; } }
+      section.initial div.band-container-gray div.block div.description p.description-text-right {
+        float: left;
+        display: block;
+        margin-right: 2.3255813953%;
+        width: 40.3100775194%;
+        margin-left: 8.5271317829%;
+        color: #b2b2b2;
         font-size: 1rem;
+        line-height: 20px;
+        padding-bottom: 30px;
         font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+        section.initial div.band-container-gray div.block div.description p.description-text-right:last-child {
+          margin-right: 0; }
         @media screen and (max-width: 768px) {
-          section.initial div div.description p.following {
+          section.initial div.band-container-gray div.block div.description p.description-text-right {
             font-size: 1rem; } }
         @media screen and (max-width: 480px) {
-          section.initial div div.description p.following {
+          section.initial div.band-container-gray div.block div.description p.description-text-right {
             font-size: 0.9375rem; } }
+        @media screen and (max-width: 480px) {
+          section.initial div.band-container-gray div.block div.description p.description-text-right {
+            float: left;
+            display: block;
+            margin-right: 10%;
+            width: 100%;
+            margin-left: 0%; }
+            section.initial div.band-container-gray div.block div.description p.description-text-right:last-child {
+              margin-right: 0; } }
 
 section.detail-layout-value {
   max-width: 75em;
@@ -1116,48 +1150,6 @@ section.contact-list {
         section.contact-list div.one-contact:last-child {
           margin-right: 0; } }
 
-/*.page_banner_contact-2{
-    background-color: #eee;
-    position: relative;
-    height: 500px;
-    background: url('../images/contact-cities.jpg') center center no-repeat;
-    background-size: 100%;
-    background-position: absolute;
-    bottom: 0;
-    @include media($mobile) {
-        display: none;
-    }
-    div.overlay {
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        height: 40px;
-        background-color: rgba($blue, 0.6);
-        div.inner_banner {
-            @include outer-container;
-            @extend .global_pad;
-            position: relative;
-            height: 100%;
-            div {
-                height: 100%;
-                @extend .vertical_center_parent;
-                p {
-                    @include span-columns(6);
-                    font-family: $frutigerLightCond;
-                    font-size: 20pt; 
-                    color: #fff;
-                    @include media($tablet) {
-                        @include span-columns(4);
-
-                    }
-                    @include media($mobile) {
-                        display: none;
-                    }
-                }
-            }
-        }
-    }
-}*/
 section.contact {
   max-width: 75em;
   margin-left: auto;
@@ -1246,8 +1238,9 @@ section.contact {
   max-width: none; }
 
 footer {
-  margin-top: 5%;
-  background-color: #eee;
+  background-color: #000;
+  width: 100%;
+  height: auto;
   font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
   footer div.inner_footer {
     max-width: 75em;
@@ -1257,23 +1250,27 @@ footer {
       clear: both;
       content: "";
       display: table; }
-    footer div.inner_footer div.inner_footer {
-      color: #A3A9AC;
-      font-size: 1rem;
-      font-size: 14px; }
-      @media screen and (max-width: 768px) {
-        footer div.inner_footer div.inner_footer {
-          font-size: 1rem; } }
-      @media screen and (max-width: 480px) {
-        footer div.inner_footer div.inner_footer {
-          font-size: 0.9375rem; } }
-    footer div.inner_footer address {
+    footer div.inner_footer ul {
       float: left;
       display: block;
       margin-right: 2.3255813953%;
-      width: 65.8914728682%;
-      margin-bottom: 10px;
-      font-size: 14px;
-      line-height: 20px; }
-      footer div.inner_footer address:last-child {
+      width: 100%; }
+      footer div.inner_footer ul:last-child {
         margin-right: 0; }
+      footer div.inner_footer ul li.copyright {
+        float: left;
+        display: block;
+        margin-right: 2.3255813953%;
+        width: 48.8372093023%; }
+        footer div.inner_footer ul li.copyright:last-child {
+          margin-right: 0; }
+      footer div.inner_footer ul li {
+        float: left;
+        display: block;
+        margin-right: 2.3255813953%;
+        width: 23.2558139535%;
+        display: inline-block;
+        font-size: 1em;
+        color: #b2b2b2; }
+        footer div.inner_footer ul li:last-child {
+          margin-right: 0; }

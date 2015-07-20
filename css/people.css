@@ -194,3 +194,378 @@ div.description-person-single {
       background: url("../images/people/single/jay-banner.jpg") no-repeat;
       background-size: 100%;
       height: 190px; } }
+
+.page_banner_rossana {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eee;
+  position: relative;
+  height: 500px;
+  margin: 0 auto;
+  background: url("../images/people/single/rossana-banner.jpg") center center no-repeat;
+  background-size: cover; }
+  .page_banner_rossana::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 768px) {
+    .page_banner_rossana {
+      background: url("../images/people/single/rossana-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 300px; } }
+  @media screen and (max-width: 480px) {
+    .page_banner_rossana {
+      background: url("../images/people/single/rossana-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 190px; } }
+
+.page_banner_cgcrane {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eee;
+  position: relative;
+  height: 500px;
+  margin: 0 auto;
+  background: url("../images/people/single/cgcrane-banner.jpg") center center no-repeat;
+  background-size: cover; }
+  .page_banner_cgcrane::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 768px) {
+    .page_banner_cgcrane {
+      background: url("../images/people/single/cgcrane-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 300px; } }
+  @media screen and (max-width: 480px) {
+    .page_banner_cgcrane {
+      background: url("../images/people/single/cgcrane-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 190px; } }
+
+.page_banner_sonny {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eee;
+  position: relative;
+  height: 500px;
+  margin: 0 auto;
+  background: url("../images/people/single/sonny-banner.jpg") center center no-repeat;
+  background-size: cover; }
+  .page_banner_sonny::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 768px) {
+    .page_banner_sonny {
+      background: url("../images/people/single/sonny-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 300px; } }
+  @media screen and (max-width: 480px) {
+    .page_banner_sonny {
+      background: url("../images/people/single/sonny-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 190px; } }
+
+.page_banner_lea {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eee;
+  position: relative;
+  height: 500px;
+  margin: 0 auto;
+  background: url("../images/people/single/lea-banner.jpg") center center no-repeat;
+  background-size: cover; }
+  .page_banner_lea::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 768px) {
+    .page_banner_lea {
+      background: url("../images/people/single/lea-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 300px; } }
+  @media screen and (max-width: 480px) {
+    .page_banner_lea {
+      background: url("../images/people/single/lea-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 190px; } }
+
+.page_banner_charlie {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eee;
+  position: relative;
+  height: 500px;
+  margin: 0 auto;
+  background: url("../images/people/single/charlie-banner.jpg") center center no-repeat;
+  background-size: cover; }
+  .page_banner_charlie::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 768px) {
+    .page_banner_charlie {
+      background: url("../images/people/single/charlie-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 300px; } }
+  @media screen and (max-width: 480px) {
+    .page_banner_charlie {
+      background: url("../images/people/single/charlie-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 190px; } }
+
+.page_banner_koren {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eee;
+  position: relative;
+  height: 500px;
+  margin: 0 auto;
+  background: url("../images/people/single/koren-banner.jpg") center center no-repeat;
+  background-size: cover; }
+  .page_banner_koren::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 768px) {
+    .page_banner_koren {
+      background: url("../images/people/single/koren-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 300px; } }
+  @media screen and (max-width: 480px) {
+    .page_banner_koren {
+      background: url("../images/people/single/koren-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 190px; } }
+
+.page_banner_josh {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eee;
+  position: relative;
+  height: 500px;
+  margin: 0 auto;
+  background: url("../images/people/single/josh-banner.jpg") center center no-repeat;
+  background-size: cover; }
+  .page_banner_josh::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 768px) {
+    .page_banner_josh {
+      background: url("../images/people/single/josh-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 300px; } }
+  @media screen and (max-width: 480px) {
+    .page_banner_josh {
+      background: url("../images/people/single/josh-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 190px; } }
+
+.page_banner_olivia {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eee;
+  position: relative;
+  height: 500px;
+  margin: 0 auto;
+  background: url("../images/people/single/olivia-banner.jpg") center center no-repeat;
+  background-size: cover; }
+  .page_banner_olivia::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 768px) {
+    .page_banner_olivia {
+      background: url("../images/people/single/olivia-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 300px; } }
+  @media screen and (max-width: 480px) {
+    .page_banner_olivia {
+      background: url("../images/people/single/olivia-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 190px; } }
+
+.page_banner_bryce {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eee;
+  position: relative;
+  height: 500px;
+  margin: 0 auto;
+  background: url("../images/people/single/bryce-banner.jpg") center center no-repeat;
+  background-size: cover; }
+  .page_banner_bryce::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 768px) {
+    .page_banner_bryce {
+      background: url("../images/people/single/bryce-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 300px; } }
+  @media screen and (max-width: 480px) {
+    .page_banner_bryce {
+      background: url("../images/people/single/bryce-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 190px; } }
+
+.page_banner_alex {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eee;
+  position: relative;
+  height: 500px;
+  margin: 0 auto;
+  background: url("../images/people/single/alex-banner.jpg") center center no-repeat;
+  background-size: cover; }
+  .page_banner_alex::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 768px) {
+    .page_banner_alex {
+      background: url("../images/people/single/alex-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 300px; } }
+  @media screen and (max-width: 480px) {
+    .page_banner_alex {
+      background: url("../images/people/single/alex-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 190px; } }
+
+.page_banner_oak {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eee;
+  position: relative;
+  height: 500px;
+  margin: 0 auto;
+  background: url("../images/people/single/oak-banner.jpg") center center no-repeat;
+  background-size: cover; }
+  .page_banner_oak::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 768px) {
+    .page_banner_oak {
+      background: url("../images/people/single/oak-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 300px; } }
+  @media screen and (max-width: 480px) {
+    .page_banner_oak {
+      background: url("../images/people/single/oak-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 190px; } }
+
+.page_banner_bowdy {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eee;
+  position: relative;
+  height: 500px;
+  margin: 0 auto;
+  background: url("../images/people/single/bowdy-banner.jpg") center center no-repeat;
+  background-size: cover; }
+  .page_banner_bowdy::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 768px) {
+    .page_banner_bowdy {
+      background: url("../images/people/single/bowdy-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 300px; } }
+  @media screen and (max-width: 480px) {
+    .page_banner_bowdy {
+      background: url("../images/people/single/bowdy-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 190px; } }
+
+.page_banner_lisa {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eee;
+  position: relative;
+  height: 500px;
+  margin: 0 auto;
+  background: url("../images/people/single/lisa-banner.jpg") center center no-repeat;
+  background-size: cover; }
+  .page_banner_lisa::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 768px) {
+    .page_banner_lisa {
+      background: url("../images/people/single/lisa-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 300px; } }
+  @media screen and (max-width: 480px) {
+    .page_banner_lisa {
+      background: url("../images/people/single/lisa-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 190px; } }
+
+.page_banner_phil {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eee;
+  position: relative;
+  height: 500px;
+  margin: 0 auto;
+  background: url("../images/people/single/phil-banner.jpg") center center no-repeat;
+  background-size: cover; }
+  .page_banner_phil::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 768px) {
+    .page_banner_phil {
+      background: url("../images/people/single/phil-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 300px; } }
+  @media screen and (max-width: 480px) {
+    .page_banner_phil {
+      background: url("../images/people/single/phil-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 190px; } }
+
+.page_banner_grant {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eee;
+  position: relative;
+  height: 500px;
+  margin: 0 auto;
+  background: url("../images/people/single/grant-banner.jpg") center center no-repeat;
+  background-size: cover; }
+  .page_banner_grant::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 768px) {
+    .page_banner_grant {
+      background: url("../images/people/single/grant-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 300px; } }
+  @media screen and (max-width: 480px) {
+    .page_banner_grant {
+      background: url("../images/people/single/grant-banner.jpg") no-repeat;
+      background-size: 100%;
+      height: 190px; } }

@@ -1,15 +1,15 @@
 <?php include 'header.php'; ?>
-    <aside class="page_banner_robert">
+    <aside class="page_banner_rossana">
         
     </aside>
     
     <section class="initial">
     <div>
-        <h2 class="title-person-single">Robert Douglass<br>Principal<br>robert@douglasswinthrop.com</h2>
+        <h2 class="title-person-single">Rossana Azzara<br>Client Relations Manager<br>rossana@douglasswinthrop.com</h2>
         <div class="description-person-single">
-            <p class="sub-header">
-            Robert is a principal in Douglass Winthrop Advisors LLC. Previously, he was a Managing Director at Morgens, Waterfall, Vintiadis & Company, a New York investment management company, where he managed proprietary equity partnerships. Prior to MWV, Robert was a Managing Director with Trainer, Wortham & Company, where he managed growth equities for high net worth individuals and the Trainer, Wortham Emerging Growth Fund. Prior to TW, Robert was affiliated with Warburg, Pincus Counsellors and Salomon Brothers Inc.
-            Robert received an MBA from the Amos Tuck School of Business Administration in 1991, an MSc. from the London School of Economics in 1989, and a BA from Dartmouth College in 1986.
+            <p class="sub-header">  
+            Rossana joined Douglass Winthrop Advisors LLC as the firm’s Client Relations Manager in 2000. Prior to joining Douglass Winthrop, Rossana worked at PricewaterhouseCoopers, Sakura Global Capital and JPMorgan Chase. 
+            Rossana has a BA in Psychology from Queens College.
             </p>
         </div>
     </div>
