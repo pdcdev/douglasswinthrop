@@ -3,9 +3,9 @@
         
     </aside>
     
-    <section class="initial">
+    <section class="person-info">
     <div>
-        <h2 class="title-person-single">Rossana Azzara<br>Client Relations Manager<br>rossana@douglasswinthrop.com</h2>
+        <h2 class="title-person-single">Rossana Azzara<br><p>Client Relations Manager</p><br></h2>
         <div class="description-person-single">
             <p class="sub-header">  
             Rossana joined Douglass Winthrop Advisors LLC as the firm’s Client Relations Manager in 2000. Prior to joining Douglass Winthrop, Rossana worked at PricewaterhouseCoopers, Sakura Global Capital and JPMorgan Chase. 

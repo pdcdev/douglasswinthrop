@@ -1,5 +1,5 @@
-<?php include 'header.php'; ?>
-
+<?php $thisPage="Home"; ?>
+<?php include 'header-home.php'; ?>
     <aside class="page_banner_home">
         <div class="overlay_home">
             <div class="inner_banner_home">

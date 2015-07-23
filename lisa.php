@@ -3,9 +3,9 @@
         
     </aside>
     
-    <section class="initial">
+    <section class="person-info">
     <div>
-        <h2 class="title-person-single">Lisa Wade<br>Client Relations Manager <br>lisa@douglasswinthrop.com</h2>
+        <h2 class="title-person-single">Lisa Wade<br><p>Client Relations Manager</p><br></h2>
         <div class="description-person-single">
             <p class="sub-header">  
             Lisa joined Douglass Winthrop Advisors LLC in 2007 as the firm’s Client Relations Manager. In addition to her work with its clients, Lisa oversees the firm’s portfolio reporting system and manages the office. 

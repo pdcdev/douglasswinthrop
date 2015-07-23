@@ -3,9 +3,9 @@
         
     </aside>
     
-    <section class="initial">
+    <section class="person-info">
     <div>
-        <h2 class="title-person-single">Philip Warner<br>Managing Director<br>phil@douglasswinthrop.com</h2>
+        <h2 class="title-person-single">Philip Warner<br><p>Managing Director</p><br></h2>
         <div class="description-person-single">
             <p class="sub-header">  
             Phil is a Managing Director at Douglass Winthrop Advisors LLC. He has almost 50 years of experience in the investment management industry. Prior to joining Douglass Winthrop Phil was a Senior Managing Director at Dominick & Dominick. He began his career at Drexel & Co. and also worked at Warfield Associates, Neuberger Berman, Forstman-Leff, and Morgan Stanley. Phil specializes in stock selection and portfolio management for high net worth individuals, families, trusts and charitable organizations.

@@ -45,9 +45,12 @@
 }
 
 h2.title-person-single {
-    @include type($small, $blue);
-    @include span-columns(3);
-    font-family: $frutigerLightCond;
+    @include type($small, $gray);
+    @include span-columns(6);
+    font-family: $frutigerBoldCond;
+    p{
+        font-family:$frutigerLightCond;
+    }
     @include media($tablet) {
         @include span-columns(12);
         padding-bottom: 2em;
@@ -59,8 +62,8 @@ h2.title-person-single {
 }
 
 div.description-person-single {
-    @include span-columns(8);
-    @include type($small, $blue);
+    @include span-columns(5);
+    @include type($small, $gray);
     font-family: $frutigerLightCond;
     @include media($tablet) {
         @include span-columns(6);

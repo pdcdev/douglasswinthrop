@@ -3,9 +3,9 @@
         
     </aside>
     
-    <section class="initial">
+    <section class="person-info">
     <div>
-        <h2 class="title-person-single">Sonny Degady<br>Vice President, Controller<br>sonny@douglasswinthrop.com</h2>
+        <h2 class="title-person-single">Sonny Degady<br><p>Vice President, Controller</p><br></h2>
         <div class="description-person-single">
             <p class="sub-header">  
             Sonny Degady joined Douglass Winthrop Advisors LLC in 2013 as its Vice President and Controller. Previously Sonny was the Controller for Abacus & Associates, a family office, for two years. He held the same position with Meehan & Associates, another family office, for four years. Prior to joining Meehan, he was the Controller for Trainer, Wortham & Company, an investment advisory firm, for more than 16 years. 

@@ -3,9 +3,9 @@
         
     </aside>
     
-    <section class="initial">
+    <section class="person-info">
     <div>
-        <h2 class="title-person-single">Josh Huffard<br>Principal<br>josh@douglasswinthrop.com</h2>
+        <h2 class="title-person-single">Josh Huffard<br><p>Principal</p><br></h2>
         <div class="description-person-single">
             <p class="sub-header">  
             Josh is a principal in Douglass Winthrop Advisors LLC. Previously Josh was the Founder of Consor Capital LLC, a private equity firm based in San Francisco focused on consumer oriented growth companies. Prior to Consor, Josh was a Principal at Sterling Payot Company in San Francisco where he led venture capital investments and provided strategic advisory services to small and large companies seeking to leverage emerging communication technologies. Josh began his career in the Merchant Banking Group at Donaldson, Lufkin & Jenrette in New York City focused on media and consumer products.

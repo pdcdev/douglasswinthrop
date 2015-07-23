@@ -3,9 +3,9 @@
         
     </aside>
     
-    <section class="initial">
+    <section class="person-info">
     <div>
-        <h2 class="title-person-single">D. Bryce O’Brien II<br>Principal<br>bryce@douglasswinthrop.com</h2>
+        <h2 class="title-person-single">D. Bryce O’Brien II<br><p>Principal</p><br></h2>
         <div class="description-person-single">
             <p class="sub-header">  
                 Bryce is a principal in Douglass Winthrop Advisors LLC. Previously, Bryce was a senior portfolio manager at Nicholas Advisors, Inc. for eight years. During this period he was also responsible for asset allocation and manger selection. Prior to NAI he worked at Lazard Frères Asset Management as an analyst in the Fixed Income group.

@@ -3,9 +3,9 @@
         
     </aside>
     
-    <section class="initial">
+    <section class="person-info">
     <div>
-        <h2 class="title-person-single">Olivia Le Blan<br>Associate<br>olivia@douglasswinthrop.com</h2>
+        <h2 class="title-person-single">Olivia Le Blan<br><p>Associate</p><br></h2>
         <div class="description-person-single">
             <p class="sub-header">  
             Olivia joined Douglass Winthrop Advisors LLC as an associate in 2015. Working primarily with Lea Highet in the Wealth Management department, Olivia focuses on Trust Administration and Estate Planning. Her experience consists of various summer internships, including a buy-side research analyst position at Tocqueville Asset Management during the summer of 2014. 

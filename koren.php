@@ -3,9 +3,9 @@
         
     </aside>
     
-    <section class="initial">
+    <section class="person-info">
     <div>
-        <h2 class="title-person-single">Koren Howe<br>Client Relations Manager<br>koren@douglasswinthrop.com</h2>
+        <h2 class="title-person-single">Koren Howe<br><p>Client Relations Manager</p><br></h2>
         <div class="description-person-single">
             <p class="sub-header">  
             Koren joined Douglass Winthrop Advisors LLC as a Client Relations Manager in 2015. Prior to joining Douglass Winthrop, Koren worked at Dominick & Dominick, Warfield Associates, Neuberger Berman and HSBC Private Bank.

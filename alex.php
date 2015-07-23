@@ -3,9 +3,9 @@
         
     </aside>
     
-    <section class="initial">
+    <section class="person-info">
     <div>
-        <h2 class="title-person-single">Alexandra Panetta<br>Client Administration Officer<br>alex@douglasswinthrop.com</h2>
+        <h2 class="title-person-single">Alexandra Panetta<br><p>Client Administration Officer</p><br></h2>
         <div class="description-person-single">
             <p class="sub-header">  
             Alex joined Douglass Winthrop in 2015. As Client Administrator, she looks forward to getting to know clients. She has had experience in various positions in a client relations capacity since graduation.

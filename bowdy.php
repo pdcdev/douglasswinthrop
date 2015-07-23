@@ -3,9 +3,9 @@
         
     </aside>
     
-    <section class="initial">
+    <section class="person-info">
     <div>
-        <h2 class="title-person-single">C. Bowdoin Train<br>Principal<br>bowdy@douglasswinthrop.com</h2>
+        <h2 class="title-person-single">C. Bowdoin Train<br><p>Principal</p><br></h2>
         <div class="description-person-single">
             <p class="sub-header">  
             Bowdy is a principal in Douglass Winthrop Advisors LLC, working in the firm’s Washington, DC office. He has twenty years’ experience in the investment management industry, most recently as a Principal with the Grosvenor Funds, a Washington, DC-based venture capital company where he led many of the firm’s investments in biotech, telecommunications, Internet and e-commerce. He is also a Founder and Principal of BlueWing Asset Management, a firm which makes direct investments in mortgage backed securities and their derivatives.

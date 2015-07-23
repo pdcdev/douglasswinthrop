@@ -1,3 +1,4 @@
+<?php $thisPage="Contact"; ?>
 <?php include 'header.php'; ?>
     <aside class="page_banner_contact">
         <!-- <div class="overlay">

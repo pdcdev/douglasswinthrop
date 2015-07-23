@@ -1,3 +1,4 @@
+<?php $thisPage="About"; ?>
 <?php include 'header.php'; ?>
     <aside class="page_banner_firm">
         <div class="intro-box">
@@ -8,24 +9,26 @@
                     </h1>
                 </div>
                 <div>
-                    <p>Investment advisors to individuals, families, trusts and endowments.</p>
+                    <p>Commited to providing our clients with responsive service and proactive management 
+                    of their financial affairs.</p>
                 </div>
             </div>
-        </div>
+        </div><!-- end blue intro box -->
         <div class="actual-banner">
+            <img src="images/DW_About.jpg">
         </div>
     </aside>
-    <div class="overlay-mobile">
+    <!-- <div class="overlay-mobile">
         <div class="inner_banner-mobile">
             <div>
                 <p>Commited to providing our clients with responsive service and proactive management of their financial affairs.</p>
             </div>
         </div>
-    </div>
-    <section class="initial">
-        <div class="band-container-gray">
+    </div> -->
+    <div class="band-container-gray">
+    <section class="firm">
             <div class="block">
-                <h2 class="title"> About </h2>
+                <h2 class="title"> Firm </h2>
                 <div class="description">
                     <p class="description-text-left">Douglass Winthrop is a New York City based SEC registered investment advisor. 
                         The firm manages more than $1.2 billion for individuals, families, trusts, and endowments. Douglass Winthrop is 
@@ -35,12 +38,12 @@
                         We manage long-only equity and balanced accounts that are customized 
                         to the individual needs, objectives and risk tolerance of each client. We offer wealth management advice to clients when relevant. Our fee structure 
                         is simple and fair, keeping our goals aligned with those of our clients at all times. Our primary objective is to grow and preserve our clients' capital.
-
                     </p>
                 </div>
             </div>
-        </div> 
-        <div class="band-container-gray">
+    </section>
+    </div> <!---gray container -->
+    <section class="history">    
             <div class="block">
                 <h2 class="title"> History </h2>
                 <div class="description">
@@ -53,8 +56,9 @@
                     </p>
                 </div>
             </div>
-        </div>
-        <div class="band-container-gray">
+    </section>
+    <div class="band-container-gray">
+    <section class="philosophy">    
             <div class="block">
                 <h2 class="title"> Philosophy </h2>
                 <div class="description">
@@ -66,7 +70,8 @@
                         who run their firms for the benefit of shareholders. We select companies with near-permanent advantages arising from brand, industry leadership or economies of scale that increase the chances for success in times of stress. Strong balance sheets back all of our equity and corporate bond holdings.   We invest relatively more capital behind our highest conviction ideas. 
                         Our approach aims to minimize the risk of capital loss while achieving superior results.
                     </p>
+                </div>
             </div>
-        </div>
     </section>
+    </div>
 <?php include 'footer.php'; ?>

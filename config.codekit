@@ -184,6 +184,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/header-home.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/header-home.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/header.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -224,17 +233,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/contact.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 313417,
-		"inputAbbreviatedPath": "\/images\/contact.jpg",
-		"outputAbbreviatedPath": "\/images\/contact.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/dc.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -257,6 +255,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/DW_About-mob.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 159646,
+		"inputAbbreviatedPath": "\/images\/DW_About-mob.jpg",
+		"outputAbbreviatedPath": "\/images\/DW_About-mob.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/DW_About.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -264,6 +273,28 @@
 		"initialSize": 172915,
 		"inputAbbreviatedPath": "\/images\/DW_About.jpg",
 		"outputAbbreviatedPath": "\/images\/DW_About.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/DW_Home.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 313417,
+		"inputAbbreviatedPath": "\/images\/DW_Home.jpg",
+		"outputAbbreviatedPath": "\/images\/DW_Home.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/DW_Letters-mob.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 149645,
+		"inputAbbreviatedPath": "\/images\/DW_Letters-mob.jpg",
+		"outputAbbreviatedPath": "\/images\/DW_Letters-mob.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -286,6 +317,17 @@
 		"initialSize": 5.81409e+06,
 		"inputAbbreviatedPath": "\/images\/DW_Process.jpg",
 		"outputAbbreviatedPath": "\/images\/DW_Process.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/DW_Value-mob.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 145135,
+		"inputAbbreviatedPath": "\/images\/DW_Value-mob.jpg",
+		"outputAbbreviatedPath": "\/images\/DW_Value-mob.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

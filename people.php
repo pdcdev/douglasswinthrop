@@ -1,18 +1,20 @@
+<?php $thisPage="People"; ?>
 <?php include 'header.php'; ?>
     <aside class="page_banner_people">
-        <!-- <div class="overlay">
+        <div class="intro-box">
             <div class="inner_banner">
+                <div class="page-name">
+                    <h1>
+                        People
+                    </h1>
+                </div>
                 <div>
-                    <p>Our People</p>
+                    <p>Our team works hard to foster a culture of unwavering commitment to putting our clients’ interests first.</p>
                 </div>
             </div>
-        </div> -->
+        </div><!-- end blue intro box -->
     </aside>
-    <section class="initial">
-    <div>
-        <h2 class="people"> People </h2>
-    </div>
-    </section>
+
     <section class="people">
         <div class="person">
             <a href="robert.php"><img class="person_headshot" src="images/people/RobertDouglass_Headshot.jpg"></a>
@@ -26,27 +28,6 @@
             <div class="person_name">
                 <h1><a href="jay.php">Jay Winthrop</a></h1>
                 <p>Principal</p>
-            </div>
-        </div>
-        <div class="person">
-            <a href="rossana.php"><img class="person_headshot" src="images/people/RossanaAzzara_Headshot.jpg"></a>
-            <div class="person_name">
-                <h1><a href="rossana.php">Rossana Azzara</a></h1>
-                <p>Client Relations Manager</p>
-            </div>
-        </div>
-        <div class="person">
-            <a href="cgcrane.php"><img class="person_headshot" src="images/people/CharlesCrane_Headshot.jpg"></a>
-            <div class="person_name">
-                <h1><a href="cgcrane.php">Charles Crane</a></h1>
-                <p>Principal</p>
-            </div>
-        </div>
-        <div class="person">
-            <a href="sonny.php"><img class="person_headshot" src="images/people/SonnyDegady_Headshot.jpg"></a>
-            <div class="person_name">
-                <h1><a href="sonny.php">Sonny Degady</a></h1>
-                <p>Vice President, Controller</p>
             </div>
         </div>
         <div class="person">
@@ -64,10 +45,17 @@
             </div>
         </div>
         <div class="person">
-            <a href="koren.php"><img class="person_headshot" src="images/people/Koren_Headshot.jpg"></a>
+            <a href="charlie.php"><img class="person_headshot" src="images/people/CharlesHoward_Headshot.jpg"></a>
             <div class="person_name">
-                <h1><a href="koren.php">Koren Howe</a></h1>
-                <p>Client Relations Manager</p>
+                <h1><a href="charlie.php">Charles Howard</a></h1>
+                <p>Principal</p>
+            </div>
+        </div>
+        <div class="person">
+            <a href="cgcrane.php"><img class="person_headshot" src="images/people/CharlesCrane_Headshot.jpg"></a>
+            <div class="person_name">
+                <h1><a href="cgcrane.php">Charles Crane</a></h1>
+                <p>Principal</p>
             </div>
         </div>
         <div class="person">
@@ -78,24 +66,10 @@
             </div>
         </div>
         <div class="person">
-            <a href="olivia.php"><img class="person_headshot" src="images/people/Olivia_Headshot.jpg"></a>
-            <div class="person_name">
-                <h1><a href="olivia.php">Olivia Le Blan</a></h1>
-                <p>Associate</p>
-            </div>
-        </div>
-        <div class="person">
             <a href="bryce.php"><img class="person_headshot" src="images/people/BryceO'Brien_Headshot.jpg"></a>
             <div class="person_name">
                 <h1><a href="bryce.php">D. Bryce O'Brien II</a></h1>
                 <p>Principal</p>
-            </div>
-        </div>
-        <div class="person">
-            <a href="alex.php"><img class="person_headshot" src="images/people/Alex_Headshot.jpg"></a>
-            <div class="person_name">
-                <h1><a href="alex.php">Alexandra Panetta</a></h1>
-                <p>Client Administration Officer</p>
             </div>
         </div>
         <div class="person">
@@ -113,10 +87,10 @@
             </div>
         </div>
         <div class="person">
-            <a href="lisa.php"><img class="person_headshot" src="images/people/LisaWade_Headshot.jpg"></a>
+            <a href="sonny.php"><img class="person_headshot" src="images/people/SonnyDegady_Headshot.jpg"></a>
             <div class="person_name">
-                <h1><a href="lisa.php">Lisa Wade</a></h1>
-                <p>Client Relations Manager </p>
+                <h1><a href="sonny.php">Sonny Degady</a></h1>
+                <p>Vice President, Controller</p>
             </div>
         </div>
         <div class="person">
@@ -133,6 +107,43 @@
                 <p>Managing Director</p>
             </div>
         </div>
+        <div class="person">
+            <a href="rossana.php"><img class="person_headshot" src="images/people/RossanaAzzara_Headshot.jpg"></a>
+            <div class="person_name">
+                <h1><a href="rossana.php">Rossana Azzara</a></h1>
+                <p>Client Relations Manager</p>
+            </div>
+        </div>
+        <div class="person">
+            <a href="koren.php"><img class="person_headshot" src="images/people/Koren_Headshot.jpg"></a>
+            <div class="person_name">
+                <h1><a href="koren.php">Koren Howe</a></h1>
+                <p>Client Relations Manager</p>
+            </div>
+        </div>
+        <div class="person">
+            <a href="olivia.php"><img class="person_headshot" src="images/people/Olivia_Headshot.jpg"></a>
+            <div class="person_name">
+                <h1><a href="olivia.php">Olivia Le Blan</a></h1>
+                <p>Associate</p>
+            </div>
+        </div>
+        <div class="person">
+            <a href="alex.php"><img class="person_headshot" src="images/people/Alex_Headshot.jpg"></a>
+            <div class="person_name">
+                <h1><a href="alex.php">Alexandra Panetta</a></h1>
+                <p>Client Administration Officer</p>
+            </div>
+        </div>
+        <div class="person">
+            <a href="lisa.php"><img class="person_headshot" src="images/people/LisaWade_Headshot.jpg"></a>
+            <div class="person_name">
+                <h1><a href="lisa.php">Lisa Wade</a></h1>
+                <p>Client Relations Manager </p>
+            </div>
+        </div>
+        
+        
 
     </section>
 <?php include 'footer.php'; ?>

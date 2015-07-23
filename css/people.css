@@ -76,13 +76,13 @@ do_something(list_of_stuff, "blue");*/
       margin-right: 0; } }
 
 h2.title-person-single {
-  color: #004FB1;
+  color: #A3A9AC;
   font-size: 1rem;
   float: left;
   display: block;
   margin-right: 2.3255813953%;
-  width: 23.2558139535%;
-  font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+  width: 48.8372093023%;
+  font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif; }
   @media screen and (max-width: 768px) {
     h2.title-person-single {
       font-size: 1rem; } }
@@ -91,6 +91,8 @@ h2.title-person-single {
       font-size: 0.9375rem; } }
   h2.title-person-single:last-child {
     margin-right: 0; }
+  h2.title-person-single p {
+    font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
   @media screen and (max-width: 768px) {
     h2.title-person-single {
       float: left;
@@ -114,8 +116,8 @@ div.description-person-single {
   float: left;
   display: block;
   margin-right: 2.3255813953%;
-  width: 65.8914728682%;
-  color: #004FB1;
+  width: 40.3100775194%;
+  color: #A3A9AC;
   font-size: 1rem;
   font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
   div.description-person-single:last-child {

@@ -3,9 +3,9 @@
         
     </aside>
     
-    <section class="initial">
+    <section class="person-info">
     <div>
-        <h2 class="title-person-single">W. Oak Strawbridge<br>Principal<br>oak@douglasswinthrop.com</h2>
+        <h2 class="title-person-single">W. Oak Strawbridge<br><p>Principal</p><br></h2>
         <div class="description-person-single">
             <p class="sub-header">  
             Oak is a principal in Douglass Winthrop Advisors LLC, working in the firm’s Washington, DC office. He has served as Chief Financial Officer and Partner at the Grosvenor Funds, a Washington, DC- based venture capital firm where he made and managed venture investments primarily in early-stage technology and healthcare companies. In addition to his role as an investment professional, Oak managed investor relations, audit, tax and compliance activities for the firm. Oak is also a Founder and Principal of BlueWing Asset Management, a firm which makes direct investments in mortgage backed securities and their derivatives. Previously he worked for IGOR Communications as a marketing consultant to technology companies and trade associations in Washington, DC. Prior to IGOR, he was a systems analyst for Subsystems Technologies, Inc. a Washington, DC-based provider of technology services to the Federal Government.

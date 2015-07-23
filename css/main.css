@@ -39,9 +39,11 @@ var list_of_stuff = [1,2,3,4];
 
 do_something(list_of_stuff, "blue");*/
 body {
-  font-family: "FrutigerLTW01-55Roman", helvetica, sans serif; }
+  font-family: "FrutigerLTW01-55Roman", helvetica, sans serif;
+  background-color: #fff;
+  height: 100%; }
 
-.vertical_center_parent, .page_banner_home div.overlay_home div.inner_banner_home div, .page_banner_letters div.overlay div.inner_banner div, .page_banner_value div.overlay div.inner_banner div, .page_banner_people div.overlay div.inner_banner div, .page_banner_contact div.overlay div.inner_banner div {
+.vertical_center_parent, .page_banner_home div.overlay_home div.inner_banner_home div, .page_banner_letters div.overlay div.inner_banner div, .page_banner_contact div.overlay div.inner_banner div {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -51,13 +53,13 @@ body {
   align-items: center;
   /*justify-content: center;*/ }
 
-.global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.intro-box div.inner_banner, .page_banner_value div.overlay div.inner_banner, .page_banner_people div.overlay div.inner_banner, .page_banner_contact div.overlay div.inner_banner, section.people, section.people-single, section.initial, section.detail-layout-value, section.letters, section.initial_contact, section.contact-list, section.contact, footer div.inner_footer {
+.global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.intro-box div.inner_banner, .page_banner_value div.intro-box div.inner_banner, .page_banner_people div.intro-box div.inner_banner, .page_banner_contact div.overlay div.inner_banner, section.people, section.person-info, section.people-single, section.firm, section.history, section.philosophy, section.value, div.band-container-white, section.detail-layout-value, section.letters, section.initial_contact, section.contact-list, section.contact, footer div.inner_footer {
   padding: 1.5em 40px; }
   @media screen and (max-width: 768px) {
-    .global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.intro-box div.inner_banner, .page_banner_value div.overlay div.inner_banner, .page_banner_people div.overlay div.inner_banner, .page_banner_contact div.overlay div.inner_banner, section.people, section.people-single, section.initial, section.detail-layout-value, section.letters, section.initial_contact, section.contact-list, section.contact, footer div.inner_footer {
+    .global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.intro-box div.inner_banner, .page_banner_value div.intro-box div.inner_banner, .page_banner_people div.intro-box div.inner_banner, .page_banner_contact div.overlay div.inner_banner, section.people, section.person-info, section.people-single, section.firm, section.history, section.philosophy, section.value, div.band-container-white, section.detail-layout-value, section.letters, section.initial_contact, section.contact-list, section.contact, footer div.inner_footer {
       padding: 2em 40px; } }
   @media screen and (max-width: 480px) {
-    .global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.intro-box div.inner_banner, .page_banner_value div.overlay div.inner_banner, .page_banner_people div.overlay div.inner_banner, .page_banner_contact div.overlay div.inner_banner, section.people, section.people-single, section.initial, section.detail-layout-value, section.letters, section.initial_contact, section.contact-list, section.contact, footer div.inner_footer {
+    .global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.intro-box div.inner_banner, .page_banner_value div.intro-box div.inner_banner, .page_banner_people div.intro-box div.inner_banner, .page_banner_contact div.overlay div.inner_banner, section.people, section.person-info, section.people-single, section.firm, section.history, section.philosophy, section.value, div.band-container-white, section.detail-layout-value, section.letters, section.initial_contact, section.contact-list, section.contact, footer div.inner_footer {
       padding: 2em 30px; } }
 
 .sidepad, .inner_header {
@@ -77,6 +79,119 @@ body {
     width: 169.8412698413%; }
     .inner_header h1 a:last-child {
       margin-right: 0; } }
+
+header.header-home {
+  z-index: 999;
+  position: relative;
+  background-color: #004FB1;
+  opacity: 0.1;
+  border-bottom: 1px solid #5e9eec; }
+
+div.inner_header {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  height: 60px; }
+  div.inner_header::after {
+    clear: both;
+    content: "";
+    display: table; }
+  div.inner_header h1 {
+    float: left;
+    display: block;
+    margin-right: 2.3255813953%;
+    width: 48.8372093023%;
+    line-height: 60px;
+    font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
+    font-size: 1em; }
+    div.inner_header h1:last-child {
+      margin-right: 0; }
+    div.inner_header h1 a {
+      text-decoration: none;
+      color: #b2b2b2; }
+    @media screen and (max-width: 480px) {
+      div.inner_header h1 {
+        font-size: 1rem; } }
+    @media screen and (max-width: 320px) {
+      div.inner_header h1 {
+        float: left;
+        display: block;
+        margin-right: 10%;
+        width: 63.3333333333%; }
+        div.inner_header h1:last-child {
+          margin-right: 0; } }
+  div.inner_header nav.main-nav ul {
+    float: left;
+    display: block;
+    margin-right: 2.3255813953%;
+    width: 48.8372093023%;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    div.inner_header nav.main-nav ul:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      div.inner_header nav.main-nav ul {
+        float: left;
+        display: block;
+        margin-right: 4.7619047619%;
+        width: 82.5396825397%;
+        background-color: #fff;
+        display: none; }
+        div.inner_header nav.main-nav ul:last-child {
+          margin-right: 0; } }
+    @media screen and (max-width: 480px) {
+      div.inner_header nav.main-nav ul {
+        float: left;
+        display: block;
+        margin-right: 10%;
+        width: 100%;
+        background-color: #fff;
+        display: none; }
+        div.inner_header nav.main-nav ul:last-child {
+          margin-right: 0; } }
+    div.inner_header nav.main-nav ul li {
+      float: left;
+      display: block;
+      margin-right: 2.3255813953%;
+      width: 14.7286821705%;
+      font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
+      font-size: 1em;
+      margin: 20px 0 5px 0;
+      display: inline-block; }
+      div.inner_header nav.main-nav ul li:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        div.inner_header nav.main-nav ul li {
+          float: left;
+          display: block;
+          margin-right: 4.7619047619%;
+          width: 100%;
+          display: block; }
+          div.inner_header nav.main-nav ul li:last-child {
+            margin-right: 0; } }
+      @media screen and (max-width: 480px) {
+        div.inner_header nav.main-nav ul li {
+          float: left;
+          display: block;
+          margin-right: 10%;
+          width: 100%;
+          display: block; }
+          div.inner_header nav.main-nav ul li:last-child {
+            margin-right: 0; } }
+      div.inner_header nav.main-nav ul li a {
+        width: 50px;
+        color: #b2b2b2;
+        text-decoration: none;
+        padding-bottom: 5px; }
+      div.inner_header nav.main-nav ul li a:hover {
+        color: #2775F6; }
+      div.inner_header nav.main-nav ul li .currentpage a:active {
+        color: red; }
+      div.inner_header nav.main-nav ul li .main-nav li.current {
+        border-bottom: 1px #333 solid; }
 
 header {
   z-index: 999;
@@ -134,7 +249,8 @@ header {
           display: block;
           margin-right: 4.7619047619%;
           width: 82.5396825397%;
-          background-color: #fff; }
+          background-color: #fff;
+          display: none; }
           header div.inner_header nav.main-nav ul:last-child {
             margin-right: 0; } }
       @media screen and (max-width: 480px) {
@@ -143,7 +259,8 @@ header {
           display: block;
           margin-right: 10%;
           width: 100%;
-          background-color: #fff; }
+          background-color: #fff;
+          display: none; }
           header div.inner_header nav.main-nav ul:last-child {
             margin-right: 0; } }
       header div.inner_header nav.main-nav ul li {
@@ -182,65 +299,218 @@ header {
           padding-bottom: 5px; }
         header div.inner_header nav.main-nav ul li a:hover {
           color: #2775F6; }
+        header div.inner_header nav.main-nav ul li .currentpage a:active {
+          color: red; }
+        header div.inner_header nav.main-nav ul li .main-nav li.current {
+          border-bottom: 1px #333 solid; }
 
-.menuIcon {
-  display: none;
-  width: 100%;
-  text-align: center; }
-  .menuIcon h1 a {
-    font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
-  .menuIcon a {
+/*.menuIcon {
+    display: none;
     width: 100%;
-    display: block;
-    color: #004FB1;
-    text-decoration: none; }
-    .menuIcon a:hover {
-      color: #999; }
-    .menuIcon a img {
-      vertical-align: middle; }
+    text-align: center;
+    h1 {
+        a{
+            font-family: $frutigerLightCond;
+        }
+    }
+    a {
+        &:hover {
+        color: #999;
+    }  
+      width: 100%;
+      display: block;
+      color: $blue;
+      text-decoration: none;
+      img {
+        vertical-align: middle;
+      }
+    }
+  }*/
+button {
+  display: none; }
+  button span {
+    display: none; }
 
-@media only screen and (max-width: 767px) {
-  .inner_header .main-nav {
-    max-height: 0;
+.mob-nav-container ul {
+  display: none; }
+
+/* ------------ MOBILE LAYOUT VALUE ---------*/
+.mobile-column {
+  display: none; }
+
+@media only screen and (min-device-width: 220px) and (max-device-width: 480px) {
+  .content {
+    display: none; } }
+@media only screen and (min-device-width: 220px) and (max-device-width: 480px) and (max-width: 768px) {
+  .mobile-column {
+    float: left;
+    display: block;
+    margin-right: 4.7619047619%;
+    width: 100%;
+    display: block; }
+    .mobile-column:last-child {
+      margin-right: 0; } }
+@media only screen and (min-device-width: 220px) and (max-device-width: 480px) and (max-width: 480px) {
+  .mobile-column {
+    float: left;
+    display: block;
+    margin-right: 10%;
+    width: 100%;
+    display: block; }
+    .mobile-column:last-child {
+      margin-right: 0; } }
+
+@media only screen and (min-device-width: 220px) and (max-device-width: 480px) {
+  .main-nav ul {
+    display: none; }
+
+  button {
+    position: fixed;
+    top: 0;
+    right: 0; }
+
+  /* ---------------------------------HAMBURGER STARTS ---------------*/
+  .c-hamburger {
+    float: right;
+    display: inline-block;
+    position: relative;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 70px;
+    height: 60px;
+    font-size: 0;
+    text-indent: -9999px;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s; }
+
+  .c-hamburger:focus {
+    outline: none; }
+
+  .c-hamburger span {
+    display: block;
+    width: 30px;
+    position: absolute;
+    top: 30px;
+    left: 18px;
+    right: 18px;
+    height: 3px;
+    background: #b2b2b2; }
+
+  .c-hamburger span::before,
+  .c-hamburger span::after {
+    position: absolute;
+    display: block;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #b2b2b2;
+    content: ""; }
+
+  .c-hamburger span::before {
+    top: -10px; }
+
+  .c-hamburger span::after {
+    bottom: -10px; }
+
+  .c-hamburger--htx {
+    background-color: #004fb1; }
+
+  .c-hamburger--htx span {
+    transition: background 0s 0.3s; }
+
+  .c-hamburger--htx span::before,
+  .c-hamburger--htx span::after {
+    transition-duration: 0.3s, 0.3s;
+    transition-delay: 0.3s, 0s; }
+
+  .c-hamburger--htx span::before {
+    transition-property: top, transform; }
+
+  .c-hamburger--htx span::after {
+    transition-property: bottom, transform; }
+
+  /* active state, i.e. menu open */
+  .c-hamburger--htx.is-active {
+    background-color: #000; }
+
+  .c-hamburger--htx.is-active span {
+    background: none; }
+
+  .c-hamburger--htx.is-active span::before {
+    top: 0;
+    transform: rotate(45deg); }
+
+  .c-hamburger--htx.is-active span::after {
+    bottom: 0;
+    transform: rotate(-45deg); }
+
+  .c-hamburger--htx.is-active span::before,
+  .c-hamburger--htx.is-active span::after {
+    transition-delay: 0s, 0.3s; }
+
+  /* ---------------------------------HAMBURGER ENDS ---------------*/
+  .mob-nav-container-active {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
     width: 100%;
     margin: 0 auto;
-    -webkit-transition: max-height 0.5s;
-    -moz-transition: max-height 0.5s;
-    transition: max-height 0.5s; }
-    .inner_header .main-nav.menuOpen {
-      max-height: 600px;
-      -webkit-transition: max-height 0.5s;
-      -moz-transition: max-height 0.5s;
-      transition: max-height 0.5s; }
-    .inner_header .main-nav ul {
-      float: left;
-      display: block;
-      margin-right: 2.3255813953%;
-      width: 14.7286821705%; }
-      .inner_header .main-nav ul:last-child {
-        margin-right: 0; }
-      .inner_header .main-nav ul li {
-        float: left;
-        display: block;
-        margin-right: 2.3255813953%;
-        width: 23.2558139535%;
+    background-color: red;
+    opacity: 1;
+    z-index: 99; }
+    .mob-nav-container-active ul {
+      transition: all .05s;
+      position: relative;
+      left: 0;
+      z-index: 2; }
+    .mob-nav-container-active a {
+      transition: all .15s;
+      font-size: 2em;
+      padding: 5px; }
+
+    /*#menuExpand {
+    }
+  .inner_header {
+    .main-nav {
+      max-height: 0;
+      overflow: hidden;
+      width: 100%;
+      margin: 0 auto;
+      @include transition(max-height 0.5s);
+      &.menuOpen {
+        max-height: 600px;
+        @include transition(max-height 0.5s);
+      }
+    ul {
+        @include span-columns(2);
+      li {
+        @include span-columns(3);
         background-color: #fff;
         display: block;
         text-align: center;
-        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
+        font-family: $frutigerLightCond;
         line-height: 50px;
-        border-bottom: 1px solid #fff; }
-        .inner_header .main-nav ul li:last-child {
-          margin-right: 0; }
-  .inner_header .menuIcon {
-    float: left;
-    display: block;
-    margin-right: 2.3255813953%;
-    width: 23.2558139535%;
-    float: right; }
-    .inner_header .menuIcon:last-child {
-      margin-right: 0; } }
+        border-bottom: 1px solid #fff;
+        }
+        @include media($mobile){
+
+        }
+      }
+    }
+    .menuIcon {
+        @include span-columns(3);
+        float: right;
+        }
+        @include media($tiny){
+            
+        }
+    }*/ }
 /*.expand {
     display: block !important; 
 }*/
@@ -251,7 +521,7 @@ header {
   width: 100%;
   height: 100%;
   position: absolute;
-  background: url("../images/home.jpg") center center no-repeat;
+  background: url("../images/DW_Home.jpg") center center no-repeat;
   background-size: cover;
   top: 0; }
   .page_banner_home div.overlay_home {
@@ -416,7 +686,8 @@ header {
           width: 48.8372093023%;
           font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
           font-size: 20pt;
-          color: #fff; }
+          color: #fff;
+          line-height: 1.1; }
           .page_banner_letters div.overlay div.inner_banner div p:last-child {
             margin-right: 0; }
           @media screen and (max-width: 768px) {
@@ -437,15 +708,11 @@ div.overlay-mobile {
     padding: 10%;
     background-color: rgba(0, 79, 177, 0.6); } }
 .page_banner_firm {
-  background-color: #eee;
   position: relative; }
   .page_banner_firm div.intro-box {
     width: 100%;
     height: 185px;
     background-color: #004FB1; }
-    @media screen and (max-width: 480px) {
-      .page_banner_firm div.intro-box {
-        display: none; } }
     .page_banner_firm div.intro-box div.inner_banner {
       max-width: 75em;
       margin-left: auto;
@@ -467,7 +734,8 @@ div.overlay-mobile {
         .page_banner_firm div.intro-box div.inner_banner div.page-name h1 {
           font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
           font-size: 1.5em;
-          color: #b2b2b2; }
+          color: #b2b2b2;
+          padding-bottom: 30px; }
       .page_banner_firm div.intro-box div.inner_banner div p {
         float: left;
         display: block;
@@ -475,6 +743,7 @@ div.overlay-mobile {
         width: 40.3100775194%;
         font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
         font-size: 1.5em;
+        line-height: 1.1;
         color: #b2b2b2; }
         .page_banner_firm div.intro-box div.inner_banner div p:last-child {
           margin-right: 0; }
@@ -483,8 +752,7 @@ div.overlay-mobile {
             float: left;
             display: block;
             margin-right: 4.7619047619%;
-            width: 65.0793650794%;
-            font-size: 1em; }
+            width: 47.619047619%; }
             .page_banner_firm div.intro-box div.inner_banner div p:last-child {
               margin-right: 0; } }
         @media screen and (max-width: 480px) {
@@ -492,142 +760,144 @@ div.overlay-mobile {
             float: left;
             display: block;
             margin-right: 10%;
-            width: 136.6666666667%; }
+            width: 100%;
+            font-size: 1em; }
             .page_banner_firm div.intro-box div.inner_banner div p:last-child {
               margin-right: 0; } }
-  .page_banner_firm div.actual-banner {
+  .page_banner_firm div.actual-banner img {
     position: relative;
     display: block;
-    height: 250px;
-    background: url("../images/DW_About.jpg") center center no-repeat;
+    height: auto;
     background-size: 100%;
     background-position: top; }
     @media screen and (max-width: 480px) {
-      .page_banner_firm div.actual-banner {
-        height: 190px;
-        background: url("../images/DW_About.jpg") no-repeat;
-        background-size: 115%; } }
+      .page_banner_firm div.actual-banner img {
+        background: url("../images/DW_About-mob.jpg") no-repeat; } }
 
 .page_banner_value {
-  background-color: #eee;
-  position: relative;
-  height: 500px;
-  background: url("../images/value.jpg") center center no-repeat;
-  background-size: cover; }
-  @media screen and (max-width: 480px) {
-    .page_banner_value {
-      background: url("../images/value.jpg") no-repeat;
-      background-size: 100%;
-      height: 190px; } }
-  .page_banner_value div.overlay {
+  position: relative; }
+  .page_banner_value div.intro-box {
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    height: 175px;
-    background-color: rgba(0, 79, 177, 0.6); }
-    @media screen and (max-width: 480px) {
-      .page_banner_value div.overlay {
-        display: none; } }
-    .page_banner_value div.overlay div.inner_banner {
+    height: 185px;
+    background-color: #004FB1; }
+    .page_banner_value div.intro-box div.inner_banner {
       max-width: 75em;
       margin-left: auto;
       margin-right: auto;
+      padding-top: 5%;
       position: relative;
       height: 100%; }
-      .page_banner_value div.overlay div.inner_banner::after {
+      .page_banner_value div.intro-box div.inner_banner::after {
         clear: both;
         content: "";
         display: table; }
-      .page_banner_value div.overlay div.inner_banner div {
-        height: 100%; }
-        .page_banner_value div.overlay div.inner_banner div p {
-          float: left;
-          display: block;
-          margin-right: 2.3255813953%;
-          width: 48.8372093023%;
-          font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
-          font-size: 20pt;
-          color: #fff; }
-          .page_banner_value div.overlay div.inner_banner div p:last-child {
-            margin-right: 0; }
-          @media screen and (max-width: 768px) {
-            .page_banner_value div.overlay div.inner_banner div p {
-              float: left;
-              display: block;
-              margin-right: 4.7619047619%;
-              width: 65.0793650794%; }
-              .page_banner_value div.overlay div.inner_banner div p:last-child {
-                margin-right: 0; } }
-          @media screen and (max-width: 480px) {
-            .page_banner_value div.overlay div.inner_banner div p {
-              float: left;
-              display: block;
-              margin-right: 10%;
-              width: 136.6666666667%; }
-              .page_banner_value div.overlay div.inner_banner div p:last-child {
-                margin-right: 0; } }
+      .page_banner_value div.intro-box div.inner_banner div.page-name {
+        float: left;
+        display: block;
+        margin-right: 2.3255813953%;
+        width: 48.8372093023%; }
+        .page_banner_value div.intro-box div.inner_banner div.page-name:last-child {
+          margin-right: 0; }
+        .page_banner_value div.intro-box div.inner_banner div.page-name h1 {
+          font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
+          font-size: 1.5em;
+          color: #b2b2b2;
+          padding-bottom: 30px; }
+      .page_banner_value div.intro-box div.inner_banner div p {
+        float: left;
+        display: block;
+        margin-right: 2.3255813953%;
+        width: 40.3100775194%;
+        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
+        font-size: 1.5em;
+        line-height: 1.1;
+        color: #b2b2b2; }
+        .page_banner_value div.intro-box div.inner_banner div p:last-child {
+          margin-right: 0; }
+        @media screen and (max-width: 768px) {
+          .page_banner_value div.intro-box div.inner_banner div p {
+            float: left;
+            display: block;
+            margin-right: 4.7619047619%;
+            width: 47.619047619%; }
+            .page_banner_value div.intro-box div.inner_banner div p:last-child {
+              margin-right: 0; } }
+        @media screen and (max-width: 480px) {
+          .page_banner_value div.intro-box div.inner_banner div p {
+            float: left;
+            display: block;
+            margin-right: 10%;
+            width: 100%;
+            font-size: 1em; }
+            .page_banner_value div.intro-box div.inner_banner div p:last-child {
+              margin-right: 0; } }
+  .page_banner_value div.actual-banner img {
+    position: relative;
+    display: block;
+    height: auto;
+    background-size: 100%;
+    background-position: top; }
+    @media screen and (max-width: 480px) {
+      .page_banner_value div.actual-banner img {
+        background: url("../images/DW_Value-mob.jpg") no-repeat; } }
 
 .page_banner_people {
-  background-color: #eee;
-  position: relative;
-  height: 500px;
-  background: url("../images/people.jpg") center center no-repeat;
-  background-size: cover;
-  background-position: 0px -30px; }
-  @media screen and (max-width: 768px) {
-    .page_banner_people {
-      background: url("../images/people/single/jay-banner.jpg") no-repeat;
-      background-size: 100%;
-      height: 300px; } }
-  @media screen and (max-width: 480px) {
-    .page_banner_people {
-      height: 190px;
-      background: url("../images/people.jpg") no-repeat;
-      background-size: 100%; } }
-  .page_banner_people div.overlay {
+  position: relative; }
+  .page_banner_people div.intro-box {
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    height: 175px;
-    background-color: rgba(0, 79, 177, 0.6); }
-    .page_banner_people div.overlay div.inner_banner {
+    height: 185px;
+    background-color: #004FB1; }
+    .page_banner_people div.intro-box div.inner_banner {
       max-width: 75em;
       margin-left: auto;
       margin-right: auto;
+      padding-top: 5%;
       position: relative;
       height: 100%; }
-      .page_banner_people div.overlay div.inner_banner::after {
+      .page_banner_people div.intro-box div.inner_banner::after {
         clear: both;
         content: "";
         display: table; }
-      .page_banner_people div.overlay div.inner_banner div {
-        height: 100%; }
-        .page_banner_people div.overlay div.inner_banner div p {
-          float: left;
-          display: block;
-          margin-right: 2.3255813953%;
-          width: 48.8372093023%;
-          font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
-          font-size: 20pt;
-          color: #fff; }
-          .page_banner_people div.overlay div.inner_banner div p:last-child {
-            margin-right: 0; }
-          @media screen and (max-width: 768px) {
-            .page_banner_people div.overlay div.inner_banner div p {
-              float: left;
-              display: block;
-              margin-right: 4.7619047619%;
-              width: 65.0793650794%; }
-              .page_banner_people div.overlay div.inner_banner div p:last-child {
-                margin-right: 0; } }
-          @media screen and (max-width: 480px) {
-            .page_banner_people div.overlay div.inner_banner div p {
-              float: left;
-              display: block;
-              margin-right: 10%;
-              width: 136.6666666667%; }
-              .page_banner_people div.overlay div.inner_banner div p:last-child {
-                margin-right: 0; } }
+      .page_banner_people div.intro-box div.inner_banner div.page-name {
+        float: left;
+        display: block;
+        margin-right: 2.3255813953%;
+        width: 48.8372093023%; }
+        .page_banner_people div.intro-box div.inner_banner div.page-name:last-child {
+          margin-right: 0; }
+        .page_banner_people div.intro-box div.inner_banner div.page-name h1 {
+          font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
+          font-size: 1.5em;
+          color: #b2b2b2;
+          padding-bottom: 30px; }
+      .page_banner_people div.intro-box div.inner_banner div p {
+        float: left;
+        display: block;
+        margin-right: 2.3255813953%;
+        width: 40.3100775194%;
+        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
+        font-size: 1.5em;
+        line-height: 1.1;
+        color: #b2b2b2; }
+        .page_banner_people div.intro-box div.inner_banner div p:last-child {
+          margin-right: 0; }
+        @media screen and (max-width: 768px) {
+          .page_banner_people div.intro-box div.inner_banner div p {
+            float: left;
+            display: block;
+            margin-right: 4.7619047619%;
+            width: 47.619047619%; }
+            .page_banner_people div.intro-box div.inner_banner div p:last-child {
+              margin-right: 0; } }
+        @media screen and (max-width: 480px) {
+          .page_banner_people div.intro-box div.inner_banner div p {
+            float: left;
+            display: block;
+            margin-right: 10%;
+            width: 100%;
+            font-size: 1em; }
+            .page_banner_people div.intro-box div.inner_banner div p:last-child {
+              margin-right: 0; } }
 
 .page_banner_contact {
   background-color: #eee;
@@ -765,6 +1035,17 @@ section.people {
       background-color: rgba(0, 0, 0, 0.6); }
 
 /* ----------------------------- Single person people grid - mobile -----*/
+section.person-info {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto; }
+  section.person-info::after {
+    clear: both;
+    content: "";
+    display: table; }
+  section.person-info div.description-person-single h2.title-person-single {
+    font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif; }
+
 section.people-single {
   max-width: 75em;
   margin-left: auto;
@@ -840,104 +1121,420 @@ section.people-single {
     section.people-single div.person-single div.person_name:hover {
       background-color: rgba(0, 0, 0, 0.6); }
 
-section.initial {
+div.band-container-gray {
+  background-color: #eee;
+  width: 100%;
+  height: auto; }
+
+section.firm {
   max-width: 75em;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
   padding-bottom: 0; }
-  section.initial::after {
+  section.firm::after {
     clear: both;
     content: "";
     display: table; }
-  section.initial:nth-child(2) {
-    margin-right: 0; }
-  section.initial h2.title {
-    padding-bottom: 30px;
-    font-size: 1.5em;
-    color: #b2b2b2;
-    font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
-  section.initial h2.people {
+  section.firm div.block {
     float: left;
     display: block;
     margin-right: 2.3255813953%;
-    width: 23.2558139535%;
-    color: #b2b2b2;
-    font-size: 1rem;
-    font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
-    section.initial h2.people:last-child {
-      margin-right: 0; }
-    @media screen and (max-width: 768px) {
-      section.initial h2.people {
-        font-size: 1rem; } }
-    @media screen and (max-width: 480px) {
-      section.initial h2.people {
-        font-size: 0.9375rem; } }
-  section.initial div.band-container-gray {
-    background-color: #eee;
     width: 100%;
-    height: auto; }
-    section.initial div.band-container-gray div.block {
+    top: 0; }
+    section.firm div.block:last-child {
+      margin-right: 0; }
+    section.firm div.block h2.title {
+      padding-bottom: 30px;
+      font-size: 1.5em;
+      color: #b2b2b2;
+      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+    section.firm div.block div.description p.description-text-left {
       float: left;
       display: block;
       margin-right: 2.3255813953%;
-      width: 100%;
-      padding-bottom: 30px; }
-      section.initial div.band-container-gray div.block:last-child {
+      width: 40.3100775194%;
+      color: #b2b2b2;
+      font-size: 1rem;
+      line-height: 20px;
+      padding-bottom: 30px;
+      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+      section.firm div.block div.description p.description-text-left:last-child {
         margin-right: 0; }
-      section.initial div.band-container-gray div.block div.description p.description-text-left {
-        float: left;
-        display: block;
-        margin-right: 2.3255813953%;
-        width: 40.3100775194%;
-        color: #b2b2b2;
-        font-size: 1rem;
-        line-height: 20px;
+      @media screen and (max-width: 768px) {
+        section.firm div.block div.description p.description-text-left {
+          font-size: 1rem; } }
+      @media screen and (max-width: 480px) {
+        section.firm div.block div.description p.description-text-left {
+          font-size: 0.9375rem; } }
+      @media screen and (max-width: 480px) {
+        section.firm div.block div.description p.description-text-left {
+          float: left;
+          display: block;
+          margin-right: 10%;
+          width: 100%; }
+          section.firm div.block div.description p.description-text-left:last-child {
+            margin-right: 0; } }
+    section.firm div.block div.description p.description-text-right {
+      float: left;
+      display: block;
+      margin-right: 2.3255813953%;
+      width: 40.3100775194%;
+      margin-left: 8.5271317829%;
+      color: #b2b2b2;
+      font-size: 1rem;
+      line-height: 20px;
+      padding-bottom: 30px;
+      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+      section.firm div.block div.description p.description-text-right:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        section.firm div.block div.description p.description-text-right {
+          font-size: 1rem; } }
+      @media screen and (max-width: 480px) {
+        section.firm div.block div.description p.description-text-right {
+          font-size: 0.9375rem; } }
+      @media screen and (max-width: 480px) {
+        section.firm div.block div.description p.description-text-right {
+          float: left;
+          display: block;
+          margin-right: 10%;
+          width: 100%;
+          margin-left: 0%; }
+          section.firm div.block div.description p.description-text-right:last-child {
+            margin-right: 0; } }
+
+section.history {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding-bottom: 0; }
+  section.history::after {
+    clear: both;
+    content: "";
+    display: table; }
+  section.history div.block {
+    float: left;
+    display: block;
+    margin-right: 2.3255813953%;
+    width: 100%;
+    top: 0; }
+    section.history div.block:last-child {
+      margin-right: 0; }
+    section.history div.block h2.title {
+      padding-bottom: 30px;
+      font-size: 1.5em;
+      color: #b2b2b2;
+      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+    section.history div.block div.description p.description-text-left {
+      float: left;
+      display: block;
+      margin-right: 2.3255813953%;
+      width: 40.3100775194%;
+      color: #b2b2b2;
+      font-size: 1rem;
+      line-height: 20px;
+      padding-bottom: 30px;
+      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+      section.history div.block div.description p.description-text-left:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        section.history div.block div.description p.description-text-left {
+          font-size: 1rem; } }
+      @media screen and (max-width: 480px) {
+        section.history div.block div.description p.description-text-left {
+          font-size: 0.9375rem; } }
+      @media screen and (max-width: 480px) {
+        section.history div.block div.description p.description-text-left {
+          float: left;
+          display: block;
+          margin-right: 10%;
+          width: 100%; }
+          section.history div.block div.description p.description-text-left:last-child {
+            margin-right: 0; } }
+    section.history div.block div.description p.description-text-right {
+      float: left;
+      display: block;
+      margin-right: 2.3255813953%;
+      width: 40.3100775194%;
+      margin-left: 8.5271317829%;
+      color: #b2b2b2;
+      font-size: 1rem;
+      line-height: 20px;
+      padding-bottom: 30px;
+      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+      section.history div.block div.description p.description-text-right:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        section.history div.block div.description p.description-text-right {
+          font-size: 1rem; } }
+      @media screen and (max-width: 480px) {
+        section.history div.block div.description p.description-text-right {
+          font-size: 0.9375rem; } }
+      @media screen and (max-width: 480px) {
+        section.history div.block div.description p.description-text-right {
+          float: left;
+          display: block;
+          margin-right: 10%;
+          width: 100%;
+          margin-left: 0%; }
+          section.history div.block div.description p.description-text-right:last-child {
+            margin-right: 0; } }
+
+section.philosophy {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding-bottom: 0; }
+  section.philosophy::after {
+    clear: both;
+    content: "";
+    display: table; }
+  section.philosophy div.block {
+    float: left;
+    display: block;
+    margin-right: 2.3255813953%;
+    width: 100%;
+    top: 0; }
+    section.philosophy div.block:last-child {
+      margin-right: 0; }
+    section.philosophy div.block h2.title {
+      padding-bottom: 30px;
+      font-size: 1.5em;
+      color: #b2b2b2;
+      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+    section.philosophy div.block div.description p.description-text-left {
+      float: left;
+      display: block;
+      margin-right: 2.3255813953%;
+      width: 40.3100775194%;
+      color: #b2b2b2;
+      font-size: 1rem;
+      line-height: 20px;
+      padding-bottom: 30px;
+      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+      section.philosophy div.block div.description p.description-text-left:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        section.philosophy div.block div.description p.description-text-left {
+          font-size: 1rem; } }
+      @media screen and (max-width: 480px) {
+        section.philosophy div.block div.description p.description-text-left {
+          font-size: 0.9375rem; } }
+      @media screen and (max-width: 480px) {
+        section.philosophy div.block div.description p.description-text-left {
+          float: left;
+          display: block;
+          margin-right: 10%;
+          width: 100%; }
+          section.philosophy div.block div.description p.description-text-left:last-child {
+            margin-right: 0; } }
+    section.philosophy div.block div.description p.description-text-right {
+      float: left;
+      display: block;
+      margin-right: 2.3255813953%;
+      width: 40.3100775194%;
+      margin-left: 8.5271317829%;
+      color: #b2b2b2;
+      font-size: 1rem;
+      line-height: 20px;
+      padding-bottom: 30px;
+      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+      section.philosophy div.block div.description p.description-text-right:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        section.philosophy div.block div.description p.description-text-right {
+          font-size: 1rem; } }
+      @media screen and (max-width: 480px) {
+        section.philosophy div.block div.description p.description-text-right {
+          font-size: 0.9375rem; } }
+      @media screen and (max-width: 480px) {
+        section.philosophy div.block div.description p.description-text-right {
+          float: left;
+          display: block;
+          margin-right: 10%;
+          width: 100%;
+          margin-left: 0%; }
+          section.philosophy div.block div.description p.description-text-right:last-child {
+            margin-right: 0; } }
+
+section.value {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding-bottom: 0; }
+  section.value::after {
+    clear: both;
+    content: "";
+    display: table; }
+  section.value div.block-value {
+    float: left;
+    display: block;
+    margin-right: 2.3255813953%;
+    width: 100%;
+    top: 0; }
+    section.value div.block-value:last-child {
+      margin-right: 0; }
+    section.value div.block-value section.description-text-left {
+      float: left;
+      display: block;
+      margin-right: 2.3255813953%;
+      width: 40.3100775194%;
+      color: #b2b2b2;
+      font-size: 1rem;
+      line-height: 20px;
+      padding-bottom: 30px;
+      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+      section.value div.block-value section.description-text-left:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        section.value div.block-value section.description-text-left {
+          font-size: 1rem; } }
+      @media screen and (max-width: 480px) {
+        section.value div.block-value section.description-text-left {
+          font-size: 0.9375rem; } }
+      @media screen and (max-width: 480px) {
+        section.value div.block-value section.description-text-left {
+          float: left;
+          display: block;
+          margin-right: 10%;
+          width: 100%; }
+          section.value div.block-value section.description-text-left:last-child {
+            margin-right: 0; } }
+      section.value div.block-value section.description-text-left h3.title {
         padding-bottom: 30px;
-        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
-        section.initial div.band-container-gray div.block div.description p.description-text-left:last-child {
-          margin-right: 0; }
-        @media screen and (max-width: 768px) {
-          section.initial div.band-container-gray div.block div.description p.description-text-left {
-            font-size: 1rem; } }
-        @media screen and (max-width: 480px) {
-          section.initial div.band-container-gray div.block div.description p.description-text-left {
-            font-size: 0.9375rem; } }
-        @media screen and (max-width: 480px) {
-          section.initial div.band-container-gray div.block div.description p.description-text-left {
-            float: left;
-            display: block;
-            margin-right: 10%;
-            width: 100%; }
-            section.initial div.band-container-gray div.block div.description p.description-text-left:last-child {
-              margin-right: 0; } }
-      section.initial div.band-container-gray div.block div.description p.description-text-right {
-        float: left;
-        display: block;
-        margin-right: 2.3255813953%;
-        width: 40.3100775194%;
-        margin-left: 8.5271317829%;
+        line-height: 1.2em;
+        font-size: 1.5em;
         color: #b2b2b2;
-        font-size: 1rem;
-        line-height: 20px;
-        padding-bottom: 30px;
         font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
-        section.initial div.band-container-gray div.block div.description p.description-text-right:last-child {
-          margin-right: 0; }
-        @media screen and (max-width: 768px) {
-          section.initial div.band-container-gray div.block div.description p.description-text-right {
-            font-size: 1rem; } }
-        @media screen and (max-width: 480px) {
-          section.initial div.band-container-gray div.block div.description p.description-text-right {
-            font-size: 0.9375rem; } }
-        @media screen and (max-width: 480px) {
-          section.initial div.band-container-gray div.block div.description p.description-text-right {
-            float: left;
-            display: block;
-            margin-right: 10%;
-            width: 100%;
-            margin-left: 0%; }
-            section.initial div.band-container-gray div.block div.description p.description-text-right:last-child {
-              margin-right: 0; } }
+    section.value div.block-value section.description-text-right {
+      float: left;
+      display: block;
+      margin-right: 2.3255813953%;
+      width: 40.3100775194%;
+      margin-left: 8.5271317829%;
+      color: #b2b2b2;
+      font-size: 1rem;
+      line-height: 20px;
+      padding-bottom: 30px;
+      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+      section.value div.block-value section.description-text-right:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        section.value div.block-value section.description-text-right {
+          font-size: 1rem; } }
+      @media screen and (max-width: 480px) {
+        section.value div.block-value section.description-text-right {
+          font-size: 0.9375rem; } }
+      @media screen and (max-width: 480px) {
+        section.value div.block-value section.description-text-right {
+          float: left;
+          display: block;
+          margin-right: 10%;
+          width: 100%;
+          margin-left: 0%; }
+          section.value div.block-value section.description-text-right:last-child {
+            margin-right: 0; } }
+      section.value div.block-value section.description-text-right h3.title {
+        padding-bottom: 30px;
+        line-height: 1.2em;
+        font-size: 1.5em;
+        color: #b2b2b2;
+        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+
+div.band-container-white {
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding-bottom: 0; }
+  div.band-container-white::after {
+    clear: both;
+    content: "";
+    display: table; }
+  div.band-container-white div.block-value {
+    float: left;
+    display: block;
+    margin-right: 2.3255813953%;
+    width: 100%;
+    top: 0; }
+    div.band-container-white div.block-value:last-child {
+      margin-right: 0; }
+    div.band-container-white div.block-value section.description-text-left {
+      float: left;
+      display: block;
+      margin-right: 2.3255813953%;
+      width: 40.3100775194%;
+      color: #b2b2b2;
+      font-size: 1rem;
+      line-height: 20px;
+      padding-bottom: 30px;
+      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+      div.band-container-white div.block-value section.description-text-left:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        div.band-container-white div.block-value section.description-text-left {
+          font-size: 1rem; } }
+      @media screen and (max-width: 480px) {
+        div.band-container-white div.block-value section.description-text-left {
+          font-size: 0.9375rem; } }
+      @media screen and (max-width: 480px) {
+        div.band-container-white div.block-value section.description-text-left {
+          float: left;
+          display: block;
+          margin-right: 10%;
+          width: 100%; }
+          div.band-container-white div.block-value section.description-text-left:last-child {
+            margin-right: 0; } }
+      div.band-container-white div.block-value section.description-text-left h3.title {
+        padding-bottom: 30px;
+        line-height: 1.2em;
+        font-size: 1.5em;
+        color: #b2b2b2;
+        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+    div.band-container-white div.block-value section.description-text-right {
+      float: left;
+      display: block;
+      margin-right: 2.3255813953%;
+      width: 40.3100775194%;
+      margin-left: 8.5271317829%;
+      color: #b2b2b2;
+      font-size: 1rem;
+      line-height: 20px;
+      padding-bottom: 30px;
+      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+      div.band-container-white div.block-value section.description-text-right:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        div.band-container-white div.block-value section.description-text-right {
+          font-size: 1rem; } }
+      @media screen and (max-width: 480px) {
+        div.band-container-white div.block-value section.description-text-right {
+          font-size: 0.9375rem; } }
+      @media screen and (max-width: 480px) {
+        div.band-container-white div.block-value section.description-text-right {
+          float: left;
+          display: block;
+          margin-right: 10%;
+          width: 100%;
+          margin-left: 0%; }
+          div.band-container-white div.block-value section.description-text-right:last-child {
+            margin-right: 0; } }
+      div.band-container-white div.block-value section.description-text-right h3.title {
+        padding-bottom: 30px;
+        line-height: 1.2em;
+        font-size: 1.5em;
+        color: #b2b2b2;
+        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+
+div.band-container-gray .white {
+  background-color: white; }
 
 section.detail-layout-value {
   max-width: 75em;
@@ -1264,6 +1861,14 @@ footer {
         width: 48.8372093023%; }
         footer div.inner_footer ul li.copyright:last-child {
           margin-right: 0; }
+        @media screen and (max-width: 480px) {
+          footer div.inner_footer ul li.copyright {
+            float: left;
+            display: block;
+            margin-right: 10%;
+            width: 246.6666666667%; }
+            footer div.inner_footer ul li.copyright:last-child {
+              margin-right: 0; } }
       footer div.inner_footer ul li {
         float: left;
         display: block;
@@ -1274,3 +1879,13 @@ footer {
         color: #b2b2b2; }
         footer div.inner_footer ul li:last-child {
           margin-right: 0; }
+        @media screen and (max-width: 480px) {
+          footer div.inner_footer ul li {
+            float: left;
+            display: block;
+            margin-right: 10%;
+            width: 136.6666666667%;
+            padding-bottom: 20px;
+            font-size: 0.7em; }
+            footer div.inner_footer ul li:last-child {
+              margin-right: 0; } }

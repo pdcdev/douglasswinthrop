@@ -3,14 +3,14 @@
         
     </aside>
     
-    <section class="initial">
+    <section class="person-info">
     <div>
-        <h2 class="title-person-single">Charles Crane<br>Principal<br>cgcrane@douglasswinthrop.com</h2>
+        <h2 class="title-person-single">Charles Crane<br><p>Principal</p><br></h2>
         <div class="description-person-single">
             <p class="sub-header">  
-            Chars is a principal in Douglass Winthrop Advisors LLC. Previously, he was a Founder and Managing Member of Scotsman Capital Management LLC. Prior to forming Scotsman, Chars was the Managing Partner and Chief Investment Officer for Victory SBSF Capital Management (SBSF). He was also the Chief Market Strategist for Key Asset Management (now known as Victory Capital Management), which acquired SBSF (Spears Benzak Salomon & Farrell) in 1995. Prior to joining SBSF, Chars was an analyst with Prudential-Bache Securities and Oppenheimer & Co., Inc. He was named to the Institutional Investor All-American Research Team from 1985 to 1988.
+            Charles is a principal in Douglass Winthrop Advisors LLC. Previously, he was a Founder and Managing Member of Scotsman Capital Management LLC. Prior to forming Scotsman, Chars was the Managing Partner and Chief Investment Officer for Victory SBSF Capital Management (SBSF). He was also the Chief Market Strategist for Key Asset Management (now known as Victory Capital Management), which acquired SBSF (Spears Benzak Salomon & Farrell) in 1995. Prior to joining SBSF, Chars was an analyst with Prudential-Bache Securities and Oppenheimer & Co., Inc. He was named to the Institutional Investor All-American Research Team from 1985 to 1988.
             <br><br>Chars serves on the Advisory Board of the Center for Business and Society at Tuck in Hanover, New Hampshire, and is Treasurer of the Pool Association in Biddeford Pool, Maine. He was formerly a Director of Housing Works and a Trustee of the HealthCare Chaplaincy, both based in New York, and was a member of the MBA Advisory Board at Tuck. He was also a Director of Habitat for Humanity of Greater Portland, Maine.
-            Chars is a member of the Class of 1982 at Dartmouth College; he graduated Magna cum laude in 1981. He received his M.B.A. from Tuck in 1983, where he was named a Tuck Scholar.
+            Charles is a member of the Class of 1982 at Dartmouth College; he graduated Magna cum laude in 1981. He received his M.B.A. from Tuck in 1983, where he was named a Tuck Scholar.
             </p>
         </div>
     </div>

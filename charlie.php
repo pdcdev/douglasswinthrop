@@ -3,9 +3,9 @@
         
     </aside>
     
-    <section class="initial">
+    <section class="person-info">
     <div>
-        <h2 class="title-person-single">Charles T. Howard<br>Principal<br>charlie@douglasswinthrop.com</h2>
+        <h2 class="title-person-single">Charles T. Howard<br><p>Principal</p><br></h2>
         <div class="description-person-single">
             <p class="sub-header">  
             Charlie is a principal in Douglass Winthrop Advisors LLC. Previously, Charlie was a partner and investment manager with Forstmann-Leff Associates for 13 years. During this period, Charlie was an analyst and managed an equity hedge fund. He began his career at Benton, Corcoran, Lieb, a specialist firm on the NYSE.

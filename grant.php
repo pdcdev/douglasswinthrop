@@ -3,9 +3,9 @@
         
     </aside>
     
-    <section class="initial">
+    <section class="person-info">
     <div>
-        <h2 class="title-person-single">Grant Winthrop<br>Managing Director<br>grant@douglasswinthrop.com</h2>
+        <h2 class="title-person-single">Grant Winthrop<br><p>Managing Director</p><br></h2>
         <div class="description-person-single">
             <p class="sub-header">  
            Grant Winthrop is a Managing Director at Douglass Winthrop Advisors LLC, working in the firm’s Boston office. Prior to joining the firm he was a Partner at Milbank Winthrop & Co. where he managed portfolios for high net worth individuals, families and trusts. His prior experience includes service as a Director of Wood Struthers and Winthrop Management Corp. and as a financial writer at Fortune Magazine.

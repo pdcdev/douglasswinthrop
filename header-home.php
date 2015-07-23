@@ -24,7 +24,8 @@ jQuery(function() {
 //]]>
 </script>
 <body>
-    <header>
+    <header class="header-home">
+    </header>
         <div class="inner_header">
             <h1><a href ="index.php">Douglass Winthrop</a></h1>
             <!-- <div class="menuIcon">
@@ -55,5 +56,7 @@ jQuery(function() {
                     <li<?php if ($thisPage=="Contact") echo " id=\"currentpage\""; ?>><a href ="contact.php">Contact</a></li>
                 </ul>
             </nav>
+            </div>
         </div>
-    </header>
+
+

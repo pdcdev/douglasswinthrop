@@ -3,9 +3,9 @@
         
     </aside>
     
-    <section class="initial">
+    <section class="person-info">
     <div>
-        <h2 class="title-person-single">Jay Winthrop<br>Principal<br>robert@douglasswinthrop.com</h2>
+        <h2 class="title-person-single">Jay Winthrop<br><p>Principal</p><br></h2>
         <div class="description-person-single">
             <p class="sub-header">
             Jay is a principal in Douglass Winthrop Advisors LLC. Previously, Jay was a Vice President in the Mergers and Acquisitions group at JP Morgan Chase, where he provided financial and strategic advice to companies in a range of industries. Jay also worked at Hambrecht & Quist LLC, helping early stage companies raise capital in private and public markets. 

@@ -3,9 +3,9 @@
         
     </aside>
     
-    <section class="initial">
+    <section class="person-info">
     <div>
-        <h2 class="title-person-single">Robert Douglass<br>Principal<br>robert@douglasswinthrop.com</h2>
+        <h2 class="title-person-single">Robert Douglass<br><p>Principal</p><br></h2>
         <div class="description-person-single">
             <p class="sub-header">
             Robert is a principal in Douglass Winthrop Advisors LLC. Previously, he was a Managing Director at Morgens, Waterfall, Vintiadis & Company, a New York investment management company, where he managed proprietary equity partnerships. Prior to MWV, Robert was a Managing Director with Trainer, Wortham & Company, where he managed growth equities for high net worth individuals and the Trainer, Wortham Emerging Growth Fund. Prior to TW, Robert was affiliated with Warburg, Pincus Counsellors and Salomon Brothers Inc.

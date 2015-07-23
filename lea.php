@@ -3,9 +3,9 @@
         
     </aside>
     
-    <section class="initial">
+    <section class="person-info">
     <div>
-        <h2 class="title-person-single">Lea Paine Highet<br>Principal<br>lea@douglasswinthrop.com</h2>
+        <h2 class="title-person-single">Lea Paine Highet<br><p>Principal</p><br></h2>
         <div class="description-person-single">
             <p class="sub-header">  
             Lea is a principal in Douglass Winthrop Advisors LLC. Previously, Lea was a Vice President in the Private Banking Group at U.S. Trust Company, where she served as a trust and custody specialist for high net worth individuals and families. Her experience also includes two years as an Alumnae Coordinator in the Radcliffe Alumnae Office. 
