@@ -11,22 +11,10 @@
 <link href="css/fontello/css/fontello.css" rel="stylesheet" type="text/css">
     
 </head>
-<script type="text/javascript" charset="utf-8">
-//<![CDATA[
-jQuery(function() {
-  jQuery('.main-nav li').each(function() {
-    var href = jQuery(this).find('a').attr('href');
-    if (href === window.location.pathname) {
-      jQuery(this).addClass('current');
-    }
-  });
-});  
-//]]>
-</script>
+
 <body>
-    <header class="header-home">
-    </header>
-        <div class="inner_header">
+    <header class="home">
+        <div class="inner_header_home">
             <h1><a href ="index.php">Douglass Winthrop</a></h1>
             <!-- <div class="menuIcon">
                 <h1><a href="#menuExpand">Menu</a></h1>
@@ -47,7 +35,7 @@ jQuery(function() {
                 </div>
             </button>
             
-            <nav class="main-nav">
+            <nav class="main-nav-home">
                 <ul>
                     <li<?php if ($thisPage=="About") echo " id=\"currentpage\""; ?>><a href ="firm.php">About</a></li>
                     <li<?php if ($thisPage=="Value") echo " id=\"currentpage\""; ?>><a href ="value.php">Value</a></li>
@@ -56,7 +44,6 @@ jQuery(function() {
                     <li<?php if ($thisPage=="Contact") echo " id=\"currentpage\""; ?>><a href ="contact.php">Contact</a></li>
                 </ul>
             </nav>
-            </div>
         </div>
-
+    </header>
 

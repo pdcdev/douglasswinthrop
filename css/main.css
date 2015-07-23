@@ -53,13 +53,13 @@ body {
   align-items: center;
   /*justify-content: center;*/ }
 
-.global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.intro-box div.inner_banner, .page_banner_value div.intro-box div.inner_banner, .page_banner_people div.intro-box div.inner_banner, .page_banner_contact div.overlay div.inner_banner, section.people, section.person-info, section.people-single, section.firm, section.history, section.philosophy, section.value, div.band-container-white, section.detail-layout-value, section.letters, section.initial_contact, section.contact-list, section.contact, footer div.inner_footer {
+.global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.intro-box div.inner_banner, .page_banner_value div.intro-box div.inner_banner, .page_banner_people div.intro-box div.inner_banner, .page_banner_contact div.overlay div.inner_banner, section.people, section.person-info, section.people-single, section.firm, section.history, section.philosophy, section.value, div.band-container-white, section.detail-layout-value, section.letters, section.initial_contact, section.contact-list, section.contact, footer div.inner_footer, footer.home div.inner_footer {
   padding: 1.5em 40px; }
   @media screen and (max-width: 768px) {
-    .global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.intro-box div.inner_banner, .page_banner_value div.intro-box div.inner_banner, .page_banner_people div.intro-box div.inner_banner, .page_banner_contact div.overlay div.inner_banner, section.people, section.person-info, section.people-single, section.firm, section.history, section.philosophy, section.value, div.band-container-white, section.detail-layout-value, section.letters, section.initial_contact, section.contact-list, section.contact, footer div.inner_footer {
+    .global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.intro-box div.inner_banner, .page_banner_value div.intro-box div.inner_banner, .page_banner_people div.intro-box div.inner_banner, .page_banner_contact div.overlay div.inner_banner, section.people, section.person-info, section.people-single, section.firm, section.history, section.philosophy, section.value, div.band-container-white, section.detail-layout-value, section.letters, section.initial_contact, section.contact-list, section.contact, footer div.inner_footer, footer.home div.inner_footer {
       padding: 2em 40px; } }
   @media screen and (max-width: 480px) {
-    .global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.intro-box div.inner_banner, .page_banner_value div.intro-box div.inner_banner, .page_banner_people div.intro-box div.inner_banner, .page_banner_contact div.overlay div.inner_banner, section.people, section.person-info, section.people-single, section.firm, section.history, section.philosophy, section.value, div.band-container-white, section.detail-layout-value, section.letters, section.initial_contact, section.contact-list, section.contact, footer div.inner_footer {
+    .global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.intro-box div.inner_banner, .page_banner_value div.intro-box div.inner_banner, .page_banner_people div.intro-box div.inner_banner, .page_banner_contact div.overlay div.inner_banner, section.people, section.person-info, section.people-single, section.firm, section.history, section.philosophy, section.value, div.band-container-white, section.detail-layout-value, section.letters, section.initial_contact, section.contact-list, section.contact, footer div.inner_footer, footer.home div.inner_footer {
       padding: 2em 30px; } }
 
 .sidepad, .inner_header {
@@ -80,118 +80,116 @@ body {
     .inner_header h1 a:last-child {
       margin-right: 0; } }
 
-header.header-home {
+header.home {
   z-index: 999;
   position: relative;
-  background-color: #004FB1;
-  opacity: 0.1;
-  border-bottom: 1px solid #5e9eec; }
-
-div.inner_header {
-  max-width: 75em;
-  margin-left: auto;
-  margin-right: auto;
-  height: 60px; }
-  div.inner_header::after {
-    clear: both;
-    content: "";
-    display: table; }
-  div.inner_header h1 {
-    float: left;
-    display: block;
-    margin-right: 2.3255813953%;
-    width: 48.8372093023%;
-    line-height: 60px;
-    font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
-    font-size: 1em; }
-    div.inner_header h1:last-child {
-      margin-right: 0; }
-    div.inner_header h1 a {
-      text-decoration: none;
-      color: #b2b2b2; }
-    @media screen and (max-width: 480px) {
-      div.inner_header h1 {
-        font-size: 1rem; } }
-    @media screen and (max-width: 320px) {
-      div.inner_header h1 {
-        float: left;
-        display: block;
-        margin-right: 10%;
-        width: 63.3333333333%; }
-        div.inner_header h1:last-child {
-          margin-right: 0; } }
-  div.inner_header nav.main-nav ul {
-    float: left;
-    display: block;
-    margin-right: 2.3255813953%;
-    width: 48.8372093023%;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
-    div.inner_header nav.main-nav ul:last-child {
-      margin-right: 0; }
-    @media screen and (max-width: 768px) {
-      div.inner_header nav.main-nav ul {
-        float: left;
-        display: block;
-        margin-right: 4.7619047619%;
-        width: 82.5396825397%;
-        background-color: #fff;
-        display: none; }
-        div.inner_header nav.main-nav ul:last-child {
-          margin-right: 0; } }
-    @media screen and (max-width: 480px) {
-      div.inner_header nav.main-nav ul {
-        float: left;
-        display: block;
-        margin-right: 10%;
-        width: 100%;
-        background-color: #fff;
-        display: none; }
-        div.inner_header nav.main-nav ul:last-child {
-          margin-right: 0; } }
-    div.inner_header nav.main-nav ul li {
+  background-color: transparent;
+  border-bottom: 1px solid #b2b2b2; }
+  header.home div.inner_header_home {
+    max-width: 75em;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px; }
+    header.home div.inner_header_home::after {
+      clear: both;
+      content: "";
+      display: table; }
+    header.home div.inner_header_home h1 {
       float: left;
       display: block;
       margin-right: 2.3255813953%;
-      width: 14.7286821705%;
+      width: 48.8372093023%;
+      line-height: 60px;
       font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
-      font-size: 1em;
-      margin: 20px 0 5px 0;
-      display: inline-block; }
-      div.inner_header nav.main-nav ul li:last-child {
+      font-size: 1em; }
+      header.home div.inner_header_home h1:last-child {
+        margin-right: 0; }
+      header.home div.inner_header_home h1 a {
+        text-decoration: none;
+        color: #b2b2b2; }
+      @media screen and (max-width: 480px) {
+        header.home div.inner_header_home h1 {
+          font-size: 1rem; } }
+      @media screen and (max-width: 320px) {
+        header.home div.inner_header_home h1 {
+          float: left;
+          display: block;
+          margin-right: 10%;
+          width: 63.3333333333%; }
+          header.home div.inner_header_home h1:last-child {
+            margin-right: 0; } }
+    header.home div.inner_header_home nav.main-nav-home ul {
+      float: left;
+      display: block;
+      margin-right: 2.3255813953%;
+      width: 48.8372093023%;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      header.home div.inner_header_home nav.main-nav-home ul:last-child {
         margin-right: 0; }
       @media screen and (max-width: 768px) {
-        div.inner_header nav.main-nav ul li {
+        header.home div.inner_header_home nav.main-nav-home ul {
           float: left;
           display: block;
           margin-right: 4.7619047619%;
-          width: 100%;
-          display: block; }
-          div.inner_header nav.main-nav ul li:last-child {
+          width: 82.5396825397%;
+          background-color: #fff;
+          display: none; }
+          header.home div.inner_header_home nav.main-nav-home ul:last-child {
             margin-right: 0; } }
       @media screen and (max-width: 480px) {
-        div.inner_header nav.main-nav ul li {
+        header.home div.inner_header_home nav.main-nav-home ul {
           float: left;
           display: block;
           margin-right: 10%;
           width: 100%;
-          display: block; }
-          div.inner_header nav.main-nav ul li:last-child {
+          background-color: #fff;
+          display: none; }
+          header.home div.inner_header_home nav.main-nav-home ul:last-child {
             margin-right: 0; } }
-      div.inner_header nav.main-nav ul li a {
-        width: 50px;
-        color: #b2b2b2;
-        text-decoration: none;
-        padding-bottom: 5px; }
-      div.inner_header nav.main-nav ul li a:hover {
-        color: #2775F6; }
-      div.inner_header nav.main-nav ul li .currentpage a:active {
-        color: red; }
-      div.inner_header nav.main-nav ul li .main-nav li.current {
-        border-bottom: 1px #333 solid; }
+      header.home div.inner_header_home nav.main-nav-home ul li {
+        float: left;
+        display: block;
+        margin-right: 2.3255813953%;
+        width: 14.7286821705%;
+        font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
+        font-size: 1em;
+        margin: 20px 0 5px 0;
+        display: inline-block; }
+        header.home div.inner_header_home nav.main-nav-home ul li:last-child {
+          margin-right: 0; }
+        @media screen and (max-width: 768px) {
+          header.home div.inner_header_home nav.main-nav-home ul li {
+            float: left;
+            display: block;
+            margin-right: 4.7619047619%;
+            width: 100%;
+            display: block; }
+            header.home div.inner_header_home nav.main-nav-home ul li:last-child {
+              margin-right: 0; } }
+        @media screen and (max-width: 480px) {
+          header.home div.inner_header_home nav.main-nav-home ul li {
+            float: left;
+            display: block;
+            margin-right: 10%;
+            width: 100%;
+            display: block; }
+            header.home div.inner_header_home nav.main-nav-home ul li:last-child {
+              margin-right: 0; } }
+        header.home div.inner_header_home nav.main-nav-home ul li a {
+          width: 50px;
+          color: #b2b2b2;
+          text-decoration: none;
+          padding-bottom: 5px; }
+        header.home div.inner_header_home nav.main-nav-home ul li a:hover {
+          color: #2775F6; }
+        header.home div.inner_header_home nav.main-nav-home ul li .currentpage a:active {
+          color: red; }
+        header.home div.inner_header_home nav.main-nav-home ul li .main-nav li.current {
+          border-bottom: 1px #333 solid; }
 
 header {
   z-index: 999;
@@ -527,9 +525,8 @@ button {
   .page_banner_home div.overlay_home {
     width: 100%;
     height: 100%;
-    position: absolute;
     top: 0;
-    background-color: rgba(0, 79, 177, 0.6); }
+    background-color: rgba(0, 79, 177, 0.9); }
     .page_banner_home div.overlay_home div.inner_banner_home {
       max-width: 75em;
       margin-left: auto;
@@ -545,110 +542,6 @@ button {
           padding: 3em 0; } }
       .page_banner_home div.overlay_home div.inner_banner_home div {
         height: 100%; }
-        .page_banner_home div.overlay_home div.inner_banner_home div ul li.left {
-          height: auto;
-          float: left;
-          display: block;
-          margin-right: 2.3255813953%;
-          width: 48.8372093023%; }
-          .page_banner_home div.overlay_home div.inner_banner_home div ul li.left:last-child {
-            margin-right: 0; }
-          .page_banner_home div.overlay_home div.inner_banner_home div ul li.left p {
-            margin-top: 0 0 1em 0;
-            font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
-            color: #fff;
-            font-size: 2.25rem; }
-            @media screen and (max-width: 768px) {
-              .page_banner_home div.overlay_home div.inner_banner_home div ul li.left p {
-                font-size: 2.25rem; } }
-            @media screen and (max-width: 480px) {
-              .page_banner_home div.overlay_home div.inner_banner_home div ul li.left p {
-                font-size: 2.125rem; } }
-            @media screen and (max-width: 768px) {
-              .page_banner_home div.overlay_home div.inner_banner_home div ul li.left p {
-                float: left;
-                display: block;
-                margin-right: 4.7619047619%;
-                width: 117.4603174603%; }
-                .page_banner_home div.overlay_home div.inner_banner_home div ul li.left p:last-child {
-                  margin-right: 0; } }
-            @media screen and (max-width: 480px) {
-              .page_banner_home div.overlay_home div.inner_banner_home div ul li.left p {
-                float: left;
-                display: block;
-                margin-right: 10%;
-                width: 283.3333333333%;
-                font-size: 30px;
-                padding-top: 2em; }
-                .page_banner_home div.overlay_home div.inner_banner_home div ul li.left p:last-child {
-                  margin-right: 0; } }
-            @media screen and (max-width: 320px) {
-              .page_banner_home div.overlay_home div.inner_banner_home div ul li.left p {
-                float: left;
-                display: block;
-                margin-right: 10%;
-                width: 283.3333333333%;
-                padding-left: 2em;
-                font-size: 20px; }
-                .page_banner_home div.overlay_home div.inner_banner_home div ul li.left p:last-child {
-                  margin-right: 0; } }
-        .page_banner_home div.overlay_home div.inner_banner_home div ul li.intro {
-          float: left;
-          display: block;
-          margin-right: 2.3255813953%;
-          width: 48.8372093023%;
-          height: auto; }
-          .page_banner_home div.overlay_home div.inner_banner_home div ul li.intro:last-child {
-            margin-right: 0; }
-          @media screen and (max-width: 768px) {
-            .page_banner_home div.overlay_home div.inner_banner_home div ul li.intro {
-              float: left;
-              display: block;
-              margin-right: 4.7619047619%;
-              width: 47.619047619%; }
-              .page_banner_home div.overlay_home div.inner_banner_home div ul li.intro:last-child {
-                margin-right: 0; } }
-          @media screen and (max-width: 480px) {
-            .page_banner_home div.overlay_home div.inner_banner_home div ul li.intro {
-              float: left;
-              display: block;
-              margin-right: 10%;
-              width: 63.3333333333%;
-              padding-top: 2em; }
-              .page_banner_home div.overlay_home div.inner_banner_home div ul li.intro:last-child {
-                margin-right: 0; } }
-        .page_banner_home div.overlay_home div.inner_banner_home div ul ol li {
-          font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
-          margin: 0 0 1em 0;
-          color: #A3A9AC;
-          font-size: 1.25rem;
-          list-style: none;
-          text-align: center;
-          background-color: #fff;
-          line-height: 50px;
-          /*&:after {
-              content:"\e802";
-              float: right;
-              font-family: fontello;
-              color: #fff;
-              @include media($mobile) {
-                  display: none;
-              }
-          }*/ }
-          @media screen and (max-width: 320px) {
-            .page_banner_home div.overlay_home div.inner_banner_home div ul ol li {
-              line-height: 40px;
-              margin-bottom: 1em;
-              font-size: 20px; } }
-          .page_banner_home div.overlay_home div.inner_banner_home div ul ol li a {
-            text-decoration: none;
-            color: #5e9eec; }
-            @media screen and (max-width: 480px) {
-              .page_banner_home div.overlay_home div.inner_banner_home div ul ol li a {
-                color: #5e9eec; } }
-            @media screen and (max-width: 320px) {
-              .page_banner_home div.overlay_home div.inner_banner_home div ul ol li a {
-                font-size: 15px; } }
 
 .page_banner_letters {
   background-color: #eee;
@@ -1837,7 +1730,10 @@ section.contact {
 footer {
   background-color: #000;
   width: 100%;
+  z-index: 999;
   height: auto;
+  position: relative;
+  bottom: 0;
   font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
   footer div.inner_footer {
     max-width: 75em;
@@ -1888,4 +1784,63 @@ footer {
             padding-bottom: 20px;
             font-size: 0.7em; }
             footer div.inner_footer ul li:last-child {
+              margin-right: 0; } }
+
+footer.home {
+  background-color: #000;
+  width: 100%;
+  z-index: 999;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+  footer.home div.inner_footer {
+    max-width: 75em;
+    margin-left: auto;
+    margin-right: auto; }
+    footer.home div.inner_footer::after {
+      clear: both;
+      content: "";
+      display: table; }
+    footer.home div.inner_footer ul {
+      float: left;
+      display: block;
+      margin-right: 2.3255813953%;
+      width: 100%; }
+      footer.home div.inner_footer ul:last-child {
+        margin-right: 0; }
+      footer.home div.inner_footer ul li.copyright {
+        float: left;
+        display: block;
+        margin-right: 2.3255813953%;
+        width: 48.8372093023%; }
+        footer.home div.inner_footer ul li.copyright:last-child {
+          margin-right: 0; }
+        @media screen and (max-width: 480px) {
+          footer.home div.inner_footer ul li.copyright {
+            float: left;
+            display: block;
+            margin-right: 10%;
+            width: 246.6666666667%; }
+            footer.home div.inner_footer ul li.copyright:last-child {
+              margin-right: 0; } }
+      footer.home div.inner_footer ul li {
+        float: left;
+        display: block;
+        margin-right: 2.3255813953%;
+        width: 23.2558139535%;
+        display: inline-block;
+        font-size: 1em;
+        color: #b2b2b2; }
+        footer.home div.inner_footer ul li:last-child {
+          margin-right: 0; }
+        @media screen and (max-width: 480px) {
+          footer.home div.inner_footer ul li {
+            float: left;
+            display: block;
+            margin-right: 10%;
+            width: 136.6666666667%;
+            padding-bottom: 20px;
+            font-size: 0.7em; }
+            footer.home div.inner_footer ul li:last-child {
               margin-right: 0; } }
