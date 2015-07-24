@@ -41,9 +41,10 @@ do_something(list_of_stuff, "blue");*/
 body {
   font-family: "FrutigerLTW01-55Roman", helvetica, sans serif;
   background-color: #fff;
-  height: 100%; }
+  height: 100%;
+  position: relative; }
 
-.vertical_center_parent, .page_banner_home div.overlay_home div.inner_banner_home div, .page_banner_letters div.overlay div.inner_banner div, .page_banner_contact div.overlay div.inner_banner div {
+.vertical_center_parent, .page_banner_home div.overlay_home div.inner_banner_home div.home-logo, .page_banner_letters div.overlay div.inner_banner div, .page_banner_contact div.overlay div.inner_banner div {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -53,13 +54,13 @@ body {
   align-items: center;
   /*justify-content: center;*/ }
 
-.global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.intro-box div.inner_banner, .page_banner_value div.intro-box div.inner_banner, .page_banner_people div.intro-box div.inner_banner, .page_banner_contact div.overlay div.inner_banner, section.people, section.person-info, section.people-single, section.firm, section.history, section.philosophy, section.value, div.band-container-white, section.detail-layout-value, section.letters, section.initial_contact, section.contact-list, section.contact, footer div.inner_footer, footer.home div.inner_footer {
+.global_pad, .page_banner_home div.overlay_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.intro-box div.inner_banner, .page_banner_value div.intro-box div.inner_banner, .page_banner_people div.intro-box div.inner_banner, .page_banner_contact div.overlay div.inner_banner, section.people, section.person-info, section.people-single, section.firm, section.history, section.philosophy, section.value, div.band-container-white, section.detail-layout-value, section.letters, section.initial_contact, section.contact-list, section.contact, footer div.inner_footer, #footer div.inner_footer {
   padding: 1.5em 40px; }
   @media screen and (max-width: 768px) {
-    .global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.intro-box div.inner_banner, .page_banner_value div.intro-box div.inner_banner, .page_banner_people div.intro-box div.inner_banner, .page_banner_contact div.overlay div.inner_banner, section.people, section.person-info, section.people-single, section.firm, section.history, section.philosophy, section.value, div.band-container-white, section.detail-layout-value, section.letters, section.initial_contact, section.contact-list, section.contact, footer div.inner_footer, footer.home div.inner_footer {
+    .global_pad, .page_banner_home div.overlay_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.intro-box div.inner_banner, .page_banner_value div.intro-box div.inner_banner, .page_banner_people div.intro-box div.inner_banner, .page_banner_contact div.overlay div.inner_banner, section.people, section.person-info, section.people-single, section.firm, section.history, section.philosophy, section.value, div.band-container-white, section.detail-layout-value, section.letters, section.initial_contact, section.contact-list, section.contact, footer div.inner_footer, #footer div.inner_footer {
       padding: 2em 40px; } }
   @media screen and (max-width: 480px) {
-    .global_pad, .page_banner_home div.overlay_home div.inner_banner_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.intro-box div.inner_banner, .page_banner_value div.intro-box div.inner_banner, .page_banner_people div.intro-box div.inner_banner, .page_banner_contact div.overlay div.inner_banner, section.people, section.person-info, section.people-single, section.firm, section.history, section.philosophy, section.value, div.band-container-white, section.detail-layout-value, section.letters, section.initial_contact, section.contact-list, section.contact, footer div.inner_footer, footer.home div.inner_footer {
+    .global_pad, .page_banner_home div.overlay_home, .page_banner_letters div.overlay div.inner_banner, .page_banner_firm div.intro-box div.inner_banner, .page_banner_value div.intro-box div.inner_banner, .page_banner_people div.intro-box div.inner_banner, .page_banner_contact div.overlay div.inner_banner, section.people, section.person-info, section.people-single, section.firm, section.history, section.philosophy, section.value, div.band-container-white, section.detail-layout-value, section.letters, section.initial_contact, section.contact-list, section.contact, footer div.inner_footer, #footer div.inner_footer {
       padding: 2em 30px; } }
 
 .sidepad, .inner_header {
@@ -332,8 +333,17 @@ button {
 .mob-nav-container ul {
   display: none; }
 
+ul.btn-mobile li {
+  display: none; }
+
 /* ------------ MOBILE LAYOUT VALUE ---------*/
 .mobile-column {
+  display: none; }
+
+.buttons-btn-mob {
+  display: none; }
+
+hr {
   display: none; }
 
 @media only screen and (min-device-width: 220px) and (max-device-width: 480px) {
@@ -368,89 +378,107 @@ button {
     right: 0; }
 
   /* ---------------------------------HAMBURGER STARTS ---------------*/
-  .c-hamburger {
-    float: right;
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    width: 70px;
-    height: 60px;
-    font-size: 0;
-    text-indent: -9999px;
-    appearance: none;
-    box-shadow: none;
-    border-radius: none;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s; }
+ /* 
+    .c-hamburger {
+      float: right;  
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      width: 70px;
+      height: 60px;
+      font-size: 0;
+      text-indent: -9999px;
+      appearance: none;
+      box-shadow: none;
+      border-radius: none;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
 
-  .c-hamburger:focus {
-    outline: none; }
+    }
 
-  .c-hamburger span {
-    display: block;
-    width: 30px;
-    position: absolute;
-    top: 30px;
-    left: 18px;
-    right: 18px;
-    height: 3px;
-    background: #b2b2b2; }
+    .c-hamburger:focus {
+      outline: none;
+    }
 
-  .c-hamburger span::before,
-  .c-hamburger span::after {
-    position: absolute;
-    display: block;
-    right: 0;
-    width: 100%;
-    height: 3px;
-    background-color: #b2b2b2;
-    content: ""; }
+    .c-hamburger span {
+      display: block;
+      width: 30px;
+      position: absolute;
+      top: 30px;
+      left: 18px;
+      right: 18px;
+      height: 3px;
+      background: #b2b2b2;
+    }
 
-  .c-hamburger span::before {
-    top: -10px; }
+    .c-hamburger span::before,
+    .c-hamburger span::after {
+      position: absolute;
+      display: block;
+      right: 0;
+      width: 100%;
+      height: 3px;
+      background-color: #b2b2b2;
+      content: "";
+    }
 
-  .c-hamburger span::after {
-    bottom: -10px; }
+    .c-hamburger span::before {
+      top: -10px;
+    }
 
-  .c-hamburger--htx {
-    background-color: #004fb1; }
+    .c-hamburger span::after {
+      bottom: -10px;
+    }
 
-  .c-hamburger--htx span {
-    transition: background 0s 0.3s; }
+    .c-hamburger--htx {
+      background-color: #004fb1;
+    }
 
-  .c-hamburger--htx span::before,
-  .c-hamburger--htx span::after {
-    transition-duration: 0.3s, 0.3s;
-    transition-delay: 0.3s, 0s; }
+    .c-hamburger--htx span {
+      transition: background 0s 0.3s;
+    }
 
-  .c-hamburger--htx span::before {
-    transition-property: top, transform; }
+    .c-hamburger--htx span::before,
+    .c-hamburger--htx span::after {
+      transition-duration: 0.3s, 0.3s;
+      transition-delay: 0.3s, 0s;
+    }
 
-  .c-hamburger--htx span::after {
-    transition-property: bottom, transform; }
+    .c-hamburger--htx span::before {
+      transition-property: top, transform;
+    }
 
-  /* active state, i.e. menu open */
-  .c-hamburger--htx.is-active {
-    background-color: #000; }
+    .c-hamburger--htx span::after {
+      transition-property: bottom, transform;
+    }
 
-  .c-hamburger--htx.is-active span {
-    background: none; }
+     active state, i.e. menu open 
+    .c-hamburger--htx.is-active {
+      background-color: #000;
+    }
 
-  .c-hamburger--htx.is-active span::before {
-    top: 0;
-    transform: rotate(45deg); }
+    .c-hamburger--htx.is-active span {
+      background: none;
+    }
 
-  .c-hamburger--htx.is-active span::after {
-    bottom: 0;
-    transform: rotate(-45deg); }
+    .c-hamburger--htx.is-active span::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
 
-  .c-hamburger--htx.is-active span::before,
-  .c-hamburger--htx.is-active span::after {
-    transition-delay: 0s, 0.3s; }
+    .c-hamburger--htx.is-active span::after {
+      bottom: 0;
+      transform: rotate(-45deg);
+    }
 
+    .c-hamburger--htx.is-active span::before,
+    .c-hamburger--htx.is-active span::after {
+      transition-delay: 0s, 0.3s;
+    }
+*/
   /* ---------------------------------HAMBURGER ENDS ---------------*/
   .mob-nav-container-active {
     position: fixed;
@@ -470,78 +498,168 @@ button {
     .mob-nav-container-active a {
       transition: all .15s;
       font-size: 2em;
-      padding: 5px; }
+      padding: 5px; } }
+/* -----------END media queries -----------------------*/
+/* -----------------------------------BUTTONS ---------------*/
+.buttons-btn {
+  float: left;
+  display: block;
+  margin-right: 2.3255813953%;
+  width: 65.8914728682%;
+  padding-top: 40px; }
+  .buttons-btn:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .buttons-btn {
+      float: left;
+      display: block;
+      margin-right: 4.7619047619%;
+      width: 204.7619047619%; }
+      .buttons-btn:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 480px) {
+    .buttons-btn {
+      width: 100%; } }
 
-    /*#menuExpand {
-    }
-  .inner_header {
-    .main-nav {
-      max-height: 0;
-      overflow: hidden;
+.container-button {
+  float: left;
+  display: block;
+  margin-right: 2.3255813953%;
+  width: 100%;
+  display: block; }
+  .container-button:last-child {
+    margin-right: 0; }
+  .container-button p {
+    font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
+    font-size: 1.5em;
+    text-align: center; }
+
+.btn {
+  margin-left: -5px;
+  color: #A3A9AC;
+  cursor: pointer;
+  font-size: 1em;
+  line-height: 60px;
+  display: inline-block;
+  max-width: 160px;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 100%; }
+  @media screen and (max-width: 480px) {
+    .btn {
+      border-top: 1px solid;
+      max-width: 100%; } }
+
+.btn-4 {
+  border: 1px solid; }
+  @media screen and (max-width: 480px) {
+    .btn-4 {
+      border: none;
       width: 100%;
-      margin: 0 auto;
-      @include transition(max-height 0.5s);
-      &.menuOpen {
-        max-height: 600px;
-        @include transition(max-height 0.5s);
-      }
-    ul {
-        @include span-columns(2);
-      li {
-        @include span-columns(3);
-        background-color: #fff;
-        display: block;
-        text-align: center;
-        font-family: $frutigerLightCond;
-        line-height: 50px;
-        border-bottom: 1px solid #fff;
-        }
-        @include media($mobile){
+      display: block;
+      text-align: center;
+      margin: 0 auto; }
+      .btn-4 a {
+        border-bottom: 1px solid #A3A9AC; } }
 
-        }
-      }
-    }
-    .menuIcon {
-        @include span-columns(3);
-        float: right;
-        }
-        @include media($tiny){
-            
-        }
-    }*/ }
-/*.expand {
-    display: block !important; 
-}*/
+.btn-4:hover {
+  background: #2775F6; }
+  @media screen and (max-width: 480px) {
+    .btn-4:hover {
+      background: transparent; } }
+  @media screen and (max-width: 480px) {
+    .btn-4:hover p:hover {
+      color: #2775F6; } }
+
+/* -----------------------------END BUTTONS ------------------------*/
 .page_banner_home {
   z-index: 0;
   background-color: #eee;
-  padding-top: 1em;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: url("../images/DW_Home.jpg") center center no-repeat;
-  background-size: cover;
-  top: 0; }
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  background: url("../images/DW_Home2.jpg") center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
   .page_banner_home div.overlay_home {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    background-color: rgba(0, 79, 177, 0.9); }
+    max-width: 75em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20%; }
+    .page_banner_home div.overlay_home::after {
+      clear: both;
+      content: "";
+      display: table; }
     .page_banner_home div.overlay_home div.inner_banner_home {
-      max-width: 75em;
-      margin-left: auto;
-      margin-right: auto;
+      padding: 200px 0 200px 0;
       position: relative;
-      height: 100%; }
-      .page_banner_home div.overlay_home div.inner_banner_home::after {
-        clear: both;
-        content: "";
-        display: table; }
-      @media screen and (max-width: 320px) {
+      min-height: 100%;
+      /* equal to footer height */
+      margin-bottom: -142px;
+      /*@include media($mobile) {
+          padding-top: 100px;
+      }
+      @include media($tiny) {
+          padding: 100px 0 0 50px;
+      }*/ }
+      @media screen and (max-width: 768px) {
         .page_banner_home div.overlay_home div.inner_banner_home {
-          padding: 3em 0; } }
-      .page_banner_home div.overlay_home div.inner_banner_home div {
-        height: 100%; }
+          padding-top: 100px; } }
+      .page_banner_home div.overlay_home div.inner_banner_home div.home-logo h1.home-logo-name {
+        font-size: 3em;
+        font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
+        color: #A3A9AC; }
+        @media screen and (max-width: 768px) {
+          .page_banner_home div.overlay_home div.inner_banner_home div.home-logo h1.home-logo-name {
+            float: left;
+            display: block;
+            margin-right: 4.7619047619%;
+            width: 82.5396825397%; }
+            .page_banner_home div.overlay_home div.inner_banner_home div.home-logo h1.home-logo-name:last-child {
+              margin-right: 0; } }
+        @media screen and (max-width: 480px) {
+          .page_banner_home div.overlay_home div.inner_banner_home div.home-logo h1.home-logo-name {
+            float: left;
+            display: block;
+            margin-right: 10%;
+            width: 100%;
+            font-size: 2em; }
+            .page_banner_home div.overlay_home div.inner_banner_home div.home-logo h1.home-logo-name:last-child {
+              margin-right: 0; } }
+    .page_banner_home div.overlay_home div.home-message {
+      padding-top: 30px;
+      display: block; }
+      .page_banner_home div.overlay_home div.home-message p {
+        float: left;
+        display: block;
+        margin-right: 2.3255813953%;
+        width: 57.3643410853%;
+        font-size: 3em;
+        color: #A3A9AC;
+        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+        .page_banner_home div.overlay_home div.home-message p:last-child {
+          margin-right: 0; }
+        @media screen and (max-width: 768px) {
+          .page_banner_home div.overlay_home div.home-message p {
+            float: left;
+            display: block;
+            margin-right: 4.7619047619%;
+            width: 82.5396825397%; }
+            .page_banner_home div.overlay_home div.home-message p:last-child {
+              margin-right: 0; } }
+        @media screen and (max-width: 480px) {
+          .page_banner_home div.overlay_home div.home-message p {
+            float: left;
+            display: block;
+            margin-right: 10%;
+            width: 100%;
+            font-size: 2em; }
+            .page_banner_home div.overlay_home div.home-message p:last-child {
+              margin-right: 0; } }
+    .page_banner_home div.overlay_home button {
+      border: 1px solid #b2b2b2; }
 
 .page_banner_letters {
   background-color: #eee;
@@ -1732,8 +1850,6 @@ footer {
   width: 100%;
   z-index: 999;
   height: auto;
-  position: relative;
-  bottom: 0;
   font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
   footer div.inner_footer {
     max-width: 75em;
@@ -1762,7 +1878,7 @@ footer {
             float: left;
             display: block;
             margin-right: 10%;
-            width: 246.6666666667%; }
+            width: 173.3333333333%; }
             footer div.inner_footer ul li.copyright:last-child {
               margin-right: 0; } }
       footer div.inner_footer ul li {
@@ -1780,51 +1896,49 @@ footer {
             float: left;
             display: block;
             margin-right: 10%;
-            width: 136.6666666667%;
+            width: 100%;
             padding-bottom: 20px;
             font-size: 0.7em; }
             footer div.inner_footer ul li:last-child {
               margin-right: 0; } }
 
-footer.home {
+#footer {
   background-color: #000;
   width: 100%;
   z-index: 999;
-  height: auto;
-  position: absolute;
-  bottom: 0;
+  display: block;
   font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
-  footer.home div.inner_footer {
+  #footer div.inner_footer {
     max-width: 75em;
     margin-left: auto;
     margin-right: auto; }
-    footer.home div.inner_footer::after {
+    #footer div.inner_footer::after {
       clear: both;
       content: "";
       display: table; }
-    footer.home div.inner_footer ul {
+    #footer div.inner_footer ul {
       float: left;
       display: block;
       margin-right: 2.3255813953%;
       width: 100%; }
-      footer.home div.inner_footer ul:last-child {
+      #footer div.inner_footer ul:last-child {
         margin-right: 0; }
-      footer.home div.inner_footer ul li.copyright {
+      #footer div.inner_footer ul li.copyright {
         float: left;
         display: block;
         margin-right: 2.3255813953%;
         width: 48.8372093023%; }
-        footer.home div.inner_footer ul li.copyright:last-child {
+        #footer div.inner_footer ul li.copyright:last-child {
           margin-right: 0; }
         @media screen and (max-width: 480px) {
-          footer.home div.inner_footer ul li.copyright {
+          #footer div.inner_footer ul li.copyright {
             float: left;
             display: block;
             margin-right: 10%;
-            width: 246.6666666667%; }
-            footer.home div.inner_footer ul li.copyright:last-child {
+            width: 173.3333333333%; }
+            #footer div.inner_footer ul li.copyright:last-child {
               margin-right: 0; } }
-      footer.home div.inner_footer ul li {
+      #footer div.inner_footer ul li {
         float: left;
         display: block;
         margin-right: 2.3255813953%;
@@ -1832,15 +1946,48 @@ footer.home {
         display: inline-block;
         font-size: 1em;
         color: #b2b2b2; }
-        footer.home div.inner_footer ul li:last-child {
+        #footer div.inner_footer ul li:last-child {
           margin-right: 0; }
         @media screen and (max-width: 480px) {
-          footer.home div.inner_footer ul li {
+          #footer div.inner_footer ul li {
             float: left;
             display: block;
             margin-right: 10%;
-            width: 136.6666666667%;
+            width: 100%;
             padding-bottom: 20px;
             font-size: 0.7em; }
-            footer.home div.inner_footer ul li:last-child {
+            #footer div.inner_footer ul li:last-child {
               margin-right: 0; } }
+
+/*footer.home {
+    background-color: #000;
+    width: 100%;
+    z-index: 999;
+    height: auto;
+    display: block;
+    font-family: $frutigerLightCond;
+    div.inner_footer {
+            @include outer-container;
+            @extend .global_pad;
+            ul {
+                @include span-columns(12);
+                li.copyright {
+                    @include span-columns(6);
+                    @include media($mobile) {
+                        @include span-columns(7);
+                    }
+                }
+                li {
+                    @include span-columns(3);
+                    display: inline-block;
+                    font-size: 1em;
+                    color: #b2b2b2;
+                    @include media($mobile) {
+                        @include span-columns(4);
+                        padding-bottom: 20px;
+                        font-size: 0.7em;
+                    }
+                }
+            }   
+        } 
+    }*/

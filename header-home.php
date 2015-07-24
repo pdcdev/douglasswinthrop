@@ -19,7 +19,7 @@
             <!-- <div class="menuIcon">
                 <h1><a href="#menuExpand">Menu</a></h1>
             </div> -->
-            <button class="overlay c-hamburger c-hamburger--htx">
+            <!-- <button class="overlay c-hamburger c-hamburger--htx">
                 <span>toggle menu</span>
                 <label for="op"></label>
                 <div class="mob-nav-container">
@@ -33,7 +33,7 @@
                         </ul>
                     </nav>
                 </div>
-            </button>
+            </button> -->
             
             <nav class="main-nav-home">
                 <ul>

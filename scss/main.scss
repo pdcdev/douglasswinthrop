@@ -8,6 +8,7 @@ body {
     font-family: $frutigerRoman;
     background-color: #fff;
     height: 100%;
+    position: relative;
 
 }
 
@@ -60,12 +61,10 @@ header.home{
         @include outer-container;
         height: 60px;
         h1 {
-
             @include span-columns(6);
             line-height: 60px;
             font-family: $frutigerBoldCond;
             font-size: 1em;
-
             a {
                 text-decoration: none;
                 color: #b2b2b2;
@@ -260,11 +259,27 @@ button {
     
 }
 
+ul.btn-mobile {
+    li{
+        display: none;
+    }
+}
+    
+
+
 /* ------------ MOBILE LAYOUT VALUE ---------*/
 
 .mobile-column {
     display: none;
 
+}
+
+.buttons-btn-mob {
+    display: none;
+}
+
+hr {
+    display: none;
 }
 
 @media only screen and (min-device-width: 220px) and (max-device-width: 480px) {
@@ -297,8 +312,10 @@ button {
         right: 0;
     }
 
-    /* ---------------------------------HAMBURGER STARTS ---------------*/
 
+
+    /* ---------------------------------HAMBURGER STARTS ---------------*/
+ /* 
     .c-hamburger {
       float: right;  
       display: inline-block;
@@ -375,7 +392,7 @@ button {
       transition-property: bottom, transform;
     }
 
-    /* active state, i.e. menu open */
+     active state, i.e. menu open 
     .c-hamburger--htx.is-active {
       background-color: #000;
     }
@@ -398,8 +415,8 @@ button {
     .c-hamburger--htx.is-active span::after {
       transition-delay: 0s, 0.3s;
     }
-
-    /* ---------------------------------HAMBURGER ENDS ---------------*/
+*/
+  /* ---------------------------------HAMBURGER ENDS ---------------*/
 
     .mob-nav-container-active {
         position: fixed;
@@ -422,95 +439,153 @@ button {
             font-size:2em;
             padding:5px;
             
-        }
-
-        
-
-        
+        } 
     }
 
-    
+
+} /* -----------END media queries -----------------------*/
+
+
+/* -----------------------------------BUTTONS ---------------*/
 
 
 
-
-    /*#menuExpand {
+.buttons-btn {
+    @include span-columns(8);
+    padding-top: 40px;
+    @include media($tablet) {
+        @include span-columns(12);
     }
-  .inner_header {
-    .main-nav {
-      max-height: 0;
-      overflow: hidden;
-      width: 100%;
-      margin: 0 auto;
-      @include transition(max-height 0.5s);
-      &.menuOpen {
-        max-height: 600px;
-        @include transition(max-height 0.5s);
-      }
-    ul {
-        @include span-columns(2);
-      li {
-        @include span-columns(3);
-        background-color: #fff;
+    @include media($mobile) {
+        width: 100%;
+    }
+}
+
+.container-button { 
+    @include span-columns(12);
+    display: block;
+    p {
+        font-family: $frutigerLightCond;
+        font-size: 1.5em;
+        text-align: center;  
+    }
+}
+
+.btn {
+    margin-left: -5px;
+  color: $gray;
+  cursor: pointer;
+  font-size:1em;
+  line-height: 60px;
+  display: inline-block;
+  max-width: 160px;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 100%;
+  @include media($mobile) {
+        border-top: 1px solid;
+        max-width: 100%;
+    }
+}
+
+.btn-4 {
+  border: 1px solid;
+  @include media($mobile) {
+        border: none;
+        width: 100%;
         display: block;
         text-align: center;
-        font-family: $frutigerLightCond;
-        line-height: 50px;
-        border-bottom: 1px solid #fff;
+        margin: 0 auto;
+        a {
+            border-bottom: 1px solid $gray;
         }
-        @include media($mobile){
-
-        }
-      }
     }
-    .menuIcon {
-        @include span-columns(3);
-        float: right;
+}
+
+.btn-4:hover {
+  background: #2775F6;
+  @include media($mobile) {
+    background: transparent;
+  }
+  p:hover {
+    @include media($mobile) {
+        color: #2775F6;
         }
-        @include media($tiny){
-            
-        }
-    }*/
+    }
 }
 
 
-/*.expand {
-    display: block !important; 
-}*/
+
+/* -----------------------------END BUTTONS ------------------------*/
 
 .page_banner_home {
     z-index: 0;
     background-color: #eee;
-    padding-top: 1em;
-    width: 100%;
-    height:100%;
-    position: absolute;
-    background: url('../images/DW_Home.jpg') center center no-repeat;
+
+    min-height: 100%;
+    top: 0;
+    left: 0;
+
+    background: url('../images/DW_Home2.jpg') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-
-    top:0;
     div.overlay_home {
-        width: 100%;
-        height: 100%;
-        
-        top: 0;
-        background-color: rgba($blue, 0.9);
+        @include outer-container;
+        @extend .global_pad;
+        padding-bottom: 20%;
         div.inner_banner_home {
-            @include outer-container;
-            @extend .global_pad;
-            position: relative;
-            height: 100%;
-            @include media($tiny) {
-                padding: 3em 0;
+            padding: 200px 0 200px 0;
+            position: relative; 
+            min-height: 100%;
+              /* equal to footer height */
+              margin-bottom: -142px; 
+            @include media($tablet) {
+                padding-top: 100px;
             }
-            div {
-                height: 100%;
-                @extend .vertical_center_parent;
-                
+            /*@include media($mobile) {
+                padding-top: 100px;
+            }
+            @include media($tiny) {
+                padding: 100px 0 0 50px;
+            }*/
+            div.home-logo{
+                    @extend .vertical_center_parent;
+                    h1.home-logo-name {
+                        font-size: 3em;
+                        font-family: $frutigerBoldCond;
+                        color: $gray;
+                        @include media($tablet) {
+                            @include span-columns(5);
+                        }
+                        @include media($mobile) {
+                            @include span-columns(3);
+                            font-size: 2em;
+                        }
+                    }
 
-                        
-                
                 }
+            }
+            div.home-message {
+                padding-top:30px;
+                display: block;
+                p{
+                    @include span-columns(7);
+                    font-size: 3em;
+                    color: $gray;
+                    font-family: $frutigerLightCond;
+                    @include media($tablet) {
+                        @include span-columns(5);
+                    }
+                    @include media($mobile) {
+                        @include span-columns(3);
+                        font-size: 2em;
+                    }
+                }
+            }
+            button {
+                border: 1px solid #b2b2b2; 
             }
         }
     }
@@ -1340,43 +1415,72 @@ footer {
     width: 100%;
     z-index: 999;
     height: auto;
-    position: relative;
-    bottom: 0;
     font-family: $frutigerLightCond;
     div.inner_footer {
-            @include outer-container;
-            @extend .global_pad;
-            ul {
-                @include span-columns(12);
-                li.copyright {
-                    @include span-columns(6);
-                    @include media($mobile) {
-                        @include span-columns(7);
-                    }
+        @include outer-container;
+        @extend .global_pad;
+        ul {
+            @include span-columns(12);
+            li.copyright {
+                @include span-columns(6);
+                @include media($mobile) {
+                    @include span-columns(5);
                 }
-                li {
+            }
+            li {
+                @include span-columns(3);
+                display: inline-block;
+                font-size: 1em;
+                color: #b2b2b2;
+                @include media($mobile) {
                     @include span-columns(3);
-                    display: inline-block;
-                    font-size: 1em;
-                    color: #b2b2b2;
-                    @include media($mobile) {
-                        @include span-columns(4);
-                        padding-bottom: 20px;
-                        font-size: 0.7em;
-                    }
+                    padding-bottom: 20px;
+                    font-size: 0.7em;
                 }
-            }   
-        } 
-    }
+            }
+        }   
+    } 
+}
   
+#footer {
+    background-color: #000;
+    width: 100%;
+    z-index: 999;
+    display: block;
+    font-family: $frutigerLightCond;
+    div.inner_footer {
+        @include outer-container;
+        @extend .global_pad;
+        ul {
+            @include span-columns(12);
+            li.copyright {
+                @include span-columns(6);
+                @include media($mobile) {
+                    @include span-columns(5);
+                }
+            }
+            li {
+                @include span-columns(3);
+                display: inline-block;
+                font-size: 1em;
+                color: #b2b2b2;
+                @include media($mobile) {
+                    @include span-columns(3);
+                    padding-bottom: 20px;
+                    font-size: 0.7em;
+                }
+            }
+        }   
+    } 
+} 
 
-footer.home {
+
+/*footer.home {
     background-color: #000;
     width: 100%;
     z-index: 999;
     height: auto;
-    position: absolute;
-    bottom: 0;
+    display: block;
     font-family: $frutigerLightCond;
     div.inner_footer {
             @include outer-container;
@@ -1402,6 +1506,6 @@ footer.home {
                 }
             }   
         } 
-    }
+    }*/
 
 
