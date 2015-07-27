@@ -75,11 +75,226 @@ div.description-person-single {
     }
 }
 
+/*--------- blue intro box -----*/
+
+div.intro-box {
+    width: 100%;
+    height: 185px;
+    background-color: $blue;
+    @include media($mobile) {
+        
+    }
+    div.inner_banner {
+        @include outer-container;
+        @extend .global_pad;
+        padding-top: 5%;
+        position: relative;
+        height: 100%;
+        div.page-name {
+            @include span-columns(6);
+            h1 {
+                font-family: $frutigerBoldCond;
+                font-size: 1.5em; 
+                color: #b2b2b2;
+                padding-bottom: 30px;
+            }
+        }
+        div {
+            p {
+                @include span-columns(5);
+                font-family: $frutigerLightCond;
+                font-size: 1.5em;
+                line-height: 1.1;
+                color: #b2b2b2;
+                @include media($tablet) {
+                    @include span-columns(3);
+                }
+                @include media($mobile) {
+                    @include span-columns(3);
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section.sliderContainer {
+        display: none !important;
+    }
+}
+
+
+section.people-single-mobile {
+    @include outer-container;
+    @extend .global_pad;
+    div.person-single {
+        @include span-columns(3);
+        @include omega(4n);
+        background-color: #eee;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        position: relative;
+        display: none;
+        @include media($tablet) {
+            @include span-columns(3);
+            @include omega(2n);
+            visibility: none !important;
+        }
+        @include media($mobile) {
+            
+            visibility: visible !important;
+        }
+        img.person_headshot:hover {
+           
+        }
+
+        div.person_name-single {
+            position: absolute;
+            height: 60px;
+            bottom: 0;
+            background-color: rgba($blue, 0.6);
+            width: 100%;
+            @include pad(0 1em);
+            h1 {
+                line-height: 35px;
+                color: #fff;
+                @include type($small, #fff);
+                font-family: $frutigerLightCond;
+                @include media($tablet) {
+                    line-height: 25px;
+                    font-size: 10pt;
+                }
+            }
+            p {
+                line-height: 20px;
+                color:#fff;
+                font-size: 10pt;
+                font-family: $frutigerLightCond;
+                @include media($tablet) {
+                    line-height: 15px;
+                    font-size:9pt;
+                }
+            }
+            p:hover {
+                opacity: 1;
+            }
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+            a:hover{
+                
+            }
+        }
+        div.person_name:hover {
+            background-color: rgba(black, 0.6);
+        }
+    }
+}
+
+/* ------ scroll side to side-----*/
+
+section.sliderContainer {
+    @include outer-container;
+    .slider { 
+        width:100%;
+        height:185px;
+        position:relative;
+        #viewContainer {
+            width:950px;
+            height:100%;
+            position:absolute;
+            left:40%;
+            margin-left:-360px;
+            overflow:scroll; 
+                #insideContainer {
+                position:absolute;
+                left:0;
+                width:3000px;
+                .person-single{
+                    background-color: #eee;
+                    position: relative;
+                    width: 150px;
+                    vertical-align: top;
+                    display: inline-block;
+                    img.person_headshot {
+                        height: 150px;
+                    }
+                    div.person_name-single {
+                            position: absolute;
+                            height: 50px;
+                            bottom: 0;
+                            background-color: rgba($blue, 0.6);
+                            width: 100%;
+                            @include pad(0 1em);
+                            h1 {
+                                margin-top: 5px;
+                                line-height: 20px;
+                                color: #fff;
+                                @include type($small, #fff);
+                                font-family: $frutigerLightCond;
+                                @include media($tablet) {
+                                    line-height: 25px;
+                                    font-size: 10pt;
+                                }
+                            }
+                            p {
+                                line-height: 20px;
+                                color:#fff;
+                                font-size: 8pt;
+                                font-family: $frutigerLightCond;
+                                @include media($tablet) {
+                                    line-height: 15px;
+                                    font-size:9pt;
+                                }
+                            }
+                            p:hover {
+                                opacity: 1;
+                            }
+                            a {
+                                color: #fff;
+                                text-decoration: none;
+                            }
+                            a:hover{
+                                
+                            }
+                        }
+                        div.person_name:hover {
+                            background-color: rgba(black, 0.6);
+                        }
+                }
+            }
+        }    
+    }
+}
+
+
+
+#leftArrow img {
+    margin-top: 60px;
+    position:absolute;
+    left:0px;
+    width: 30px;
+
+}
+
+#rightArrow img{ 
+    margin-top: 60px;
+    position:absolute;
+    right:0px;
+    width: 30px;
+}
+
+
+
+/* ------ single page people banners -----*/
+
 .page_banner_robert {
     @include outer-container;
     background-color: #eee;
     position: relative;
-    height: 500px;
+    height: 550px;
     margin: 0 auto;
     background: url('../images/people/single/robert-banner.jpg') center center no-repeat;
     background-size: cover;
@@ -100,7 +315,7 @@ div.description-person-single {
     @include outer-container;
     background-color: #eee;
     position: relative;
-    height: 500px;
+    height:550px;
     margin: 0 auto;
     background: url('../images/people/single/jay-banner.jpg') center center no-repeat;
     background-size: cover;
@@ -121,7 +336,7 @@ div.description-person-single {
     @include outer-container;
     background-color: #eee;
     position: relative;
-    height: 500px;
+    height:550px;
     margin: 0 auto;
     background: url('../images/people/single/rossana-banner.jpg') center center no-repeat;
     background-size: cover;
@@ -142,7 +357,7 @@ div.description-person-single {
     @include outer-container;
     background-color: #eee;
     position: relative;
-    height: 500px;
+    height:550px;
     margin: 0 auto;
     background: url('../images/people/single/cgcrane-banner.jpg') center center no-repeat;
     background-size: cover;
@@ -163,7 +378,7 @@ div.description-person-single {
     @include outer-container;
     background-color: #eee;
     position: relative;
-    height: 500px;
+    height:550px;
     margin: 0 auto;
     background: url('../images/people/single/sonny-banner.jpg') center center no-repeat;
     background-size: cover;
@@ -183,7 +398,7 @@ div.description-person-single {
     @include outer-container;
     background-color: #eee;
     position: relative;
-    height: 500px;
+    height:550px;
     margin: 0 auto;
     background: url('../images/people/single/lea-banner.jpg') center center no-repeat;
     background-size: cover;
@@ -204,7 +419,7 @@ div.description-person-single {
     @include outer-container;
     background-color: #eee;
     position: relative;
-    height: 500px;
+    height:550px;
     margin: 0 auto;
     background: url('../images/people/single/charlie-banner.jpg') center center no-repeat;
     background-size: cover;
@@ -225,7 +440,7 @@ div.description-person-single {
     @include outer-container;
     background-color: #eee;
     position: relative;
-    height: 500px;
+    height:550px;
     margin: 0 auto;
     background: url('../images/people/single/koren-banner.jpg') center center no-repeat;
     background-size: cover;
@@ -246,7 +461,7 @@ div.description-person-single {
     @include outer-container;
     background-color: #eee;
     position: relative;
-    height: 500px;
+    height:550px;
     margin: 0 auto;
     background: url('../images/people/single/josh-banner.jpg') center center no-repeat;
     background-size: cover;
@@ -267,7 +482,7 @@ div.description-person-single {
     @include outer-container;
     background-color: #eee;
     position: relative;
-    height: 500px;
+    height:550px;
     margin: 0 auto;
     background: url('../images/people/single/olivia-banner.jpg') center center no-repeat;
     background-size: cover;
@@ -288,7 +503,7 @@ div.description-person-single {
     @include outer-container;
     background-color: #eee;
     position: relative;
-    height: 500px;
+    height:550px;
     margin: 0 auto;
     background: url('../images/people/single/bryce-banner.jpg') center center no-repeat;
     background-size: cover;
@@ -309,7 +524,7 @@ div.description-person-single {
     @include outer-container;
     background-color: #eee;
     position: relative;
-    height: 500px;
+    height:550px;
     margin: 0 auto;
     background: url('../images/people/single/alex-banner.jpg') center center no-repeat;
     background-size: cover;
@@ -330,7 +545,7 @@ div.description-person-single {
     @include outer-container;
     background-color: #eee;
     position: relative;
-    height: 500px;
+    height:550px;
     margin: 0 auto;
     background: url('../images/people/single/oak-banner.jpg') center center no-repeat;
     background-size: cover;
@@ -351,7 +566,7 @@ div.description-person-single {
     @include outer-container;
     background-color: #eee;
     position: relative;
-    height: 500px;
+    height:550px;
     margin: 0 auto;
     background: url('../images/people/single/bowdy-banner.jpg') center center no-repeat;
     background-size: cover;
@@ -373,7 +588,7 @@ div.description-person-single {
     @include outer-container;
     background-color: #eee;
     position: relative;
-    height: 500px;
+    height:550px;
     margin: 0 auto;
     background: url('../images/people/single/lisa-banner.jpg') center center no-repeat;
     background-size: cover;
@@ -394,7 +609,7 @@ div.description-person-single {
     @include outer-container;
     background-color: #eee;
     position: relative;
-    height: 500px;
+    height:550px;
     margin: 0 auto;
     background: url('../images/people/single/phil-banner.jpg') center center no-repeat;
     background-size: cover;
@@ -415,7 +630,7 @@ div.description-person-single {
     @include outer-container;
     background-color: #eee;
     position: relative;
-    height: 500px;
+    height:550px;
     margin: 0 auto;
     background: url('../images/people/single/grant-banner.jpg') center center no-repeat;
     background-size: cover;

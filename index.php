@@ -24,12 +24,12 @@
             
         </div>
         <div id="footer">
-                <div class="inner_footer">
-                    <ul>
-                        <li class="copyright">© 1997 - 2015 Douglass Winthrop  All rights reserved</li>
-                        <li>Terms of Use</li>
-                        <li>LinkedIn</li>
-                    </ul>
-                </div>
-            </div><!-- #footer -->
+            <div class="inner_footer">
+                <ul>
+                    <li class="copyright">© 1997 - 2015 Douglass Winthrop  All rights reserved</li>
+                    <li>Terms of Use</li>
+                    <li>LinkedIn</li>
+                </ul>
+            </div>
+        </div><!-- #footer -->
     </aside>

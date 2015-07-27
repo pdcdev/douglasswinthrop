@@ -48,13 +48,13 @@ do_something(list_of_stuff, "blue");*/
   align-items: center;
   /*justify-content: center;*/ }
 
-.global_pad {
+.global_pad, div.intro-box div.inner_banner, section.people-single-mobile {
   padding: 2em 40px; }
   @media screen and (max-width: 768px) {
-    .global_pad {
+    .global_pad, div.intro-box div.inner_banner, section.people-single-mobile {
       padding: 2em 40px; } }
   @media screen and (max-width: 480px) {
-    .global_pad {
+    .global_pad, div.intro-box div.inner_banner, section.people-single-mobile {
       padding: 2em 30px; } }
 
 .sidepad, .inner_header {
@@ -147,13 +147,239 @@ div.description-person-single {
       div.description-person-single:last-child {
         margin-right: 0; } }
 
+/*--------- blue intro box -----*/
+div.intro-box {
+  width: 100%;
+  height: 185px;
+  background-color: #004FB1; }
+  div.intro-box div.inner_banner {
+    max-width: 75em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+    position: relative;
+    height: 100%; }
+    div.intro-box div.inner_banner::after {
+      clear: both;
+      content: "";
+      display: table; }
+    div.intro-box div.inner_banner div.page-name {
+      float: left;
+      display: block;
+      margin-right: 2.3255813953%;
+      width: 48.8372093023%; }
+      div.intro-box div.inner_banner div.page-name:last-child {
+        margin-right: 0; }
+      div.intro-box div.inner_banner div.page-name h1 {
+        font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
+        font-size: 1.5em;
+        color: #b2b2b2;
+        padding-bottom: 30px; }
+    div.intro-box div.inner_banner div p {
+      float: left;
+      display: block;
+      margin-right: 2.3255813953%;
+      width: 40.3100775194%;
+      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
+      font-size: 1.5em;
+      line-height: 1.1;
+      color: #b2b2b2; }
+      div.intro-box div.inner_banner div p:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        div.intro-box div.inner_banner div p {
+          float: left;
+          display: block;
+          margin-right: 4.7619047619%;
+          width: 47.619047619%; }
+          div.intro-box div.inner_banner div p:last-child {
+            margin-right: 0; } }
+      @media screen and (max-width: 480px) {
+        div.intro-box div.inner_banner div p {
+          float: left;
+          display: block;
+          margin-right: 10%;
+          width: 100%;
+          font-size: 1em; }
+          div.intro-box div.inner_banner div p:last-child {
+            margin-right: 0; } }
+
+@media screen and (max-width: 768px) {
+  section.sliderContainer {
+    display: none !important; } }
+section.people-single-mobile {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto; }
+  section.people-single-mobile::after {
+    clear: both;
+    content: "";
+    display: table; }
+  section.people-single-mobile div.person-single {
+    float: left;
+    display: block;
+    margin-right: 2.3255813953%;
+    width: 23.2558139535%;
+    background-color: #eee;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    position: relative;
+    display: none; }
+    section.people-single-mobile div.person-single:last-child {
+      margin-right: 0; }
+    section.people-single-mobile div.person-single:nth-child(4n) {
+      margin-right: 0; }
+    section.people-single-mobile div.person-single:nth-child(4n+1) {
+      clear: left; }
+    @media screen and (max-width: 768px) {
+      section.people-single-mobile div.person-single {
+        float: left;
+        display: block;
+        margin-right: 4.7619047619%;
+        width: 47.619047619%;
+        visibility: none !important; }
+        section.people-single-mobile div.person-single:last-child {
+          margin-right: 0; }
+        section.people-single-mobile div.person-single:nth-child(2n) {
+          margin-right: 0; }
+        section.people-single-mobile div.person-single:nth-child(2n+1) {
+          clear: left; } }
+    @media screen and (max-width: 480px) {
+      section.people-single-mobile div.person-single {
+        visibility: visible !important; } }
+    section.people-single-mobile div.person-single div.person_name-single {
+      position: absolute;
+      height: 60px;
+      bottom: 0;
+      background-color: rgba(0, 79, 177, 0.6);
+      width: 100%;
+      padding: 0 1em; }
+      section.people-single-mobile div.person-single div.person_name-single h1 {
+        line-height: 35px;
+        color: #fff;
+        color: #fff;
+        font-size: 1rem;
+        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+        @media screen and (max-width: 768px) {
+          section.people-single-mobile div.person-single div.person_name-single h1 {
+            font-size: 1rem; } }
+        @media screen and (max-width: 480px) {
+          section.people-single-mobile div.person-single div.person_name-single h1 {
+            font-size: 0.9375rem; } }
+        @media screen and (max-width: 768px) {
+          section.people-single-mobile div.person-single div.person_name-single h1 {
+            line-height: 25px;
+            font-size: 10pt; } }
+      section.people-single-mobile div.person-single div.person_name-single p {
+        line-height: 20px;
+        color: #fff;
+        font-size: 10pt;
+        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+        @media screen and (max-width: 768px) {
+          section.people-single-mobile div.person-single div.person_name-single p {
+            line-height: 15px;
+            font-size: 9pt; } }
+      section.people-single-mobile div.person-single div.person_name-single p:hover {
+        opacity: 1; }
+      section.people-single-mobile div.person-single div.person_name-single a {
+        color: #fff;
+        text-decoration: none; }
+    section.people-single-mobile div.person-single div.person_name:hover {
+      background-color: rgba(0, 0, 0, 0.6); }
+
+/* ------ scroll side to side-----*/
+section.sliderContainer {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto; }
+  section.sliderContainer::after {
+    clear: both;
+    content: "";
+    display: table; }
+  section.sliderContainer .slider {
+    width: 100%;
+    height: 185px;
+    position: relative; }
+    section.sliderContainer .slider #viewContainer {
+      width: 950px;
+      height: 100%;
+      position: absolute;
+      left: 40%;
+      margin-left: -360px;
+      overflow: scroll; }
+      section.sliderContainer .slider #viewContainer #insideContainer {
+        position: absolute;
+        left: 0;
+        width: 3000px; }
+        section.sliderContainer .slider #viewContainer #insideContainer .person-single {
+          background-color: #eee;
+          position: relative;
+          width: 150px;
+          vertical-align: top;
+          display: inline-block; }
+          section.sliderContainer .slider #viewContainer #insideContainer .person-single img.person_headshot {
+            height: 150px; }
+          section.sliderContainer .slider #viewContainer #insideContainer .person-single div.person_name-single {
+            position: absolute;
+            height: 50px;
+            bottom: 0;
+            background-color: rgba(0, 79, 177, 0.6);
+            width: 100%;
+            padding: 0 1em; }
+            section.sliderContainer .slider #viewContainer #insideContainer .person-single div.person_name-single h1 {
+              margin-top: 5px;
+              line-height: 20px;
+              color: #fff;
+              color: #fff;
+              font-size: 1rem;
+              font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+              @media screen and (max-width: 768px) {
+                section.sliderContainer .slider #viewContainer #insideContainer .person-single div.person_name-single h1 {
+                  font-size: 1rem; } }
+              @media screen and (max-width: 480px) {
+                section.sliderContainer .slider #viewContainer #insideContainer .person-single div.person_name-single h1 {
+                  font-size: 0.9375rem; } }
+              @media screen and (max-width: 768px) {
+                section.sliderContainer .slider #viewContainer #insideContainer .person-single div.person_name-single h1 {
+                  line-height: 25px;
+                  font-size: 10pt; } }
+            section.sliderContainer .slider #viewContainer #insideContainer .person-single div.person_name-single p {
+              line-height: 20px;
+              color: #fff;
+              font-size: 8pt;
+              font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+              @media screen and (max-width: 768px) {
+                section.sliderContainer .slider #viewContainer #insideContainer .person-single div.person_name-single p {
+                  line-height: 15px;
+                  font-size: 9pt; } }
+            section.sliderContainer .slider #viewContainer #insideContainer .person-single div.person_name-single p:hover {
+              opacity: 1; }
+            section.sliderContainer .slider #viewContainer #insideContainer .person-single div.person_name-single a {
+              color: #fff;
+              text-decoration: none; }
+          section.sliderContainer .slider #viewContainer #insideContainer .person-single div.person_name:hover {
+            background-color: rgba(0, 0, 0, 0.6); }
+
+#leftArrow img {
+  margin-top: 60px;
+  position: absolute;
+  left: 0px;
+  width: 30px; }
+
+#rightArrow img {
+  margin-top: 60px;
+  position: absolute;
+  right: 0px;
+  width: 30px; }
+
+/* ------ single page people banners -----*/
 .page_banner_robert {
   max-width: 75em;
   margin-left: auto;
   margin-right: auto;
   background-color: #eee;
   position: relative;
-  height: 500px;
+  height: 550px;
   margin: 0 auto;
   background: url("../images/people/single/robert-banner.jpg") center center no-repeat;
   background-size: cover; }
@@ -178,7 +404,7 @@ div.description-person-single {
   margin-right: auto;
   background-color: #eee;
   position: relative;
-  height: 500px;
+  height: 550px;
   margin: 0 auto;
   background: url("../images/people/single/jay-banner.jpg") center center no-repeat;
   background-size: cover; }
@@ -203,7 +429,7 @@ div.description-person-single {
   margin-right: auto;
   background-color: #eee;
   position: relative;
-  height: 500px;
+  height: 550px;
   margin: 0 auto;
   background: url("../images/people/single/rossana-banner.jpg") center center no-repeat;
   background-size: cover; }
@@ -228,7 +454,7 @@ div.description-person-single {
   margin-right: auto;
   background-color: #eee;
   position: relative;
-  height: 500px;
+  height: 550px;
   margin: 0 auto;
   background: url("../images/people/single/cgcrane-banner.jpg") center center no-repeat;
   background-size: cover; }
@@ -253,7 +479,7 @@ div.description-person-single {
   margin-right: auto;
   background-color: #eee;
   position: relative;
-  height: 500px;
+  height: 550px;
   margin: 0 auto;
   background: url("../images/people/single/sonny-banner.jpg") center center no-repeat;
   background-size: cover; }
@@ -278,7 +504,7 @@ div.description-person-single {
   margin-right: auto;
   background-color: #eee;
   position: relative;
-  height: 500px;
+  height: 550px;
   margin: 0 auto;
   background: url("../images/people/single/lea-banner.jpg") center center no-repeat;
   background-size: cover; }
@@ -303,7 +529,7 @@ div.description-person-single {
   margin-right: auto;
   background-color: #eee;
   position: relative;
-  height: 500px;
+  height: 550px;
   margin: 0 auto;
   background: url("../images/people/single/charlie-banner.jpg") center center no-repeat;
   background-size: cover; }
@@ -328,7 +554,7 @@ div.description-person-single {
   margin-right: auto;
   background-color: #eee;
   position: relative;
-  height: 500px;
+  height: 550px;
   margin: 0 auto;
   background: url("../images/people/single/koren-banner.jpg") center center no-repeat;
   background-size: cover; }
@@ -353,7 +579,7 @@ div.description-person-single {
   margin-right: auto;
   background-color: #eee;
   position: relative;
-  height: 500px;
+  height: 550px;
   margin: 0 auto;
   background: url("../images/people/single/josh-banner.jpg") center center no-repeat;
   background-size: cover; }
@@ -378,7 +604,7 @@ div.description-person-single {
   margin-right: auto;
   background-color: #eee;
   position: relative;
-  height: 500px;
+  height: 550px;
   margin: 0 auto;
   background: url("../images/people/single/olivia-banner.jpg") center center no-repeat;
   background-size: cover; }
@@ -403,7 +629,7 @@ div.description-person-single {
   margin-right: auto;
   background-color: #eee;
   position: relative;
-  height: 500px;
+  height: 550px;
   margin: 0 auto;
   background: url("../images/people/single/bryce-banner.jpg") center center no-repeat;
   background-size: cover; }
@@ -428,7 +654,7 @@ div.description-person-single {
   margin-right: auto;
   background-color: #eee;
   position: relative;
-  height: 500px;
+  height: 550px;
   margin: 0 auto;
   background: url("../images/people/single/alex-banner.jpg") center center no-repeat;
   background-size: cover; }
@@ -453,7 +679,7 @@ div.description-person-single {
   margin-right: auto;
   background-color: #eee;
   position: relative;
-  height: 500px;
+  height: 550px;
   margin: 0 auto;
   background: url("../images/people/single/oak-banner.jpg") center center no-repeat;
   background-size: cover; }
@@ -478,7 +704,7 @@ div.description-person-single {
   margin-right: auto;
   background-color: #eee;
   position: relative;
-  height: 500px;
+  height: 550px;
   margin: 0 auto;
   background: url("../images/people/single/bowdy-banner.jpg") center center no-repeat;
   background-size: cover; }
@@ -503,7 +729,7 @@ div.description-person-single {
   margin-right: auto;
   background-color: #eee;
   position: relative;
-  height: 500px;
+  height: 550px;
   margin: 0 auto;
   background: url("../images/people/single/lisa-banner.jpg") center center no-repeat;
   background-size: cover; }
@@ -528,7 +754,7 @@ div.description-person-single {
   margin-right: auto;
   background-color: #eee;
   position: relative;
-  height: 500px;
+  height: 550px;
   margin: 0 auto;
   background: url("../images/people/single/phil-banner.jpg") center center no-repeat;
   background-size: cover; }
@@ -553,7 +779,7 @@ div.description-person-single {
   margin-right: auto;
   background-color: #eee;
   position: relative;
-  height: 500px;
+  height: 550px;
   margin: 0 auto;
   background: url("../images/people/single/grant-banner.jpg") center center no-repeat;
   background-size: cover; }
