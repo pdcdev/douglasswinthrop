@@ -1,24 +1,46 @@
 <?php $thisPage="Letters"; ?>
 <?php include 'header.php'; ?>
     <aside class="page_banner_letters">
-        
-    </aside>
-    
-    <section class="initial">
-    <div>
-        <h2 class="title"> Letters </h2>
-        <div class="description">
-            <p class="sub-header">Communication is integral to our advisory service. Our clients receive quarterly reports including our investment commentary, an account statement, performance history and a gains/losses report. 
-            We stay in frequent contact with our clients via telephone and email, and in the course of scheduled personal meetings. We are delighted to see our clients, and encourage them to stop by our office any time.</p>
+        <div class="intro-box">
+            <div class="inner_banner">
+                <div class="page-name">
+                    <h1>
+                        Letters
+                    </h1>
+                </div>
+                <div>
+                    <p>Communication is integral to our advisory service.</p>
+                </div>
+            </div>
+        </div><!-- end blue intro box -->
+        <div class="actual-banner">
+            <img src="images/DW_Letters.jpg">
         </div>
-    </div>
+    </aside>
+
+    
+    <section class="letters_list">    
+            <div class="block-row1">
+                <div class="number first">
+                    <h3 class="letter-title">July 2015</h3>
+                    <p class="letter_number"><a href="#" target="_blank">2</a></p>
+                </div>
+                <div class="number second">
+                    <h3 class="letter-title">April 2015</h3>
+                    <p class="letter_number"><a href="#" target="_blank">1</a></p>
+                </div>  
+            </div>
+            <div class="block-row2">
+                <div class="number third">
+                    <h3 class="letter-title">January 2015</h3>
+                    <p class="letter_number"><a href="#" target="_blank">4</a></p>
+                </div>
+                <div class="number fourth">
+                    <h3 class="letter-title">October 2015</h3>
+                    <p class="letter_number"><a href="#" target="_blank">3</a></p>
+                </div>
+            </div>
     </section>
-    <section class="letters">
-    <div class="letter-list">
-        <a href="#" target="_blank">April 2015</a>
-        <a href="#" target="_blank">January 2015</a>
-        <a href="#" target="_blank">October 2015</a>
-        <a href="#" target="_blank">July 2015</a>
-    </div>
-</section>
+    
+
 <?php include 'footer.php'; ?>

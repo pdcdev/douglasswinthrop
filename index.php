@@ -15,6 +15,10 @@
                         <hr>
                         <a href="people.php" class="btn btn-4"><h5 class="btn"><p>Our People</p></h5></a> 
                         <hr>
+                        <a href="value.php" class="btn btn-4"><h5 class="btn"><p>Value</p></h5></a> 
+                        <hr>
+                        <a href="letters.php" class="btn btn-4"><h5 class="btn"><p>Letters</p></h5></a> 
+                        <hr>
                         <a href="contact.php" class="btn btn-4"><h5 class="btn"><p>Our Offices</p></h5></a> 
                         <hr>
                     </div>

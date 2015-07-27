@@ -280,6 +280,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/dw-boston.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 44350,
+		"inputAbbreviatedPath": "\/images\/dw-boston.jpg",
+		"outputAbbreviatedPath": "\/images\/dw-boston.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/dw-dc.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 33493,
+		"inputAbbreviatedPath": "\/images\/dw-dc.jpg",
+		"outputAbbreviatedPath": "\/images\/dw-dc.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/dw-nyc.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 42784,
+		"inputAbbreviatedPath": "\/images\/dw-nyc.jpg",
+		"outputAbbreviatedPath": "\/images\/dw-nyc.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/dw.png": {
 		"fileType": 32768,
 		"ignore": 0,
