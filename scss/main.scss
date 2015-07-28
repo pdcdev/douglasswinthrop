@@ -51,6 +51,7 @@ body {
     }
 }
 
+/*----------------- HOME PAGE -----------*/
 
 header.home{
     z-index: 999;
@@ -134,7 +135,164 @@ header.home{
     }
 }
 
+.page_banner_home {
+    z-index: 0;
+    background-color: #eee;
 
+    min-height: 100%;
+    top: 0;
+    left: 0;
+
+    background: url('../images/DW_Home2.jpg') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    div.overlay_home {
+        @include outer-container;
+        @extend .global_pad;
+        padding-bottom: 20%;
+        div.inner_banner_home {
+            padding: 200px 0 200px 0;
+            position: relative; 
+            min-height: 100%;
+              /* equal to footer height */
+              margin-bottom: -142px; 
+            @include media($tablet) {
+                padding-top: 100px;
+            }
+            /*@include media($mobile) {
+                padding-top: 100px;
+            }
+            @include media($tiny) {
+                padding: 100px 0 0 50px;
+            }*/
+            div.home-logo{
+                    @extend .vertical_center_parent;
+                    h1.home-logo-name {
+                        font-size: 3em;
+                        font-family: $frutigerBoldCond;
+                        color: $gray;
+                        @include media($tablet) {
+                            @include span-columns(5);
+                        }
+                        @include media($mobile) {
+                            @include span-columns(3);
+                            font-size: 2em;
+                        }
+                    }
+
+                }
+            }
+            div.home-message {
+                padding-top:30px;
+                display: block;
+                p{
+                    @include span-columns(7);
+                    font-size: 3em;
+                    color: $gray;
+                    font-family: $frutigerLightCond;
+                    @include media($tablet) {
+                        @include span-columns(5);
+                    }
+                    @include media($mobile) {
+                        @include span-columns(3);
+                        font-size: 2em;
+                    }
+                }
+            }
+            button {
+                border: 1px solid #b2b2b2; 
+            }
+        }
+    }
+
+
+
+div.overlay-mobile {
+    display: none;
+}
+@media (max-width: 480px) {
+    div.overlay-mobile {
+        div.inner_banner-mobile {
+            height: 175px;
+            padding: 10%;
+            background-color: rgba($blue, 0.6);
+        }
+    }
+}
+
+/* ----------------------------HOME PAGE BUTTONS ---------------*/
+
+
+
+.buttons-btn {
+    @include span-columns(8);
+    padding-top: 40px;
+    @include media($tablet) {
+        @include span-columns(12);
+    }
+    @include media($mobile) {
+        width: 100%;
+    }
+}
+
+.container-button { 
+    @include span-columns(12);
+    display: block;
+    p {
+        font-family: $frutigerLightCond;
+        font-size: 1.5em;
+        text-align: center;  
+    }
+}
+
+.btn {
+    margin-left: -5px;
+  color: $gray;
+  cursor: pointer;
+  font-size:1em;
+  line-height: 60px;
+  display: inline-block;
+  max-width: 160px;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 100%;
+  @include media($mobile) {
+        border-top: 1px solid;
+        max-width: 100%;
+    }
+}
+
+.btn-4 {
+  border: 1px solid;
+  @include media($mobile) {
+        border: none;
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        a {
+            border-bottom: 1px solid $gray;
+        }
+    }
+}
+
+.btn-4:hover {
+  background: #2775F6;
+  @include media($mobile) {
+    background: transparent;
+  }
+  p:hover {
+    @include media($mobile) {
+        color: #2775F6;
+        }
+    }
+}
+
+
+
+/* -----------------------------END BUTTONS ------------------------*/
 
 header {
     z-index: 999;
@@ -220,31 +378,6 @@ header {
 }
 
 
-
-
-/*.menuIcon {
-    display: none;
-    width: 100%;
-    text-align: center;
-    h1 {
-        a{
-            font-family: $frutigerLightCond;
-        }
-    }
-    a {
-        &:hover {
-        color: #999;
-    }  
-      width: 100%;
-      display: block;
-      color: $blue;
-      text-decoration: none;
-      img {
-        vertical-align: middle;
-      }
-    }
-  }*/
-
 button {
     display: none;
     span {
@@ -314,7 +447,7 @@ hr {
 
 
 
-    /* ---------------------------------HAMBURGER STARTS ---------------*/
+    /* --------------HAMBURGER STARTS -----------*/
  /* 
     .c-hamburger {
       float: right;  
@@ -416,7 +549,7 @@ hr {
       transition-delay: 0s, 0.3s;
     }
 */
-  /* ---------------------------------HAMBURGER ENDS ---------------*/
+  /* --------------HAMBURGER ENDS ---------------*/
 
     .mob-nav-container-active {
         position: fixed;
@@ -443,174 +576,18 @@ hr {
     }
 
 
-} /* -----------END media queries -----------------------*/
+} 
+/* -----------END media queries -----------------*/
 
+/* ----------- ABOUT PAGE -----------------------*/
 
-/* -----------------------------------BUTTONS ---------------*/
-
-
-
-.buttons-btn {
-    @include span-columns(8);
-    padding-top: 40px;
-    @include media($tablet) {
-        @include span-columns(12);
-    }
-    @include media($mobile) {
-        width: 100%;
-    }
-}
-
-.container-button { 
-    @include span-columns(12);
-    display: block;
-    p {
-        font-family: $frutigerLightCond;
-        font-size: 1.5em;
-        text-align: center;  
-    }
-}
-
-.btn {
-    margin-left: -5px;
-  color: $gray;
-  cursor: pointer;
-  font-size:1em;
-  line-height: 60px;
-  display: inline-block;
-  max-width: 160px;
-  text-decoration: none;
-  vertical-align: middle;
-  width: 100%;
-  @include media($mobile) {
-        border-top: 1px solid;
-        max-width: 100%;
-    }
-}
-
-.btn-4 {
-  border: 1px solid;
-  @include media($mobile) {
-        border: none;
-        width: 100%;
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-        a {
-            border-bottom: 1px solid $gray;
-        }
-    }
-}
-
-.btn-4:hover {
-  background: #2775F6;
-  @include media($mobile) {
-    background: transparent;
-  }
-  p:hover {
-    @include media($mobile) {
-        color: #2775F6;
-        }
-    }
-}
-
-
-
-/* -----------------------------END BUTTONS ------------------------*/
-
-.page_banner_home {
-    z-index: 0;
-    background-color: #eee;
-
-    min-height: 100%;
-    top: 0;
-    left: 0;
-
-    background: url('../images/DW_Home2.jpg') center center no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    div.overlay_home {
-        @include outer-container;
-        @extend .global_pad;
-        padding-bottom: 20%;
-        div.inner_banner_home {
-            padding: 200px 0 200px 0;
-            position: relative; 
-            min-height: 100%;
-              /* equal to footer height */
-              margin-bottom: -142px; 
-            @include media($tablet) {
-                padding-top: 100px;
-            }
-            /*@include media($mobile) {
-                padding-top: 100px;
-            }
-            @include media($tiny) {
-                padding: 100px 0 0 50px;
-            }*/
-            div.home-logo{
-                    @extend .vertical_center_parent;
-                    h1.home-logo-name {
-                        font-size: 3em;
-                        font-family: $frutigerBoldCond;
-                        color: $gray;
-                        @include media($tablet) {
-                            @include span-columns(5);
-                        }
-                        @include media($mobile) {
-                            @include span-columns(3);
-                            font-size: 2em;
-                        }
-                    }
-
-                }
-            }
-            div.home-message {
-                padding-top:30px;
-                display: block;
-                p{
-                    @include span-columns(7);
-                    font-size: 3em;
-                    color: $gray;
-                    font-family: $frutigerLightCond;
-                    @include media($tablet) {
-                        @include span-columns(5);
-                    }
-                    @include media($mobile) {
-                        @include span-columns(3);
-                        font-size: 2em;
-                    }
-                }
-            }
-            button {
-                border: 1px solid #b2b2b2; 
-            }
-        }
-    }
-
-
-
-div.overlay-mobile {
-    display: none;
-}
-@media (max-width: 480px) {
-    div.overlay-mobile {
-        div.inner_banner-mobile {
-            height: 175px;
-            padding: 10%;
-            background-color: rgba($blue, 0.6);
-        }
-    }
-}
 
 .page_banner_firm {
     
     position: relative;
     div.intro-box {
         width: 100%;
-        height: 185px;
+        height: auto;
         background-color: $blue;
         @include media($mobile) {
             
@@ -618,7 +595,8 @@ div.overlay-mobile {
         div.inner_banner {
             @include outer-container;
             @extend .global_pad;
-            padding-top: 5%;
+            padding-top: 50px;
+            padding-bottom: 50px;
             position: relative;
             height: 100%;
             div.page-name {
@@ -628,7 +606,7 @@ div.overlay-mobile {
                     font-size: 1.5em; 
                     line-height: 15px;
                     color: #b2b2b2;
-                    padding-bottom: 30px;
+                    padding-bottom: 50px;
                 }
             }
             div {
@@ -664,71 +642,146 @@ div.overlay-mobile {
     }
 }
 
-
-.page_banner_letters {
-    
+section.firm {
+    @include outer-container;
+    @extend .global_pad;
     position: relative;
-    div.intro-box {
-        width: 100%;
-        height: 185px;
-        background-color: $blue;
-        @include media($mobile) {
-            
+    padding-bottom: 0;
+    div.block {
+        @include span-columns(12);
+        top: 0;
+        h2.title {
+            padding-bottom: 30px;
+            font-size: 1.5em;
+            color: #b2b2b2;
+            font-family: $frutigerLightCond;
+            @include media ($tablet) {
+            }
         }
-        div.inner_banner {
-            @include outer-container;
-            @extend .global_pad;
-            padding-top: 5%;
-            position: relative;
-            height: 100%;
-            div.page-name {
-                @include span-columns(6);
-                h1 {
-                    font-family: $frutigerBoldCond;
-                    font-size: 1.5em;
-                    line-height: 15px;
-                    color: #b2b2b2;
-                    padding-bottom: 30px;
+        div.description {
+            p.description-text-left {
+                @include span-columns(5);
+                @include type($small, #b2b2b2);
+                line-height: 20px;
+                padding-bottom: 30px;
+                font-family: $frutigerLightCond;
+                 @include media($mobile) {
+                    @include span-columns(3);
+                    
                 }
             }
-            div {
-                p {
-                    @include span-columns(5);
-                    font-family: $frutigerLightCond;
-                    font-size: 1.5em;
-                    line-height: 1.2;
-                    color: #b2b2b2;
-                    @include media($tablet) {
-                        @include span-columns(3);
-                    }
-                    @include media($mobile) {
-                        @include span-columns(3);
-                        font-size: 1em;
-                    }
+            p.description-text-right {
+                @include span-columns(5);
+                @include shift(1);
+                @include type($small, #b2b2b2);
+                line-height: 20px;
+                padding-bottom: 30px;
+                font-family: $frutigerLightCond;
+                 @include media($mobile) {
+                    @include span-columns(3);
+                    @include shift(0);
+                    
                 }
             }
-        }
-    }
-    div.actual-banner img {
-        position: relative;
-        display: block;
-        height: auto;
-        background-size: 100%;
-        background-position: top;
-            @include media($tablet) {
-
-            }
-            @include media($mobile) {
-            background: url('../images/DW_About-mob.jpg') no-repeat;
-        }
+        } 
     }
 }
+section.history {
+    @include outer-container;
+    @extend .global_pad;
+    position: relative;
+    padding-bottom: 0;
+    div.block {
+        @include span-columns(12);
+        top: 0;
+        h2.title {
+            padding-bottom: 30px;
+            font-size: 1.5em;
+            color: #b2b2b2;
+            font-family: $frutigerLightCond;
+            @include media ($tablet) {
+            }
+        }
+        div.description {
+            p.description-text-left {
+                @include span-columns(5);
+                @include type($small, #b2b2b2);
+                line-height: 20px;
+                padding-bottom: 30px;
+                font-family: $frutigerLightCond;
+                 @include media($mobile) {
+                    @include span-columns(3);
+                    
+                }
+            }
+            p.description-text-right {
+                @include span-columns(5);
+                @include shift(1);
+                @include type($small, #b2b2b2);
+                line-height: 20px;
+                padding-bottom: 30px;
+                font-family: $frutigerLightCond;
+                 @include media($mobile) {
+                    @include span-columns(3);
+                    @include shift(0);
+                    
+                }
+            }
+        } 
+    }
+}
+section.philosophy {
+    @include outer-container;
+    @extend .global_pad;
+    position: relative;
+    padding-bottom: 0;
+    div.block {
+        @include span-columns(12);
+        top: 0;
+        h2.title {
+            padding-bottom: 30px;
+            font-size: 1.5em;
+            color: #b2b2b2;
+            font-family: $frutigerLightCond;
+            @include media ($tablet) {
+            }
+        }
+        div.description {
+            p.description-text-left {
+                @include span-columns(5);
+                @include type($small, #b2b2b2);
+                line-height: 20px;
+                padding-bottom: 30px;
+                font-family: $frutigerLightCond;
+                 @include media($mobile) {
+                    @include span-columns(3);
+                    
+                }
+            }
+            p.description-text-right {
+                @include span-columns(5);
+                @include shift(1);
+                @include type($small, #b2b2b2);
+                line-height: 20px;
+                padding-bottom: 30px;
+                font-family: $frutigerLightCond;
+                 @include media($mobile) {
+                    @include span-columns(3);
+                    @include shift(0);
+                    
+                }
+            }
+        } 
+    }
+}
+
+/* ----------- VALUE PAGE -----------------------*/
 
 .page_banner_value {
     position: relative;
     div.intro-box {
         width: 100%;
-        height: 185px;
+        height: auto;
         background-color: $blue;
         @include media($mobile) {
             
@@ -736,7 +789,8 @@ div.overlay-mobile {
         div.inner_banner {
             @include outer-container;
             @extend .global_pad;
-            padding-top: 5%;
+            padding-top: 50px;
+            padding-bottom: 50px;
             position: relative;
             height: 100%;
             div.page-name {
@@ -746,7 +800,7 @@ div.overlay-mobile {
                     font-size: 1.5em; 
                     line-height: 15px;
                     color: #b2b2b2;
-                    padding-bottom: 30px;
+                    padding-bottom: 50px;
                 }
             }
             div {
@@ -783,11 +837,156 @@ div.overlay-mobile {
     }
 }
 
+section.value {
+    @include outer-container;
+    @extend .global_pad;
+    position: relative;
+    padding-bottom: 0;
+    div.block-value {
+        @include span-columns(12);
+        top: 0;
+        section.description-text-left {
+            @include span-columns(5);
+            @include type($small, #b2b2b2);
+            line-height: 20px;
+            padding-bottom: 30px;
+            font-family: $frutigerLightCond;
+            @include media($mobile) {
+                @include span-columns(3);
+            }
+            h3.title {
+                padding-bottom: 30px;
+                line-height: 1.2em;
+                font-size: 1.5em;
+                color: #b2b2b2;
+                font-family: $frutigerLightCond;
+                @include media ($tablet) {
+                }   
+            }
+        }
+        section.description-text-right {
+            @include span-columns(5);
+            @include shift(1);
+            @include type($small, #b2b2b2);
+            line-height: 20px;
+            padding-bottom: 30px;
+            font-family: $frutigerLightCond;
+            @include media($mobile) {
+                @include span-columns(3);
+                @include shift(0);
+            }
+            h3.title {
+                padding-bottom: 30px;
+                line-height: 1.2em;
+                font-size: 1.5em;
+                color: #b2b2b2;
+                font-family: $frutigerLightCond;
+                @include media ($tablet) {
+                }    
+            } 
+        } 
+    }
+}
+
+div.band-container-white {
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    @include outer-container;
+    @extend .global_pad;
+    position: relative;
+    padding-bottom: 0;
+    div.block-value {
+        @include span-columns(12);
+        top: 0;
+        section.description-text-left {
+            @include span-columns(5);
+            @include type($small, #b2b2b2);
+            line-height: 20px;
+            padding-bottom: 30px;
+            font-family: $frutigerLightCond;
+            @include media($mobile) {
+                @include span-columns(3);
+            }
+            h3.title {
+                padding-bottom: 30px;
+                line-height: 1.2em;
+                font-size: 1.5em;
+                color: #b2b2b2;
+                font-family: $frutigerLightCond;
+                @include media ($tablet) {
+                }   
+            }
+        }
+        section.description-text-right {
+            @include span-columns(5);
+            @include shift(1);
+            @include type($small, #b2b2b2);
+            line-height: 20px;
+            padding-bottom: 30px;
+            font-family: $frutigerLightCond;
+            @include media($mobile) {
+                @include span-columns(3);
+                @include shift(0);
+            }
+            h3.title {
+                padding-bottom: 30px;
+                line-height: 1.2em;
+                font-size: 1.5em;
+                color: #b2b2b2;
+                font-family: $frutigerLightCond;
+                @include media ($tablet) {
+                }    
+            } 
+        } 
+    }
+}
+
+
+div.band-container-gray .white {
+    background-color: white;
+}
+
+
+section.detail-layout-value {
+    @include outer-container;
+    @extend .global_pad;
+    div.detail {
+        @include span-columns(4);
+        @include omega(3n);
+        margin-top: 1em;
+        margin-bottom: 1em;
+        position: relative;
+        h3 {
+            font-family: $frutigerLightCond;
+            @include type($small, $blue);
+            margin-bottom: 14px;
+        }
+        p {
+            @include type($small, $gray);
+            font-family: $frutigerLightCond;
+        }
+        @include media($tablet) {
+            @include span-columns(5);
+        }
+        @include media($mobile) {
+            @include span-columns(3);
+            
+        }
+    }
+}
+
+.band-container-gray-letters {
+    border-bottom: 1px solid #828282;
+}
+
+/* ----------- PEOPLE PAGE -----------------------*/
+
 .page_banner_people {
     position: relative;
         div.intro-box {
             width: 100%;
-            height: 185px;
+            height: auto;
             background-color: $blue;
             @include media($mobile) {
                 
@@ -795,7 +994,8 @@ div.overlay-mobile {
             div.inner_banner {
                 @include outer-container;
                 @extend .global_pad;
-                padding-top: 5%;
+                padding-top: 50px;
+                padding-bottom: 50px;
                 position: relative;
                 height: 100%;
                 div.page-name {
@@ -805,7 +1005,7 @@ div.overlay-mobile {
                         font-size: 1.5em; 
                         color: #b2b2b2;
                         line-height: 15px;
-                        padding-bottom: 30px;
+                        padding-bottom: 50px;
                     }
                 }
                 div {
@@ -828,10 +1028,6 @@ div.overlay-mobile {
             }
         }
     }
-
-
-
-
 
 section.people {
     @include outer-container;
@@ -971,291 +1167,71 @@ section.people-single {
 }
 
 
-
-
-
 div.band-container-gray {
     background-color: #eee;
     width: 100%;
     height: auto;
 }
 
-section.firm {
-    @include outer-container;
-    @extend .global_pad;
-    position: relative;
-    padding-bottom: 0;
-    div.block {
-        @include span-columns(12);
-        top: 0;
-        h2.title {
-            padding-bottom: 30px;
-            font-size: 1.5em;
-            color: #b2b2b2;
-            font-family: $frutigerLightCond;
-            @include media ($tablet) {
-            }
-        }
-        div.description {
-            p.description-text-left {
-                @include span-columns(5);
-                @include type($small, #b2b2b2);
-                line-height: 20px;
-                padding-bottom: 30px;
-                font-family: $frutigerLightCond;
-                 @include media($mobile) {
-                    @include span-columns(3);
-                    
-                }
-            }
-            p.description-text-right {
-                @include span-columns(5);
-                @include shift(1);
-                @include type($small, #b2b2b2);
-                line-height: 20px;
-                padding-bottom: 30px;
-                font-family: $frutigerLightCond;
-                 @include media($mobile) {
-                    @include span-columns(3);
-                    @include shift(0);
-                    
-                }
-            }
-        } 
-    }
-}
-section.history {
-    @include outer-container;
-    @extend .global_pad;
-    position: relative;
-    padding-bottom: 0;
-    div.block {
-        @include span-columns(12);
-        top: 0;
-        h2.title {
-            padding-bottom: 30px;
-            font-size: 1.5em;
-            color: #b2b2b2;
-            font-family: $frutigerLightCond;
-            @include media ($tablet) {
-            }
-        }
-        div.description {
-            p.description-text-left {
-                @include span-columns(5);
-                @include type($small, #b2b2b2);
-                line-height: 20px;
-                padding-bottom: 30px;
-                font-family: $frutigerLightCond;
-                 @include media($mobile) {
-                    @include span-columns(3);
-                    
-                }
-            }
-            p.description-text-right {
-                @include span-columns(5);
-                @include shift(1);
-                @include type($small, #b2b2b2);
-                line-height: 20px;
-                padding-bottom: 30px;
-                font-family: $frutigerLightCond;
-                 @include media($mobile) {
-                    @include span-columns(3);
-                    @include shift(0);
-                    
-                }
-            }
-        } 
-    }
-}
-section.philosophy {
-    @include outer-container;
-    @extend .global_pad;
-    position: relative;
-    padding-bottom: 0;
-    div.block {
-        @include span-columns(12);
-        top: 0;
-        h2.title {
-            padding-bottom: 30px;
-            font-size: 1.5em;
-            color: #b2b2b2;
-            font-family: $frutigerLightCond;
-            @include media ($tablet) {
-            }
-        }
-        div.description {
-            p.description-text-left {
-                @include span-columns(5);
-                @include type($small, #b2b2b2);
-                line-height: 20px;
-                padding-bottom: 30px;
-                font-family: $frutigerLightCond;
-                 @include media($mobile) {
-                    @include span-columns(3);
-                    
-                }
-            }
-            p.description-text-right {
-                @include span-columns(5);
-                @include shift(1);
-                @include type($small, #b2b2b2);
-                line-height: 20px;
-                padding-bottom: 30px;
-                font-family: $frutigerLightCond;
-                 @include media($mobile) {
-                    @include span-columns(3);
-                    @include shift(0);
-                    
-                }
-            }
-        } 
-    }
-}
-section.value {
-    @include outer-container;
-    @extend .global_pad;
-    position: relative;
-    padding-bottom: 0;
-    div.block-value {
-        @include span-columns(12);
-        top: 0;
-        section.description-text-left {
-            @include span-columns(5);
-            @include type($small, #b2b2b2);
-            line-height: 20px;
-            padding-bottom: 30px;
-            font-family: $frutigerLightCond;
-            @include media($mobile) {
-                @include span-columns(3);
-            }
-            h3.title {
-                padding-bottom: 30px;
-                line-height: 1.2em;
-                font-size: 1.5em;
-                color: #b2b2b2;
-                font-family: $frutigerLightCond;
-                @include media ($tablet) {
-                }   
-            }
-        }
-        section.description-text-right {
-            @include span-columns(5);
-            @include shift(1);
-            @include type($small, #b2b2b2);
-            line-height: 20px;
-            padding-bottom: 30px;
-            font-family: $frutigerLightCond;
-            @include media($mobile) {
-                @include span-columns(3);
-                @include shift(0);
-            }
-            h3.title {
-                padding-bottom: 30px;
-                line-height: 1.2em;
-                font-size: 1.5em;
-                color: #b2b2b2;
-                font-family: $frutigerLightCond;
-                @include media ($tablet) {
-                }    
-            } 
-        } 
-    }
-}
+/* ----------- LETTERS PAGE -----------------------*/
 
-div.band-container-white {
-    background-color: #fff;
-    width: 100%;
-    height: auto;
-    @include outer-container;
-    @extend .global_pad;
-    position: relative;
-    padding-bottom: 0;
-    div.block-value {
-        @include span-columns(12);
-        top: 0;
-        section.description-text-left {
-            @include span-columns(5);
-            @include type($small, #b2b2b2);
-            line-height: 20px;
-            padding-bottom: 30px;
-            font-family: $frutigerLightCond;
-            @include media($mobile) {
-                @include span-columns(3);
-            }
-            h3.title {
-                padding-bottom: 30px;
-                line-height: 1.2em;
-                font-size: 1.5em;
-                color: #b2b2b2;
-                font-family: $frutigerLightCond;
-                @include media ($tablet) {
-                }   
-            }
-        }
-        section.description-text-right {
-            @include span-columns(5);
-            @include shift(1);
-            @include type($small, #b2b2b2);
-            line-height: 20px;
-            padding-bottom: 30px;
-            font-family: $frutigerLightCond;
-            @include media($mobile) {
-                @include span-columns(3);
-                @include shift(0);
-            }
-            h3.title {
-                padding-bottom: 30px;
-                line-height: 1.2em;
-                font-size: 1.5em;
-                color: #b2b2b2;
-                font-family: $frutigerLightCond;
-                @include media ($tablet) {
-                }    
-            } 
-        } 
-    }
-}
-
-
+.page_banner_letters {
     
-div.band-container-gray .white {
-    background-color: white;
-}
-
-
-
-
-section.detail-layout-value {
-    @include outer-container;
-    @extend .global_pad;
-    div.detail {
-        @include span-columns(4);
-        @include omega(3n);
-        margin-top: 1em;
-        margin-bottom: 1em;
-        position: relative;
-        h3 {
-            font-family: $frutigerLightCond;
-            @include type($small, $blue);
-            margin-bottom: 14px;
-        }
-        p {
-            @include type($small, $gray);
-            font-family: $frutigerLightCond;
-        }
-        @include media($tablet) {
-            @include span-columns(5);
-        }
+    position: relative;
+    div.intro-box {
+        width: 100%;
+        height: auto;
+        background-color: $blue;
         @include media($mobile) {
-            @include span-columns(3);
             
         }
+        div.inner_banner {
+            @include outer-container;
+            @extend .global_pad;
+            padding-top: 50px;
+            position: relative;
+            height: 100%;
+            div.page-name {
+                @include span-columns(6);
+                h1 {
+                    font-family: $frutigerBoldCond;
+                    font-size: 1.5em;
+                    line-height: 15px;
+                    color: #b2b2b2;
+                    padding-bottom: 50px;
+                }
+            }
+            div {
+                p {
+                    @include span-columns(5);
+                    font-family: $frutigerLightCond;
+                    font-size: 1.5em;
+                    line-height: 1.2;
+                    color: #b2b2b2;
+                    @include media($tablet) {
+                        @include span-columns(3);
+                    }
+                    @include media($mobile) {
+                        @include span-columns(3);
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
     }
-}
+    div.actual-banner img {
+        position: relative;
+        display: block;
+        height: auto;
+        background-size: 100%;
+        background-position: top;
+            @include media($tablet) {
 
-.band-container-gray-letters {
-    border-bottom: 1px solid #828282;
+            }
+            @include media($mobile) {
+            background: url('../images/DW_About-mob.jpg') no-repeat;
+        }
+    }
 }
 
 section.letters_list {
@@ -1268,6 +1244,13 @@ section.letters_list {
         @include omega(2n);
         div.number {
             @include span-columns(6);
+            @include media($tablet) {
+                @include span-columns(6);
+                @include omega(2n);
+            }
+            @include media($mobile) {
+                display: block;
+            }
             padding: 0 30px 30px 30px;
             h3.letter-title {
                 float: left;
@@ -1290,6 +1273,13 @@ section.letters_list {
         @include omega(2n);
         div.number {
             @include span-columns(6);
+            @include media($tablet) {
+                @include span-columns(6);
+                @include omega(2n);
+            }
+            @include media($mobile) {
+                display: block;
+            }
             padding: 0 30px 30px 30px;
             h3.letter-title {
                 float: left;
@@ -1315,6 +1305,7 @@ section.letters_list {
     }
 }
 
+/* ----------- CONTACT PAGE -----------------------*/
 
 section.contact_list {
     @include outer-container;
@@ -1323,9 +1314,17 @@ section.contact_list {
     height: auto;
     div.contact {
         @include span-columns(12);
+        padding: 30px 0 0 0;
         display: block;
-        div.city-address {
+        div.city-address { 
             @include span-columns(6);
+                @include media($tablet) {
+                @include span-columns(6);
+                @include omega(2n);
+            }
+            @include media($mobile) {
+                @include span-columns(3); 
+            }
             float: left;
             padding: 0 30px 30px 0;
             h3.city-name {
@@ -1337,50 +1336,47 @@ section.contact_list {
 
             p.address-info {
                 font-size: 1em;
-                font-family: $frutigerBoldCond;
+                font-family: $frutigerLightCond;
                 color: $gray;
             }
         }
         div.city-img {
             @include span-columns(6);
-        }
-    }
-    .block-row2 {
-        @include span-columns(12);
-        @include omega(2n);
-        div.number {
-            @include span-columns(6);
-            padding: 0 30px 30px 30px;
-            h3.letter-title {
-                float: left;
-                font-family: $frutigerLightCond;
-                font-size: 2em;
-                color: $gray;
+                @include media($tablet) {
+                @include span-columns(6);
+                @include omega(2n);
             }
-            p.letter_number {
-                float: right;
-                font-size: 16em;
-                font-family: $frutigerBoldCond;
-                color: $gray;
+            @include media($mobile) {
+               @include span-columns(3); 
             }
         }
-    }
-    a {
-        text-decoration: none;
-        color: $gray;
-    }
-
-    a:hover{
-        color: $blue;
     }
 }
 
-#map-canvas {
-    min-height: 640px;
+#map-canvas-nyc {
+    min-height: 340px;
     width: 100%;
 }
 
-.gmnoprint img {
+#map-canvas-dc {
+    min-height: 340px;
+    width: 100%;
+}
+
+#map-canvas-boston {
+    min-height: 340px;
+    width: 100%;
+}
+
+.gmnoprint-nyc img {
+    max-width: none;
+}
+
+.gmnoprint-dc img {
+    max-width: none;
+}
+
+.gmnoprint-boston img {
     max-width: none;
 }
 
@@ -1419,6 +1415,7 @@ footer {
 #footer {
     background-color: #000;
     width: 100%;
+    height: auto;
     z-index: 999;
     display: block;
     font-family: $frutigerLightCond;

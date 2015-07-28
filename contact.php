@@ -12,7 +12,8 @@
             </div>
         </div>
     </div><!-- end blue intro box -->
-    <section class="contact_list">    
+    
+    <section class="contact_list">
             <div class="contact nyc">
                 <div class="city-address">
                     <h3 class="city-name">New York City</h3>
@@ -23,6 +24,9 @@
                     <img src="images/dw-nyc.jpg">
                 </div>  
             </div>
+    </section>
+    <div id="map-canvas-nyc"></div>
+    <section class="contact_list">
             <div class="contact dc">
                 <div class="city-address">
                     <h3 class="city-name">Washington, D.C.</h3>
@@ -33,6 +37,9 @@
                    <img src="images/dw-dc.jpg">
                 </div>
             </div>
+    </section>
+    <div id="map-canvas-dc"></div>
+    <section class="contact_list">
             <div class="contact boston">
                 <div class="city-address">
                     <h3 class="city-name">Boston</h3>
@@ -44,6 +51,7 @@
                 </div>
             </div>
     </section>
+    <div id="map-canvas-boston"></div>
     
 
     

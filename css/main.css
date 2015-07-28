@@ -54,13 +54,13 @@ body {
   align-items: center;
   /*justify-content: center;*/ }
 
-.global_pad, .page_banner_home div.overlay_home, .page_banner_firm div.intro-box div.inner_banner, .page_banner_letters div.intro-box div.inner_banner, .page_banner_value div.intro-box div.inner_banner, .page_banner_people div.intro-box div.inner_banner, section.people, section.person-info, section.people-single, section.firm, section.history, section.philosophy, section.value, div.band-container-white, section.detail-layout-value, section.letters_list, section.contact_list, footer div.inner_footer, #footer div.inner_footer {
+.global_pad, .page_banner_home div.overlay_home, .page_banner_firm div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, .page_banner_value div.intro-box div.inner_banner, section.value, div.band-container-white, section.detail-layout-value, .page_banner_people div.intro-box div.inner_banner, section.people, section.person-info, section.people-single, .page_banner_letters div.intro-box div.inner_banner, section.letters_list, section.contact_list, footer div.inner_footer, #footer div.inner_footer {
   padding: 1.5em 40px; }
   @media screen and (max-width: 768px) {
-    .global_pad, .page_banner_home div.overlay_home, .page_banner_firm div.intro-box div.inner_banner, .page_banner_letters div.intro-box div.inner_banner, .page_banner_value div.intro-box div.inner_banner, .page_banner_people div.intro-box div.inner_banner, section.people, section.person-info, section.people-single, section.firm, section.history, section.philosophy, section.value, div.band-container-white, section.detail-layout-value, section.letters_list, section.contact_list, footer div.inner_footer, #footer div.inner_footer {
+    .global_pad, .page_banner_home div.overlay_home, .page_banner_firm div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, .page_banner_value div.intro-box div.inner_banner, section.value, div.band-container-white, section.detail-layout-value, .page_banner_people div.intro-box div.inner_banner, section.people, section.person-info, section.people-single, .page_banner_letters div.intro-box div.inner_banner, section.letters_list, section.contact_list, footer div.inner_footer, #footer div.inner_footer {
       padding: 2em 40px; } }
   @media screen and (max-width: 480px) {
-    .global_pad, .page_banner_home div.overlay_home, .page_banner_firm div.intro-box div.inner_banner, .page_banner_letters div.intro-box div.inner_banner, .page_banner_value div.intro-box div.inner_banner, .page_banner_people div.intro-box div.inner_banner, section.people, section.person-info, section.people-single, section.firm, section.history, section.philosophy, section.value, div.band-container-white, section.detail-layout-value, section.letters_list, section.contact_list, footer div.inner_footer, #footer div.inner_footer {
+    .global_pad, .page_banner_home div.overlay_home, .page_banner_firm div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, .page_banner_value div.intro-box div.inner_banner, section.value, div.band-container-white, section.detail-layout-value, .page_banner_people div.intro-box div.inner_banner, section.people, section.person-info, section.people-single, .page_banner_letters div.intro-box div.inner_banner, section.letters_list, section.contact_list, footer div.inner_footer, #footer div.inner_footer {
       padding: 2em 30px; } }
 
 .sidepad, .inner_header {
@@ -81,6 +81,7 @@ body {
     .inner_header h1 a:last-child {
       margin-right: 0; } }
 
+/*----------------- HOME PAGE -----------*/
 header.home {
   z-index: 999;
   position: relative;
@@ -192,6 +193,175 @@ header.home {
         header.home div.inner_header_home nav.main-nav-home ul li .main-nav li.current {
           border-bottom: 1px #333 solid; }
 
+.page_banner_home {
+  z-index: 0;
+  background-color: #eee;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  background: url("../images/DW_Home2.jpg") center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .page_banner_home div.overlay_home {
+    max-width: 75em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20%; }
+    .page_banner_home div.overlay_home::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .page_banner_home div.overlay_home div.inner_banner_home {
+      padding: 200px 0 200px 0;
+      position: relative;
+      min-height: 100%;
+      /* equal to footer height */
+      margin-bottom: -142px;
+      /*@include media($mobile) {
+          padding-top: 100px;
+      }
+      @include media($tiny) {
+          padding: 100px 0 0 50px;
+      }*/ }
+      @media screen and (max-width: 768px) {
+        .page_banner_home div.overlay_home div.inner_banner_home {
+          padding-top: 100px; } }
+      .page_banner_home div.overlay_home div.inner_banner_home div.home-logo h1.home-logo-name {
+        font-size: 3em;
+        font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
+        color: #A3A9AC; }
+        @media screen and (max-width: 768px) {
+          .page_banner_home div.overlay_home div.inner_banner_home div.home-logo h1.home-logo-name {
+            float: left;
+            display: block;
+            margin-right: 4.7619047619%;
+            width: 82.5396825397%; }
+            .page_banner_home div.overlay_home div.inner_banner_home div.home-logo h1.home-logo-name:last-child {
+              margin-right: 0; } }
+        @media screen and (max-width: 480px) {
+          .page_banner_home div.overlay_home div.inner_banner_home div.home-logo h1.home-logo-name {
+            float: left;
+            display: block;
+            margin-right: 10%;
+            width: 100%;
+            font-size: 2em; }
+            .page_banner_home div.overlay_home div.inner_banner_home div.home-logo h1.home-logo-name:last-child {
+              margin-right: 0; } }
+    .page_banner_home div.overlay_home div.home-message {
+      padding-top: 30px;
+      display: block; }
+      .page_banner_home div.overlay_home div.home-message p {
+        float: left;
+        display: block;
+        margin-right: 2.3255813953%;
+        width: 57.3643410853%;
+        font-size: 3em;
+        color: #A3A9AC;
+        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+        .page_banner_home div.overlay_home div.home-message p:last-child {
+          margin-right: 0; }
+        @media screen and (max-width: 768px) {
+          .page_banner_home div.overlay_home div.home-message p {
+            float: left;
+            display: block;
+            margin-right: 4.7619047619%;
+            width: 82.5396825397%; }
+            .page_banner_home div.overlay_home div.home-message p:last-child {
+              margin-right: 0; } }
+        @media screen and (max-width: 480px) {
+          .page_banner_home div.overlay_home div.home-message p {
+            float: left;
+            display: block;
+            margin-right: 10%;
+            width: 100%;
+            font-size: 2em; }
+            .page_banner_home div.overlay_home div.home-message p:last-child {
+              margin-right: 0; } }
+    .page_banner_home div.overlay_home button {
+      border: 1px solid #b2b2b2; }
+
+div.overlay-mobile {
+  display: none; }
+
+@media (max-width: 480px) {
+  div.overlay-mobile div.inner_banner-mobile {
+    height: 175px;
+    padding: 10%;
+    background-color: rgba(0, 79, 177, 0.6); } }
+/* ----------------------------HOME PAGE BUTTONS ---------------*/
+.buttons-btn {
+  float: left;
+  display: block;
+  margin-right: 2.3255813953%;
+  width: 65.8914728682%;
+  padding-top: 40px; }
+  .buttons-btn:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .buttons-btn {
+      float: left;
+      display: block;
+      margin-right: 4.7619047619%;
+      width: 204.7619047619%; }
+      .buttons-btn:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 480px) {
+    .buttons-btn {
+      width: 100%; } }
+
+.container-button {
+  float: left;
+  display: block;
+  margin-right: 2.3255813953%;
+  width: 100%;
+  display: block; }
+  .container-button:last-child {
+    margin-right: 0; }
+  .container-button p {
+    font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
+    font-size: 1.5em;
+    text-align: center; }
+
+.btn {
+  margin-left: -5px;
+  color: #A3A9AC;
+  cursor: pointer;
+  font-size: 1em;
+  line-height: 60px;
+  display: inline-block;
+  max-width: 160px;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 100%; }
+  @media screen and (max-width: 480px) {
+    .btn {
+      border-top: 1px solid;
+      max-width: 100%; } }
+
+.btn-4 {
+  border: 1px solid; }
+  @media screen and (max-width: 480px) {
+    .btn-4 {
+      border: none;
+      width: 100%;
+      display: block;
+      text-align: center;
+      margin: 0 auto; }
+      .btn-4 a {
+        border-bottom: 1px solid #A3A9AC; } }
+
+.btn-4:hover {
+  background: #2775F6; }
+  @media screen and (max-width: 480px) {
+    .btn-4:hover {
+      background: transparent; } }
+  @media screen and (max-width: 480px) {
+    .btn-4:hover p:hover {
+      color: #2775F6; } }
+
+/* -----------------------------END BUTTONS ------------------------*/
 header {
   z-index: 999;
   position: relative;
@@ -303,28 +473,6 @@ header {
         header div.inner_header nav.main-nav ul li .main-nav li.current {
           border-bottom: 1px #333 solid; }
 
-/*.menuIcon {
-    display: none;
-    width: 100%;
-    text-align: center;
-    h1 {
-        a{
-            font-family: $frutigerLightCond;
-        }
-    }
-    a {
-        &:hover {
-        color: #999;
-    }  
-      width: 100%;
-      display: block;
-      color: $blue;
-      text-decoration: none;
-      img {
-        vertical-align: middle;
-      }
-    }
-  }*/
 button {
   display: none; }
   button span {
@@ -377,7 +525,7 @@ hr {
     top: 0;
     right: 0; }
 
-  /* ---------------------------------HAMBURGER STARTS ---------------*/
+  /* --------------HAMBURGER STARTS -----------*/
  /* 
     .c-hamburger {
       float: right;  
@@ -479,7 +627,7 @@ hr {
       transition-delay: 0s, 0.3s;
     }
 */
-  /* ---------------------------------HAMBURGER ENDS ---------------*/
+  /* --------------HAMBURGER ENDS ---------------*/
   .mob-nav-container-active {
     position: fixed;
     left: 0;
@@ -499,187 +647,20 @@ hr {
       transition: all .15s;
       font-size: 2em;
       padding: 5px; } }
-/* -----------END media queries -----------------------*/
-/* -----------------------------------BUTTONS ---------------*/
-.buttons-btn {
-  float: left;
-  display: block;
-  margin-right: 2.3255813953%;
-  width: 65.8914728682%;
-  padding-top: 40px; }
-  .buttons-btn:last-child {
-    margin-right: 0; }
-  @media screen and (max-width: 768px) {
-    .buttons-btn {
-      float: left;
-      display: block;
-      margin-right: 4.7619047619%;
-      width: 204.7619047619%; }
-      .buttons-btn:last-child {
-        margin-right: 0; } }
-  @media screen and (max-width: 480px) {
-    .buttons-btn {
-      width: 100%; } }
-
-.container-button {
-  float: left;
-  display: block;
-  margin-right: 2.3255813953%;
-  width: 100%;
-  display: block; }
-  .container-button:last-child {
-    margin-right: 0; }
-  .container-button p {
-    font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
-    font-size: 1.5em;
-    text-align: center; }
-
-.btn {
-  margin-left: -5px;
-  color: #A3A9AC;
-  cursor: pointer;
-  font-size: 1em;
-  line-height: 60px;
-  display: inline-block;
-  max-width: 160px;
-  text-decoration: none;
-  vertical-align: middle;
-  width: 100%; }
-  @media screen and (max-width: 480px) {
-    .btn {
-      border-top: 1px solid;
-      max-width: 100%; } }
-
-.btn-4 {
-  border: 1px solid; }
-  @media screen and (max-width: 480px) {
-    .btn-4 {
-      border: none;
-      width: 100%;
-      display: block;
-      text-align: center;
-      margin: 0 auto; }
-      .btn-4 a {
-        border-bottom: 1px solid #A3A9AC; } }
-
-.btn-4:hover {
-  background: #2775F6; }
-  @media screen and (max-width: 480px) {
-    .btn-4:hover {
-      background: transparent; } }
-  @media screen and (max-width: 480px) {
-    .btn-4:hover p:hover {
-      color: #2775F6; } }
-
-/* -----------------------------END BUTTONS ------------------------*/
-.page_banner_home {
-  z-index: 0;
-  background-color: #eee;
-  min-height: 100%;
-  top: 0;
-  left: 0;
-  background: url("../images/DW_Home2.jpg") center center no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-  .page_banner_home div.overlay_home {
-    max-width: 75em;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 20%; }
-    .page_banner_home div.overlay_home::after {
-      clear: both;
-      content: "";
-      display: table; }
-    .page_banner_home div.overlay_home div.inner_banner_home {
-      padding: 200px 0 200px 0;
-      position: relative;
-      min-height: 100%;
-      /* equal to footer height */
-      margin-bottom: -142px;
-      /*@include media($mobile) {
-          padding-top: 100px;
-      }
-      @include media($tiny) {
-          padding: 100px 0 0 50px;
-      }*/ }
-      @media screen and (max-width: 768px) {
-        .page_banner_home div.overlay_home div.inner_banner_home {
-          padding-top: 100px; } }
-      .page_banner_home div.overlay_home div.inner_banner_home div.home-logo h1.home-logo-name {
-        font-size: 3em;
-        font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
-        color: #A3A9AC; }
-        @media screen and (max-width: 768px) {
-          .page_banner_home div.overlay_home div.inner_banner_home div.home-logo h1.home-logo-name {
-            float: left;
-            display: block;
-            margin-right: 4.7619047619%;
-            width: 82.5396825397%; }
-            .page_banner_home div.overlay_home div.inner_banner_home div.home-logo h1.home-logo-name:last-child {
-              margin-right: 0; } }
-        @media screen and (max-width: 480px) {
-          .page_banner_home div.overlay_home div.inner_banner_home div.home-logo h1.home-logo-name {
-            float: left;
-            display: block;
-            margin-right: 10%;
-            width: 100%;
-            font-size: 2em; }
-            .page_banner_home div.overlay_home div.inner_banner_home div.home-logo h1.home-logo-name:last-child {
-              margin-right: 0; } }
-    .page_banner_home div.overlay_home div.home-message {
-      padding-top: 30px;
-      display: block; }
-      .page_banner_home div.overlay_home div.home-message p {
-        float: left;
-        display: block;
-        margin-right: 2.3255813953%;
-        width: 57.3643410853%;
-        font-size: 3em;
-        color: #A3A9AC;
-        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
-        .page_banner_home div.overlay_home div.home-message p:last-child {
-          margin-right: 0; }
-        @media screen and (max-width: 768px) {
-          .page_banner_home div.overlay_home div.home-message p {
-            float: left;
-            display: block;
-            margin-right: 4.7619047619%;
-            width: 82.5396825397%; }
-            .page_banner_home div.overlay_home div.home-message p:last-child {
-              margin-right: 0; } }
-        @media screen and (max-width: 480px) {
-          .page_banner_home div.overlay_home div.home-message p {
-            float: left;
-            display: block;
-            margin-right: 10%;
-            width: 100%;
-            font-size: 2em; }
-            .page_banner_home div.overlay_home div.home-message p:last-child {
-              margin-right: 0; } }
-    .page_banner_home div.overlay_home button {
-      border: 1px solid #b2b2b2; }
-
-div.overlay-mobile {
-  display: none; }
-
-@media (max-width: 480px) {
-  div.overlay-mobile div.inner_banner-mobile {
-    height: 175px;
-    padding: 10%;
-    background-color: rgba(0, 79, 177, 0.6); } }
+/* -----------END media queries -----------------*/
+/* ----------- ABOUT PAGE -----------------------*/
 .page_banner_firm {
   position: relative; }
   .page_banner_firm div.intro-box {
     width: 100%;
-    height: 185px;
+    height: auto;
     background-color: #004FB1; }
     .page_banner_firm div.intro-box div.inner_banner {
       max-width: 75em;
       margin-left: auto;
       margin-right: auto;
-      padding-top: 5%;
+      padding-top: 50px;
+      padding-bottom: 50px;
       position: relative;
       height: 100%; }
       .page_banner_firm div.intro-box div.inner_banner::after {
@@ -698,7 +679,7 @@ div.overlay-mobile {
           font-size: 1.5em;
           line-height: 15px;
           color: #b2b2b2;
-          padding-bottom: 30px; }
+          padding-bottom: 50px; }
       .page_banner_firm div.intro-box div.inner_banner div p {
         float: left;
         display: block;
@@ -736,372 +717,6 @@ div.overlay-mobile {
     @media screen and (max-width: 480px) {
       .page_banner_firm div.actual-banner img {
         background: url("../images/DW_About-mob.jpg") no-repeat; } }
-
-.page_banner_letters {
-  position: relative; }
-  .page_banner_letters div.intro-box {
-    width: 100%;
-    height: 185px;
-    background-color: #004FB1; }
-    .page_banner_letters div.intro-box div.inner_banner {
-      max-width: 75em;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 5%;
-      position: relative;
-      height: 100%; }
-      .page_banner_letters div.intro-box div.inner_banner::after {
-        clear: both;
-        content: "";
-        display: table; }
-      .page_banner_letters div.intro-box div.inner_banner div.page-name {
-        float: left;
-        display: block;
-        margin-right: 2.3255813953%;
-        width: 48.8372093023%; }
-        .page_banner_letters div.intro-box div.inner_banner div.page-name:last-child {
-          margin-right: 0; }
-        .page_banner_letters div.intro-box div.inner_banner div.page-name h1 {
-          font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
-          font-size: 1.5em;
-          line-height: 15px;
-          color: #b2b2b2;
-          padding-bottom: 30px; }
-      .page_banner_letters div.intro-box div.inner_banner div p {
-        float: left;
-        display: block;
-        margin-right: 2.3255813953%;
-        width: 40.3100775194%;
-        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
-        font-size: 1.5em;
-        line-height: 1.2;
-        color: #b2b2b2; }
-        .page_banner_letters div.intro-box div.inner_banner div p:last-child {
-          margin-right: 0; }
-        @media screen and (max-width: 768px) {
-          .page_banner_letters div.intro-box div.inner_banner div p {
-            float: left;
-            display: block;
-            margin-right: 4.7619047619%;
-            width: 47.619047619%; }
-            .page_banner_letters div.intro-box div.inner_banner div p:last-child {
-              margin-right: 0; } }
-        @media screen and (max-width: 480px) {
-          .page_banner_letters div.intro-box div.inner_banner div p {
-            float: left;
-            display: block;
-            margin-right: 10%;
-            width: 100%;
-            font-size: 1em; }
-            .page_banner_letters div.intro-box div.inner_banner div p:last-child {
-              margin-right: 0; } }
-  .page_banner_letters div.actual-banner img {
-    position: relative;
-    display: block;
-    height: auto;
-    background-size: 100%;
-    background-position: top; }
-    @media screen and (max-width: 480px) {
-      .page_banner_letters div.actual-banner img {
-        background: url("../images/DW_About-mob.jpg") no-repeat; } }
-
-.page_banner_value {
-  position: relative; }
-  .page_banner_value div.intro-box {
-    width: 100%;
-    height: 185px;
-    background-color: #004FB1; }
-    .page_banner_value div.intro-box div.inner_banner {
-      max-width: 75em;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 5%;
-      position: relative;
-      height: 100%; }
-      .page_banner_value div.intro-box div.inner_banner::after {
-        clear: both;
-        content: "";
-        display: table; }
-      .page_banner_value div.intro-box div.inner_banner div.page-name {
-        float: left;
-        display: block;
-        margin-right: 2.3255813953%;
-        width: 48.8372093023%; }
-        .page_banner_value div.intro-box div.inner_banner div.page-name:last-child {
-          margin-right: 0; }
-        .page_banner_value div.intro-box div.inner_banner div.page-name h1 {
-          font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
-          font-size: 1.5em;
-          line-height: 15px;
-          color: #b2b2b2;
-          padding-bottom: 30px; }
-      .page_banner_value div.intro-box div.inner_banner div p {
-        float: left;
-        display: block;
-        margin-right: 2.3255813953%;
-        width: 40.3100775194%;
-        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
-        font-size: 1.5em;
-        line-height: 1.2;
-        color: #b2b2b2; }
-        .page_banner_value div.intro-box div.inner_banner div p:last-child {
-          margin-right: 0; }
-        @media screen and (max-width: 768px) {
-          .page_banner_value div.intro-box div.inner_banner div p {
-            float: left;
-            display: block;
-            margin-right: 4.7619047619%;
-            width: 47.619047619%; }
-            .page_banner_value div.intro-box div.inner_banner div p:last-child {
-              margin-right: 0; } }
-        @media screen and (max-width: 480px) {
-          .page_banner_value div.intro-box div.inner_banner div p {
-            float: left;
-            display: block;
-            margin-right: 10%;
-            width: 100%;
-            font-size: 1em; }
-            .page_banner_value div.intro-box div.inner_banner div p:last-child {
-              margin-right: 0; } }
-  .page_banner_value div.actual-banner img {
-    position: relative;
-    display: block;
-    height: auto;
-    background-size: 100%;
-    background-position: top; }
-    @media screen and (max-width: 480px) {
-      .page_banner_value div.actual-banner img {
-        background: url("../images/DW_Value-mob.jpg") no-repeat; } }
-
-.page_banner_people {
-  position: relative; }
-  .page_banner_people div.intro-box {
-    width: 100%;
-    height: 185px;
-    background-color: #004FB1; }
-    .page_banner_people div.intro-box div.inner_banner {
-      max-width: 75em;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 5%;
-      position: relative;
-      height: 100%; }
-      .page_banner_people div.intro-box div.inner_banner::after {
-        clear: both;
-        content: "";
-        display: table; }
-      .page_banner_people div.intro-box div.inner_banner div.page-name {
-        float: left;
-        display: block;
-        margin-right: 2.3255813953%;
-        width: 48.8372093023%; }
-        .page_banner_people div.intro-box div.inner_banner div.page-name:last-child {
-          margin-right: 0; }
-        .page_banner_people div.intro-box div.inner_banner div.page-name h1 {
-          font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
-          font-size: 1.5em;
-          color: #b2b2b2;
-          line-height: 15px;
-          padding-bottom: 30px; }
-      .page_banner_people div.intro-box div.inner_banner div p {
-        float: left;
-        display: block;
-        margin-right: 2.3255813953%;
-        width: 40.3100775194%;
-        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
-        font-size: 1.5em;
-        line-height: 1.2;
-        color: #b2b2b2; }
-        .page_banner_people div.intro-box div.inner_banner div p:last-child {
-          margin-right: 0; }
-        @media screen and (max-width: 768px) {
-          .page_banner_people div.intro-box div.inner_banner div p {
-            float: left;
-            display: block;
-            margin-right: 4.7619047619%;
-            width: 47.619047619%; }
-            .page_banner_people div.intro-box div.inner_banner div p:last-child {
-              margin-right: 0; } }
-        @media screen and (max-width: 480px) {
-          .page_banner_people div.intro-box div.inner_banner div p {
-            float: left;
-            display: block;
-            margin-right: 10%;
-            width: 100%;
-            font-size: 1em; }
-            .page_banner_people div.intro-box div.inner_banner div p:last-child {
-              margin-right: 0; } }
-
-section.people {
-  max-width: 75em;
-  margin-left: auto;
-  margin-right: auto; }
-  section.people::after {
-    clear: both;
-    content: "";
-    display: table; }
-  section.people div.person {
-    float: left;
-    display: block;
-    margin-right: 2.3255813953%;
-    width: 23.2558139535%;
-    background-color: #eee;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    position: relative; }
-    section.people div.person:last-child {
-      margin-right: 0; }
-    section.people div.person:nth-child(4n) {
-      margin-right: 0; }
-    section.people div.person:nth-child(4n+1) {
-      clear: left; }
-    @media screen and (max-width: 768px) {
-      section.people div.person {
-        float: left;
-        display: block;
-        margin-right: 4.7619047619%;
-        width: 47.619047619%; }
-        section.people div.person:last-child {
-          margin-right: 0; }
-        section.people div.person:nth-child(2n) {
-          margin-right: 0; }
-        section.people div.person:nth-child(2n+1) {
-          clear: left; } }
-    @media screen and (max-width: 480px) {
-      section.people div.person {
-        float: left;
-        display: block;
-        margin-right: 10%;
-        width: 100%; }
-        section.people div.person:last-child {
-          margin-right: 0; }
-        section.people div.person:nth-child(4n) {
-          margin-right: 0; }
-        section.people div.person:nth-child(4n+1) {
-          clear: left; } }
-    section.people div.person div.person_name {
-      position: absolute;
-      height: 60px;
-      bottom: 0;
-      background-color: rgba(0, 79, 177, 0.6);
-      width: 100%;
-      padding: 0 1em; }
-      section.people div.person div.person_name h1 {
-        line-height: 40px;
-        color: #fff;
-        color: #fff;
-        font-size: 1rem;
-        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
-        @media screen and (max-width: 768px) {
-          section.people div.person div.person_name h1 {
-            font-size: 1rem; } }
-        @media screen and (max-width: 480px) {
-          section.people div.person div.person_name h1 {
-            font-size: 0.9375rem; } }
-      section.people div.person div.person_name p {
-        line-height: 5px;
-        color: #fff;
-        font-size: 10pt;
-        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
-      section.people div.person div.person_name p:hover {
-        opacity: 1; }
-      section.people div.person div.person_name a {
-        color: #fff;
-        text-decoration: none; }
-    section.people div.person div.person_name:hover {
-      background-color: rgba(0, 0, 0, 0.6); }
-
-/* ----------------------------- Single person people grid - mobile -----*/
-section.person-info {
-  max-width: 75em;
-  margin-left: auto;
-  margin-right: auto; }
-  section.person-info::after {
-    clear: both;
-    content: "";
-    display: table; }
-  section.person-info div.description-person-single h2.title-person-single {
-    font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif; }
-
-section.people-single {
-  max-width: 75em;
-  margin-left: auto;
-  margin-right: auto; }
-  section.people-single::after {
-    clear: both;
-    content: "";
-    display: table; }
-  section.people-single div.person-single {
-    float: left;
-    display: block;
-    margin-right: 2.3255813953%;
-    width: 23.2558139535%;
-    background-color: #eee;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    position: relative; }
-    section.people-single div.person-single:last-child {
-      margin-right: 0; }
-    section.people-single div.person-single:nth-child(4n) {
-      margin-right: 0; }
-    section.people-single div.person-single:nth-child(4n+1) {
-      clear: left; }
-    @media screen and (max-width: 768px) {
-      section.people-single div.person-single {
-        float: left;
-        display: block;
-        margin-right: 4.7619047619%;
-        width: 47.619047619%; }
-        section.people-single div.person-single:last-child {
-          margin-right: 0; }
-        section.people-single div.person-single:nth-child(2n) {
-          margin-right: 0; }
-        section.people-single div.person-single:nth-child(2n+1) {
-          clear: left; } }
-    section.people-single div.person-single div.person_name-single {
-      position: absolute;
-      height: 60px;
-      bottom: 0;
-      background-color: rgba(0, 79, 177, 0.6);
-      width: 100%;
-      padding: 0 1em; }
-      section.people-single div.person-single div.person_name-single h1 {
-        line-height: 35px;
-        color: #fff;
-        color: #fff;
-        font-size: 1rem;
-        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
-        @media screen and (max-width: 768px) {
-          section.people-single div.person-single div.person_name-single h1 {
-            font-size: 1rem; } }
-        @media screen and (max-width: 480px) {
-          section.people-single div.person-single div.person_name-single h1 {
-            font-size: 0.9375rem; } }
-        @media screen and (max-width: 768px) {
-          section.people-single div.person-single div.person_name-single h1 {
-            line-height: 25px;
-            font-size: 10pt; } }
-      section.people-single div.person-single div.person_name-single p {
-        line-height: 20px;
-        color: #fff;
-        font-size: 10pt;
-        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
-        @media screen and (max-width: 768px) {
-          section.people-single div.person-single div.person_name-single p {
-            line-height: 15px;
-            font-size: 9pt; } }
-      section.people-single div.person-single div.person_name-single p:hover {
-        opacity: 1; }
-      section.people-single div.person-single div.person_name-single a {
-        color: #fff;
-        text-decoration: none; }
-    section.people-single div.person-single div.person_name:hover {
-      background-color: rgba(0, 0, 0, 0.6); }
-
-div.band-container-gray {
-  background-color: #eee;
-  width: 100%;
-  height: auto; }
 
 section.firm {
   max-width: 75em;
@@ -1336,6 +951,76 @@ section.philosophy {
           margin-left: 0%; }
           section.philosophy div.block div.description p.description-text-right:last-child {
             margin-right: 0; } }
+
+/* ----------- VALUE PAGE -----------------------*/
+.page_banner_value {
+  position: relative; }
+  .page_banner_value div.intro-box {
+    width: 100%;
+    height: auto;
+    background-color: #004FB1; }
+    .page_banner_value div.intro-box div.inner_banner {
+      max-width: 75em;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      position: relative;
+      height: 100%; }
+      .page_banner_value div.intro-box div.inner_banner::after {
+        clear: both;
+        content: "";
+        display: table; }
+      .page_banner_value div.intro-box div.inner_banner div.page-name {
+        float: left;
+        display: block;
+        margin-right: 2.3255813953%;
+        width: 48.8372093023%; }
+        .page_banner_value div.intro-box div.inner_banner div.page-name:last-child {
+          margin-right: 0; }
+        .page_banner_value div.intro-box div.inner_banner div.page-name h1 {
+          font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
+          font-size: 1.5em;
+          line-height: 15px;
+          color: #b2b2b2;
+          padding-bottom: 50px; }
+      .page_banner_value div.intro-box div.inner_banner div p {
+        float: left;
+        display: block;
+        margin-right: 2.3255813953%;
+        width: 40.3100775194%;
+        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
+        font-size: 1.5em;
+        line-height: 1.2;
+        color: #b2b2b2; }
+        .page_banner_value div.intro-box div.inner_banner div p:last-child {
+          margin-right: 0; }
+        @media screen and (max-width: 768px) {
+          .page_banner_value div.intro-box div.inner_banner div p {
+            float: left;
+            display: block;
+            margin-right: 4.7619047619%;
+            width: 47.619047619%; }
+            .page_banner_value div.intro-box div.inner_banner div p:last-child {
+              margin-right: 0; } }
+        @media screen and (max-width: 480px) {
+          .page_banner_value div.intro-box div.inner_banner div p {
+            float: left;
+            display: block;
+            margin-right: 10%;
+            width: 100%;
+            font-size: 1em; }
+            .page_banner_value div.intro-box div.inner_banner div p:last-child {
+              margin-right: 0; } }
+  .page_banner_value div.actual-banner img {
+    position: relative;
+    display: block;
+    height: auto;
+    background-size: 100%;
+    background-position: top; }
+    @media screen and (max-width: 480px) {
+      .page_banner_value div.actual-banner img {
+        background: url("../images/DW_Value-mob.jpg") no-repeat; } }
 
 section.value {
   max-width: 75em;
@@ -1576,6 +1261,307 @@ section.detail-layout-value {
 .band-container-gray-letters {
   border-bottom: 1px solid #828282; }
 
+/* ----------- PEOPLE PAGE -----------------------*/
+.page_banner_people {
+  position: relative; }
+  .page_banner_people div.intro-box {
+    width: 100%;
+    height: auto;
+    background-color: #004FB1; }
+    .page_banner_people div.intro-box div.inner_banner {
+      max-width: 75em;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      position: relative;
+      height: 100%; }
+      .page_banner_people div.intro-box div.inner_banner::after {
+        clear: both;
+        content: "";
+        display: table; }
+      .page_banner_people div.intro-box div.inner_banner div.page-name {
+        float: left;
+        display: block;
+        margin-right: 2.3255813953%;
+        width: 48.8372093023%; }
+        .page_banner_people div.intro-box div.inner_banner div.page-name:last-child {
+          margin-right: 0; }
+        .page_banner_people div.intro-box div.inner_banner div.page-name h1 {
+          font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
+          font-size: 1.5em;
+          color: #b2b2b2;
+          line-height: 15px;
+          padding-bottom: 50px; }
+      .page_banner_people div.intro-box div.inner_banner div p {
+        float: left;
+        display: block;
+        margin-right: 2.3255813953%;
+        width: 40.3100775194%;
+        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
+        font-size: 1.5em;
+        line-height: 1.2;
+        color: #b2b2b2; }
+        .page_banner_people div.intro-box div.inner_banner div p:last-child {
+          margin-right: 0; }
+        @media screen and (max-width: 768px) {
+          .page_banner_people div.intro-box div.inner_banner div p {
+            float: left;
+            display: block;
+            margin-right: 4.7619047619%;
+            width: 47.619047619%; }
+            .page_banner_people div.intro-box div.inner_banner div p:last-child {
+              margin-right: 0; } }
+        @media screen and (max-width: 480px) {
+          .page_banner_people div.intro-box div.inner_banner div p {
+            float: left;
+            display: block;
+            margin-right: 10%;
+            width: 100%;
+            font-size: 1em; }
+            .page_banner_people div.intro-box div.inner_banner div p:last-child {
+              margin-right: 0; } }
+
+section.people {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto; }
+  section.people::after {
+    clear: both;
+    content: "";
+    display: table; }
+  section.people div.person {
+    float: left;
+    display: block;
+    margin-right: 2.3255813953%;
+    width: 23.2558139535%;
+    background-color: #eee;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    position: relative; }
+    section.people div.person:last-child {
+      margin-right: 0; }
+    section.people div.person:nth-child(4n) {
+      margin-right: 0; }
+    section.people div.person:nth-child(4n+1) {
+      clear: left; }
+    @media screen and (max-width: 768px) {
+      section.people div.person {
+        float: left;
+        display: block;
+        margin-right: 4.7619047619%;
+        width: 47.619047619%; }
+        section.people div.person:last-child {
+          margin-right: 0; }
+        section.people div.person:nth-child(2n) {
+          margin-right: 0; }
+        section.people div.person:nth-child(2n+1) {
+          clear: left; } }
+    @media screen and (max-width: 480px) {
+      section.people div.person {
+        float: left;
+        display: block;
+        margin-right: 10%;
+        width: 100%; }
+        section.people div.person:last-child {
+          margin-right: 0; }
+        section.people div.person:nth-child(4n) {
+          margin-right: 0; }
+        section.people div.person:nth-child(4n+1) {
+          clear: left; } }
+    section.people div.person div.person_name {
+      position: absolute;
+      height: 60px;
+      bottom: 0;
+      background-color: rgba(0, 79, 177, 0.6);
+      width: 100%;
+      padding: 0 1em; }
+      section.people div.person div.person_name h1 {
+        line-height: 40px;
+        color: #fff;
+        color: #fff;
+        font-size: 1rem;
+        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+        @media screen and (max-width: 768px) {
+          section.people div.person div.person_name h1 {
+            font-size: 1rem; } }
+        @media screen and (max-width: 480px) {
+          section.people div.person div.person_name h1 {
+            font-size: 0.9375rem; } }
+      section.people div.person div.person_name p {
+        line-height: 5px;
+        color: #fff;
+        font-size: 10pt;
+        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+      section.people div.person div.person_name p:hover {
+        opacity: 1; }
+      section.people div.person div.person_name a {
+        color: #fff;
+        text-decoration: none; }
+    section.people div.person div.person_name:hover {
+      background-color: rgba(0, 0, 0, 0.6); }
+
+/* ----------------------------- Single person people grid - mobile -----*/
+section.person-info {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto; }
+  section.person-info::after {
+    clear: both;
+    content: "";
+    display: table; }
+  section.person-info div.description-person-single h2.title-person-single {
+    font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif; }
+
+section.people-single {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto; }
+  section.people-single::after {
+    clear: both;
+    content: "";
+    display: table; }
+  section.people-single div.person-single {
+    float: left;
+    display: block;
+    margin-right: 2.3255813953%;
+    width: 23.2558139535%;
+    background-color: #eee;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    position: relative; }
+    section.people-single div.person-single:last-child {
+      margin-right: 0; }
+    section.people-single div.person-single:nth-child(4n) {
+      margin-right: 0; }
+    section.people-single div.person-single:nth-child(4n+1) {
+      clear: left; }
+    @media screen and (max-width: 768px) {
+      section.people-single div.person-single {
+        float: left;
+        display: block;
+        margin-right: 4.7619047619%;
+        width: 47.619047619%; }
+        section.people-single div.person-single:last-child {
+          margin-right: 0; }
+        section.people-single div.person-single:nth-child(2n) {
+          margin-right: 0; }
+        section.people-single div.person-single:nth-child(2n+1) {
+          clear: left; } }
+    section.people-single div.person-single div.person_name-single {
+      position: absolute;
+      height: 60px;
+      bottom: 0;
+      background-color: rgba(0, 79, 177, 0.6);
+      width: 100%;
+      padding: 0 1em; }
+      section.people-single div.person-single div.person_name-single h1 {
+        line-height: 35px;
+        color: #fff;
+        color: #fff;
+        font-size: 1rem;
+        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+        @media screen and (max-width: 768px) {
+          section.people-single div.person-single div.person_name-single h1 {
+            font-size: 1rem; } }
+        @media screen and (max-width: 480px) {
+          section.people-single div.person-single div.person_name-single h1 {
+            font-size: 0.9375rem; } }
+        @media screen and (max-width: 768px) {
+          section.people-single div.person-single div.person_name-single h1 {
+            line-height: 25px;
+            font-size: 10pt; } }
+      section.people-single div.person-single div.person_name-single p {
+        line-height: 20px;
+        color: #fff;
+        font-size: 10pt;
+        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+        @media screen and (max-width: 768px) {
+          section.people-single div.person-single div.person_name-single p {
+            line-height: 15px;
+            font-size: 9pt; } }
+      section.people-single div.person-single div.person_name-single p:hover {
+        opacity: 1; }
+      section.people-single div.person-single div.person_name-single a {
+        color: #fff;
+        text-decoration: none; }
+    section.people-single div.person-single div.person_name:hover {
+      background-color: rgba(0, 0, 0, 0.6); }
+
+div.band-container-gray {
+  background-color: #eee;
+  width: 100%;
+  height: auto; }
+
+/* ----------- LETTERS PAGE -----------------------*/
+.page_banner_letters {
+  position: relative; }
+  .page_banner_letters div.intro-box {
+    width: 100%;
+    height: auto;
+    background-color: #004FB1; }
+    .page_banner_letters div.intro-box div.inner_banner {
+      max-width: 75em;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 50px;
+      position: relative;
+      height: 100%; }
+      .page_banner_letters div.intro-box div.inner_banner::after {
+        clear: both;
+        content: "";
+        display: table; }
+      .page_banner_letters div.intro-box div.inner_banner div.page-name {
+        float: left;
+        display: block;
+        margin-right: 2.3255813953%;
+        width: 48.8372093023%; }
+        .page_banner_letters div.intro-box div.inner_banner div.page-name:last-child {
+          margin-right: 0; }
+        .page_banner_letters div.intro-box div.inner_banner div.page-name h1 {
+          font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
+          font-size: 1.5em;
+          line-height: 15px;
+          color: #b2b2b2;
+          padding-bottom: 50px; }
+      .page_banner_letters div.intro-box div.inner_banner div p {
+        float: left;
+        display: block;
+        margin-right: 2.3255813953%;
+        width: 40.3100775194%;
+        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
+        font-size: 1.5em;
+        line-height: 1.2;
+        color: #b2b2b2; }
+        .page_banner_letters div.intro-box div.inner_banner div p:last-child {
+          margin-right: 0; }
+        @media screen and (max-width: 768px) {
+          .page_banner_letters div.intro-box div.inner_banner div p {
+            float: left;
+            display: block;
+            margin-right: 4.7619047619%;
+            width: 47.619047619%; }
+            .page_banner_letters div.intro-box div.inner_banner div p:last-child {
+              margin-right: 0; } }
+        @media screen and (max-width: 480px) {
+          .page_banner_letters div.intro-box div.inner_banner div p {
+            float: left;
+            display: block;
+            margin-right: 10%;
+            width: 100%;
+            font-size: 1em; }
+            .page_banner_letters div.intro-box div.inner_banner div p:last-child {
+              margin-right: 0; } }
+  .page_banner_letters div.actual-banner img {
+    position: relative;
+    display: block;
+    height: auto;
+    background-size: 100%;
+    background-position: top; }
+    @media screen and (max-width: 480px) {
+      .page_banner_letters div.actual-banner img {
+        background: url("../images/DW_About-mob.jpg") no-repeat; } }
+
 section.letters_list {
   max-width: 75em;
   margin-left: auto;
@@ -1605,6 +1591,21 @@ section.letters_list {
       padding: 0 30px 30px 30px; }
       section.letters_list .block-row1 div.number:last-child {
         margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        section.letters_list .block-row1 div.number {
+          float: left;
+          display: block;
+          margin-right: 4.7619047619%;
+          width: 100%; }
+          section.letters_list .block-row1 div.number:last-child {
+            margin-right: 0; }
+          section.letters_list .block-row1 div.number:nth-child(2n) {
+            margin-right: 0; }
+          section.letters_list .block-row1 div.number:nth-child(2n+1) {
+            clear: left; } }
+      @media screen and (max-width: 480px) {
+        section.letters_list .block-row1 div.number {
+          display: block; } }
       section.letters_list .block-row1 div.number h3.letter-title {
         float: left;
         font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
@@ -1634,6 +1635,21 @@ section.letters_list {
       padding: 0 30px 30px 30px; }
       section.letters_list .block-row2 div.number:last-child {
         margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        section.letters_list .block-row2 div.number {
+          float: left;
+          display: block;
+          margin-right: 4.7619047619%;
+          width: 100%; }
+          section.letters_list .block-row2 div.number:last-child {
+            margin-right: 0; }
+          section.letters_list .block-row2 div.number:nth-child(2n) {
+            margin-right: 0; }
+          section.letters_list .block-row2 div.number:nth-child(2n+1) {
+            clear: left; } }
+      @media screen and (max-width: 480px) {
+        section.letters_list .block-row2 div.number {
+          display: block; } }
       section.letters_list .block-row2 div.number h3.letter-title {
         float: left;
         font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
@@ -1650,6 +1666,7 @@ section.letters_list {
   section.letters_list a:hover {
     color: #004FB1; }
 
+/* ----------- CONTACT PAGE -----------------------*/
 section.contact_list {
   max-width: 75em;
   margin-left: auto;
@@ -1665,6 +1682,7 @@ section.contact_list {
     display: block;
     margin-right: 2.3255813953%;
     width: 100%;
+    padding: 30px 0 0 0;
     display: block; }
     section.contact_list div.contact:last-child {
       margin-right: 0; }
@@ -1677,6 +1695,26 @@ section.contact_list {
       padding: 0 30px 30px 0; }
       section.contact_list div.contact div.city-address:last-child {
         margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        section.contact_list div.contact div.city-address {
+          float: left;
+          display: block;
+          margin-right: 4.7619047619%;
+          width: 100%; }
+          section.contact_list div.contact div.city-address:last-child {
+            margin-right: 0; }
+          section.contact_list div.contact div.city-address:nth-child(2n) {
+            margin-right: 0; }
+          section.contact_list div.contact div.city-address:nth-child(2n+1) {
+            clear: left; } }
+      @media screen and (max-width: 480px) {
+        section.contact_list div.contact div.city-address {
+          float: left;
+          display: block;
+          margin-right: 10%;
+          width: 100%; }
+          section.contact_list div.contact div.city-address:last-child {
+            margin-right: 0; } }
       section.contact_list div.contact div.city-address h3.city-name {
         font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
         font-size: 2em;
@@ -1684,7 +1722,7 @@ section.contact_list {
         padding-bottom: 30px; }
       section.contact_list div.contact div.city-address p.address-info {
         font-size: 1em;
-        font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
+        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
         color: #A3A9AC; }
     section.contact_list div.contact div.city-img {
       float: left;
@@ -1693,46 +1731,46 @@ section.contact_list {
       width: 48.8372093023%; }
       section.contact_list div.contact div.city-img:last-child {
         margin-right: 0; }
-  section.contact_list .block-row2 {
-    float: left;
-    display: block;
-    margin-right: 2.3255813953%;
-    width: 100%; }
-    section.contact_list .block-row2:last-child {
-      margin-right: 0; }
-    section.contact_list .block-row2:nth-child(2n) {
-      margin-right: 0; }
-    section.contact_list .block-row2:nth-child(2n+1) {
-      clear: left; }
-    section.contact_list .block-row2 div.number {
-      float: left;
-      display: block;
-      margin-right: 2.3255813953%;
-      width: 48.8372093023%;
-      padding: 0 30px 30px 30px; }
-      section.contact_list .block-row2 div.number:last-child {
-        margin-right: 0; }
-      section.contact_list .block-row2 div.number h3.letter-title {
-        float: left;
-        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
-        font-size: 2em;
-        color: #A3A9AC; }
-      section.contact_list .block-row2 div.number p.letter_number {
-        float: right;
-        font-size: 16em;
-        font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
-        color: #A3A9AC; }
-  section.contact_list a {
-    text-decoration: none;
-    color: #A3A9AC; }
-  section.contact_list a:hover {
-    color: #004FB1; }
+      @media screen and (max-width: 768px) {
+        section.contact_list div.contact div.city-img {
+          float: left;
+          display: block;
+          margin-right: 4.7619047619%;
+          width: 100%; }
+          section.contact_list div.contact div.city-img:last-child {
+            margin-right: 0; }
+          section.contact_list div.contact div.city-img:nth-child(2n) {
+            margin-right: 0; }
+          section.contact_list div.contact div.city-img:nth-child(2n+1) {
+            clear: left; } }
+      @media screen and (max-width: 480px) {
+        section.contact_list div.contact div.city-img {
+          float: left;
+          display: block;
+          margin-right: 10%;
+          width: 100%; }
+          section.contact_list div.contact div.city-img:last-child {
+            margin-right: 0; } }
 
-#map-canvas {
-  min-height: 640px;
+#map-canvas-nyc {
+  min-height: 340px;
   width: 100%; }
 
-.gmnoprint img {
+#map-canvas-dc {
+  min-height: 340px;
+  width: 100%; }
+
+#map-canvas-boston {
+  min-height: 340px;
+  width: 100%; }
+
+.gmnoprint-nyc img {
+  max-width: none; }
+
+.gmnoprint-dc img {
+  max-width: none; }
+
+.gmnoprint-boston img {
   max-width: none; }
 
 footer {
@@ -1795,6 +1833,7 @@ footer {
 #footer {
   background-color: #000;
   width: 100%;
+  height: auto;
   z-index: 999;
   display: block;
   font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }

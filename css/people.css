@@ -150,13 +150,13 @@ div.description-person-single {
 /*--------- blue intro box -----*/
 div.intro-box {
   width: 100%;
-  height: 185px;
+  height: auto;
   background-color: #004FB1; }
   div.intro-box div.inner_banner {
     max-width: 75em;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 5%;
+    padding-top: 50px;
     position: relative;
     height: 100%; }
     div.intro-box div.inner_banner::after {
@@ -174,7 +174,7 @@ div.intro-box {
         font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
         font-size: 1.5em;
         color: #b2b2b2;
-        padding-bottom: 30px; }
+        padding-bottom: 50px; }
     div.intro-box div.inner_banner div p {
       float: left;
       display: block;
