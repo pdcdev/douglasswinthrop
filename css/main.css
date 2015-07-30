@@ -38,13 +38,15 @@ font-family:'Frutiger LT W04_87 X Bl1459298';*/
 var list_of_stuff = [1,2,3,4];
 
 do_something(list_of_stuff, "blue");*/
-body {
+html, body {
   font-family: "FrutigerLTW01-55Roman", helvetica, sans serif;
   background-color: #fff;
-  height: 100%;
-  position: relative; }
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100%; }
 
-.vertical_center_parent, .page_banner_home div.overlay_home div.inner_banner_home div.home-logo {
+.vertical_center_parent, aside.page_banner_home div.overlay_home div.inner_banner_home div.home-logo {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -54,13 +56,13 @@ body {
   align-items: center;
   /*justify-content: center;*/ }
 
-.global_pad, .page_banner_home div.overlay_home, .page_banner_firm div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, .page_banner_value div.intro-box div.inner_banner, section.value, div.band-container-white, section.detail-layout-value, .page_banner_people div.intro-box div.inner_banner, section.people, section.person-info, section.people-single, .page_banner_letters div.intro-box div.inner_banner, section.letters_list, section.contact_list, footer div.inner_footer, #footer div.inner_footer {
+.global_pad, aside.page_banner_home div.overlay_home, .page_banner_firm div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, .page_banner_value div.intro-box div.inner_banner, section.value, div.band-container-white, section.detail-layout-value, .page_banner_people div.intro-box div.inner_banner, section.people, section.person-info, section.people-single, .page_banner_letters div.intro-box div.inner_banner, section.letters_list, section.contact_list, footer div.inner_footer, #footer div.inner_footer {
   padding: 1.5em 40px; }
   @media screen and (max-width: 768px) {
-    .global_pad, .page_banner_home div.overlay_home, .page_banner_firm div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, .page_banner_value div.intro-box div.inner_banner, section.value, div.band-container-white, section.detail-layout-value, .page_banner_people div.intro-box div.inner_banner, section.people, section.person-info, section.people-single, .page_banner_letters div.intro-box div.inner_banner, section.letters_list, section.contact_list, footer div.inner_footer, #footer div.inner_footer {
+    .global_pad, aside.page_banner_home div.overlay_home, .page_banner_firm div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, .page_banner_value div.intro-box div.inner_banner, section.value, div.band-container-white, section.detail-layout-value, .page_banner_people div.intro-box div.inner_banner, section.people, section.person-info, section.people-single, .page_banner_letters div.intro-box div.inner_banner, section.letters_list, section.contact_list, footer div.inner_footer, #footer div.inner_footer {
       padding: 2em 40px; } }
   @media screen and (max-width: 480px) {
-    .global_pad, .page_banner_home div.overlay_home, .page_banner_firm div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, .page_banner_value div.intro-box div.inner_banner, section.value, div.band-container-white, section.detail-layout-value, .page_banner_people div.intro-box div.inner_banner, section.people, section.person-info, section.people-single, .page_banner_letters div.intro-box div.inner_banner, section.letters_list, section.contact_list, footer div.inner_footer, #footer div.inner_footer {
+    .global_pad, aside.page_banner_home div.overlay_home, .page_banner_firm div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, .page_banner_value div.intro-box div.inner_banner, section.value, div.band-container-white, section.detail-layout-value, .page_banner_people div.intro-box div.inner_banner, section.people, section.person-info, section.people-single, .page_banner_letters div.intro-box div.inner_banner, section.letters_list, section.contact_list, footer div.inner_footer, #footer div.inner_footer {
       padding: 2em 30px; } }
 
 .sidepad, .inner_header {
@@ -188,71 +190,73 @@ header.home {
           padding-bottom: 5px; }
         header.home div.inner_header_home nav.main-nav-home ul li a:hover {
           color: #2775F6; }
+        header.home div.inner_header_home nav.main-nav-home ul li a:active {
+          color: #004FB1; }
         header.home div.inner_header_home nav.main-nav-home ul li .currentpage a:active {
           color: red; }
         header.home div.inner_header_home nav.main-nav-home ul li .main-nav li.current {
           border-bottom: 1px #333 solid; }
 
-.page_banner_home {
+nav.nav-hide ul li a {
+  font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif !important; }
+
+aside.page_banner_home {
   z-index: 0;
   background-color: #eee;
-  min-height: 100%;
   top: 0;
   left: 0;
+  min-height: 100%;
+  overflow: auto;
   background: url("../images/DW_Home2.jpg") center center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-  .page_banner_home div.overlay_home {
+  aside.page_banner_home div.overlay_home {
     max-width: 75em;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 20%; }
-    .page_banner_home div.overlay_home::after {
+    padding-bottom: 50px; }
+    aside.page_banner_home div.overlay_home::after {
       clear: both;
       content: "";
       display: table; }
-    .page_banner_home div.overlay_home div.inner_banner_home {
-      padding: 200px 0 200px 0;
+    aside.page_banner_home div.overlay_home div.inner_banner_home {
+      padding: 100px 0 0 0;
       position: relative;
-      min-height: 100%;
       /* equal to footer height */
-      margin-bottom: -142px;
-      /*@include media($mobile) {
-          padding-top: 100px;
-      }
-      @include media($tiny) {
-          padding: 100px 0 0 50px;
-      }*/ }
+      margin-bottom: -142px; }
       @media screen and (max-width: 768px) {
-        .page_banner_home div.overlay_home div.inner_banner_home {
+        aside.page_banner_home div.overlay_home div.inner_banner_home {
           padding-top: 100px; } }
-      .page_banner_home div.overlay_home div.inner_banner_home div.home-logo h1.home-logo-name {
+      @media screen and (max-width: 480px) {
+        aside.page_banner_home div.overlay_home div.inner_banner_home {
+          padding-top: 30px; } }
+      aside.page_banner_home div.overlay_home div.inner_banner_home div.home-logo h1.home-logo-name {
         font-size: 3em;
         font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
         color: #A3A9AC; }
         @media screen and (max-width: 768px) {
-          .page_banner_home div.overlay_home div.inner_banner_home div.home-logo h1.home-logo-name {
+          aside.page_banner_home div.overlay_home div.inner_banner_home div.home-logo h1.home-logo-name {
             float: left;
             display: block;
             margin-right: 4.7619047619%;
-            width: 82.5396825397%; }
-            .page_banner_home div.overlay_home div.inner_banner_home div.home-logo h1.home-logo-name:last-child {
+            width: 47.619047619%; }
+            aside.page_banner_home div.overlay_home div.inner_banner_home div.home-logo h1.home-logo-name:last-child {
               margin-right: 0; } }
         @media screen and (max-width: 480px) {
-          .page_banner_home div.overlay_home div.inner_banner_home div.home-logo h1.home-logo-name {
+          aside.page_banner_home div.overlay_home div.inner_banner_home div.home-logo h1.home-logo-name {
             float: left;
             display: block;
             margin-right: 10%;
             width: 100%;
-            font-size: 2em; }
-            .page_banner_home div.overlay_home div.inner_banner_home div.home-logo h1.home-logo-name:last-child {
+            font-size: 1.5em; }
+            aside.page_banner_home div.overlay_home div.inner_banner_home div.home-logo h1.home-logo-name:last-child {
               margin-right: 0; } }
-    .page_banner_home div.overlay_home div.home-message {
+    aside.page_banner_home div.overlay_home div.home-message {
       padding-top: 30px;
       display: block; }
-      .page_banner_home div.overlay_home div.home-message p {
+      aside.page_banner_home div.overlay_home div.home-message p {
         float: left;
         display: block;
         margin-right: 2.3255813953%;
@@ -260,42 +264,37 @@ header.home {
         font-size: 3em;
         color: #A3A9AC;
         font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
-        .page_banner_home div.overlay_home div.home-message p:last-child {
+        aside.page_banner_home div.overlay_home div.home-message p:last-child {
           margin-right: 0; }
         @media screen and (max-width: 768px) {
-          .page_banner_home div.overlay_home div.home-message p {
+          aside.page_banner_home div.overlay_home div.home-message p {
             float: left;
             display: block;
             margin-right: 4.7619047619%;
             width: 82.5396825397%; }
-            .page_banner_home div.overlay_home div.home-message p:last-child {
+            aside.page_banner_home div.overlay_home div.home-message p:last-child {
               margin-right: 0; } }
         @media screen and (max-width: 480px) {
-          .page_banner_home div.overlay_home div.home-message p {
+          aside.page_banner_home div.overlay_home div.home-message p {
             float: left;
             display: block;
             margin-right: 10%;
             width: 100%;
-            font-size: 2em; }
-            .page_banner_home div.overlay_home div.home-message p:last-child {
+            font-size: 1.5em; }
+            aside.page_banner_home div.overlay_home div.home-message p:last-child {
               margin-right: 0; } }
-    .page_banner_home div.overlay_home button {
+    aside.page_banner_home div.overlay_home button {
       border: 1px solid #b2b2b2; }
 
 div.overlay-mobile {
   display: none; }
 
-@media (max-width: 480px) {
-  div.overlay-mobile div.inner_banner-mobile {
-    height: 175px;
-    padding: 10%;
-    background-color: rgba(0, 79, 177, 0.6); } }
 /* ----------------------------HOME PAGE BUTTONS ---------------*/
 .buttons-btn {
   float: left;
   display: block;
   margin-right: 2.3255813953%;
-  width: 65.8914728682%;
+  width: 74.4186046512%;
   padding-top: 40px; }
   .buttons-btn:last-child {
     margin-right: 0; }
@@ -304,12 +303,17 @@ div.overlay-mobile {
       float: left;
       display: block;
       margin-right: 4.7619047619%;
-      width: 204.7619047619%; }
+      width: 100%; }
       .buttons-btn:last-child {
         margin-right: 0; } }
   @media screen and (max-width: 480px) {
     .buttons-btn {
-      width: 100%; } }
+      float: left;
+      display: block;
+      margin-right: 10%;
+      width: 100%; }
+      .buttons-btn:last-child {
+        margin-right: 0; } }
 
 .container-button {
   float: left;
@@ -400,7 +404,7 @@ header {
           width: 63.3333333333%; }
           header div.inner_header h1:last-child {
             margin-right: 0; } }
-    header div.inner_header nav.main-nav ul {
+    header div.inner_header div.main-nav ul {
       float: left;
       display: block;
       margin-right: 2.3255813953%;
@@ -410,29 +414,29 @@ header {
       display: flex;
       flex-direction: row;
       justify-content: space-between; }
-      header div.inner_header nav.main-nav ul:last-child {
+      header div.inner_header div.main-nav ul:last-child {
         margin-right: 0; }
       @media screen and (max-width: 768px) {
-        header div.inner_header nav.main-nav ul {
+        header div.inner_header div.main-nav ul {
           float: left;
           display: block;
           margin-right: 4.7619047619%;
           width: 82.5396825397%;
           background-color: #fff;
           display: none; }
-          header div.inner_header nav.main-nav ul:last-child {
+          header div.inner_header div.main-nav ul:last-child {
             margin-right: 0; } }
       @media screen and (max-width: 480px) {
-        header div.inner_header nav.main-nav ul {
+        header div.inner_header div.main-nav ul {
           float: left;
           display: block;
           margin-right: 10%;
           width: 100%;
           background-color: #fff;
           display: none; }
-          header div.inner_header nav.main-nav ul:last-child {
+          header div.inner_header div.main-nav ul:last-child {
             margin-right: 0; } }
-      header div.inner_header nav.main-nav ul li {
+      header div.inner_header div.main-nav ul li {
         float: left;
         display: block;
         margin-right: 2.3255813953%;
@@ -441,36 +445,36 @@ header {
         font-size: 1em;
         margin: 20px 0 5px 0;
         display: inline-block; }
-        header div.inner_header nav.main-nav ul li:last-child {
+        header div.inner_header div.main-nav ul li:last-child {
           margin-right: 0; }
         @media screen and (max-width: 768px) {
-          header div.inner_header nav.main-nav ul li {
+          header div.inner_header div.main-nav ul li {
             float: left;
             display: block;
             margin-right: 4.7619047619%;
             width: 100%;
             display: block; }
-            header div.inner_header nav.main-nav ul li:last-child {
+            header div.inner_header div.main-nav ul li:last-child {
               margin-right: 0; } }
         @media screen and (max-width: 480px) {
-          header div.inner_header nav.main-nav ul li {
+          header div.inner_header div.main-nav ul li {
             float: left;
             display: block;
             margin-right: 10%;
             width: 100%;
             display: block; }
-            header div.inner_header nav.main-nav ul li:last-child {
+            header div.inner_header div.main-nav ul li:last-child {
               margin-right: 0; } }
-        header div.inner_header nav.main-nav ul li a {
+        header div.inner_header div.main-nav ul li a {
           width: 50px;
           color: #b2b2b2;
           text-decoration: none;
           padding-bottom: 5px; }
-        header div.inner_header nav.main-nav ul li a:hover {
+        header div.inner_header div.main-nav ul li a:hover {
           color: #2775F6; }
-        header div.inner_header nav.main-nav ul li .currentpage a:active {
+        header div.inner_header div.main-nav ul li .currentpage a:active {
           color: red; }
-        header div.inner_header nav.main-nav ul li .main-nav li.current {
+        header div.inner_header div.main-nav ul li .main-nav li.current {
           border-bottom: 1px #333 solid; }
 
 button {
@@ -494,15 +498,24 @@ ul.btn-mobile li {
 hr {
   display: none; }
 
+/*@media (max-width: 480px) {
+    div.overlay-mobile {
+        div.inner_banner-mobile {
+            height: 175px;
+            padding: 10%;
+            background-color: rgba($blue, 0.6);
+        }
+    }
+}*/
 @media only screen and (min-device-width: 220px) and (max-device-width: 480px) {
-  .content {
+  .content-value {
     display: none; } }
 @media only screen and (min-device-width: 220px) and (max-device-width: 480px) and (max-width: 768px) {
   .mobile-column {
     float: left;
     display: block;
     margin-right: 4.7619047619%;
-    width: 100%;
+    width: 47.619047619%;
     display: block; }
     .mobile-column:last-child {
       margin-right: 0; } }
@@ -515,8 +528,10 @@ hr {
     display: block; }
     .mobile-column:last-child {
       margin-right: 0; } }
-
 @media only screen and (min-device-width: 220px) and (max-device-width: 480px) {
+  .mobile-column div.band-container-gray .white {
+    background-color: white; }
+
   .main-nav ul {
     display: none; }
 
@@ -525,129 +540,16 @@ hr {
     top: 0;
     right: 0; }
 
-  /* --------------HAMBURGER STARTS -----------*/
- /* 
-    .c-hamburger {
-      float: right;  
-      display: inline-block;
-      position: relative;
-      overflow: hidden;
-      margin: 0;
-      padding: 0;
-      width: 70px;
-      height: 60px;
-      font-size: 0;
-      text-indent: -9999px;
-      appearance: none;
-      box-shadow: none;
-      border-radius: none;
-      border: none;
-      cursor: pointer;
-      transition: background 0.3s;
-
-    }
-
-    .c-hamburger:focus {
-      outline: none;
-    }
-
-    .c-hamburger span {
-      display: block;
-      width: 30px;
-      position: absolute;
-      top: 30px;
-      left: 18px;
-      right: 18px;
-      height: 3px;
-      background: #b2b2b2;
-    }
-
-    .c-hamburger span::before,
-    .c-hamburger span::after {
-      position: absolute;
-      display: block;
-      right: 0;
-      width: 100%;
-      height: 3px;
-      background-color: #b2b2b2;
-      content: "";
-    }
-
-    .c-hamburger span::before {
-      top: -10px;
-    }
-
-    .c-hamburger span::after {
-      bottom: -10px;
-    }
-
-    .c-hamburger--htx {
-      background-color: #004fb1;
-    }
-
-    .c-hamburger--htx span {
-      transition: background 0s 0.3s;
-    }
-
-    .c-hamburger--htx span::before,
-    .c-hamburger--htx span::after {
-      transition-duration: 0.3s, 0.3s;
-      transition-delay: 0.3s, 0s;
-    }
-
-    .c-hamburger--htx span::before {
-      transition-property: top, transform;
-    }
-
-    .c-hamburger--htx span::after {
-      transition-property: bottom, transform;
-    }
-
-     active state, i.e. menu open 
-    .c-hamburger--htx.is-active {
-      background-color: #000;
-    }
-
-    .c-hamburger--htx.is-active span {
-      background: none;
-    }
-
-    .c-hamburger--htx.is-active span::before {
-      top: 0;
-      transform: rotate(45deg);
-    }
-
-    .c-hamburger--htx.is-active span::after {
-      bottom: 0;
-      transform: rotate(-45deg);
-    }
-
-    .c-hamburger--htx.is-active span::before,
-    .c-hamburger--htx.is-active span::after {
-      transition-delay: 0s, 0.3s;
-    }
-*/
-  /* --------------HAMBURGER ENDS ---------------*/
-  .mob-nav-container-active {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    background-color: red;
-    opacity: 1;
-    z-index: 99; }
-    .mob-nav-container-active ul {
-      transition: all .05s;
-      position: relative;
-      left: 0;
-      z-index: 2; }
-    .mob-nav-container-active a {
-      transition: all .15s;
-      font-size: 2em;
-      padding: 5px; } }
-/* -----------END media queries -----------------*/
+  /* --------------HAMBURGER STARTS -----------*/ }
+/* ---media one ends ---*/
+/*------------- hiding and showing banner imgs ------*/
+@media screen and (max-width: 480px) {
+  div.actual-banner img {
+    display: none !important; } }
+@media screen and (min-width: 480px) {
+  div.actual-banner-mob img {
+    display: none !important; } }
+/* --- media two ends ---*/
 /* ----------- ABOUT PAGE -----------------------*/
 .page_banner_firm {
   position: relative; }
@@ -716,7 +618,14 @@ hr {
     background-position: top; }
     @media screen and (max-width: 480px) {
       .page_banner_firm div.actual-banner img {
-        background: url("../images/DW_About-mob.jpg") no-repeat; } }
+        display: none; } }
+
+div.actual-banner-mob img {
+  position: relative;
+  display: block;
+  height: auto;
+  background-size: 100%;
+  background-position: top; }
 
 section.firm {
   max-width: 75em;
@@ -1755,14 +1664,23 @@ section.contact_list {
 #map-canvas-nyc {
   min-height: 340px;
   width: 100%; }
+  @media screen and (max-width: 480px) {
+    #map-canvas-nyc {
+      min-height: 150px; } }
 
 #map-canvas-dc {
   min-height: 340px;
   width: 100%; }
+  @media screen and (max-width: 480px) {
+    #map-canvas-dc {
+      min-height: 150px; } }
 
 #map-canvas-boston {
   min-height: 340px;
   width: 100%; }
+  @media screen and (max-width: 480px) {
+    #map-canvas-boston {
+      min-height: 150px; } }
 
 .gmnoprint-nyc img {
   max-width: none; }
@@ -1835,6 +1753,8 @@ footer {
   width: 100%;
   height: auto;
   z-index: 999;
+  position: relative;
+  bottom: 0;
   display: block;
   font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
   #footer div.inner_footer {

@@ -185,7 +185,7 @@ var map;
         position: loc,
         map: map,
         title:"douglass winthrop",
-        icon: 'images/dw.png'
+        icon: 'images/dw-small.png'
     });
 
     map.mapTypes.set(MY_MAPTYPE_ID, customMapType);

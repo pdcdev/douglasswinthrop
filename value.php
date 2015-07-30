@@ -17,7 +17,10 @@
     <div class="actual-banner">
         <img src="images/DW_Value.jpg">
     </div>
-    <div class="content">
+    <div class="actual-banner-mob">
+            <img src="images/DW_Value-mob.jpg">
+        </div>
+    <div class="content-value">
     <div class="band-container-gray">
         <section class="value">
             <div class="block-value">

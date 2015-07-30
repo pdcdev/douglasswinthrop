@@ -4,13 +4,16 @@
 @import "utilities/variables";
 @import "utilities/universal";
 
-body {
+html, body {
     font-family: $frutigerRoman;
     background-color: #fff;
-    height: 100%;
     position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 
 }
+
 
 .vertical_center_parent {
     display: -ms-flexbox;
@@ -121,7 +124,9 @@ header.home{
                     }
                     a:hover {
                         color: #2775F6;
-
+                    }
+                    a:active{
+                        color: $blue;
                     }
                     .currentpage a:active {
                         color: red;
@@ -135,14 +140,17 @@ header.home{
     }
 }
 
-.page_banner_home {
+nav.nav-hide ul li a{
+    font-family: $frutigerLightCond !important;
+}
+
+aside.page_banner_home {
     z-index: 0;
     background-color: #eee;
-
-    min-height: 100%;
     top: 0;
     left: 0;
-
+    min-height: 100%;
+    overflow: auto;
     background: url('../images/DW_Home2.jpg') center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -151,22 +159,22 @@ header.home{
     div.overlay_home {
         @include outer-container;
         @extend .global_pad;
-        padding-bottom: 20%;
+        padding-bottom: 50px;
         div.inner_banner_home {
-            padding: 200px 0 200px 0;
+            padding: 100px 0 0 0;
             position: relative; 
-            min-height: 100%;
-              /* equal to footer height */
-              margin-bottom: -142px; 
+            
+            /* equal to footer height */
+            margin-bottom: -142px; 
             @include media($tablet) {
                 padding-top: 100px;
             }
-            /*@include media($mobile) {
-                padding-top: 100px;
+            @include media($mobile) {
+                padding-top: 30px;
             }
             @include media($tiny) {
-                padding: 100px 0 0 50px;
-            }*/
+                
+            }
             div.home-logo{
                     @extend .vertical_center_parent;
                     h1.home-logo-name {
@@ -174,11 +182,11 @@ header.home{
                         font-family: $frutigerBoldCond;
                         color: $gray;
                         @include media($tablet) {
-                            @include span-columns(5);
+                            @include span-columns(3);
                         }
                         @include media($mobile) {
                             @include span-columns(3);
-                            font-size: 2em;
+                            font-size: 1.5em;
                         }
                     }
 
@@ -197,7 +205,7 @@ header.home{
                     }
                     @include media($mobile) {
                         @include span-columns(3);
-                        font-size: 2em;
+                        font-size: 1.5em;
                     }
                 }
             }
@@ -212,28 +220,20 @@ header.home{
 div.overlay-mobile {
     display: none;
 }
-@media (max-width: 480px) {
-    div.overlay-mobile {
-        div.inner_banner-mobile {
-            height: 175px;
-            padding: 10%;
-            background-color: rgba($blue, 0.6);
-        }
-    }
-}
+
 
 /* ----------------------------HOME PAGE BUTTONS ---------------*/
 
 
 
 .buttons-btn {
-    @include span-columns(8);
+    @include span-columns(9);
     padding-top: 40px;
     @include media($tablet) {
-        @include span-columns(12);
+        @include span-columns(6);
     }
     @include media($mobile) {
-        width: 100%;
+        @include span-columns(3);
     }
 }
 
@@ -249,16 +249,16 @@ div.overlay-mobile {
 
 .btn {
     margin-left: -5px;
-  color: $gray;
-  cursor: pointer;
-  font-size:1em;
-  line-height: 60px;
-  display: inline-block;
-  max-width: 160px;
-  text-decoration: none;
-  vertical-align: middle;
-  width: 100%;
-  @include media($mobile) {
+    color: $gray;
+    cursor: pointer;
+    font-size:1em;
+    line-height: 60px;
+    display: inline-block;
+    max-width: 160px;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 100%;
+    @include media($mobile) {
         border-top: 1px solid;
         max-width: 100%;
     }
@@ -319,7 +319,7 @@ header {
                 @include span-columns(2);
             }
         }
-        nav.main-nav {
+        div.main-nav {
             ul {
                 @include span-columns(6);
                 margin:0;
@@ -404,7 +404,6 @@ ul.btn-mobile {
 
 .mobile-column {
     display: none;
-
 }
 
 .buttons-btn-mob {
@@ -415,20 +414,35 @@ hr {
     display: none;
 }
 
+/*@media (max-width: 480px) {
+    div.overlay-mobile {
+        div.inner_banner-mobile {
+            height: 175px;
+            padding: 10%;
+            background-color: rgba($blue, 0.6);
+        }
+    }
+}*/
+
 @media only screen and (min-device-width: 220px) and (max-device-width: 480px) {
 
-    .content {
+    .content-value {
         display: none;
     }
 
     .mobile-column {
         @include media($tablet) {
-        @include span-columns(6);
+        @include span-columns(3);
         display: block;
         }
         @include media($mobile) {
             @include span-columns(3);
             display: block;
+        }
+        
+
+        div.band-container-gray .white {
+            background-color: white;
         }
 
     }
@@ -447,137 +461,30 @@ hr {
 
 
 
-    /* --------------HAMBURGER STARTS -----------*/
- /* 
-    .c-hamburger {
-      float: right;  
-      display: inline-block;
-      position: relative;
-      overflow: hidden;
-      margin: 0;
-      padding: 0;
-      width: 70px;
-      height: 60px;
-      font-size: 0;
-      text-indent: -9999px;
-      appearance: none;
-      box-shadow: none;
-      border-radius: none;
-      border: none;
-      cursor: pointer;
-      transition: background 0.3s;
+/* --------------HAMBURGER STARTS -----------*/
+    
 
+
+
+} /* ---media one ends ---*/
+
+/*------------- hiding and showing banner imgs ------*/
+
+@media screen and (max-width: 480px) {
+
+    div.actual-banner img {
+        display: none !important;
     }
 
-    .c-hamburger:focus {
-      outline: none;
+}
+
+@media screen and (min-width: 480px) {
+
+    div.actual-banner-mob img {
+        display: none !important;
     }
-
-    .c-hamburger span {
-      display: block;
-      width: 30px;
-      position: absolute;
-      top: 30px;
-      left: 18px;
-      right: 18px;
-      height: 3px;
-      background: #b2b2b2;
-    }
-
-    .c-hamburger span::before,
-    .c-hamburger span::after {
-      position: absolute;
-      display: block;
-      right: 0;
-      width: 100%;
-      height: 3px;
-      background-color: #b2b2b2;
-      content: "";
-    }
-
-    .c-hamburger span::before {
-      top: -10px;
-    }
-
-    .c-hamburger span::after {
-      bottom: -10px;
-    }
-
-    .c-hamburger--htx {
-      background-color: #004fb1;
-    }
-
-    .c-hamburger--htx span {
-      transition: background 0s 0.3s;
-    }
-
-    .c-hamburger--htx span::before,
-    .c-hamburger--htx span::after {
-      transition-duration: 0.3s, 0.3s;
-      transition-delay: 0.3s, 0s;
-    }
-
-    .c-hamburger--htx span::before {
-      transition-property: top, transform;
-    }
-
-    .c-hamburger--htx span::after {
-      transition-property: bottom, transform;
-    }
-
-     active state, i.e. menu open 
-    .c-hamburger--htx.is-active {
-      background-color: #000;
-    }
-
-    .c-hamburger--htx.is-active span {
-      background: none;
-    }
-
-    .c-hamburger--htx.is-active span::before {
-      top: 0;
-      transform: rotate(45deg);
-    }
-
-    .c-hamburger--htx.is-active span::after {
-      bottom: 0;
-      transform: rotate(-45deg);
-    }
-
-    .c-hamburger--htx.is-active span::before,
-    .c-hamburger--htx.is-active span::after {
-      transition-delay: 0s, 0.3s;
-    }
-*/
-  /* --------------HAMBURGER ENDS ---------------*/
-
-    .mob-nav-container-active {
-        position: fixed;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        margin: 0 auto;
-        background-color: red;
-        opacity: 1;
-        z-index: 99;
-        ul {
-            transition:all .05s;
-            position:relative;
-            left:0;
-            z-index:2;
-          }
-        a {
-            transition:all .15s;
-            font-size:2em;
-            padding:5px;
-            
-        } 
-    }
-
-
-} 
-/* -----------END media queries -----------------*/
+}
+/* --- media two ends ---*/
 
 /* ----------- ABOUT PAGE -----------------------*/
 
@@ -634,13 +541,22 @@ hr {
         background-size: 100%;
         background-position: top;
             @include media($tablet) {
-
             }
             @include media($mobile) {
-            background: url('../images/DW_About-mob.jpg') no-repeat;
+                display: none;
         }
     }
 }
+
+div.actual-banner-mob img {
+    position: relative;
+    display: block;
+    height: auto;
+    background-size: 100%;
+    background-position: top;
+}
+
+
 
 section.firm {
     @include outer-container;
@@ -1356,16 +1272,25 @@ section.contact_list {
 #map-canvas-nyc {
     min-height: 340px;
     width: 100%;
+    @include media($mobile) {
+       min-height: 150px
+    }
 }
 
 #map-canvas-dc {
     min-height: 340px;
     width: 100%;
+    @include media($mobile) {
+       min-height: 150px
+    }
 }
 
 #map-canvas-boston {
     min-height: 340px;
     width: 100%;
+    @include media($mobile) {
+       min-height: 150px
+    }
 }
 
 .gmnoprint-nyc img {
@@ -1417,6 +1342,8 @@ footer {
     width: 100%;
     height: auto;
     z-index: 999;
+    position: relative;
+    bottom: 0;
     display: block;
     font-family: $frutigerLightCond;
     div.inner_footer {

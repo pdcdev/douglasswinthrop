@@ -198,14 +198,14 @@ section.people-single-mobile {
 section.sliderContainer {
     @include outer-container;
     .slider { 
-        width:100%;
+        @include span-columns(12);
         height:185px;
         position:relative;
         #viewContainer {
-            width:950px;
+            @include span-columns(10);
             height:100%;
             position:absolute;
-            left:40%;
+            left: 430px;
             margin-left:-360px;
             overflow:scroll; 
                 #insideContainer {
@@ -272,7 +272,7 @@ section.sliderContainer {
 
 
 #leftArrow img {
-    margin-top: 60px;
+    margin: 60px 60px 0 0;
     position:absolute;
     left:0px;
     width: 30px;
@@ -280,7 +280,7 @@ section.sliderContainer {
 }
 
 #rightArrow img{ 
-    margin-top: 60px;
+    margin: 60px 0 0 60px;
     position:absolute;
     right:0px;
     width: 30px;

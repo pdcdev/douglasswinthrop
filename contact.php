@@ -25,7 +25,7 @@
                 </div>  
             </div>
     </section>
-    <div id="map-canvas-nyc"></div>
+    <a href="https://www.google.com/maps/place/Douglass+Winthrop+Advisors+LLC/@40.7548928,-73.9795689,17z/data=!3m1!4b1!4m2!3m1!1s0x89c2590199c0667d:0x132969b72cdfc3cc" target="_blank"><div id="map-canvas-nyc"></div></a>
     <section class="contact_list">
             <div class="contact dc">
                 <div class="city-address">
@@ -38,7 +38,7 @@
                 </div>
             </div>
     </section>
-    <div id="map-canvas-dc"></div>
+    <a href="https://www.google.com/maps/place/888+17th+St+NW+%23205,+Washington,+DC+20006/@38.9011035,-77.0396397,17z/data=!3m1!4b1!4m2!3m1!1s0x89b7b7bbfbb76e45:0x75ff110aaae0d26d" target="_blank"><div id="map-canvas-dc"></div></a>
     <section class="contact_list">
             <div class="contact boston">
                 <div class="city-address">
@@ -51,7 +51,8 @@
                 </div>
             </div>
     </section>
-    <div id="map-canvas-boston"></div>
+    <a href="https://www.google.com/maps/place/121+Mt+Vernon+St,+Boston,+MA+02108/@42.3579214,-71.0707528,17z/data=!3m1!4b1!4m2!3m1!1s0x89e3709ee1df6781:0x3f69e428397bc2ce" target="_blank"><div id="map-canvas-boston"></div></a>
+    
     
 
     

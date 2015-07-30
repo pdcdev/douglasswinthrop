@@ -20,8 +20,11 @@
         <h2 class="title-person-single">Jay Winthrop<br><p>Principal</p><br></h2>
         <div class="description-person-single">
             <p class="sub-header">
-            Jay is a principal in Douglass Winthrop Advisors LLC. Previously, Jay was a Vice President in the Mergers and Acquisitions group at JP Morgan Chase, where he provided financial and strategic advice to companies in a range of industries. Jay also worked at Hambrecht & Quist LLC, helping early stage companies raise capital in private and public markets. 
-            Jay has a lifelong interest in environmental policy and public service. He is a Vice Chairman of the Conservation Fund and former Chairman of American Farmland Trust. In 2014 Jay was appointed to the U.S. State Department’s Advisory Committee on International Economic Policy (ACIEP). Before co-founding Douglass Winthrop Advisors, Jay worked at the Office of Management and Budget and served two terms as an elected representative in his home town of Old Greenwich, Connecticut.
+            Jay is a principal in Douglass Winthrop Advisors LLC. Previously, Jay was a Vice President in the Mergers and Acquisitions group at JP Morgan Chase, where he provided financial and strategic advice to companies in a range of industries. Jay also worked at Hambrecht & Quist LLC, helping early stage companies raise capital in private and public markets.   
+            <br><br>
+            In 2014 Jay was appointed to the U.S. State Department’s Advisory Committee on International Economic Policy (ACIEP). He is a Vice Chairman of the Conservation Fund and former Chairman of American Farmland Trust. Before co-founding Douglass Winthrop Advisors, Jay worked at the Office of Management and Budget and served two terms as an elected representative in his home town of Old Greenwich, Connecticut.
+            <br><br>
+            Jay received an AB from Harvard College in 1986 and  an MBA from Harvard Business School in 1992.
             </p>
         </div>
     </div>

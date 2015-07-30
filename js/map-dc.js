@@ -1,5 +1,5 @@
 var map;
-  var loc = new google.maps.LatLng(42.3579214,-71.0707528);
+  var loc = new google.maps.LatLng(38.9011035,-77.0396397);
 
   var MY_MAPTYPE_ID = 'custom_style';
 
@@ -183,7 +183,7 @@ var map;
         position: loc,
         map: map,
         title:"douglass winthrop",
-        icon: 'images/dw.png'
+        icon: 'images/dw-small.png'
     });
 
     map.mapTypes.set(MY_MAPTYPE_ID, customMapType);

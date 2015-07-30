@@ -16,6 +16,9 @@
         <div class="actual-banner">
             <img src="images/DW_Letters.jpg">
         </div>
+        <div class="actual-banner-mob">
+            <img src="images/DW_Letters-mob.jpg">
+        </div>
     </aside>
 
     

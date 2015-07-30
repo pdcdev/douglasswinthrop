@@ -17,6 +17,9 @@
         <div class="actual-banner">
             <img src="images/DW_About.jpg">
         </div>
+        <div class="actual-banner-mob">
+            <img src="images/DW_About-mob.jpg">
+        </div>
     </aside>
     <!-- <div class="overlay-mobile">
         <div class="inner_banner-mobile">

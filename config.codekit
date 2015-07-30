@@ -313,6 +313,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/dw-small.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2910,
+		"inputAbbreviatedPath": "\/images\/dw-small.png",
+		"outputAbbreviatedPath": "\/images\/dw-small.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/dw.png": {
 		"fileType": 32768,
 		"ignore": 0,
