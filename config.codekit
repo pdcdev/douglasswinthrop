@@ -467,6 +467,61 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/letter-1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8091,
+		"inputAbbreviatedPath": "\/images\/letter-1.png",
+		"outputAbbreviatedPath": "\/images\/letter-1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/letter-2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12542,
+		"inputAbbreviatedPath": "\/images\/letter-2.png",
+		"outputAbbreviatedPath": "\/images\/letter-2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/letter-22.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6791,
+		"inputAbbreviatedPath": "\/images\/letter-22.png",
+		"outputAbbreviatedPath": "\/images\/letter-22.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/letter-3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10154,
+		"inputAbbreviatedPath": "\/images\/letter-3.png",
+		"outputAbbreviatedPath": "\/images\/letter-3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/letter-4.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15851,
+		"inputAbbreviatedPath": "\/images\/letter-4.png",
+		"outputAbbreviatedPath": "\/images\/letter-4.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/letters.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -738,6 +793,17 @@
 		"initialSize": 0,
 		"inputAbbreviatedPath": "\/images\/people\/LisaWade_Headshot.jpg",
 		"outputAbbreviatedPath": "\/images\/people\/LisaWade_Headshot.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/people\/Luke_Headshot.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.53604e+06,
+		"inputAbbreviatedPath": "\/images\/people\/Luke_Headshot.jpg",
+		"outputAbbreviatedPath": "\/images\/people\/Luke_Headshot.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1154,6 +1220,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/js\/map2.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/map2.js",
+		"outputAbbreviatedPath": "\/js\/min\/map2-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/materialize.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -1231,6 +1308,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/js\/min\/map2-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/min\/map2-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/map2-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/min\/materialize.min.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -1274,6 +1362,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/lisa.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/luke.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/luke.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

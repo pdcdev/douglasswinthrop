@@ -555,8 +555,14 @@ hr {
   position: relative; }
   .page_banner_firm div.intro-box {
     width: 100%;
-    height: auto;
+    height: 200px;
     background-color: #004FB1; }
+    @media screen and (max-width: 768px) {
+      .page_banner_firm div.intro-box {
+        height: 250px; } }
+    @media screen and (max-width: 480px) {
+      .page_banner_firm div.intro-box {
+        height: 200px; } }
     .page_banner_firm div.intro-box div.inner_banner {
       max-width: 75em;
       margin-left: auto;
@@ -866,8 +872,14 @@ section.philosophy {
   position: relative; }
   .page_banner_value div.intro-box {
     width: 100%;
-    height: auto;
+    height: 200px;
     background-color: #004FB1; }
+    @media screen and (max-width: 768px) {
+      .page_banner_value div.intro-box {
+        height: 250px; } }
+    @media screen and (max-width: 480px) {
+      .page_banner_value div.intro-box {
+        height: 200px; } }
     .page_banner_value div.intro-box div.inner_banner {
       max-width: 75em;
       margin-left: auto;
@@ -1175,8 +1187,14 @@ section.detail-layout-value {
   position: relative; }
   .page_banner_people div.intro-box {
     width: 100%;
-    height: auto;
+    height: 200px;
     background-color: #004FB1; }
+    @media screen and (max-width: 768px) {
+      .page_banner_people div.intro-box {
+        height: 250px; } }
+    @media screen and (max-width: 480px) {
+      .page_banner_people div.intro-box {
+        height: 200px; } }
     .page_banner_people div.intro-box div.inner_banner {
       max-width: 75em;
       margin-left: auto;
@@ -1407,8 +1425,14 @@ div.band-container-gray {
   position: relative; }
   .page_banner_letters div.intro-box {
     width: 100%;
-    height: auto;
+    height: 200px;
     background-color: #004FB1; }
+    @media screen and (max-width: 768px) {
+      .page_banner_letters div.intro-box {
+        height: 250px; } }
+    @media screen and (max-width: 480px) {
+      .page_banner_letters div.intro-box {
+        height: 200px; } }
     .page_banner_letters div.intro-box div.inner_banner {
       max-width: 75em;
       margin-left: auto;
@@ -1474,106 +1498,93 @@ div.band-container-gray {
 section.letters_list {
   max-width: 75em;
   margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: auto; }
+  margin-right: auto; }
   section.letters_list::after {
     clear: both;
     content: "";
     display: table; }
-  section.letters_list .block-row1 {
+  section.letters_list ul {
     float: left;
     display: block;
     margin-right: 2.3255813953%;
     width: 100%; }
-    section.letters_list .block-row1:last-child {
+    section.letters_list ul:last-child {
       margin-right: 0; }
-    section.letters_list .block-row1:nth-child(2n) {
-      margin-right: 0; }
-    section.letters_list .block-row1:nth-child(2n+1) {
-      clear: left; }
-    section.letters_list .block-row1 div.number {
-      float: left;
-      display: block;
-      margin-right: 2.3255813953%;
-      width: 48.8372093023%;
-      padding: 0 30px 30px 30px; }
-      section.letters_list .block-row1 div.number:last-child {
-        margin-right: 0; }
-      @media screen and (max-width: 768px) {
-        section.letters_list .block-row1 div.number {
-          float: left;
-          display: block;
-          margin-right: 4.7619047619%;
-          width: 100%; }
-          section.letters_list .block-row1 div.number:last-child {
-            margin-right: 0; }
-          section.letters_list .block-row1 div.number:nth-child(2n) {
-            margin-right: 0; }
-          section.letters_list .block-row1 div.number:nth-child(2n+1) {
-            clear: left; } }
+    @media screen and (max-width: 480px) {
+      section.letters_list ul {
+        display: block; } }
+    section.letters_list ul li.number-one {
+      display: inline-block;
+      width: 460px;
+      height: 300px;
+      background: url(../images/letter-2.png) no-repeat 0 0; }
       @media screen and (max-width: 480px) {
-        section.letters_list .block-row1 div.number {
-          display: block; } }
-      section.letters_list .block-row1 div.number h3.letter-title {
-        float: left;
-        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
-        font-size: 2em;
-        color: #A3A9AC; }
-      section.letters_list .block-row1 div.number p.letter_number {
-        float: right;
-        font-size: 16em;
-        font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
-        color: #A3A9AC; }
-  section.letters_list .block-row2 {
-    float: left;
-    display: block;
-    margin-right: 2.3255813953%;
-    width: 100%; }
-    section.letters_list .block-row2:last-child {
-      margin-right: 0; }
-    section.letters_list .block-row2:nth-child(2n) {
-      margin-right: 0; }
-    section.letters_list .block-row2:nth-child(2n+1) {
-      clear: left; }
-    section.letters_list .block-row2 div.number {
-      float: left;
-      display: block;
-      margin-right: 2.3255813953%;
-      width: 48.8372093023%;
-      padding: 0 30px 30px 30px; }
-      section.letters_list .block-row2 div.number:last-child {
-        margin-right: 0; }
-      @media screen and (max-width: 768px) {
-        section.letters_list .block-row2 div.number {
-          float: left;
-          display: block;
-          margin-right: 4.7619047619%;
-          width: 100%; }
-          section.letters_list .block-row2 div.number:last-child {
-            margin-right: 0; }
-          section.letters_list .block-row2 div.number:nth-child(2n) {
-            margin-right: 0; }
-          section.letters_list .block-row2 div.number:nth-child(2n+1) {
-            clear: left; } }
+        section.letters_list ul li.number-one {
+          width: 305px;
+          height: 205px;
+          background: url(../images/letter-2.png) no-repeat;
+          background-size: 300px 410px; } }
+    section.letters_list ul li.number-one:hover {
+      background: url(../images/letter-2.png) no-repeat;
+      background-position: 1px -295px;
+      z-index: 999; }
       @media screen and (max-width: 480px) {
-        section.letters_list .block-row2 div.number {
-          display: block; } }
-      section.letters_list .block-row2 div.number h3.letter-title {
-        float: left;
-        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
-        font-size: 2em;
-        color: #A3A9AC; }
-      section.letters_list .block-row2 div.number p.letter_number {
-        float: right;
-        font-size: 16em;
-        font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
-        color: #A3A9AC; }
-  section.letters_list a {
-    text-decoration: none;
-    color: #A3A9AC; }
-  section.letters_list a:hover {
-    color: #004FB1; }
+        section.letters_list ul li.number-one:hover {
+          visibility: hidden; } }
+    section.letters_list ul li.number-two {
+      display: inline-block;
+      width: 460px;
+      height: 300px;
+      background: url(../images/letter-1.png) no-repeat 0 0; }
+      @media screen and (max-width: 480px) {
+        section.letters_list ul li.number-two {
+          width: 305px;
+          height: 205px;
+          background: url(../images/letter-1.png) no-repeat;
+          background-size: 300px 410px; } }
+    section.letters_list ul li.number-two:hover {
+      background: url(../images/letter-1.png) no-repeat;
+      background-position: 0 -294px;
+      z-index: 999; }
+      @media screen and (max-width: 480px) {
+        section.letters_list ul li.number-two:hover {
+          visibility: hidden; } }
+    section.letters_list ul li.number-three {
+      display: inline-block;
+      width: 460px;
+      height: 300px;
+      background: url(../images/letter-3.png) no-repeat 0 0; }
+      @media screen and (max-width: 480px) {
+        section.letters_list ul li.number-three {
+          width: 305px;
+          height: 205px;
+          background: url(../images/letter-3.png) no-repeat;
+          background-size: 300px 410px; } }
+    section.letters_list ul li.number-three:hover {
+      background: url(../images/letter-3.png) no-repeat;
+      background-position: 0 -294px;
+      z-index: 999; }
+      @media screen and (max-width: 480px) {
+        section.letters_list ul li.number-three:hover {
+          visibility: hidden; } }
+    section.letters_list ul li.number-four {
+      display: inline-block;
+      width: 460px;
+      height: 300px;
+      background: url(../images/letter-4.png) no-repeat 0 0; }
+      @media screen and (max-width: 480px) {
+        section.letters_list ul li.number-four {
+          width: 305px;
+          height: 205px;
+          background: url(../images/letter-4.png) no-repeat;
+          background-size: 300px 410px; } }
+    section.letters_list ul li.number-four:hover {
+      background: url(../images/letter-4.png) no-repeat;
+      background-position: 0 -292px;
+      z-index: 999; }
+      @media screen and (max-width: 480px) {
+        section.letters_list ul li.number-four:hover {
+          visibility: hidden; } }
 
 /* ----------- CONTACT PAGE -----------------------*/
 section.contact_list {
@@ -1581,7 +1592,7 @@ section.contact_list {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  height: auto; }
+  height: 200px; }
   section.contact_list::after {
     clear: both;
     content: "";
@@ -1591,7 +1602,7 @@ section.contact_list {
     display: block;
     margin-right: 2.3255813953%;
     width: 100%;
-    padding: 30px 0 0 0;
+    padding: 30px 0 30px 0;
     display: block; }
     section.contact_list div.contact:last-child {
       margin-right: 0; }

@@ -150,8 +150,14 @@ div.description-person-single {
 /*--------- blue intro box -----*/
 div.intro-box {
   width: 100%;
-  height: auto;
+  height: 200px;
   background-color: #004FB1; }
+  @media screen and (max-width: 768px) {
+    div.intro-box {
+      height: 250px; } }
+  @media screen and (max-width: 480px) {
+    div.intro-box {
+      height: 200px; } }
   div.intro-box div.inner_banner {
     max-width: 75em;
     margin-left: auto;

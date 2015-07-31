@@ -79,10 +79,13 @@ div.description-person-single {
 
 div.intro-box {
     width: 100%;
-    height: auto;
+    height: 200px;
     background-color: $blue;
+    @include media($tablet) {
+        height: 250px;
+    }
     @include media($mobile) {
-        
+        height: 200px;
     }
     div.inner_banner {
         @include outer-container;

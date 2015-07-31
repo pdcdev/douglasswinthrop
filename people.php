@@ -45,9 +45,9 @@
             </div>
         </div>
         <div class="person">
-            <a href="charlie.php"><img class="person_headshot" src="images/people/CharlesHoward_Headshot.jpg"></a>
+            <a href="luke.php"><img class="person_headshot" src="images/people/Luke_Headshot.jpg"></a>
             <div class="person_name">
-                <h1><a href="charlie.php">Charles Howard</a></h1>
+                <h1><a href="luke.php">Luke Fowler</a></h1>
                 <p>Principal</p>
             </div>
         </div>

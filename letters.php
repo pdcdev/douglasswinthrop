@@ -23,26 +23,18 @@
 
     
     <section class="letters_list">    
-            <div class="block-row1">
-                <div class="number first">
-                    <h3 class="letter-title">July 2015</h3>
-                    <p class="letter_number"><a href="July2015.pdf" target="_blank">2</a></p>
-                </div>
-                <div class="number second">
-                    <h3 class="letter-title">April 2015</h3>
-                    <p class="letter_number"><a href="April2015.pdf" target="_blank">1</a></p>
-                </div>  
-            </div>
-            <div class="block-row2">
-                <div class="number third">
-                    <h3 class="letter-title">January 2015</h3>
-                    <p class="letter_number"><a href="January2015.pdf" target="_blank">4</a></p>
-                </div>
-                <div class="number fourth">
-                    <h3 class="letter-title">October 2015</h3>
-                    <p class="letter_number"><a href="October2014.pdf" target="_blank">3</a></p>
-                </div>
-            </div>
+            <ul class="block-row1">
+                <a class="one" href="July2015.pdf"><li class="number-one"></li></a>
+                <a class="two" href="April2015.pdf"><li class="number-two"></li></a>
+            </ul>
+
+            <ul class="block-row2">
+                <a class="three" href="January2015.pdf"><li class="number-three"></li>
+            
+                <a class="four" href="October2014.pdf"><li class="number-four"></li></a>
+            
+                
+            </ul>
     </section>
     
 

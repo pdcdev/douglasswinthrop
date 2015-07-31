@@ -1,10 +1,15 @@
 jQuery(document).ready(function($) {
 
+var map;
+    
 var myLatlngNYC = new google.maps.LatLng(40.7549469,-73.9795346);
 
 var myLatlngDC = new google.maps.LatLng(38.9011035,-77.0396397);
 
 var myLatlngBOS = new google.maps.LatLng(42.3579214,-71.0707528);
+
+// var map;
+// var loc = new google.maps.LatLng(40.751512,-73.985486);
 
 var MY_MAPTYPE_ID = 'custom_style';
 
@@ -155,110 +160,79 @@ function initialize() {
         }]
     }];
 
-
-  var mapOptionsNYC = {
-    scrollwheel: 0,
-    streetViewControl: 0,
-    draggable: true,
-    zoom: 15,
+  var mapOptionsnyc = {
+    scrollwheel: false,
+    zoom: 16,
     center: myLatlngNYC,
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    mapTypeControl: 0,
-    // mapTypeControlOptions: {
-    //     mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
-    //   },
-    //   mapTypeId: MY_MAPTYPE_ID
-    };
-
-  var mapOptionsDC = {
-    scrollwheel: 0,
-    streetViewControl: 0,
+    streetViewControl: false,
     draggable: true,
-    zoom: 15,
+    mapTypeControl:false,
+    mapTypeControlOptions: {
+      mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+    },
+    mapTypeId: MY_MAPTYPE_ID
+  };
+
+  var mapOptionsdc = {
+    scrollwheel: false,
+    zoom: 16,
     center: myLatlngDC,
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    mapTypeControl: 0,
-    // mapTypeControlOptions: {
-    //     mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
-    //   },
-    //   mapTypeId: MY_MAPTYPE_ID
-
-    };
-
-  var mapOptionsBOS = {
-    scrollwheel: 0,
-    streetViewControl: 0,
+    streetViewControl: false,
     draggable: true,
-    zoom: 15,
+    mapTypeControl:false,
+    mapTypeControlOptions: {
+      mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+    },
+    mapTypeId: MY_MAPTYPE_ID
+  };
+
+  var mapOptionsboston = {
+    scrollwheel: false,
+    zoom: 16,
     center: myLatlngBOS,
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    mapTypeControl: 0,
-    // mapTypeControlOptions: {
-    //     mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
-    //   },
-    //   mapTypeId: MY_MAPTYPE_ID
+    streetViewControl: false,
+    draggable: true,
+    mapTypeControl:false,
+    mapTypeControlOptions: {
+      mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+    },
+    mapTypeId: MY_MAPTYPE_ID
+  };
 
-    };
+  map1 = new google.maps.Map(document.getElementById('map-canvas-nyc'),mapOptionsnyc);
 
+  map2 = new google.maps.Map(document.getElementById('map-canvas-dc'),mapOptionsdc);
 
-
-  var mapNYC = new google.maps.Map(document.getElementById('map-canvas-nyc'), mapOptionsNYC);
-
-  var mapDC = new google.maps.Map(document.getElementById('map-canvas-dc'), mapOptionsDC);
-
-  var mapBOS = new google.maps.Map(document.getElementById('map-canvas-boston'), mapOptionsBOS);
+  map3 = new google.maps.Map(document.getElementById('map-canvas-boston'),mapOptionsboston);
 
   var styledMapOptions = {
-      name: 'Custom Style'
-    };
+    name: 'Custom Style'
+  };
 
   var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
 
-  // Resize stuff...
-    google.maps.event.addDomListener(window, "resize", function() {
-       var center = map.getCenter();
-       google.maps.event.trigger(map, "resize");
-       map.setCenter(center); 
-    });
-
-  var markerNYC = new google.maps.Marker({
-
-      position: myLatlngNYC,
-
-      map: mapNYC,
-
-      title:"douglass winthrop",
-        icon: 'images/dw-small.png'
-
+  var marker = new google.maps.Marker({
+      position: loc,
+      map: map,
+      title:"PBDW Architects",
+      animation: google.maps.Animation.DROP,
+      icon: '../wp-content/themes/pbdw/images/pbdwpin.png'
   });
-
-  var markerDC = new google.maps.Marker({
-
-      position: myLatlngDC,
-
-      map: mapDC,
-
-      title:"douglass winthrop",
-        icon: 'images/dw-small.png'
-
-  }); 
-
-
-  var markerBOS = new google.maps.Marker({
-
-      position: myLatlngBOS,
-
-      map: mapBOS,
-
-      title:"douglass winthrop",
-        icon: 'images/dw-small.png'
-
-  });
-
   
-  map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
+  google.maps.event.addListener(marker, 'click', function() {
+    window.open('https://www.google.com/maps/place/PBDW+Architects/@40.751512,-73.985486,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259a38659c76d:0xbf6bd067e5fa6151');
+  });
 
- } // end function
+  function toggleBounce() {
+    if (marker.getAnimation() != null) {
+      marker.setAnimation(null);
+    } else {
+      marker.setAnimation(google.maps.Animation.BOUNCE);
+    }
+  }
+
+  map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
+}
 
 google.maps.event.addDomListener(window, 'load', initialize);
  
@@ -270,5 +244,4 @@ google.maps.event.addDomListener(window, 'load', initialize);
     map.setCenter(center);
 
   });
-  
 });
