@@ -149,6 +149,10 @@ nav,
             
         }
 
+        nav.nav-hide ul.overlay li a{
+          font-family: inherit !important;
+        }
+
 </style>
 
 <body>
@@ -163,20 +167,20 @@ nav,
             </div>
 
             <nav class="nav-hide">
-              <ul>
-                <li><a href="index.php" style="font-family: 'Istok Web', sans-serif;">Home</a></li>
+              <ul class="overlay">
+                <li><a href="index.php">Home</a></li>
 
-                <li><a href="firm.php" style="font-family: 'Istok Web', sans-serif;">About</a></li>
+                <li><a href="firm.php">About</a></li>
                 
-                <li><a href="value.php" style="font-family: 'Istok Web', sans-serif;">Value</a></li>
+                <li><a href="value.php">Value</a></li>
 
-                <li><a href="process.php" style="font-family: 'Istok Web', sans-serif;">People</a></li>
+                <li><a href="process.php">People</a></li>
                 
-                <li><a href="people.php" style="font-family: 'Istok Web', sans-serif;">People</a></li>
+                <li><a href="people.php">People</a></li>
                 
-                <li><a href="letters.php" style="font-family: 'Istok Web', sans-serif;">Letters</a></li>
+                <li><a href="letters.php">Letters</a></li>
                 
-                <li><a href="contact.php" style="font-family: 'Istok Web', sans-serif;">Contact</a></li>
+                <li><a href="contact.php">Contact</a></li>
 
               </ul>
             </nav>

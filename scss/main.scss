@@ -140,15 +140,13 @@ header.home{
     }
 }
 
-nav.nav-hide ul li a{
+nav.nav-hide ul.overlay li a{
     font-family: $frutigerLightCond !important;
 }
 
 aside.page_banner_home {
     z-index: 0;
-    background-color: #eee;
-    width: 100%;
-    height: 100%;
+    min-height: 100%;
     display: block;
     background: url('../images/DW_Home2.jpg') center center no-repeat;
     -webkit-background-size: cover;
@@ -538,7 +536,7 @@ section.letters_list-mob {
 /* ----------- ABOUT PAGE -----------------------*/
 
 
-.page_banner_firm {
+.page_banner {
     
     position: relative;
     div.intro-box {
@@ -548,9 +546,7 @@ section.letters_list-mob {
         @include media($tablet) {
             height: 250px;
         }
-        @include media($mobile) {
-            height: 200px;
-        }
+        
         div.inner_banner {
             @include outer-container;
             @extend .global_pad;
@@ -607,8 +603,6 @@ div.actual-banner-mob img {
     background-size: 100%;
     background-position: top;
 }
-
-
 
 section.firm {
     @include outer-container;
@@ -745,68 +739,7 @@ section.philosophy {
 
 /* ----------- VALUE PAGE -----------------------*/
 
-.page_banner_value {
-    position: relative;
-    div.intro-box {
-        width: 100%;
-        height: 200px;
-        background-color: $blue;
-        @include media($tablet) {
-            height: 250px;
-        }
-        @include media($mobile) {
-            height: 200px;
-        }
-        div.inner_banner {
-            @include outer-container;
-            @extend .global_pad;
-            padding-top: 50px;
-            padding-bottom: 50px;
-            position: relative;
-            height: 100%;
-            div.page-name {
-                @include span-columns(6);
-                h1 {
-                    font-family: $frutigerBoldCond;
-                    font-size: 1.5em; 
-                    line-height: 15px;
-                    color: #b2b2b2;
-                    padding-bottom: 50px;
-                }
-            }
-            div {
-                p {
-                    @include span-columns(5);
-                    font-family: $frutigerLightCond;
-                    font-size: 1.5em;
-                    line-height: 1.2;
-                    color: #b2b2b2;
-                    @include media($tablet) {
-                        @include span-columns(3);
-                         
-                    }
-                    @include media($mobile) {
-                        @include span-columns(3);
-                        font-size: 1em;
-                    }
-                }
-            }
-        }
-    }
-    div.actual-banner img {
-        position: relative;
-        display: block;
-        height: auto;
-        background-size: 100%;
-        background-position: top;
-            @include media($tablet) {
 
-            }
-            @include media($mobile) {
-            background: url('../images/DW_Value-mob.jpg') no-repeat;
-        }
-    }
-}
 
 section.value {
     @include outer-container;
@@ -949,61 +882,113 @@ section.detail-layout-value {
     border-bottom: 1px solid #828282;
 }
 
-/* ----------- PEOPLE PAGE -----------------------*/
+/* ----------- Process PAGE -----------------------*/
 
-.page_banner_people {
+section.process {
+    @include outer-container;
+    @extend .global_pad;
     position: relative;
-        div.intro-box {
-            width: 100%;
-            height: 200px;
-            background-color: $blue;
-            @include media($tablet) {
-                height: 250px;
-            }
-            @include media($mobile) {
-                height: 200px;
-            }
-            div.inner_banner {
-                @include outer-container;
-                @extend .global_pad;
-                padding-top: 50px;
-                padding-bottom: 50px;
-                position: relative;
-                height: 100%;
-                div.page-name {
-                    @include span-columns(6);
-                    h1 {
-                        font-family: $frutigerBoldCond;
-                        font-size: 1.5em; 
-                        color: #b2b2b2;
-                        line-height: 15px;
-                        padding-bottom: 50px;
-                    }
-                }
-                div {
-                    p {
-                        @include span-columns(5);
-                        font-family: $frutigerLightCond;
-                        font-size: 1.5em;
-                        line-height: 1.2;
-                        color: #b2b2b2;
-                        @include media($tablet) {
-                            @include span-columns(3);
-                             
-                        }
-                        @include media($mobile) {
-                            @include span-columns(3);
-                            font-size: 1em;
-                        }
-                    }
-                }
+    padding-bottom: 0;
+    div.block {
+        @include span-columns(12);
+        top: 0;
+        h2.title {
+            padding-bottom: 30px;
+            font-size: 1.5em;
+            color: #b2b2b2;
+            font-family: $frutigerLightCond;
+            @include media ($tablet) {
             }
         }
+        div.description {
+            p.description-text-left {
+                @include span-columns(5);
+                @include type($small, #b2b2b2);
+                line-height: 20px;
+                padding-bottom: 30px;
+                font-family: $frutigerLightCond;
+                 @include media($mobile) {
+                    @include span-columns(3);
+                    
+                }
+            }
+            p.description-text-right {
+                @include span-columns(5);
+                @include shift(1);
+                @include type($small, #b2b2b2);
+                line-height: 20px;
+                padding-bottom: 30px;
+                font-family: $frutigerLightCond;
+                 @include media($mobile) {
+                    @include span-columns(3);
+                    @include shift(0);
+                    
+                }
+            }
+        } 
     }
+}
+section.process_list {
+    @include outer-container;
+    @extend .global_pad;
+    position: relative;
+    padding-bottom: 0;
+    div.block {
+        @include span-columns(12);
+        top: 0;
+        h2.title {
+            @include span-columns(12);
+            padding-bottom: 30px;
+            font-size: 1.5em;
+            color: #b2b2b2;
+            font-family: $frutigerLightCond;
+            @include media ($tablet) {
+            }
+        }
+        div.description {
+            ul.left {
+                @include span-columns(5);
+                @include type($small, #b2b2b2);
+                line-height: 20px;
+                padding-bottom: 30px;
+                font-family: $frutigerLightCond;
+                li {
+                    list-style-type: disc;
+                    line-height: 25px;
+                }
+                @include media($mobile) {
+                    @include span-columns(3);
+                    margin-left: 20px;
+                    
+                }
+            }
+            ul.right {
+                @include span-columns(5);
+                @include shift(1);
+                @include type($small, #b2b2b2);
+                line-height: 20px;
+                padding-bottom: 30px;
+                font-family: $frutigerLightCond;
+                li {
+                    list-style-type: disc;
+                    line-height: 25px;
+                }
+                @include media($mobile) {
+                    @include span-columns(3);
 
-    .your_color_class {
-        background-color: #000;
+                    
+                }
+            }
+        } 
     }
+}
+
+
+/* ----------- PEOPLE PAGE -----------------------*/
+
+.your_color_class {
+    background-color: #000;
+}
 
 section.people {
     @include outer-container;
@@ -1153,67 +1138,7 @@ div.band-container-gray {
 
 /* ----------- LETTERS PAGE -----------------------*/
 
-.page_banner_letters {
-    
-    position: relative;
-    div.intro-box {
-        width: 100%;
-        height: 200px;
-        background-color: $blue;
-        @include media($tablet) {
-            height: 250px;
-        }
-        @include media($mobile) {
-            height: 200px;
-        }
-        div.inner_banner {
-            @include outer-container;
-            @extend .global_pad;
-            padding-top: 50px;
-            position: relative;
-            height: 100%;
-            div.page-name {
-                @include span-columns(6);
-                h1 {
-                    font-family: $frutigerBoldCond;
-                    font-size: 1.5em;
-                    line-height: 15px;
-                    color: #b2b2b2;
-                    padding-bottom: 50px;
-                }
-            }
-            div {
-                p {
-                    @include span-columns(5);
-                    font-family: $frutigerLightCond;
-                    font-size: 1.5em;
-                    line-height: 1.2;
-                    color: #b2b2b2;
-                    @include media($tablet) {
-                        @include span-columns(3);
-                    }
-                    @include media($mobile) {
-                        @include span-columns(3);
-                        font-size: 1em;
-                    }
-                }
-            }
-        }
-    }
-    div.actual-banner img {
-        position: relative;
-        display: block;
-        height: auto;
-        background-size: 100%;
-        background-position: top;
-            @include media($tablet) {
 
-            }
-            @include media($mobile) {
-            background: url('../images/DW_About-mob.jpg') no-repeat;
-        }
-    }
-}
 
 section.letters_list {
     @include outer-container;
@@ -1435,17 +1360,6 @@ footer {
     } 
 }
   
-/*#footer {
-    background-color: #000;
-    width: 100%;
-    height: auto;
-    z-index: 999;
-    position: relative;
-    bottom: 0;
-    display: block;
-    font-family: $frutigerLightCond;
-    
-} */
 
 #footer {
     background-color: #000;
@@ -1479,38 +1393,5 @@ footer {
     } 
     
 }
-
-/*footer.home {
-    background-color: #000;
-    width: 100%;
-    z-index: 999;
-    height: auto;
-    display: block;
-    font-family: $frutigerLightCond;
-    div.inner_footer {
-            @include outer-container;
-            @extend .global_pad;
-            ul {
-                @include span-columns(12);
-                li.copyright {
-                    @include span-columns(6);
-                    @include media($mobile) {
-                        @include span-columns(7);
-                    }
-                }
-                li {
-                    @include span-columns(3);
-                    display: inline-block;
-                    font-size: 1em;
-                    color: #b2b2b2;
-                    @include media($mobile) {
-                        @include span-columns(4);
-                        padding-bottom: 20px;
-                        font-size: 0.7em;
-                    }
-                }
-            }   
-        } 
-    }*/
 
 

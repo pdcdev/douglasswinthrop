@@ -56,13 +56,13 @@ html, body {
   align-items: center;
   /*justify-content: center;*/ }
 
-.global_pad, aside.page_banner_home div.overlay_home, .page_banner_firm div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, .page_banner_value div.intro-box div.inner_banner, section.value, section.detail-layout-value, .page_banner_people div.intro-box div.inner_banner, section.people, section.person-info, section.people-single, .page_banner_letters div.intro-box div.inner_banner, section.letters_list, section.contact_list, footer div.inner_footer, #footer div.inner_footer {
+.global_pad, aside.page_banner_home div.overlay_home, .page_banner div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.people-single, section.letters_list, section.contact_list, footer div.inner_footer, #footer div.inner_footer {
   padding: 1.5em 40px; }
   @media screen and (max-width: 768px) {
-    .global_pad, aside.page_banner_home div.overlay_home, .page_banner_firm div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, .page_banner_value div.intro-box div.inner_banner, section.value, section.detail-layout-value, .page_banner_people div.intro-box div.inner_banner, section.people, section.person-info, section.people-single, .page_banner_letters div.intro-box div.inner_banner, section.letters_list, section.contact_list, footer div.inner_footer, #footer div.inner_footer {
+    .global_pad, aside.page_banner_home div.overlay_home, .page_banner div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.people-single, section.letters_list, section.contact_list, footer div.inner_footer, #footer div.inner_footer {
       padding: 2em 40px; } }
   @media screen and (max-width: 480px) {
-    .global_pad, aside.page_banner_home div.overlay_home, .page_banner_firm div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, .page_banner_value div.intro-box div.inner_banner, section.value, section.detail-layout-value, .page_banner_people div.intro-box div.inner_banner, section.people, section.person-info, section.people-single, .page_banner_letters div.intro-box div.inner_banner, section.letters_list, section.contact_list, footer div.inner_footer, #footer div.inner_footer {
+    .global_pad, aside.page_banner_home div.overlay_home, .page_banner div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.people-single, section.letters_list, section.contact_list, footer div.inner_footer, #footer div.inner_footer {
       padding: 2em 30px; } }
 
 .sidepad, .inner_header {
@@ -197,14 +197,12 @@ header.home {
         header.home div.inner_header_home nav.main-nav-home ul li .main-nav li.current {
           border-bottom: 1px #333 solid; }
 
-nav.nav-hide ul li a {
+nav.nav-hide ul.overlay li a {
   font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif !important; }
 
 aside.page_banner_home {
   z-index: 0;
-  background-color: #eee;
-  width: 100%;
-  height: 100%;
+  min-height: 100%;
   display: block;
   background: url("../images/DW_Home2.jpg") center center no-repeat;
   -webkit-background-size: cover;
@@ -590,19 +588,16 @@ section.letters_list-mob {
     display: none; } }
 /* --- media two ends ---*/
 /* ----------- ABOUT PAGE -----------------------*/
-.page_banner_firm {
+.page_banner {
   position: relative; }
-  .page_banner_firm div.intro-box {
+  .page_banner div.intro-box {
     width: 100%;
     height: 200px;
     background-color: #004FB1; }
     @media screen and (max-width: 768px) {
-      .page_banner_firm div.intro-box {
+      .page_banner div.intro-box {
         height: 250px; } }
-    @media screen and (max-width: 480px) {
-      .page_banner_firm div.intro-box {
-        height: 200px; } }
-    .page_banner_firm div.intro-box div.inner_banner {
+    .page_banner div.intro-box div.inner_banner {
       max-width: 75em;
       margin-left: auto;
       margin-right: auto;
@@ -610,24 +605,24 @@ section.letters_list-mob {
       padding-bottom: 50px;
       position: relative;
       height: 100%; }
-      .page_banner_firm div.intro-box div.inner_banner::after {
+      .page_banner div.intro-box div.inner_banner::after {
         clear: both;
         content: "";
         display: table; }
-      .page_banner_firm div.intro-box div.inner_banner div.page-name {
+      .page_banner div.intro-box div.inner_banner div.page-name {
         float: left;
         display: block;
         margin-right: 2.3255813953%;
         width: 48.8372093023%; }
-        .page_banner_firm div.intro-box div.inner_banner div.page-name:last-child {
+        .page_banner div.intro-box div.inner_banner div.page-name:last-child {
           margin-right: 0; }
-        .page_banner_firm div.intro-box div.inner_banner div.page-name h1 {
+        .page_banner div.intro-box div.inner_banner div.page-name h1 {
           font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
           font-size: 1.5em;
           line-height: 15px;
           color: #b2b2b2;
           padding-bottom: 50px; }
-      .page_banner_firm div.intro-box div.inner_banner div p {
+      .page_banner div.intro-box div.inner_banner div p {
         float: left;
         display: block;
         margin-right: 2.3255813953%;
@@ -636,33 +631,33 @@ section.letters_list-mob {
         font-size: 1.5em;
         line-height: 1.2;
         color: #b2b2b2; }
-        .page_banner_firm div.intro-box div.inner_banner div p:last-child {
+        .page_banner div.intro-box div.inner_banner div p:last-child {
           margin-right: 0; }
         @media screen and (max-width: 768px) {
-          .page_banner_firm div.intro-box div.inner_banner div p {
+          .page_banner div.intro-box div.inner_banner div p {
             float: left;
             display: block;
             margin-right: 4.7619047619%;
             width: 47.619047619%; }
-            .page_banner_firm div.intro-box div.inner_banner div p:last-child {
+            .page_banner div.intro-box div.inner_banner div p:last-child {
               margin-right: 0; } }
         @media screen and (max-width: 480px) {
-          .page_banner_firm div.intro-box div.inner_banner div p {
+          .page_banner div.intro-box div.inner_banner div p {
             float: left;
             display: block;
             margin-right: 10%;
             width: 100%;
             font-size: 1em; }
-            .page_banner_firm div.intro-box div.inner_banner div p:last-child {
+            .page_banner div.intro-box div.inner_banner div p:last-child {
               margin-right: 0; } }
-  .page_banner_firm div.actual-banner img {
+  .page_banner div.actual-banner img {
     position: relative;
     display: block;
     height: auto;
     background-size: 100%;
     background-position: top; }
     @media screen and (max-width: 480px) {
-      .page_banner_firm div.actual-banner img {
+      .page_banner div.actual-banner img {
         display: none; } }
 
 div.actual-banner-mob img {
@@ -907,81 +902,6 @@ section.philosophy {
             margin-right: 0; } }
 
 /* ----------- VALUE PAGE -----------------------*/
-.page_banner_value {
-  position: relative; }
-  .page_banner_value div.intro-box {
-    width: 100%;
-    height: 200px;
-    background-color: #004FB1; }
-    @media screen and (max-width: 768px) {
-      .page_banner_value div.intro-box {
-        height: 250px; } }
-    @media screen and (max-width: 480px) {
-      .page_banner_value div.intro-box {
-        height: 200px; } }
-    .page_banner_value div.intro-box div.inner_banner {
-      max-width: 75em;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      position: relative;
-      height: 100%; }
-      .page_banner_value div.intro-box div.inner_banner::after {
-        clear: both;
-        content: "";
-        display: table; }
-      .page_banner_value div.intro-box div.inner_banner div.page-name {
-        float: left;
-        display: block;
-        margin-right: 2.3255813953%;
-        width: 48.8372093023%; }
-        .page_banner_value div.intro-box div.inner_banner div.page-name:last-child {
-          margin-right: 0; }
-        .page_banner_value div.intro-box div.inner_banner div.page-name h1 {
-          font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
-          font-size: 1.5em;
-          line-height: 15px;
-          color: #b2b2b2;
-          padding-bottom: 50px; }
-      .page_banner_value div.intro-box div.inner_banner div p {
-        float: left;
-        display: block;
-        margin-right: 2.3255813953%;
-        width: 40.3100775194%;
-        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
-        font-size: 1.5em;
-        line-height: 1.2;
-        color: #b2b2b2; }
-        .page_banner_value div.intro-box div.inner_banner div p:last-child {
-          margin-right: 0; }
-        @media screen and (max-width: 768px) {
-          .page_banner_value div.intro-box div.inner_banner div p {
-            float: left;
-            display: block;
-            margin-right: 4.7619047619%;
-            width: 47.619047619%; }
-            .page_banner_value div.intro-box div.inner_banner div p:last-child {
-              margin-right: 0; } }
-        @media screen and (max-width: 480px) {
-          .page_banner_value div.intro-box div.inner_banner div p {
-            float: left;
-            display: block;
-            margin-right: 10%;
-            width: 100%;
-            font-size: 1em; }
-            .page_banner_value div.intro-box div.inner_banner div p:last-child {
-              margin-right: 0; } }
-  .page_banner_value div.actual-banner img {
-    position: relative;
-    display: block;
-    height: auto;
-    background-size: 100%;
-    background-position: top; }
-    @media screen and (max-width: 480px) {
-      .page_banner_value div.actual-banner img {
-        background: url("../images/DW_Value-mob.jpg") no-repeat; } }
-
 section.value {
   max-width: 75em;
   margin-left: auto;
@@ -1214,73 +1134,176 @@ section.detail-layout-value {
 .band-container-gray-letters {
   border-bottom: 1px solid #828282; }
 
-/* ----------- PEOPLE PAGE -----------------------*/
-.page_banner_people {
-  position: relative; }
-  .page_banner_people div.intro-box {
+/* ----------- Process PAGE -----------------------*/
+section.process {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding-bottom: 0; }
+  section.process::after {
+    clear: both;
+    content: "";
+    display: table; }
+  section.process div.block {
+    float: left;
+    display: block;
+    margin-right: 2.3255813953%;
     width: 100%;
-    height: 200px;
-    background-color: #004FB1; }
-    @media screen and (max-width: 768px) {
-      .page_banner_people div.intro-box {
-        height: 250px; } }
-    @media screen and (max-width: 480px) {
-      .page_banner_people div.intro-box {
-        height: 200px; } }
-    .page_banner_people div.intro-box div.inner_banner {
-      max-width: 75em;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      position: relative;
-      height: 100%; }
-      .page_banner_people div.intro-box div.inner_banner::after {
-        clear: both;
-        content: "";
-        display: table; }
-      .page_banner_people div.intro-box div.inner_banner div.page-name {
-        float: left;
-        display: block;
-        margin-right: 2.3255813953%;
-        width: 48.8372093023%; }
-        .page_banner_people div.intro-box div.inner_banner div.page-name:last-child {
-          margin-right: 0; }
-        .page_banner_people div.intro-box div.inner_banner div.page-name h1 {
-          font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
-          font-size: 1.5em;
-          color: #b2b2b2;
-          line-height: 15px;
-          padding-bottom: 50px; }
-      .page_banner_people div.intro-box div.inner_banner div p {
-        float: left;
-        display: block;
-        margin-right: 2.3255813953%;
-        width: 40.3100775194%;
-        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
-        font-size: 1.5em;
-        line-height: 1.2;
-        color: #b2b2b2; }
-        .page_banner_people div.intro-box div.inner_banner div p:last-child {
-          margin-right: 0; }
-        @media screen and (max-width: 768px) {
-          .page_banner_people div.intro-box div.inner_banner div p {
-            float: left;
-            display: block;
-            margin-right: 4.7619047619%;
-            width: 47.619047619%; }
-            .page_banner_people div.intro-box div.inner_banner div p:last-child {
-              margin-right: 0; } }
-        @media screen and (max-width: 480px) {
-          .page_banner_people div.intro-box div.inner_banner div p {
-            float: left;
-            display: block;
-            margin-right: 10%;
-            width: 100%;
-            font-size: 1em; }
-            .page_banner_people div.intro-box div.inner_banner div p:last-child {
-              margin-right: 0; } }
+    top: 0; }
+    section.process div.block:last-child {
+      margin-right: 0; }
+    section.process div.block h2.title {
+      padding-bottom: 30px;
+      font-size: 1.5em;
+      color: #b2b2b2;
+      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+    section.process div.block div.description p.description-text-left {
+      float: left;
+      display: block;
+      margin-right: 2.3255813953%;
+      width: 40.3100775194%;
+      color: #b2b2b2;
+      font-size: 1rem;
+      line-height: 20px;
+      padding-bottom: 30px;
+      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+      section.process div.block div.description p.description-text-left:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        section.process div.block div.description p.description-text-left {
+          font-size: 1rem; } }
+      @media screen and (max-width: 480px) {
+        section.process div.block div.description p.description-text-left {
+          font-size: 0.9375rem; } }
+      @media screen and (max-width: 480px) {
+        section.process div.block div.description p.description-text-left {
+          float: left;
+          display: block;
+          margin-right: 10%;
+          width: 100%; }
+          section.process div.block div.description p.description-text-left:last-child {
+            margin-right: 0; } }
+    section.process div.block div.description p.description-text-right {
+      float: left;
+      display: block;
+      margin-right: 2.3255813953%;
+      width: 40.3100775194%;
+      margin-left: 8.5271317829%;
+      color: #b2b2b2;
+      font-size: 1rem;
+      line-height: 20px;
+      padding-bottom: 30px;
+      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+      section.process div.block div.description p.description-text-right:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        section.process div.block div.description p.description-text-right {
+          font-size: 1rem; } }
+      @media screen and (max-width: 480px) {
+        section.process div.block div.description p.description-text-right {
+          font-size: 0.9375rem; } }
+      @media screen and (max-width: 480px) {
+        section.process div.block div.description p.description-text-right {
+          float: left;
+          display: block;
+          margin-right: 10%;
+          width: 100%;
+          margin-left: 0%; }
+          section.process div.block div.description p.description-text-right:last-child {
+            margin-right: 0; } }
 
+section.process_list {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding-bottom: 0; }
+  section.process_list::after {
+    clear: both;
+    content: "";
+    display: table; }
+  section.process_list div.block {
+    float: left;
+    display: block;
+    margin-right: 2.3255813953%;
+    width: 100%;
+    top: 0; }
+    section.process_list div.block:last-child {
+      margin-right: 0; }
+    section.process_list div.block h2.title {
+      float: left;
+      display: block;
+      margin-right: 2.3255813953%;
+      width: 100%;
+      padding-bottom: 30px;
+      font-size: 1.5em;
+      color: #b2b2b2;
+      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+      section.process_list div.block h2.title:last-child {
+        margin-right: 0; }
+    section.process_list div.block div.description ul.left {
+      float: left;
+      display: block;
+      margin-right: 2.3255813953%;
+      width: 40.3100775194%;
+      color: #b2b2b2;
+      font-size: 1rem;
+      line-height: 20px;
+      padding-bottom: 30px;
+      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+      section.process_list div.block div.description ul.left:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        section.process_list div.block div.description ul.left {
+          font-size: 1rem; } }
+      @media screen and (max-width: 480px) {
+        section.process_list div.block div.description ul.left {
+          font-size: 0.9375rem; } }
+      section.process_list div.block div.description ul.left li {
+        list-style-type: disc;
+        line-height: 25px; }
+      @media screen and (max-width: 480px) {
+        section.process_list div.block div.description ul.left {
+          float: left;
+          display: block;
+          margin-right: 10%;
+          width: 100%;
+          margin-left: 20px; }
+          section.process_list div.block div.description ul.left:last-child {
+            margin-right: 0; } }
+    section.process_list div.block div.description ul.right {
+      float: left;
+      display: block;
+      margin-right: 2.3255813953%;
+      width: 40.3100775194%;
+      margin-left: 8.5271317829%;
+      color: #b2b2b2;
+      font-size: 1rem;
+      line-height: 20px;
+      padding-bottom: 30px;
+      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+      section.process_list div.block div.description ul.right:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        section.process_list div.block div.description ul.right {
+          font-size: 1rem; } }
+      @media screen and (max-width: 480px) {
+        section.process_list div.block div.description ul.right {
+          font-size: 0.9375rem; } }
+      section.process_list div.block div.description ul.right li {
+        list-style-type: disc;
+        line-height: 25px; }
+      @media screen and (max-width: 480px) {
+        section.process_list div.block div.description ul.right {
+          float: left;
+          display: block;
+          margin-right: 10%;
+          width: 100%; }
+          section.process_list div.block div.description ul.right:last-child {
+            margin-right: 0; } }
+
+/* ----------- PEOPLE PAGE -----------------------*/
 .your_color_class {
   background-color: #000; }
 
@@ -1458,80 +1481,6 @@ div.band-container-gray {
   height: auto; }
 
 /* ----------- LETTERS PAGE -----------------------*/
-.page_banner_letters {
-  position: relative; }
-  .page_banner_letters div.intro-box {
-    width: 100%;
-    height: 200px;
-    background-color: #004FB1; }
-    @media screen and (max-width: 768px) {
-      .page_banner_letters div.intro-box {
-        height: 250px; } }
-    @media screen and (max-width: 480px) {
-      .page_banner_letters div.intro-box {
-        height: 200px; } }
-    .page_banner_letters div.intro-box div.inner_banner {
-      max-width: 75em;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 50px;
-      position: relative;
-      height: 100%; }
-      .page_banner_letters div.intro-box div.inner_banner::after {
-        clear: both;
-        content: "";
-        display: table; }
-      .page_banner_letters div.intro-box div.inner_banner div.page-name {
-        float: left;
-        display: block;
-        margin-right: 2.3255813953%;
-        width: 48.8372093023%; }
-        .page_banner_letters div.intro-box div.inner_banner div.page-name:last-child {
-          margin-right: 0; }
-        .page_banner_letters div.intro-box div.inner_banner div.page-name h1 {
-          font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
-          font-size: 1.5em;
-          line-height: 15px;
-          color: #b2b2b2;
-          padding-bottom: 50px; }
-      .page_banner_letters div.intro-box div.inner_banner div p {
-        float: left;
-        display: block;
-        margin-right: 2.3255813953%;
-        width: 40.3100775194%;
-        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
-        font-size: 1.5em;
-        line-height: 1.2;
-        color: #b2b2b2; }
-        .page_banner_letters div.intro-box div.inner_banner div p:last-child {
-          margin-right: 0; }
-        @media screen and (max-width: 768px) {
-          .page_banner_letters div.intro-box div.inner_banner div p {
-            float: left;
-            display: block;
-            margin-right: 4.7619047619%;
-            width: 47.619047619%; }
-            .page_banner_letters div.intro-box div.inner_banner div p:last-child {
-              margin-right: 0; } }
-        @media screen and (max-width: 480px) {
-          .page_banner_letters div.intro-box div.inner_banner div p {
-            float: left;
-            display: block;
-            margin-right: 10%;
-            width: 100%;
-            font-size: 1em; }
-            .page_banner_letters div.intro-box div.inner_banner div p:last-child {
-              margin-right: 0; } }
-  .page_banner_letters div.actual-banner img {
-    position: relative;
-    display: block;
-    height: auto;
-    background-size: 100%;
-    background-position: top; }
-    @media screen and (max-width: 480px) {
-      .page_banner_letters div.actual-banner img {
-        background: url("../images/DW_About-mob.jpg") no-repeat; } }
-
 section.letters_list {
   max-width: 75em;
   margin-left: auto;
@@ -1798,17 +1747,6 @@ footer {
             footer div.inner_footer ul li:last-child {
               margin-right: 0; } }
 
-/*#footer {
-    background-color: #000;
-    width: 100%;
-    height: auto;
-    z-index: 999;
-    position: relative;
-    bottom: 0;
-    display: block;
-    font-family: $frutigerLightCond;
-    
-} */
 #footer {
   background-color: #000;
   position: absolute;
@@ -1865,36 +1803,3 @@ footer {
             font-size: 0.7em; }
             #footer div.inner_footer ul li:last-child {
               margin-right: 0; } }
-
-/*footer.home {
-    background-color: #000;
-    width: 100%;
-    z-index: 999;
-    height: auto;
-    display: block;
-    font-family: $frutigerLightCond;
-    div.inner_footer {
-            @include outer-container;
-            @extend .global_pad;
-            ul {
-                @include span-columns(12);
-                li.copyright {
-                    @include span-columns(6);
-                    @include media($mobile) {
-                        @include span-columns(7);
-                    }
-                }
-                li {
-                    @include span-columns(3);
-                    display: inline-block;
-                    font-size: 1em;
-                    color: #b2b2b2;
-                    @include media($mobile) {
-                        @include span-columns(4);
-                        padding-bottom: 20px;
-                        font-size: 0.7em;
-                    }
-                }
-            }   
-        } 
-    }*/

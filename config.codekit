@@ -401,6 +401,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/DW_Process-mob.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 158237,
+		"inputAbbreviatedPath": "\/images\/DW_Process-mob.jpg",
+		"outputAbbreviatedPath": "\/images\/DW_Process-mob.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/DW_Process.jpg": {
 		"fileType": 16384,
 		"ignore": 0,

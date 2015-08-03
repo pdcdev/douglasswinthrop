@@ -1,6 +1,6 @@
 <?php $thisPage="Value"; ?>
 <?php include 'header.php'; ?>
-    <aside class="page_banner_value">
+    <aside class="page_banner">
         <div class="intro-box">
             <div class="inner_banner">
                 <div class="page-name">

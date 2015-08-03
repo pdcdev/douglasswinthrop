@@ -1,6 +1,6 @@
 <?php $thisPage="Letters"; ?>
 <?php include 'header.php'; ?>
-    <aside class="page_banner_letters">
+    <aside class="page_banner">
         <div class="intro-box">
             <div class="inner_banner">
                 <div class="page-name">
