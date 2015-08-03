@@ -467,6 +467,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/letter-1-s.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8840,
+		"inputAbbreviatedPath": "\/images\/letter-1-s.png",
+		"outputAbbreviatedPath": "\/images\/letter-1-s.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/letter-1.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -474,6 +485,17 @@
 		"initialSize": 8091,
 		"inputAbbreviatedPath": "\/images\/letter-1.png",
 		"outputAbbreviatedPath": "\/images\/letter-1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/letter-2-s.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11954,
+		"inputAbbreviatedPath": "\/images\/letter-2-s.png",
+		"outputAbbreviatedPath": "\/images\/letter-2-s.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -500,6 +522,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/letter-3-s.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10950,
+		"inputAbbreviatedPath": "\/images\/letter-3-s.png",
+		"outputAbbreviatedPath": "\/images\/letter-3-s.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/letter-3.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -507,6 +540,17 @@
 		"initialSize": 10154,
 		"inputAbbreviatedPath": "\/images\/letter-3.png",
 		"outputAbbreviatedPath": "\/images\/letter-3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/letter-4-s.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13778,
+		"inputAbbreviatedPath": "\/images\/letter-4-s.png",
+		"outputAbbreviatedPath": "\/images\/letter-4-s.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1416,6 +1460,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/phil.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/process.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/process.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

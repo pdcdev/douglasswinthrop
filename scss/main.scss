@@ -147,10 +147,9 @@ nav.nav-hide ul li a{
 aside.page_banner_home {
     z-index: 0;
     background-color: #eee;
-    top: 0;
-    left: 0;
-    min-height: 100%;
-    overflow: auto;
+    width: 100%;
+    height: 100%;
+    display: block;
     background: url('../images/DW_Home2.jpg') center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -424,6 +423,47 @@ hr {
     }
 }*/
 
+/* --------------Letters mobile list -----------*/
+
+section.letters_list-mob {
+    background-color: #fff;
+    ul {
+        margin-left: 30px;
+        li.number-one-mob {
+            margin-bottom: 30px;
+            display: block;
+            background: url(../images/letter-1-s.png) no-repeat;
+            width: 305px;
+            height: 205px;
+            background-size: 300px 410px;
+        }
+        li.number-two-mob {
+            margin-bottom: 30px;
+            display: block;
+            background: url(../images/letter-2-s.png) no-repeat;
+            width: 305px;
+            height: 205px;
+            background-size: 300px 410px;
+        }
+        li.number-three-mob {
+            margin-bottom: 30px;
+            display: block;
+            background: url(../images/letter-3-s.png) no-repeat;
+            width: 305px;
+            height: 205px;
+            background-size: 300px 410px;
+        }
+        li.number-four-mob {
+            margin-bottom: 30px;
+            display: block;
+            background: url(../images/letter-4-s.png) no-repeat;
+            width: 305px;
+            height: 205px;
+            background-size: 300px 410px;
+        }
+    }
+}
+
 @media only screen and (min-device-width: 220px) and (max-device-width: 480px) {
 
     .content-value {
@@ -476,6 +516,10 @@ hr {
         display: none !important;
     }
 
+    section.letters_list {
+        display: none !important;
+    }
+
 }
 
 @media screen and (min-width: 480px) {
@@ -483,6 +527,11 @@ hr {
     div.actual-banner-mob img {
         display: none !important;
     }
+
+    section.letters_list-mob {
+        display: none;
+    }
+
 }
 /* --- media two ends ---*/
 
@@ -814,8 +863,6 @@ div.band-container-white {
     background-color: #fff;
     width: 100%;
     height: auto;
-    @include outer-container;
-    @extend .global_pad;
     position: relative;
     padding-bottom: 0;
     div.block-value {
@@ -954,6 +1001,10 @@ section.detail-layout-value {
         }
     }
 
+    .your_color_class {
+        background-color: #000;
+    }
+
 section.people {
     @include outer-container;
     @extend .global_pad;
@@ -973,7 +1024,8 @@ section.people {
             @include omega(4n);
         }
         
-        img.person_headshot:hover {
+        img.person_headshot:hover + div#person_name {
+            background-color: rgba(#000, 0.6);
            
         }
 
@@ -1063,6 +1115,7 @@ section.people-single {
                     line-height: 25px;
                     font-size: 10pt;
                 }
+                
             }
             p {
                 line-height: 20px;
@@ -1175,6 +1228,7 @@ section.letters_list {
 
         li.number-one {
             display: inline-block;
+            margin-right: 80px;
             width: 460px;
             height: 300px;
             background: url(../images/letter-2.png) no-repeat 0 0;
@@ -1220,6 +1274,7 @@ section.letters_list {
 
         li.number-three{
             display: inline-block;
+            margin-right: 80px;
             width: 460px;
             height: 300px;
             background: url(../images/letter-3.png) no-repeat 0 0;
@@ -1380,7 +1435,7 @@ footer {
     } 
 }
   
-#footer {
+/*#footer {
     background-color: #000;
     width: 100%;
     height: auto;
@@ -1389,6 +1444,15 @@ footer {
     bottom: 0;
     display: block;
     font-family: $frutigerLightCond;
+    
+} */
+
+#footer {
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    height: 62px;
+    bottom: 0;
     div.inner_footer {
         @include outer-container;
         @extend .global_pad;
@@ -1413,8 +1477,8 @@ footer {
             }
         }   
     } 
-} 
-
+    
+}
 
 /*footer.home {
     background-color: #000;

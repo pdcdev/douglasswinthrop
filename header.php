@@ -169,6 +169,8 @@ nav,
                 <li><a href="firm.php" style="font-family: 'Istok Web', sans-serif;">About</a></li>
                 
                 <li><a href="value.php" style="font-family: 'Istok Web', sans-serif;">Value</a></li>
+
+                <li><a href="process.php" style="font-family: 'Istok Web', sans-serif;">People</a></li>
                 
                 <li><a href="people.php" style="font-family: 'Istok Web', sans-serif;">People</a></li>
                 
@@ -183,6 +185,7 @@ nav,
                 <ul>
                     <li<?php if ($thisPage=="About") echo " id=\"currentpage\""; ?>><a href ="firm.php">About</a></li>
                     <li<?php if ($thisPage=="Value") echo " id=\"currentpage\""; ?>><a href ="value.php">Value</a></li>
+                    <li<?php if ($thisPage=="Process") echo " id=\"currentpage\""; ?>><a href ="process.php">Process</a></li>
                     <li<?php if ($thisPage=="People") echo " id=\"currentpage\""; ?>><a href ="people.php">People</a></li>
                     <li<?php if ($thisPage=="Letters") echo " id=\"currentpage\""; ?>><a href ="letters.php">Letters</a></li>
                     <li<?php if ($thisPage=="Contact") echo " id=\"currentpage\""; ?>><a href ="contact.php">Contact</a></li>

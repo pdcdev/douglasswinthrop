@@ -168,6 +168,10 @@ section.people-single-mobile {
                     line-height: 25px;
                     font-size: 10pt;
                 }
+                @include media($mobile) {
+                    line-height: 20px;
+                    font-size: 8pt;
+                }
             }
             p {
                 line-height: 20px;
@@ -178,6 +182,11 @@ section.people-single-mobile {
                     line-height: 15px;
                     font-size:9pt;
                 }
+                @include media($mobile) {
+                    line-height: 15px;
+                    font-size: 8pt;
+                }
+                
             }
             p:hover {
                 opacity: 1;

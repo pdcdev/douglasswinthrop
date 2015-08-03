@@ -276,6 +276,10 @@ section.people-single-mobile {
           section.people-single-mobile div.person-single div.person_name-single h1 {
             line-height: 25px;
             font-size: 10pt; } }
+        @media screen and (max-width: 480px) {
+          section.people-single-mobile div.person-single div.person_name-single h1 {
+            line-height: 20px;
+            font-size: 8pt; } }
       section.people-single-mobile div.person-single div.person_name-single p {
         line-height: 20px;
         color: #fff;
@@ -285,6 +289,10 @@ section.people-single-mobile {
           section.people-single-mobile div.person-single div.person_name-single p {
             line-height: 15px;
             font-size: 9pt; } }
+        @media screen and (max-width: 480px) {
+          section.people-single-mobile div.person-single div.person_name-single p {
+            line-height: 15px;
+            font-size: 8pt; } }
       section.people-single-mobile div.person-single div.person_name-single p:hover {
         opacity: 1; }
       section.people-single-mobile div.person-single div.person_name-single a {

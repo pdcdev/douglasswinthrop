@@ -30,12 +30,17 @@
 
             <ul class="block-row2">
                 <a class="three" href="January2015.pdf"><li class="number-three"></li>
-            
                 <a class="four" href="October2014.pdf"><li class="number-four"></li></a>
-            
-                
             </ul>
     </section>
     
+    <section class="letters_list-mob">    
+            <ul class="column-letters-mob">
+                <a class="one-mob" href="July2015.pdf"><li class="number-one-mob"></li></a>
+                <a class="two-mob" href="April2015.pdf"><li class="number-two-mob"></li></a>
+                <a class="three-mob" href="April2015.pdf"><li class="number-three-mob"></li></a>
+                <a class="four-mob" href="April2015.pdf"><li class="number-four-mob"></li></a>
+            </ul>            
+    </section>
 
 <?php include 'footer.php'; ?>
