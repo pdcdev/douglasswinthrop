@@ -1782,7 +1782,8 @@ footer {
       float: left;
       display: block;
       margin-right: 2.3255813953%;
-      width: 100%; }
+      width: 100%;
+      padding-top: 0; }
       footer div.inner_footer ul:last-child {
         margin-right: 0; }
       footer div.inner_footer ul li.copyright {

@@ -1418,6 +1418,7 @@ footer {
         @extend .global_pad;
         ul {
             @include span-columns(12);
+            padding-top: 0;
             li.copyright {
                 @include span-columns(6);
                 @include media($mobile) {
