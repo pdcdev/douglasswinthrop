@@ -31,7 +31,7 @@
     </section>
 <section class="sliderContainer">
         <div class="slider">
-            <div id="rightArrow"><img src="images/arrow-right.svg"></div>
+            <div id="rightArrow"></div>
             <div id="viewContainer">
                 <div id="insideContainer">
 
@@ -164,7 +164,7 @@
    
                  </div><!-- inside container -->
             </div>
-            <div id="leftArrow"><img src="images/arrow-left.svg"></div>
+            <div id="leftArrow"></div>
         </div>
     </section> <!-- slider container -->
 

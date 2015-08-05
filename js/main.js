@@ -1,3 +1,5 @@
+
+
 //people hover 
 
 $(document).ready(function(){
@@ -35,3 +37,4 @@ $("#leftArrow").click(function(){
     if (currentPosition < 0) view.stop(false,true).animate({left:"+="+move},{ duration: 400})
 
 });
+

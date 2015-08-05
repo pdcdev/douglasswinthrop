@@ -104,7 +104,7 @@ div.intro-box {
                 @include span-columns(5);
                 font-family: $frutigerLightCond;
                 font-size: 1.5em;
-                line-height: 1.1;
+                line-height: 1.2;
                 color: #b2b2b2;
                 @include media($tablet) {
                     @include span-columns(3);
@@ -208,6 +208,7 @@ section.sliderContainer {
     @include outer-container;
     .slider { 
         @include span-columns(12);
+        margin-top: 70px;
         height:185px;
         position:relative;
         #viewContainer {
@@ -280,22 +281,58 @@ section.sliderContainer {
 
 
 
-#leftArrow img {
+#leftArrow {
+    top: 2pt;
+    width: 1.5em;
+    height: 1.5em;
+    border-right: 0.2em solid #004fb1;
+    border-top: 0.2em solid #004fb1;
     margin: 60px 60px 0 0;
-    position:absolute;
-    left:0px;
-    width: 30px;
+    transform: rotate(225deg);
+}
+
+#leftArrow:hover {
+    top: 2pt;
+    width: 1.5em;
+    height: 1.5em;
+    border-right: 0.2em solid #b2b2b2;
+    border-top: 0.2em solid #b2b2b2;
+    margin: 60px 60px 0 0;
+    transform: rotate(225deg);
 
 }
 
-#rightArrow img{ 
-    margin: 60px 0 0 60px;
-    position:absolute;
-    right:0px;
-    width: 30px;
+#rightArrow {
+    top: 2pt;
+    width: 1.5em;
+    height: 1.5em;
+    border-right: 0.2em solid #004fb1;
+    border-top: 0.2em solid #004fb1;
+    margin: 60px 60px 0 0;
+    transform: rotate(45deg);
+    position: absolute;
+    right:0;
 }
 
+#rightArrow:hover { 
+    top: 2pt;
+    width: 1.5em;
+    height: 1.5em;
+    border-right: 0.2em solid #b2b2b2;
+    border-top: 0.2em solid #b2b2b2;
+    margin: 60px 60px 0 0;
+    transform: rotate(45deg);
+    position: absolute;
+    right:0;
 
+}
+
+    /*margin: 60px 60px 0 0;
+    width: 0; 
+    height: 0; 
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #b2b2b2;
 
 /* ------ single page people banners -----*/
 

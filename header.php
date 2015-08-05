@@ -1,6 +1,7 @@
 <!DOCTYPE html> 
 <html> 
 <head> 
+<link href="http://fast.fonts.net/cssapi/c0791320-eb3a-41c7-8868-c0ceb0eb6a90.css" type="text/css" rel="stylesheet"/>
 <meta charset="UTF-8"> 
 <title>Douglass Winthrop</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
@@ -8,13 +9,17 @@
 <link href="css/main.css" rel="stylesheet" type="text/css">
 <link href="css/people.css" rel="stylesheet" type="text/css">
 <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-<link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/c0791320-eb3a-41c7-8868-c0ceb0eb6a90.css"/>
 <link href='http://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'>
-</head>
+ 
+ </head>
 <style>
 
 @import "utilities/variables";
 @import "utilities/universal";
+
+
+
+
 
 nav,
         .navbar-toggle {
@@ -50,10 +55,12 @@ nav,
           padding-top: 100px;
           vertical-align: middle;
           padding-left: 0 !important;
+          height: 500px;
+          overflow: scroll;
         }
 
         nav ul li { list-style: none;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
 
          }
 
@@ -174,7 +181,7 @@ nav,
                 
                 <li><a href="value.php">Value</a></li>
 
-                <li><a href="process.php">People</a></li>
+                <li><a href="process.php">Process</a></li>
                 
                 <li><a href="people.php">People</a></li>
                 
@@ -187,12 +194,12 @@ nav,
             
             <div class="main-nav">
                 <ul>
-                    <li<?php if ($thisPage=="About") echo " id=\"currentpage\""; ?>><a href ="firm.php">About</a></li>
-                    <li<?php if ($thisPage=="Value") echo " id=\"currentpage\""; ?>><a href ="value.php">Value</a></li>
-                    <li<?php if ($thisPage=="Process") echo " id=\"currentpage\""; ?>><a href ="process.php">Process</a></li>
-                    <li<?php if ($thisPage=="People") echo " id=\"currentpage\""; ?>><a href ="people.php">People</a></li>
-                    <li<?php if ($thisPage=="Letters") echo " id=\"currentpage\""; ?>><a href ="letters.php">Letters</a></li>
-                    <li<?php if ($thisPage=="Contact") echo " id=\"currentpage\""; ?>><a href ="contact.php">Contact</a></li>
+                    <li><a href ="firm.php">About</a></li>
+                    <li><a href ="value.php">Value</a></li>
+                    <li><a href ="process.php">Process</a></li>
+                    <li><a href ="people.php">People</a></li>
+                    <li><a href ="letters.php">Letters</a></li>
+                    <li><a href ="contact.php">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -219,3 +226,4 @@ nav,
     })();
 
 </script>
+

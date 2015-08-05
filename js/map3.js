@@ -1,24 +1,14 @@
-jQuery(document).ready(function($) {
+$( document ).ready( function() {
+    //Google Maps JS
+    //Set Map
+    var lightgray = "#eeeeee";
+    var mediumgray = "#aaaaaa";
+    var darkgray = "#888888";
+    var white = "#ffffff";
+    var black = "#ff8b00";
 
-
-var map;
-
-var myLatlngNYC = new google.maps.LatLng(40.7549469,-73.9795346);
-
-var myLatlngDC = new google.maps.LatLng(38.9011035,-77.0396397);
-
-var myLatlngBOS = new google.maps.LatLng(42.3579214,-71.0707528);
-
-var MY_MAPTYPE_ID = 'custom_style';
-
-var lightgray = "#eeeeee";
-var mediumgray = "#aaaaaa";
-var darkgray = "#888888";
-var white = "#ffffff";
-var black = "#ff8b00";
-
-function initialize() {
-    var featureOpts = [{
+    function initialize() {
+        var featureOpts = [{
         featureType: "water",
         stylers: [{
             color: white
@@ -158,120 +148,61 @@ function initialize() {
         }]
     }];
 
+        var myLatlngNYC = new google.maps.LatLng(40.7549469,-73.9795346);
+        var imagePath = 'http://www.jamesnew.co.uk/googlePin.png'
+        var mapOptionsNYC = {
+            zoom: 15,
+            center: myLatlngNYC,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+            
+        }
 
-  var mapOptionsNYC = {
-    scrollwheel: 0,
-    streetViewControl: 0,
-    draggable: true,
-    zoom: 15,
-    center: myLatlngNYC,
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    mapTypeControl: 0,
-    // mapTypeControlOptions: {
-    //     mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
-    //   },
-    //   mapTypeId: MY_MAPTYPE_ID
-    };
-
-  var mapOptionsDC = {
-    scrollwheel: 0,
-    streetViewControl: 0,
-    draggable: true,
-    zoom: 15,
-    center: myLatlngDC,
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    mapTypeControl: 0,
-    // mapTypeControlOptions: {
-    //     mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
-    //   },
-    //   mapTypeId: MY_MAPTYPE_ID
-
-    };
-
-  var mapOptionsBOS = {
-    scrollwheel: 0,
-    streetViewControl: 0,
-    draggable: true,
-    zoom: 15,
-    center: myLatlngBOS,
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    mapTypeControl: 0,
-    // mapTypeControlOptions: {
-    //     mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
-    //   },
-    //   mapTypeId: MY_MAPTYPE_ID
-
-    };
-
-    var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
+    
+    // var mapOptionsNYC = {
+    // scrollwheel: 0,
+    // streetViewControl: 0,
+    // draggable: true,
+    // zoom: 15,
+    // center: myLatlngNYC,
+    // mapTypeId: google.maps.MapTypeId.ROADMAP,
+    // mapTypeControl: 0,
+    // // mapTypeControlOptions: {
+    // //     mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+    // //   },
+    // //   mapTypeId: MY_MAPTYPE_ID
+    // };
 
 
-    var mapNYC = new google.maps.Map(document.getElementById('map-canvas-nyc'), mapOptionsNYC, 'Custom Style');
+        var map = new google.maps.Map(document.getElementById('map-canvas-nyc'), mapOptionsNYC);
+        //Callout Content
+        var contentString = 'Some address here..';
+        //Set window width + content
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString,
+            maxWidth: 500
+        });
 
-    var mapDC = new google.maps.Map(document.getElementById('map-canvas-dc'), mapOptionsDC, 'Custom Style');
+        //Add Marker
+        var marker = new google.maps.Marker({
+            position: myLatlngNYC,
+            map: map,
+            icon: imagePath,
+            title:"douglass winthrop",
+            icon: 'images/dw.png'
+        });
 
-    var mapBOS = new google.maps.Map(document.getElementById('map-canvas-boston'), mapOptionsBOS, 'Custom Style');
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map,marker);
+        });
 
-    var styledMapOptions = {
-        name: 'Custom Style'
-    };
-
-  
-      // Resize stuff...
-      //   google.maps.event.addDomListener(window, "resize", function() {
-      //      var center = map.getCenter();
-      //      google.maps.event.trigger(map, "resize");
-      //      map.setCenter(center); 
-      //   });
-
-  var markerNYC = new google.maps.Marker({
-
-      position: myLatlngNYC,
-
-      map: mapNYC,
-
-      title:"douglass winthrop",
-        icon: 'images/dw.png'
-
-  });
-
-  var markerDC = new google.maps.Marker({
-
-      position: myLatlngDC,
-
-      map: mapDC,
-
-      title:"douglass winthrop",
-        icon: 'images/dw.png'
-
-  }); 
-
-
-  var markerBOS = new google.maps.Marker({
-
-      position: myLatlngBOS,
-
-      map: mapBOS,
-
-      title:"douglass winthrop",
-        icon: 'images/dw.png'
-
-  });
-
-  
-  // map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
-
-  //Resize Function
+        //Resize Function
         google.maps.event.addDomListener(window, "resize", function() {
             var center = map.getCenter();
             google.maps.event.trigger(map, "resize");
             map.setCenter(center);
         });
-
- } // end function
-
-   
-
+    }
+    
     google.maps.event.addDomListener(window, 'load', initialize);
 
 });

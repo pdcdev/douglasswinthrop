@@ -4,6 +4,10 @@
 @import "utilities/variables";
 @import "utilities/universal";
 
+* {
+    margin: 0;
+}
+
 html, body {
     font-family: $frutigerRoman;
     background-color: #fff;
@@ -12,8 +16,8 @@ html, body {
     padding: 0;
     height: 100%;
 
-}
 
+}
 
 .vertical_center_parent {
     display: -ms-flexbox;
@@ -55,12 +59,98 @@ html, body {
 }
 
 /*----------------- HOME PAGE -----------*/
+header {
+    z-index: 999;
+    position: relative;
+    background-color: $blue;
+    border-bottom: 1px solid #b2b2b2;
+    div.inner_header {
+        @include outer-container;
+        height: 60px;
+        h1 {
+            @include span-columns(6);
+            line-height: 60px;
+            font-family: $frutigerBoldCond;
+            font-size: 1em;
 
-header.home{
+            a {
+                text-decoration: none;
+                color: #b2b2b2;
+            }
+            @include media($mobile){
+                font-size: 1rem;
+            }
+            @include media($tiny){
+                @include span-columns(2);
+            }
+        }
+        div.main-nav {
+            ul {
+                @include span-columns(6);
+                margin:0;
+                @include media($tablet) {
+                    @include span-columns(5);
+                    background-color: #fff;
+                    display: none;
+                }
+                @include media($mobile) {
+                    @include span-columns(3);
+                    background-color: #fff;
+                    display: none;
+                }
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                li {
+                    @include span-columns(2);
+                    font-family: $frutigerBoldCond;
+                    font-size: 1em;
+                    margin: 20px 0 5px 0;
+                    display: inline-block;
+                    @include media($tablet) {
+                        @include span-columns(6);
+                        display: block;
+                    }
+                    @include media($mobile) {
+                        @include span-columns(3);
+                        display: block;
+                    }
+                    a {
+                        width: 50px;
+                        color: #b2b2b2;
+                        text-decoration: none;
+                        padding-bottom: 5px;
+
+                    }
+                    a:visited {
+                         
+                    }
+                    a:hover {
+                        color: #2775F6;
+
+                    }
+
+                    a.currentpage:active {
+                        color: red;
+                    }
+
+
+                    .main-nav li.current {
+                        border-bottom:1px #333 solid;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*header.home{
     z-index: 999;
     position: relative;
     background-color: transparent;
-    border-bottom: 1px solid #b2b2b2;
+    border-bottom: 1px solid #b2b2b2 !important;
     div.inner_header_home {
         @include outer-container;
         height: 60px;
@@ -138,21 +228,75 @@ header.home{
             }
         }
     }
-}
+}*/
 
 nav.nav-hide ul.overlay li a{
     font-family: $frutigerLightCond !important;
 }
 
+
+#footer {
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    display: block;
+    clear: both;
+    @include media($mobile) {
+        background-color: #000;
+        position: relative;
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        display: block;
+        clear: both;
+    }
+        div.inner_footer {
+        @include outer-container;
+        @extend .global_pad;
+        ul {
+            @include span-columns(12);
+            li.copyright {
+                @include span-columns(6);
+                @include media($mobile) {
+                    @include span-columns(5);
+                }
+            }
+            li {
+                @include span-columns(3);
+                font-family: $frutigerLightCond;
+                display: inline-block;
+                font-size: 1em;
+                color: #b2b2b2;
+                @include media($mobile) {
+                    @include span-columns(3);
+                    padding-bottom: 20px;
+                    font-size: 0.7em;
+                }
+            }
+        }   
+    } 
+    
+}
+
+
+
+
 aside.page_banner_home {
     z-index: 0;
-    min-height: 100%;
+    min-height: 88%;
+    height: auto !important;
     display: block;
     background: url('../images/DW_Home2.jpg') center center no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    -webkit-background-size: auto cover;
+    -moz-background-size: auto cover;
+    -o-background-size: auto cover;
+    background-size: auto cover;
+    background-position: 0 0;
+    @include media($mobile) {
+        overflow: scroll;    
+    }
     div.overlay_home {
         @include outer-container;
         @extend .global_pad;
@@ -291,88 +435,7 @@ div.overlay-mobile {
 
 /* -----------------------------END BUTTONS ------------------------*/
 
-header {
-    z-index: 999;
-    position: relative;
-    background-color: $blue;
-    border-bottom: 1px solid #5e9eec;
-    div.inner_header {
-        @include outer-container;
-        height: 60px;
-        h1 {
-            @include span-columns(6);
-            line-height: 60px;
-            font-family: $frutigerBoldCond;
-            font-size: 1em;
 
-            a {
-                text-decoration: none;
-                color: #b2b2b2;
-            }
-            @include media($mobile){
-                font-size: 1rem;
-            }
-            @include media($tiny){
-                @include span-columns(2);
-            }
-        }
-        div.main-nav {
-            ul {
-                @include span-columns(6);
-                margin:0;
-                @include media($tablet) {
-                    @include span-columns(5);
-                    background-color: #fff;
-                    display: none;
-                }
-                @include media($mobile) {
-                    @include span-columns(3);
-                    background-color: #fff;
-                    display: none;
-                }
-                list-style: none;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                li {
-                    @include span-columns(2);
-                    font-family: $frutigerBoldCond;
-                    font-size: 1em;
-                    margin: 20px 0 5px 0;
-                    display: inline-block;
-                    @include media($tablet) {
-                        @include span-columns(6);
-                        display: block;
-                    }
-                    @include media($mobile) {
-                        @include span-columns(3);
-                        display: block;
-                    }
-                    a {
-                        width: 50px;
-                        color: #b2b2b2;
-                        text-decoration: none;
-                        padding-bottom: 5px;
-
-                    }
-                    a:visited {
-                        
-                    }
-                    a:hover {
-                        color: #2775F6;
-
-                    }
-                    .currentpage a:active {
-                        color: red;
-                    }
-                    .main-nav li.current {
-                        border-bottom:1px #333 solid;
-                    }
-                }
-            }
-        }
-    }
-}
 
 
 button {
@@ -1328,6 +1391,22 @@ section.contact_list {
     max-width: none;
 }
 
+section.credits {
+    @include outer-container;
+    @extend .global_pad;
+    ul.credits {
+        color: $gray;
+        @include span-columns(12);
+        li.credits {
+            font-family: $frutigerBoldCond;
+        }
+        li {
+            @include span-columns(6);
+            font-family: $frutigerLightCond;
+        }
+    }
+}
+
 footer {
     background-color: #000;
     width: 100%;
@@ -1360,38 +1439,3 @@ footer {
     } 
 }
   
-
-#footer {
-    background-color: #000;
-    position: absolute;
-    width: 100%;
-    height: 62px;
-    bottom: 0;
-    div.inner_footer {
-        @include outer-container;
-        @extend .global_pad;
-        ul {
-            @include span-columns(12);
-            li.copyright {
-                @include span-columns(6);
-                @include media($mobile) {
-                    @include span-columns(5);
-                }
-            }
-            li {
-                @include span-columns(3);
-                display: inline-block;
-                font-size: 1em;
-                color: #b2b2b2;
-                @include media($mobile) {
-                    @include span-columns(3);
-                    padding-bottom: 20px;
-                    font-size: 0.7em;
-                }
-            }
-        }   
-    } 
-    
-}
-
-

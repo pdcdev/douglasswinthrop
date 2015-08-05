@@ -38,6 +38,9 @@ font-family:'Frutiger LT W04_87 X Bl1459298';*/
 var list_of_stuff = [1,2,3,4];
 
 do_something(list_of_stuff, "blue");*/
+* {
+  margin: 0; }
+
 html, body {
   font-family: "FrutigerLTW01-55Roman", helvetica, sans serif;
   background-color: #fff;
@@ -56,13 +59,13 @@ html, body {
   align-items: center;
   /*justify-content: center;*/ }
 
-.global_pad, aside.page_banner_home div.overlay_home, .page_banner div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.people-single, section.letters_list, section.contact_list, footer div.inner_footer, #footer div.inner_footer {
+.global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, .page_banner div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.people-single, section.letters_list, section.contact_list, section.credits, footer div.inner_footer {
   padding: 1.5em 40px; }
   @media screen and (max-width: 768px) {
-    .global_pad, aside.page_banner_home div.overlay_home, .page_banner div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.people-single, section.letters_list, section.contact_list, footer div.inner_footer, #footer div.inner_footer {
+    .global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, .page_banner div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.people-single, section.letters_list, section.contact_list, section.credits, footer div.inner_footer {
       padding: 2em 40px; } }
   @media screen and (max-width: 480px) {
-    .global_pad, aside.page_banner_home div.overlay_home, .page_banner div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.people-single, section.letters_list, section.contact_list, footer div.inner_footer, #footer div.inner_footer {
+    .global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, .page_banner div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.people-single, section.letters_list, section.contact_list, section.credits, footer div.inner_footer {
       padding: 2em 30px; } }
 
 .sidepad, .inner_header {
@@ -84,21 +87,21 @@ html, body {
       margin-right: 0; } }
 
 /*----------------- HOME PAGE -----------*/
-header.home {
+header {
   z-index: 999;
   position: relative;
-  background-color: transparent;
+  background-color: #004FB1;
   border-bottom: 1px solid #b2b2b2; }
-  header.home div.inner_header_home {
+  header div.inner_header {
     max-width: 75em;
     margin-left: auto;
     margin-right: auto;
     height: 60px; }
-    header.home div.inner_header_home::after {
+    header div.inner_header::after {
       clear: both;
       content: "";
       display: table; }
-    header.home div.inner_header_home h1 {
+    header div.inner_header h1 {
       float: left;
       display: block;
       margin-right: 2.3255813953%;
@@ -106,23 +109,23 @@ header.home {
       line-height: 60px;
       font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
       font-size: 1em; }
-      header.home div.inner_header_home h1:last-child {
+      header div.inner_header h1:last-child {
         margin-right: 0; }
-      header.home div.inner_header_home h1 a {
+      header div.inner_header h1 a {
         text-decoration: none;
         color: #b2b2b2; }
       @media screen and (max-width: 480px) {
-        header.home div.inner_header_home h1 {
+        header div.inner_header h1 {
           font-size: 1rem; } }
       @media screen and (max-width: 320px) {
-        header.home div.inner_header_home h1 {
+        header div.inner_header h1 {
           float: left;
           display: block;
           margin-right: 10%;
           width: 63.3333333333%; }
-          header.home div.inner_header_home h1:last-child {
+          header div.inner_header h1:last-child {
             margin-right: 0; } }
-    header.home div.inner_header_home nav.main-nav-home ul {
+    header div.inner_header div.main-nav ul {
       float: left;
       display: block;
       margin-right: 2.3255813953%;
@@ -132,29 +135,29 @@ header.home {
       display: flex;
       flex-direction: row;
       justify-content: space-between; }
-      header.home div.inner_header_home nav.main-nav-home ul:last-child {
+      header div.inner_header div.main-nav ul:last-child {
         margin-right: 0; }
       @media screen and (max-width: 768px) {
-        header.home div.inner_header_home nav.main-nav-home ul {
+        header div.inner_header div.main-nav ul {
           float: left;
           display: block;
           margin-right: 4.7619047619%;
           width: 82.5396825397%;
           background-color: #fff;
           display: none; }
-          header.home div.inner_header_home nav.main-nav-home ul:last-child {
+          header div.inner_header div.main-nav ul:last-child {
             margin-right: 0; } }
       @media screen and (max-width: 480px) {
-        header.home div.inner_header_home nav.main-nav-home ul {
+        header div.inner_header div.main-nav ul {
           float: left;
           display: block;
           margin-right: 10%;
           width: 100%;
           background-color: #fff;
           display: none; }
-          header.home div.inner_header_home nav.main-nav-home ul:last-child {
+          header div.inner_header div.main-nav ul:last-child {
             margin-right: 0; } }
-      header.home div.inner_header_home nav.main-nav-home ul li {
+      header div.inner_header div.main-nav ul li {
         float: left;
         display: block;
         margin-right: 2.3255813953%;
@@ -163,52 +166,207 @@ header.home {
         font-size: 1em;
         margin: 20px 0 5px 0;
         display: inline-block; }
-        header.home div.inner_header_home nav.main-nav-home ul li:last-child {
+        header div.inner_header div.main-nav ul li:last-child {
           margin-right: 0; }
         @media screen and (max-width: 768px) {
-          header.home div.inner_header_home nav.main-nav-home ul li {
+          header div.inner_header div.main-nav ul li {
             float: left;
             display: block;
             margin-right: 4.7619047619%;
             width: 100%;
             display: block; }
-            header.home div.inner_header_home nav.main-nav-home ul li:last-child {
+            header div.inner_header div.main-nav ul li:last-child {
               margin-right: 0; } }
         @media screen and (max-width: 480px) {
-          header.home div.inner_header_home nav.main-nav-home ul li {
+          header div.inner_header div.main-nav ul li {
             float: left;
             display: block;
             margin-right: 10%;
             width: 100%;
             display: block; }
-            header.home div.inner_header_home nav.main-nav-home ul li:last-child {
+            header div.inner_header div.main-nav ul li:last-child {
               margin-right: 0; } }
-        header.home div.inner_header_home nav.main-nav-home ul li a {
+        header div.inner_header div.main-nav ul li a {
           width: 50px;
           color: #b2b2b2;
           text-decoration: none;
           padding-bottom: 5px; }
-        header.home div.inner_header_home nav.main-nav-home ul li a:hover {
+        header div.inner_header div.main-nav ul li a:hover {
           color: #2775F6; }
-        header.home div.inner_header_home nav.main-nav-home ul li a:active {
-          color: #004FB1; }
-        header.home div.inner_header_home nav.main-nav-home ul li .currentpage a:active {
+        header div.inner_header div.main-nav ul li a.currentpage:active {
           color: red; }
-        header.home div.inner_header_home nav.main-nav-home ul li .main-nav li.current {
+        header div.inner_header div.main-nav ul li .main-nav li.current {
           border-bottom: 1px #333 solid; }
 
+/*header.home{
+    z-index: 999;
+    position: relative;
+    background-color: transparent;
+    border-bottom: 1px solid #b2b2b2 !important;
+    div.inner_header_home {
+        @include outer-container;
+        height: 60px;
+        h1 {
+            @include span-columns(6);
+            line-height: 60px;
+            font-family: $frutigerBoldCond;
+            font-size: 1em;
+            a {
+                text-decoration: none;
+                color: #b2b2b2;
+            }
+            @include media($mobile){
+                font-size: 1rem;
+            }
+            @include media($tiny){
+                @include span-columns(2);
+            }
+        }
+        nav.main-nav-home {
+            ul {
+                @include span-columns(6);
+                margin:0;
+                @include media($tablet) {
+                    @include span-columns(5);
+                    background-color: #fff;
+                    display: none;
+                }
+                @include media($mobile) {
+                    @include span-columns(3);
+                    background-color: #fff;
+                    display: none;
+                }
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                li {
+                    @include span-columns(2);
+                    font-family: $frutigerBoldCond;
+                    font-size: 1em;
+                    margin: 20px 0 5px 0;
+                    display: inline-block;
+                    @include media($tablet) {
+                        @include span-columns(6);
+                        display: block;
+                    }
+                    @include media($mobile) {
+                        @include span-columns(3);
+                        display: block;
+                    }
+                    a {
+                        width: 50px;
+                        color: #b2b2b2;
+                        text-decoration: none;
+                        padding-bottom: 5px;
+
+                    }
+                    a:visited {
+                        
+                    }
+                    a:hover {
+                        color: #2775F6;
+                    }
+                    a:active{
+                        color: $blue;
+                    }
+                    .currentpage a:active {
+                        color: red;
+                    }
+                    .main-nav li.current {
+                        border-bottom:1px #333 solid;
+                    }
+                }
+            }
+        }
+    }
+}*/
 nav.nav-hide ul.overlay li a {
   font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif !important; }
 
+#footer {
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  display: block;
+  clear: both; }
+  @media screen and (max-width: 480px) {
+    #footer {
+      background-color: #000;
+      position: relative;
+      width: 100%;
+      height: auto;
+      bottom: 0;
+      display: block;
+      clear: both; } }
+  #footer div.inner_footer {
+    max-width: 75em;
+    margin-left: auto;
+    margin-right: auto; }
+    #footer div.inner_footer::after {
+      clear: both;
+      content: "";
+      display: table; }
+    #footer div.inner_footer ul {
+      float: left;
+      display: block;
+      margin-right: 2.3255813953%;
+      width: 100%; }
+      #footer div.inner_footer ul:last-child {
+        margin-right: 0; }
+      #footer div.inner_footer ul li.copyright {
+        float: left;
+        display: block;
+        margin-right: 2.3255813953%;
+        width: 48.8372093023%; }
+        #footer div.inner_footer ul li.copyright:last-child {
+          margin-right: 0; }
+        @media screen and (max-width: 480px) {
+          #footer div.inner_footer ul li.copyright {
+            float: left;
+            display: block;
+            margin-right: 10%;
+            width: 173.3333333333%; }
+            #footer div.inner_footer ul li.copyright:last-child {
+              margin-right: 0; } }
+      #footer div.inner_footer ul li {
+        float: left;
+        display: block;
+        margin-right: 2.3255813953%;
+        width: 23.2558139535%;
+        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
+        display: inline-block;
+        font-size: 1em;
+        color: #b2b2b2; }
+        #footer div.inner_footer ul li:last-child {
+          margin-right: 0; }
+        @media screen and (max-width: 480px) {
+          #footer div.inner_footer ul li {
+            float: left;
+            display: block;
+            margin-right: 10%;
+            width: 100%;
+            padding-bottom: 20px;
+            font-size: 0.7em; }
+            #footer div.inner_footer ul li:last-child {
+              margin-right: 0; } }
+
 aside.page_banner_home {
   z-index: 0;
-  min-height: 100%;
+  min-height: 88%;
+  height: auto !important;
   display: block;
   background: url("../images/DW_Home2.jpg") center center no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  -webkit-background-size: auto cover;
+  -moz-background-size: auto cover;
+  -o-background-size: auto cover;
+  background-size: auto cover;
+  background-position: 0 0; }
+  @media screen and (max-width: 480px) {
+    aside.page_banner_home {
+      overflow: scroll; } }
   aside.page_banner_home div.overlay_home {
     max-width: 75em;
     margin-left: auto;
@@ -363,117 +521,6 @@ div.overlay-mobile {
       color: #2775F6; } }
 
 /* -----------------------------END BUTTONS ------------------------*/
-header {
-  z-index: 999;
-  position: relative;
-  background-color: #004FB1;
-  border-bottom: 1px solid #5e9eec; }
-  header div.inner_header {
-    max-width: 75em;
-    margin-left: auto;
-    margin-right: auto;
-    height: 60px; }
-    header div.inner_header::after {
-      clear: both;
-      content: "";
-      display: table; }
-    header div.inner_header h1 {
-      float: left;
-      display: block;
-      margin-right: 2.3255813953%;
-      width: 48.8372093023%;
-      line-height: 60px;
-      font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
-      font-size: 1em; }
-      header div.inner_header h1:last-child {
-        margin-right: 0; }
-      header div.inner_header h1 a {
-        text-decoration: none;
-        color: #b2b2b2; }
-      @media screen and (max-width: 480px) {
-        header div.inner_header h1 {
-          font-size: 1rem; } }
-      @media screen and (max-width: 320px) {
-        header div.inner_header h1 {
-          float: left;
-          display: block;
-          margin-right: 10%;
-          width: 63.3333333333%; }
-          header div.inner_header h1:last-child {
-            margin-right: 0; } }
-    header div.inner_header div.main-nav ul {
-      float: left;
-      display: block;
-      margin-right: 2.3255813953%;
-      width: 48.8372093023%;
-      margin: 0;
-      list-style: none;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between; }
-      header div.inner_header div.main-nav ul:last-child {
-        margin-right: 0; }
-      @media screen and (max-width: 768px) {
-        header div.inner_header div.main-nav ul {
-          float: left;
-          display: block;
-          margin-right: 4.7619047619%;
-          width: 82.5396825397%;
-          background-color: #fff;
-          display: none; }
-          header div.inner_header div.main-nav ul:last-child {
-            margin-right: 0; } }
-      @media screen and (max-width: 480px) {
-        header div.inner_header div.main-nav ul {
-          float: left;
-          display: block;
-          margin-right: 10%;
-          width: 100%;
-          background-color: #fff;
-          display: none; }
-          header div.inner_header div.main-nav ul:last-child {
-            margin-right: 0; } }
-      header div.inner_header div.main-nav ul li {
-        float: left;
-        display: block;
-        margin-right: 2.3255813953%;
-        width: 14.7286821705%;
-        font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
-        font-size: 1em;
-        margin: 20px 0 5px 0;
-        display: inline-block; }
-        header div.inner_header div.main-nav ul li:last-child {
-          margin-right: 0; }
-        @media screen and (max-width: 768px) {
-          header div.inner_header div.main-nav ul li {
-            float: left;
-            display: block;
-            margin-right: 4.7619047619%;
-            width: 100%;
-            display: block; }
-            header div.inner_header div.main-nav ul li:last-child {
-              margin-right: 0; } }
-        @media screen and (max-width: 480px) {
-          header div.inner_header div.main-nav ul li {
-            float: left;
-            display: block;
-            margin-right: 10%;
-            width: 100%;
-            display: block; }
-            header div.inner_header div.main-nav ul li:last-child {
-              margin-right: 0; } }
-        header div.inner_header div.main-nav ul li a {
-          width: 50px;
-          color: #b2b2b2;
-          text-decoration: none;
-          padding-bottom: 5px; }
-        header div.inner_header div.main-nav ul li a:hover {
-          color: #2775F6; }
-        header div.inner_header div.main-nav ul li .currentpage a:active {
-          color: red; }
-        header div.inner_header div.main-nav ul li .main-nav li.current {
-          border-bottom: 1px #333 solid; }
-
 button {
   display: none; }
   button span {
@@ -1690,6 +1737,33 @@ section.contact_list {
 .gmnoprint-boston img {
   max-width: none; }
 
+section.credits {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto; }
+  section.credits::after {
+    clear: both;
+    content: "";
+    display: table; }
+  section.credits ul.credits {
+    color: #A3A9AC;
+    float: left;
+    display: block;
+    margin-right: 2.3255813953%;
+    width: 100%; }
+    section.credits ul.credits:last-child {
+      margin-right: 0; }
+    section.credits ul.credits li.credits {
+      font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif; }
+    section.credits ul.credits li {
+      float: left;
+      display: block;
+      margin-right: 2.3255813953%;
+      width: 48.8372093023%;
+      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+      section.credits ul.credits li:last-child {
+        margin-right: 0; }
+
 footer {
   background-color: #000;
   width: 100%;
@@ -1745,61 +1819,4 @@ footer {
             padding-bottom: 20px;
             font-size: 0.7em; }
             footer div.inner_footer ul li:last-child {
-              margin-right: 0; } }
-
-#footer {
-  background-color: #000;
-  position: absolute;
-  width: 100%;
-  height: 62px;
-  bottom: 0; }
-  #footer div.inner_footer {
-    max-width: 75em;
-    margin-left: auto;
-    margin-right: auto; }
-    #footer div.inner_footer::after {
-      clear: both;
-      content: "";
-      display: table; }
-    #footer div.inner_footer ul {
-      float: left;
-      display: block;
-      margin-right: 2.3255813953%;
-      width: 100%; }
-      #footer div.inner_footer ul:last-child {
-        margin-right: 0; }
-      #footer div.inner_footer ul li.copyright {
-        float: left;
-        display: block;
-        margin-right: 2.3255813953%;
-        width: 48.8372093023%; }
-        #footer div.inner_footer ul li.copyright:last-child {
-          margin-right: 0; }
-        @media screen and (max-width: 480px) {
-          #footer div.inner_footer ul li.copyright {
-            float: left;
-            display: block;
-            margin-right: 10%;
-            width: 173.3333333333%; }
-            #footer div.inner_footer ul li.copyright:last-child {
-              margin-right: 0; } }
-      #footer div.inner_footer ul li {
-        float: left;
-        display: block;
-        margin-right: 2.3255813953%;
-        width: 23.2558139535%;
-        display: inline-block;
-        font-size: 1em;
-        color: #b2b2b2; }
-        #footer div.inner_footer ul li:last-child {
-          margin-right: 0; }
-        @media screen and (max-width: 480px) {
-          #footer div.inner_footer ul li {
-            float: left;
-            display: block;
-            margin-right: 10%;
-            width: 100%;
-            padding-bottom: 20px;
-            font-size: 0.7em; }
-            #footer div.inner_footer ul li:last-child {
               margin-right: 0; } }
