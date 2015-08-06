@@ -62,7 +62,7 @@
           color: #b2b2b2;
           font-weight: bolder;
           text-decoration: none;
-          font-family: inherit;
+          font-family: Exo, sans-serif;
         }
 
         @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) { 

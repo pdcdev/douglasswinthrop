@@ -1349,6 +1349,7 @@ section.terms {
     padding-bottom: 100px;
     ul.terms {
         @include span-columns(12);
+        padding-top:30px;
         color: $gray;
         height: 100%;
         @include media($mobile) {
@@ -1427,7 +1428,6 @@ footer.value {
             li.copyright {
                 @include span-columns(6);
                 @include media($mobile) {
-                    
                     @include span-columns(5);
                 }
             }
