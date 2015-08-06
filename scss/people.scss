@@ -206,13 +206,14 @@ section.people-single-mobile {
 
 section.sliderContainer {
     @include outer-container;
+    @extend .global_pad;
     .slider { 
         @include span-columns(12);
         margin-top: 70px;
         height:185px;
         position:relative;
         #viewContainer {
-            @include span-columns(10);
+            @include span-columns(9.8);
             height:100%;
             position:absolute;
             left: 430px;
@@ -222,6 +223,7 @@ section.sliderContainer {
                 position:absolute;
                 left:0;
                 width:3000px;
+                padding-left: 50px;
                 .person-single{
                     background-color: #eee;
                     position: relative;

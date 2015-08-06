@@ -48,6 +48,9 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%; }
+  @media screen and (max-width: 480px) {
+    html, body {
+      overflow-x: hidden; } }
 
 .vertical_center_parent, aside.page_banner_home div.overlay_home div.inner_banner_home div.home-logo {
   display: -ms-flexbox;
@@ -59,13 +62,13 @@ html, body {
   align-items: center;
   /*justify-content: center;*/ }
 
-.global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, .page_banner div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.people-single, section.letters_list, section.contact_list, section.credits, footer div.inner_footer {
+.global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, .page_banner div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.people-single, section.letters_list, section.contact_list, section.credits, footer div.inner_footer, footer.value div.inner_footer-value {
   padding: 1.5em 40px; }
   @media screen and (max-width: 768px) {
-    .global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, .page_banner div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.people-single, section.letters_list, section.contact_list, section.credits, footer div.inner_footer {
+    .global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, .page_banner div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.people-single, section.letters_list, section.contact_list, section.credits, footer div.inner_footer, footer.value div.inner_footer-value {
       padding: 2em 40px; } }
   @media screen and (max-width: 480px) {
-    .global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, .page_banner div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.people-single, section.letters_list, section.contact_list, section.credits, footer div.inner_footer {
+    .global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, .page_banner div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.people-single, section.letters_list, section.contact_list, section.credits, footer div.inner_footer, footer.value div.inner_footer-value {
       padding: 2em 30px; } }
 
 .sidepad, .inner_header {
@@ -954,7 +957,7 @@ section.value {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  padding-bottom: 0; }
+  padding-bottom: 0px; }
   section.value::after {
     clear: both;
     content: "";
@@ -1346,7 +1349,8 @@ section.process_list {
           float: left;
           display: block;
           margin-right: 10%;
-          width: 100%; }
+          width: 100%;
+          margin-left: 20px; }
           section.process_list div.block div.description ul.right:last-child {
             margin-right: 0; } }
 
@@ -1795,6 +1799,7 @@ footer {
           margin-right: 0; }
         @media screen and (max-width: 480px) {
           footer div.inner_footer ul li.copyright {
+            padding-top: 30px;
             float: left;
             display: block;
             margin-right: 10%;
@@ -1820,4 +1825,61 @@ footer {
             padding-bottom: 20px;
             font-size: 0.7em; }
             footer div.inner_footer ul li:last-child {
+              margin-right: 0; } }
+
+footer.value {
+  background-color: #000;
+  width: 100%;
+  z-index: 999;
+  height: auto;
+  font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+  footer.value div.inner_footer-value {
+    max-width: 75em;
+    margin-left: auto;
+    margin-right: auto; }
+    footer.value div.inner_footer-value::after {
+      clear: both;
+      content: "";
+      display: table; }
+    footer.value div.inner_footer-value ul {
+      float: left;
+      display: block;
+      margin-right: 2.3255813953%;
+      width: 100%; }
+      footer.value div.inner_footer-value ul:last-child {
+        margin-right: 0; }
+      footer.value div.inner_footer-value ul li.copyright {
+        float: left;
+        display: block;
+        margin-right: 2.3255813953%;
+        width: 48.8372093023%; }
+        footer.value div.inner_footer-value ul li.copyright:last-child {
+          margin-right: 0; }
+        @media screen and (max-width: 480px) {
+          footer.value div.inner_footer-value ul li.copyright {
+            float: left;
+            display: block;
+            margin-right: 10%;
+            width: 173.3333333333%; }
+            footer.value div.inner_footer-value ul li.copyright:last-child {
+              margin-right: 0; } }
+      footer.value div.inner_footer-value ul li {
+        float: left;
+        display: block;
+        margin-right: 2.3255813953%;
+        width: 23.2558139535%;
+        display: inline-block;
+        font-size: 1em;
+        color: #b2b2b2; }
+        footer.value div.inner_footer-value ul li:last-child {
+          margin-right: 0; }
+        @media screen and (max-width: 480px) {
+          footer.value div.inner_footer-value ul li {
+            float: left;
+            display: block;
+            margin-right: 10%;
+            width: 100%;
+            padding-bottom: 20px;
+            font-size: 0.7em; }
+            footer.value div.inner_footer-value ul li:last-child {
               margin-right: 0; } }

@@ -48,13 +48,13 @@ do_something(list_of_stuff, "blue");*/
   align-items: center;
   /*justify-content: center;*/ }
 
-.global_pad, div.intro-box div.inner_banner, section.people-single-mobile {
+.global_pad, div.intro-box div.inner_banner, section.people-single-mobile, section.sliderContainer {
   padding: 2em 40px; }
   @media screen and (max-width: 768px) {
-    .global_pad, div.intro-box div.inner_banner, section.people-single-mobile {
+    .global_pad, div.intro-box div.inner_banner, section.people-single-mobile, section.sliderContainer {
       padding: 2em 40px; } }
   @media screen and (max-width: 480px) {
-    .global_pad, div.intro-box div.inner_banner, section.people-single-mobile {
+    .global_pad, div.intro-box div.inner_banner, section.people-single-mobile, section.sliderContainer {
       padding: 2em 30px; } }
 
 .sidepad, .inner_header {
@@ -321,7 +321,7 @@ section.sliderContainer {
       float: left;
       display: block;
       margin-right: 2.3255813953%;
-      width: 82.9457364341%;
+      width: 81.2403100775%;
       height: 100%;
       position: absolute;
       left: 430px;
@@ -332,7 +332,8 @@ section.sliderContainer {
       section.sliderContainer .slider #viewContainer #insideContainer {
         position: absolute;
         left: 0;
-        width: 3000px; }
+        width: 3000px;
+        padding-left: 50px; }
         section.sliderContainer .slider #viewContainer #insideContainer .person-single {
           background-color: #eee;
           position: relative;

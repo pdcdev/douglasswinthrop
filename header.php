@@ -13,16 +13,13 @@
  
  </head>
 <style>
+    @import "bourbon/bourbon";
+    @import "grid-settings";
+    @import "neat/neat";
+    @import "utilities/variables";
+    @import "utilities/universal";
 
-@import "utilities/variables";
-@import "utilities/universal";
-
-
-
-
-
-nav,
-        .navbar-toggle {
+      nav,  .burger-menu {
           -webkit-touch-callout: none;
           -webkit-user-select: none;
           -khtml-user-select: none;
@@ -42,14 +39,10 @@ nav,
           text-align: center;
           display: table;
           color: white;
-          font-family: $frutigerLightCond;
         }
 
         .nav-hide { display: none; 
-            font-family: georgia;
         }
-
-
 
         nav ul {
           padding-top: 100px;
@@ -61,7 +54,6 @@ nav,
 
         nav ul li { list-style: none;
             margin-bottom: 20px;
-
          }
 
         nav ul li a {
@@ -69,91 +61,78 @@ nav,
           color: #b2b2b2;
           font-weight: bolder;
           text-decoration: none;
-          font-family: $frutigerLightCond !important;
+          font-family: sans-serif 300;
         }
 
-        .navbar-toggle {
-            @include span-columns(12);
-          display: inline-block;
+        @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) { 
+              nav ul {
+                  padding-top: 100px;
+                  vertical-align: middle;
+                  padding-left: 0 !important;
+                  height: 300px;
+                  overflow: scroll;
+                }
+        }
+
+        .burger-menu {
           position: absolute;
-          right: 30px;
-          margin: 20px 0 0 0;
           width: 30px;
-          height: 30px;
-          z-index: 20;
+          height: 50px;
           cursor: pointer;
-
+          right:0;
+          margin-right: 30px;
         }
-
-        .bar1,
-        .bar2,
-        .bar3 {
+        .burger {
+          position: absolute;
+          background: #b2b2b2;
           width: 100%;
           height: 3px;
-          margin-bottom: 5px;
-          background-color: #b2b2b2;
-          -webkit-transition: 0.3s ease-in-out;
-            -moz-transition: 0.3s ease-in-out;
-            -o-transition: 0.3s ease-in-out;
-          transition: 0.3s ease-in-out;
+          top: 33px;
+          left: 0px;
+          margin-top: -5px;
         }
-
-        .navbar-on .bar1,
-        .navbar-on .bar2,
-        .navbar-on .bar3 { 
-            background-color: #b2b2b2; 
+        .burger::before {
+          position: absolute;
+          background: #b2b2b2;
+          width: 30px;
+          height: 3px;
+          top: 8px;
+          content: "";
+          display: block;
+          z-index: 999;
         }
-
-        @media only screen and (min-device-width: 220px) and (max-device-width: 480px) {
-                .navbar-on .bar1 {
-              transform-origin: 10% 40%;
-              transform: rotate(45deg);
-            }
-
-            .navbar-on .bar3 {
-              transform-origin: 10% 40%;
-              transform: rotate(-45deg);
-            }
-
-            .navbar-on .bar2 { 
-                background-color: transparent; 
-
-            }
-
-            .bar1,
-            .bar2,
-            .bar3 {
-              width: 100%;
-              height: 3px;
-              margin-bottom: 5px;
-              background-color: #b2b2b2;
-              -webkit-transition: 0.3s ease-in-out;
-                -moz-transition: 0.3s ease-in-out;
-                -o-transition: 0.3s ease-in-out;
-              transition: 0.3s ease-in-out;
-            }
-        }   
-
-        .navbar-on .bar1 {
-          transform-origin: 10% 40%;
-          transform: rotate(45deg);
+        .burger::after {
+          position: absolute;
+          background: #b2b2b2;
+          width: 30px;
+          height: 3px;
+          bottom:8px;
+          content: "";
+          display: block;
+          z-index: 999;
         }
-
-        .navbar-on .bar3 {
-          transform-origin: 10% 40%;
-          transform: rotate(-45deg);
+        .burger::after, .burger::before, .burger {
+          transition: all .3s ease-in-out;
+          -webkit-transition: all .3s ease-in-out;
         }
-
-        .navbar-on .bar2 { 
-            background-color: transparent; 
-
+        .burger-menu.menu-on .burger::after{
+           transform: rotate(-45deg);
+           -webkit-transform: rotate(-45deg);
+          bottom: 0px;
+        }
+        .burger-menu.menu-on .burger::before{
+           transform: rotate(45deg);
+           -webkit-transform: rotate(45deg);
+          top: 0px;
+        }
+        .burger-menu.menu-on .burger{
+         background: rgba(111,111,111,.0);
         }
 
         @media screen and (min-width: 768px) {
-            .navbar-toggle{
+            .burger-menu{
                 display: none;
             } 
-            
         }
 
         nav.nav-hide ul.overlay li a{
@@ -167,10 +146,14 @@ nav,
         <div class="inner_header">
             <h1><a href ="index.php">Douglass Winthrop</a></h1>
 
-            <div class="navbar-toggle">
+            <!-- <div class="navbar-toggle">
               <div class="bar1"></div>
               <div class="bar2"></div>
               <div class="bar3"></div>
+            </div> -->
+
+            <div class="burger-menu">
+              <div class="burger"></div>  
             </div>
 
             <nav class="nav-hide">
@@ -206,24 +189,26 @@ nav,
     </header>
     <script type="text/javascript">
     $(function(){
-      $('.navbar-toggle, nav').click(function(){
-        $('.navbar-toggle').toggleClass('navbar-on');
+      $('.burger-menu, nav').click(function(){
+        $('.burger-menu').toggleClass('navbar-on');
         $('nav').fadeToggle();
         $('nav').removeClass('nav-hide');
       });
     });
     </script>
     <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-36251023-1']);
-    _gaq.push(['_setDomainName', 'jqueryscript.net']);
-    _gaq.push(['_trackPageview']);
+    $(".burger-menu").click(function () {
+          $(this).toggleClass("menu-on");
+    });
+    // var _gaq = _gaq || [];
+    // _gaq.push(['_setAccount', 'UA-36251023-1']);
+    // _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    // _gaq.push(['_trackPageview']);
 
-    (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-</script>
+    // (function() {
+    // var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    // ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    // var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    // })();
+    </script>
 
