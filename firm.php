@@ -9,8 +9,7 @@
                     </h1>
                 </div>
                 <div>
-                    <p>Commited to providing our clients with responsive service and proactive management 
-                    of their financial affairs.</p>
+                    <p>Investment advisors to individuals, families, trusts and endowments.</p>
                 </div>
             </div>
         </div><!-- end blue intro box -->

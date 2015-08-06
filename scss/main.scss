@@ -59,6 +59,9 @@ html, body {
             }
         }
     }
+    a:hover {
+        color: #2775F6;
+    }
 }
 
 /*----------------- HOME PAGE -----------*/
@@ -148,91 +151,6 @@ header {
     }
 }
 
-
-/*header.home{
-    z-index: 999;
-    position: relative;
-    background-color: transparent;
-    border-bottom: 1px solid #b2b2b2 !important;
-    div.inner_header_home {
-        @include outer-container;
-        height: 60px;
-        h1 {
-            @include span-columns(6);
-            line-height: 60px;
-            font-family: $frutigerBoldCond;
-            font-size: 1em;
-            a {
-                text-decoration: none;
-                color: #b2b2b2;
-            }
-            @include media($mobile){
-                font-size: 1rem;
-            }
-            @include media($tiny){
-                @include span-columns(2);
-            }
-        }
-        nav.main-nav-home {
-            ul {
-                @include span-columns(6);
-                margin:0;
-                @include media($tablet) {
-                    @include span-columns(5);
-                    background-color: #fff;
-                    display: none;
-                }
-                @include media($mobile) {
-                    @include span-columns(3);
-                    background-color: #fff;
-                    display: none;
-                }
-                list-style: none;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                li {
-                    @include span-columns(2);
-                    font-family: $frutigerBoldCond;
-                    font-size: 1em;
-                    margin: 20px 0 5px 0;
-                    display: inline-block;
-                    @include media($tablet) {
-                        @include span-columns(6);
-                        display: block;
-                    }
-                    @include media($mobile) {
-                        @include span-columns(3);
-                        display: block;
-                    }
-                    a {
-                        width: 50px;
-                        color: #b2b2b2;
-                        text-decoration: none;
-                        padding-bottom: 5px;
-
-                    }
-                    a:visited {
-                        
-                    }
-                    a:hover {
-                        color: #2775F6;
-                    }
-                    a:active{
-                        color: $blue;
-                    }
-                    .currentpage a:active {
-                        color: red;
-                    }
-                    .main-nav li.current {
-                        border-bottom:1px #333 solid;
-                    }
-                }
-            }
-        }
-    }
-}*/
-
 nav.nav-hide ul.overlay li a{
     font-family: $frutigerLightCond !important;
 }
@@ -277,6 +195,14 @@ nav.nav-hide ul.overlay li a{
                     padding-bottom: 20px;
                     font-size: 0.7em;
                 }
+            }
+            a {
+                text-decoration: none;
+                color: #b2b2b2;
+                
+            }
+            a:hover {
+                color: $blue;
             }
         }   
     } 
@@ -333,9 +259,9 @@ aside.page_banner_home {
                             font-size: 1.5em;
                         }
                     }
-
                 }
             }
+
             div.home-message {
                 padding-top:30px;
                 display: block;
@@ -628,6 +554,11 @@ section.letters_list-mob {
                     line-height: 15px;
                     color: #b2b2b2;
                     padding-bottom: 50px;
+                }
+                 @include media($mobile) {
+                    h1.terms {
+                        @include span-columns(6);
+                    }
                 }
             }
             div {
@@ -1412,6 +1343,34 @@ section.credits {
     }
 }
 
+section.terms {
+    @include outer-container;
+    @extend .global_pad;
+    padding-bottom: 100px;
+    ul.terms {
+        @include span-columns(12);
+        color: $gray;
+        height: 100%;
+        @include media($mobile) {
+            @include span-columns(3);
+        }
+        li.terms {
+            @include span-columns(6);
+            font-family: $frutigerBoldCond;
+            padding-bottom: 30px;
+            
+        }
+        li {
+            @include span-columns(6);
+            font-family: $frutigerLightCond;
+            @include media($mobile) {    
+                @include span-columns(3);
+                display: block;
+            }
+        }
+    }
+}
+
 footer {
     background-color: #000;
     width: 100%;
@@ -1441,6 +1400,14 @@ footer {
                     padding-bottom: 20px;
                     font-size: 0.7em;
                 }
+            }
+            a {
+                text-decoration: none;
+                color: #b2b2b2;
+                
+            }
+            a:hover {
+                color: $blue;
             }
         }   
     } 
@@ -1474,6 +1441,14 @@ footer.value {
                     padding-bottom: 20px;
                     font-size: 0.7em;
                 }
+            }
+            a {
+                text-decoration: none;
+                color: #b2b2b2;
+                
+            }
+            a:hover {
+                color: $blue;
             }
         }   
     } 

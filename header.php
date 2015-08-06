@@ -18,6 +18,7 @@
     @import "neat/neat";
     @import "utilities/variables";
     @import "utilities/universal";
+    @import "compass/css3";
 
       nav,  .burger-menu {
           -webkit-touch-callout: none;
@@ -61,7 +62,7 @@
           color: #b2b2b2;
           font-weight: bolder;
           text-decoration: none;
-          font-family: sans-serif 300;
+          font-family: inherit;
         }
 
         @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) { 
@@ -146,11 +147,11 @@
         <div class="inner_header">
             <h1><a href ="index.php">Douglass Winthrop</a></h1>
 
-            <!-- <div class="navbar-toggle">
-              <div class="bar1"></div>
-              <div class="bar2"></div>
-              <div class="bar3"></div>
-            </div> -->
+            <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+
+<div class="hamburger-slim">
+</div>
+
 
             <div class="burger-menu">
               <div class="burger"></div>  

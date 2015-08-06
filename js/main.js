@@ -18,6 +18,17 @@ $(document).ready(function() {
     });
 });
 
+//hover on image to trigger color change (Poeple page)
+
+$(document).ready(function() {
+  $('.person_headshot').hover(function() {
+    $('.person_name').css('background-color', '000');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('.person_name').css('background-color', '');
+  });
+});
+
 //scroll side to side single person page .animate({'opacity':'0.8'}, 200)
 
 var view = $("#insideContainer");

@@ -227,7 +227,7 @@ section.sliderContainer {
                 .person-single{
                     background-color: #eee;
                     position: relative;
-                    width: 150px;
+                    width: 132px;
                     vertical-align: top;
                     display: inline-block;
                     img.person_headshot {
@@ -243,12 +243,13 @@ section.sliderContainer {
                             h1 {
                                 margin-top: 5px;
                                 line-height: 20px;
-                                color: #fff;
+                                color: #b2b2b2;
+                                font-size: 0.9em !important;
                                 @include type($small, #fff);
                                 font-family: $frutigerLightCond;
                                 @include media($tablet) {
                                     line-height: 25px;
-                                    font-size: 10pt;
+                                    
                                 }
                             }
                             p {

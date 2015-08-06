@@ -62,13 +62,13 @@ html, body {
   align-items: center;
   /*justify-content: center;*/ }
 
-.global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, .page_banner div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.people-single, section.letters_list, section.contact_list, section.credits, footer div.inner_footer, footer.value div.inner_footer-value {
+.global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, .page_banner div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.people-single, section.letters_list, section.contact_list, section.credits, section.terms, footer div.inner_footer, footer.value div.inner_footer-value {
   padding: 1.5em 40px; }
   @media screen and (max-width: 768px) {
-    .global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, .page_banner div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.people-single, section.letters_list, section.contact_list, section.credits, footer div.inner_footer, footer.value div.inner_footer-value {
+    .global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, .page_banner div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.people-single, section.letters_list, section.contact_list, section.credits, section.terms, footer div.inner_footer, footer.value div.inner_footer-value {
       padding: 2em 40px; } }
   @media screen and (max-width: 480px) {
-    .global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, .page_banner div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.people-single, section.letters_list, section.contact_list, section.credits, footer div.inner_footer, footer.value div.inner_footer-value {
+    .global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, .page_banner div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.people-single, section.letters_list, section.contact_list, section.credits, section.terms, footer div.inner_footer, footer.value div.inner_footer-value {
       padding: 2em 30px; } }
 
 .sidepad, .inner_header {
@@ -88,6 +88,8 @@ html, body {
     width: 169.8412698413%; }
     .inner_header h1 a:last-child {
       margin-right: 0; } }
+.inner_header a:hover {
+  color: #2775F6; }
 
 /*----------------- HOME PAGE -----------*/
 header {
@@ -201,89 +203,6 @@ header {
         header div.inner_header div.main-nav ul li .main-nav li.current {
           border-bottom: 1px #333 solid; }
 
-/*header.home{
-    z-index: 999;
-    position: relative;
-    background-color: transparent;
-    border-bottom: 1px solid #b2b2b2 !important;
-    div.inner_header_home {
-        @include outer-container;
-        height: 60px;
-        h1 {
-            @include span-columns(6);
-            line-height: 60px;
-            font-family: $frutigerBoldCond;
-            font-size: 1em;
-            a {
-                text-decoration: none;
-                color: #b2b2b2;
-            }
-            @include media($mobile){
-                font-size: 1rem;
-            }
-            @include media($tiny){
-                @include span-columns(2);
-            }
-        }
-        nav.main-nav-home {
-            ul {
-                @include span-columns(6);
-                margin:0;
-                @include media($tablet) {
-                    @include span-columns(5);
-                    background-color: #fff;
-                    display: none;
-                }
-                @include media($mobile) {
-                    @include span-columns(3);
-                    background-color: #fff;
-                    display: none;
-                }
-                list-style: none;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                li {
-                    @include span-columns(2);
-                    font-family: $frutigerBoldCond;
-                    font-size: 1em;
-                    margin: 20px 0 5px 0;
-                    display: inline-block;
-                    @include media($tablet) {
-                        @include span-columns(6);
-                        display: block;
-                    }
-                    @include media($mobile) {
-                        @include span-columns(3);
-                        display: block;
-                    }
-                    a {
-                        width: 50px;
-                        color: #b2b2b2;
-                        text-decoration: none;
-                        padding-bottom: 5px;
-
-                    }
-                    a:visited {
-                        
-                    }
-                    a:hover {
-                        color: #2775F6;
-                    }
-                    a:active{
-                        color: $blue;
-                    }
-                    .currentpage a:active {
-                        color: red;
-                    }
-                    .main-nav li.current {
-                        border-bottom:1px #333 solid;
-                    }
-                }
-            }
-        }
-    }
-}*/
 nav.nav-hide ul.overlay li a {
   font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif !important; }
 
@@ -355,6 +274,11 @@ nav.nav-hide ul.overlay li a {
             font-size: 0.7em; }
             #footer div.inner_footer ul li:last-child {
               margin-right: 0; } }
+      #footer div.inner_footer ul a {
+        text-decoration: none;
+        color: #b2b2b2; }
+      #footer div.inner_footer ul a:hover {
+        color: #004FB1; }
 
 aside.page_banner_home {
   z-index: 0;
@@ -672,6 +596,14 @@ section.letters_list-mob {
           line-height: 15px;
           color: #b2b2b2;
           padding-bottom: 50px; }
+        @media screen and (max-width: 480px) {
+          .page_banner div.intro-box div.inner_banner div.page-name h1.terms {
+            float: left;
+            display: block;
+            margin-right: 10%;
+            width: 210%; }
+            .page_banner div.intro-box div.inner_banner div.page-name h1.terms:last-child {
+              margin-right: 0; } }
       .page_banner div.intro-box div.inner_banner div p {
         float: left;
         display: block;
@@ -1768,6 +1700,59 @@ section.credits {
       section.credits ul.credits li:last-child {
         margin-right: 0; }
 
+section.terms {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 100px; }
+  section.terms::after {
+    clear: both;
+    content: "";
+    display: table; }
+  section.terms ul.terms {
+    float: left;
+    display: block;
+    margin-right: 2.3255813953%;
+    width: 100%;
+    color: #A3A9AC;
+    height: 100%; }
+    section.terms ul.terms:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 480px) {
+      section.terms ul.terms {
+        float: left;
+        display: block;
+        margin-right: 10%;
+        width: 100%; }
+        section.terms ul.terms:last-child {
+          margin-right: 0; } }
+    section.terms ul.terms li.terms {
+      float: left;
+      display: block;
+      margin-right: 2.3255813953%;
+      width: 48.8372093023%;
+      font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
+      padding-bottom: 30px; }
+      section.terms ul.terms li.terms:last-child {
+        margin-right: 0; }
+    section.terms ul.terms li {
+      float: left;
+      display: block;
+      margin-right: 2.3255813953%;
+      width: 48.8372093023%;
+      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+      section.terms ul.terms li:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 480px) {
+        section.terms ul.terms li {
+          float: left;
+          display: block;
+          margin-right: 10%;
+          width: 100%;
+          display: block; }
+          section.terms ul.terms li:last-child {
+            margin-right: 0; } }
+
 footer {
   background-color: #000;
   width: 100%;
@@ -1826,6 +1811,11 @@ footer {
             font-size: 0.7em; }
             footer div.inner_footer ul li:last-child {
               margin-right: 0; } }
+      footer div.inner_footer ul a {
+        text-decoration: none;
+        color: #b2b2b2; }
+      footer div.inner_footer ul a:hover {
+        color: #004FB1; }
 
 footer.value {
   background-color: #000;
@@ -1883,3 +1873,8 @@ footer.value {
             font-size: 0.7em; }
             footer.value div.inner_footer-value ul li:last-child {
               margin-right: 0; } }
+      footer.value div.inner_footer-value ul a {
+        text-decoration: none;
+        color: #b2b2b2; }
+      footer.value div.inner_footer-value ul a:hover {
+        color: #004FB1; }
