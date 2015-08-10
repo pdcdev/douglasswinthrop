@@ -502,22 +502,26 @@ jQuery(document).ready(function($) {
     var marker = new google.maps.Marker({
         position: loc,
         map: map,
-        title:"Piscatello Design Centre",
+        title:"Douglass Winthrop",
         icon: 'http://i.imgur.com/HI1UiKn.png'
     });
 
     var marker = new google.maps.Marker({
         position: loc2,
         map: map2,
-        title:"Piscatello Design Centre",
+        title:"Douglass Winthrop",
         icon: 'http://i.imgur.com/HI1UiKn.png'
     });
 
     var marker = new google.maps.Marker({
         position: loc3,
         map: map3,
-        title:"Piscatello Design Centre",
+        title:"Douglass Winthrop",
         icon: 'http://i.imgur.com/HI1UiKn.png'
+    });
+
+    $("marker").on('click', function(){
+         window.location = "http://www.google.com/";    
     });
 
     map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
