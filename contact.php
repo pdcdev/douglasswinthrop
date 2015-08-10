@@ -25,7 +25,7 @@
                 </div>  
             </div>
     </section>
-        <div id="map-canvas-nyc"></div>
+        <div id="map-canvas"></div>
     <section class="contact_list">
             <div class="contact dc">
                 <div class="city-address">
@@ -38,7 +38,7 @@
                 </div>
             </div>
     </section>
-    <div id="map-canvas-dc"></div>
+    <div id="map-canvas2"></div>
     <section class="contact_list">
             <div class="contact boston">
                 <div class="city-address">
@@ -51,7 +51,7 @@
                 </div>
             </div>
     </section>
-    <div id="map-canvas-boston"></div>
+    <div id="map-canvas3"></div>
     <section class="credits">
         <ul class="credits">
             <li class="credits">Design and Development</li>

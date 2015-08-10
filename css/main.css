@@ -289,11 +289,7 @@ aside.page_banner_home {
   -webkit-background-size: auto cover;
   -moz-background-size: auto cover;
   -o-background-size: auto cover;
-  background-size: auto cover;
-  background-position: 0 0; }
-  @media screen and (max-width: 480px) {
-    aside.page_banner_home {
-      overflow: scroll; } }
+  background-size: auto cover; }
   aside.page_banner_home div.overlay_home {
     max-width: 75em;
     margin-left: auto;
@@ -1643,25 +1639,25 @@ section.contact_list {
           section.contact_list div.contact div.city-img:last-child {
             margin-right: 0; } }
 
-#map-canvas-nyc {
+#map-canvas {
   min-height: 340px;
   width: 100%; }
   @media screen and (max-width: 480px) {
-    #map-canvas-nyc {
+    #map-canvas {
       min-height: 150px; } }
 
-#map-canvas-dc {
+#map-canvas2 {
   min-height: 340px;
   width: 100%; }
   @media screen and (max-width: 480px) {
-    #map-canvas-dc {
+    #map-canvas2 {
       min-height: 150px; } }
 
-#map-canvas-boston {
+#map-canvas3 {
   min-height: 340px;
   width: 100%; }
   @media screen and (max-width: 480px) {
-    #map-canvas-boston {
+    #map-canvas3 {
       min-height: 150px; } }
 
 .gmnoprint-nyc img {
