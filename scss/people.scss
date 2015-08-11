@@ -244,48 +244,45 @@ section.sliderContainer {
                         height: 150px;
                     }
                     div.person_name-single {
-                            position: absolute;
-                            height: 50px;
-                            bottom: 0;
-                            background-color: rgba(black, 0.6);
-                            width: 100%;
-                            @include pad(0 1em);
-                            h1 {
-                                margin-top: 5px;
-                                line-height: 20px;
-                                color: #b2b2b2;
-                                font-size: 0.9em !important;
-                                @include type($small, #fff);
-                                font-family: $frutigerLightCond;
-                                @include media($tablet) {
-                                    line-height: 25px;
-                                    
-                                }
-                            }
-                            p {
-                                line-height: 20px;
-                                color:#fff;
-                                font-size: 8pt;
-                                font-family: $frutigerLightCond;
-                                @include media($tablet) {
-                                    line-height: 15px;
-                                    font-size:9pt;
-                                }
-                            }
-                            p:hover {
-                                opacity: 1;
-                            }
-                            a {
-                                color: #fff;
-                                text-decoration: none;
-                            }
-                            a:hover{
+                        position: absolute;
+                        height: 50px;
+                        bottom: 0;
+                        background-color: rgba(black, 0.6);
+                        width: 100%;
+                        @include pad(0 1em);
+                        h1 {
+                            margin-top: 5px;
+                            line-height: 20px;
+                            color: #b2b2b2;
+                            font-size: 0.9em !important;
+                            @include type($small, #fff);
+                            font-family: $frutigerLightCond;
+                            @include media($tablet) {
+                                line-height: 25px;
                                 
                             }
                         }
-                        div.person_name:hover {
-                            background-color: rgba($blue, 0.6);
+                        p {
+                            line-height: 20px;
+                            color:#fff;
+                            font-size: 8pt;
+                            font-family: $frutigerLightCond;
+                            @include media($tablet) {
+                                line-height: 15px;
+                                font-size:9pt;
+                            }
                         }
+                        p:hover {
+                            opacity: 1;
+                        }
+                        a {
+                            color: #fff;
+                            text-decoration: none;
+                        }
+                        a:hover{
+                            
+                        }
+                    }    
                 }
             }
         }    

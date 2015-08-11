@@ -499,29 +499,28 @@ jQuery(document).ready(function($) {
     var customMapType = new google.maps.StyledMapType(featureOpts2, styledMapOptions2);
     var customMapType = new google.maps.StyledMapType(featureOpts3, styledMapOptions3);
 
-    var marker = new google.maps.Marker({
+    var marker1 = new google.maps.Marker({
         position: loc,
+        url: "https://www.google.com/maps/place/535+5th+Ave,+New+York,+NY+10017/@40.7549469,-73.9795346,17z/data=!3m1!4b1!4m2!3m1!1s0x89c258fe2eb4f14f:0xd42764f3a3d7ff94",
         map: map,
         title:"Douglass Winthrop",
         icon: 'http://i.imgur.com/HI1UiKn.png'
     });
 
-    var marker = new google.maps.Marker({
+    var marker2 = new google.maps.Marker({
         position: loc2,
+        url: "https://www.google.com/maps/place/888+17th+St+NW+%23205,+Washington,+DC+20006/@38.9011035,-77.0396397,17z/data=!3m1!4b1!4m2!3m1!1s0x89b7b7bbfbb76e45:0x75ff110aaae0d26d",
         map: map2,
         title:"Douglass Winthrop",
         icon: 'http://i.imgur.com/HI1UiKn.png'
     });
 
-    var marker = new google.maps.Marker({
+    var marker3 = new google.maps.Marker({
         position: loc3,
+        url: "https://www.google.com/maps/place/121+Mt+Vernon+St,+Boston,+MA+02108/@42.3579214,-71.0707528,17z/data=!3m1!4b1!4m2!3m1!1s0x89e3709ee1df6781:0x3f69e428397bc2ce",
         map: map3,
         title:"Douglass Winthrop",
         icon: 'http://i.imgur.com/HI1UiKn.png'
-    });
-
-    $("marker").on('click', function(){
-         window.location = "http://www.google.com/";    
     });
 
     map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
@@ -549,9 +548,24 @@ jQuery(document).ready(function($) {
             map3.setCenter(center);
         });
 
+        google.maps.event.addListener(marker1, 'click', function() {
+            window.open(marker1.url);
+        });
+
+        google.maps.event.addListener(marker2, 'click', function() {
+            window.open(marker2.url);
+        });
+
+        google.maps.event.addListener(marker3, 'click', function() {
+            window.open(marker3.url);
+        });
+
+
   }
 
   google.maps.event.addDomListener(window, 'load', initialize);
-   
+
 });
+
+
 

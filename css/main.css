@@ -62,13 +62,13 @@ html, body {
   align-items: center;
   /*justify-content: center;*/ }
 
-.global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, .page_banner div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.people-single, section.letters_list, section.contact_list, section.credits, section.terms, footer div.inner_footer, footer.value div.inner_footer-value {
+.global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, .page_banner div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.people-single, section.letters_list, section.contact_list, section.terms, footer div.inner_footer, footer.value div.inner_footer-value {
   padding: 1.5em 40px; }
   @media screen and (max-width: 768px) {
-    .global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, .page_banner div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.people-single, section.letters_list, section.contact_list, section.credits, section.terms, footer div.inner_footer, footer.value div.inner_footer-value {
+    .global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, .page_banner div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.people-single, section.letters_list, section.contact_list, section.terms, footer div.inner_footer, footer.value div.inner_footer-value {
       padding: 2em 40px; } }
   @media screen and (max-width: 480px) {
-    .global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, .page_banner div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.people-single, section.letters_list, section.contact_list, section.credits, section.terms, footer div.inner_footer, footer.value div.inner_footer-value {
+    .global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, .page_banner div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.people-single, section.letters_list, section.contact_list, section.terms, footer div.inner_footer, footer.value div.inner_footer-value {
       padding: 2em 30px; } }
 
 .sidepad, .inner_header {
@@ -133,6 +133,8 @@ header {
           width: 63.3333333333%; }
           header div.inner_header h1:last-child {
             margin-right: 0; } }
+      header div.inner_header h1 a:hover {
+        color: #fff; }
     header div.inner_header div.main-nav ul {
       float: left;
       display: block;
@@ -200,9 +202,7 @@ header {
           text-decoration: none;
           padding-bottom: 5px; }
         header div.inner_header div.main-nav ul li a:hover {
-          color: #2775F6; }
-        header div.inner_header div.main-nav ul li a.currentpage:active {
-          color: red; }
+          color: #fff; }
         header div.inner_header div.main-nav ul li .main-nav li.current {
           border-bottom: 1px #333 solid; }
 
@@ -1814,33 +1814,21 @@ section.contact_list {
 .gmnoprint-boston img {
   max-width: none; }
 
-section.credits {
-  max-width: 75em;
-  margin-left: auto;
-  margin-right: auto; }
-  section.credits::after {
-    clear: both;
-    content: "";
-    display: table; }
-  section.credits ul.credits {
-    color: #A3A9AC;
-    float: left;
-    display: block;
-    margin-right: 2.3255813953%;
-    width: 100%; }
-    section.credits ul.credits:last-child {
-      margin-right: 0; }
-    section.credits ul.credits li.credits {
-      font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif; }
-    section.credits ul.credits li {
-      float: left;
-      display: block;
-      margin-right: 2.3255813953%;
-      width: 48.8372093023%;
-      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
-      section.credits ul.credits li:last-child {
-        margin-right: 0; }
-
+/*section.credits {
+    @include outer-container;
+    @extend .global_pad;
+    ul.credits {
+        color: $gray;
+        @include span-columns(12);
+        li.credits {
+            font-family: $frutigerBoldCond;
+        }
+        li {
+            @include span-columns(6);
+            font-family: $frutigerLightCond;
+        }
+    }
+}*/
 /* ----------- TERMS OF USE PAGE -----------------------*/
 /* ----------- TERMS OF USE PAGE -----------------------*/
 /* ----------- TERMS OF USE PAGE -----------------------*/

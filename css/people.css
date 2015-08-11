@@ -390,8 +390,6 @@ section.sliderContainer {
             section.sliderContainer .slider #viewContainer #insideContainer .person-single div.person_name-single a {
               color: #fff;
               text-decoration: none; }
-          section.sliderContainer .slider #viewContainer #insideContainer .person-single div.person_name:hover {
-            background-color: rgba(0, 79, 177, 0.6); }
 
 #leftArrow {
   top: 2pt;

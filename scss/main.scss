@@ -93,6 +93,9 @@ header {
             @include media($tiny){
                 @include span-columns(2);
             }
+            a:hover {
+                color: #fff;
+            }
         }
         div.main-nav {
             ul {
@@ -137,12 +140,12 @@ header {
                          
                     }
                     a:hover {
-                        color: #2775F6;
+                        color: #fff;
 
                     }
 
                     a.currentpage:active {
-                        color: red;
+                        
                     }
 
 
@@ -212,6 +215,8 @@ nav.nav-hide ul.overlay li a{
     } 
     
 }
+
+
 
 
 aside.page_banner_home {
@@ -1433,7 +1438,7 @@ section.contact_list {
     max-width: none;
 }
 
-section.credits {
+/*section.credits {
     @include outer-container;
     @extend .global_pad;
     ul.credits {
@@ -1447,7 +1452,7 @@ section.credits {
             font-family: $frutigerLightCond;
         }
     }
-}
+}*/
 
 /* ----------- TERMS OF USE PAGE -----------------------*/
 /* ----------- TERMS OF USE PAGE -----------------------*/

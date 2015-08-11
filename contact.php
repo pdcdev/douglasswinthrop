@@ -52,13 +52,13 @@
             </div>
     </section>
     <div id="map-canvas3"></div>
-    <section class="credits">
+    <!-- <section class="credits">
         <ul class="credits">
             <li class="credits">Design and Development</li>
             <li>Piscatello Design Centre</li>
         </ul>
-    </section>
-
+    </section> -->
+    
     
     
 <?php include 'footer.php'; ?>
