@@ -214,24 +214,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/DW_About5.jpg": {
+	"\/images\/DW_About.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 74063,
-		"inputAbbreviatedPath": "\/images\/DW_About5.jpg",
-		"outputAbbreviatedPath": "\/images\/DW_About5.jpg",
+		"inputAbbreviatedPath": "\/images\/DW_About.jpg",
+		"outputAbbreviatedPath": "\/images\/DW_About.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/DW_Home3.jpg": {
+	"\/images\/DW_Home.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 180998,
-		"inputAbbreviatedPath": "\/images\/DW_Home3.jpg",
-		"outputAbbreviatedPath": "\/images\/DW_Home3.jpg",
+		"inputAbbreviatedPath": "\/images\/DW_Home.jpg",
+		"outputAbbreviatedPath": "\/images\/DW_Home.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -247,13 +247,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/DW_Letters5.jpg": {
+	"\/images\/DW_Letters.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 68836,
-		"inputAbbreviatedPath": "\/images\/DW_Letters5.jpg",
-		"outputAbbreviatedPath": "\/images\/DW_Letters5.jpg",
+		"inputAbbreviatedPath": "\/images\/DW_Letters.jpg",
+		"outputAbbreviatedPath": "\/images\/DW_Letters.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -291,13 +291,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/DW_Process4.jpg": {
+	"\/images\/DW_Process.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 70312,
-		"inputAbbreviatedPath": "\/images\/DW_Process4.jpg",
-		"outputAbbreviatedPath": "\/images\/DW_Process4.jpg",
+		"inputAbbreviatedPath": "\/images\/DW_Process.jpg",
+		"outputAbbreviatedPath": "\/images\/DW_Process.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -313,13 +313,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/DW_Value5.jpg": {
+	"\/images\/DW_Value.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 77238,
-		"inputAbbreviatedPath": "\/images\/DW_Value5.jpg",
-		"outputAbbreviatedPath": "\/images\/DW_Value5.jpg",
+		"inputAbbreviatedPath": "\/images\/DW_Value.jpg",
+		"outputAbbreviatedPath": "\/images\/DW_Value.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

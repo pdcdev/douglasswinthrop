@@ -219,7 +219,7 @@ aside.page_banner_home {
     min-height: 88%;
     height: auto !important;
     display: block;
-    background: url('../images/DW_Home3.jpg') center center no-repeat;
+    background: url('../images/DW_Home.jpg') center center no-repeat;
     -webkit-background-size: auto cover;
     -moz-background-size: auto cover;
     -o-background-size: auto cover;
@@ -539,7 +539,7 @@ div.actual-banner-about {
     position: relative;
     height: 550px;
     margin: 0 auto;
-    background: url('../images/DW_About5.jpg') center center no-repeat;
+    background: url('../images/DW_About.jpg') center center no-repeat;
     background-size: cover;
     @include media($tablet) {
         background: url('../images/DW_About-mob.jpg') no-repeat;
@@ -706,7 +706,7 @@ div.actual-banner-value {
     position: relative;
     height: 550px;
     margin: 0 auto;
-    background: url('../images/DW_Value5.jpg') center center no-repeat;
+    background: url('../images/DW_Value.jpg') center center no-repeat;
     background-size: cover;
     @include media($tablet) {
         background: url('../images/DW_Value-mob.jpg') no-repeat;
@@ -873,7 +873,7 @@ div.actual-banner-process {
     position: relative;
     height: 550px;
     margin: 0 auto;
-    background: url('../images/DW_Process4.jpg') center center no-repeat;
+    background: url('../images/DW_Process.jpg') center center no-repeat;
     background-size: cover;
     @include media($tablet) {
         background: url('../images/DW_Process-mob.jpg') no-repeat;
@@ -1181,7 +1181,7 @@ div.actual-banner-letters {
     position: relative;
     height: 550px;
     margin: 0 auto;
-    background: url('../images/DW_Letters5.jpg') center center no-repeat;
+    background: url('../images/DW_Letters.jpg') center center no-repeat;
     background-size: cover;
     @include media($tablet) {
         background: url('../images/DW_Letters-mob.jpg') no-repeat;
