@@ -359,6 +359,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/DW_Process-bottom-mob.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 34868,
+		"inputAbbreviatedPath": "\/images\/DW_Process-bottom-mob.jpg",
+		"outputAbbreviatedPath": "\/images\/DW_Process-bottom-mob.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/DW_Process-bottom.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -480,13 +491,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/letter-3-S.png": {
+	"\/images\/letter-3-s.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 10950,
-		"inputAbbreviatedPath": "\/images\/letter-3-S.png",
-		"outputAbbreviatedPath": "\/images\/letter-3-S.png",
+		"inputAbbreviatedPath": "\/images\/letter-3-s.png",
+		"outputAbbreviatedPath": "\/images\/letter-3-s.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
