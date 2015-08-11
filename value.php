@@ -86,7 +86,7 @@
     </div> <!--- content -->
     
     <div class="mobile-column"> <!-- MOBILE LAYOUT MOBILE LAYOUT MOBILE LAYOUT -->
-        <div class="band-container-gray">
+        <div class="band-container-white">
             <section class="value">
                 <div class="block-value">
                     <section class="description-text-left">
@@ -117,7 +117,7 @@
                 </div><!-- block value-->
             </section><!-- value -->
         </div>
-        <div class="band-container-white">
+        <div class="band-container-gray">
             <section class="value">
                 <div class="block-value">
                     <section class="description-text-left">
