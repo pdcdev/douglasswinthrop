@@ -356,7 +356,7 @@ section.sliderContainer {
             position: absolute;
             height: 50px;
             bottom: 0;
-            background-color: rgba(0, 79, 177, 0.6);
+            background-color: rgba(0, 0, 0, 0.6);
             width: 100%;
             padding: 0 1em; }
             section.sliderContainer .slider #viewContainer #insideContainer .person-single div.person_name-single h1 {
@@ -391,21 +391,9 @@ section.sliderContainer {
               color: #fff;
               text-decoration: none; }
           section.sliderContainer .slider #viewContainer #insideContainer .person-single div.person_name:hover {
-            background-color: rgba(0, 0, 0, 0.6); }
+            background-color: rgba(0, 79, 177, 0.6); }
 
 #leftArrow {
-  top: 2pt;
-  width: 1.5em;
-  height: 1.5em;
-  border-right: 0.2em solid #004fb1;
-  border-top: 0.2em solid #004fb1;
-  margin: 60px 60px 0 0;
-  -ms-transform: rotate(225deg);
-  -webkit-transform: rotate(225deg);
-  -moz-transform: rotate(225deg);
-  -o-transform: rotate(225deg); }
-
-#leftArrow:hover {
   top: 2pt;
   width: 1.5em;
   height: 1.5em;
@@ -417,12 +405,24 @@ section.sliderContainer {
   -moz-transform: rotate(225deg);
   -o-transform: rotate(225deg); }
 
-#rightArrow {
+#leftArrow:hover {
   top: 2pt;
   width: 1.5em;
   height: 1.5em;
   border-right: 0.2em solid #004fb1;
   border-top: 0.2em solid #004fb1;
+  margin: 60px 60px 0 0;
+  -ms-transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -o-transform: rotate(225deg); }
+
+#rightArrow {
+  top: 2pt;
+  width: 1.5em;
+  height: 1.5em;
+  border-right: 0.2em solid #b2b2b2;
+  border-top: 0.2em solid #b2b2b2;
   margin: 60px 60px 0 0;
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -435,8 +435,8 @@ section.sliderContainer {
   top: 2pt;
   width: 1.5em;
   height: 1.5em;
-  border-right: 0.2em solid #b2b2b2;
-  border-top: 0.2em solid #b2b2b2;
+  border-right: 0.2em solid #004fb1;
+  border-top: 0.2em solid #004fb1;
   margin: 60px 60px 0 0;
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);

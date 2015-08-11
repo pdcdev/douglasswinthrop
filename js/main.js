@@ -4,7 +4,7 @@
 
 $(document).ready(function(){
   $(".person_name-single").hover(function(){
-    $(this).css("background","#000");
+    $(this).css("background","#004fb1");
   },function(){
     $(this).css("background","");
   });

@@ -247,7 +247,7 @@ section.sliderContainer {
                             position: absolute;
                             height: 50px;
                             bottom: 0;
-                            background-color: rgba($blue, 0.6);
+                            background-color: rgba(black, 0.6);
                             width: 100%;
                             @include pad(0 1em);
                             h1 {
@@ -284,7 +284,7 @@ section.sliderContainer {
                             }
                         }
                         div.person_name:hover {
-                            background-color: rgba(black, 0.6);
+                            background-color: rgba($blue, 0.6);
                         }
                 }
             }
@@ -298,8 +298,8 @@ section.sliderContainer {
     top: 2pt;
     width: 1.5em;
     height: 1.5em;
-    border-right: 0.2em solid #004fb1;
-    border-top: 0.2em solid #004fb1;
+    border-right: 0.2em solid #b2b2b2;
+    border-top: 0.2em solid #b2b2b2;
     margin: 60px 60px 0 0;
     -ms-transform: rotate(225deg);
     -webkit-transform:rotate(225deg);
@@ -311,8 +311,8 @@ section.sliderContainer {
     top: 2pt;
     width: 1.5em;
     height: 1.5em;
-    border-right: 0.2em solid #b2b2b2;
-    border-top: 0.2em solid #b2b2b2;
+    border-right: 0.2em solid #004fb1;
+    border-top: 0.2em solid #004fb1;
     margin: 60px 60px 0 0;
     -ms-transform: rotate(225deg);
     -webkit-transform:rotate(225deg);
@@ -325,8 +325,8 @@ section.sliderContainer {
     top: 2pt;
     width: 1.5em;
     height: 1.5em;
-    border-right: 0.2em solid #004fb1;
-    border-top: 0.2em solid #004fb1;
+    border-right: 0.2em solid #b2b2b2;
+    border-top: 0.2em solid #b2b2b2;
     margin: 60px 60px 0 0;
     -ms-transform: rotate(45deg);
     -webkit-transform:rotate(45deg);
@@ -340,8 +340,8 @@ section.sliderContainer {
     top: 2pt;
     width: 1.5em;
     height: 1.5em;
-    border-right: 0.2em solid #b2b2b2;
-    border-top: 0.2em solid #b2b2b2;
+    border-right: 0.2em solid #004fb1;
+    border-top: 0.2em solid #004fb1;
     margin: 60px 60px 0 0;
     -ms-transform: rotate(45deg);
     -webkit-transform:rotate(45deg);

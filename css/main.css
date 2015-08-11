@@ -1355,7 +1355,7 @@ section.process_list {
 /* ----------- PEOPLE PAGE -----------------------*/
 /* ----------- PEOPLE PAGE -----------------------*/
 .your_color_class {
-  background-color: #000; }
+  background-color: black; }
 
 section.people {
   max-width: 75em;
@@ -1373,7 +1373,11 @@ section.people {
     background-color: #eee;
     margin-top: 1em;
     margin-bottom: 1em;
-    position: relative; }
+    position: relative;
+    /*img.person_headshot:hover + div#person_name {
+        background-color: rgba($blue, 0.6);
+       
+    }*/ }
     section.people div.person:last-child {
       margin-right: 0; }
     section.people div.person:nth-child(4n) {
@@ -1404,13 +1408,11 @@ section.people {
           margin-right: 0; }
         section.people div.person:nth-child(4n+1) {
           clear: left; } }
-    section.people div.person img.person_headshot:hover + div#person_name {
-      background-color: rgba(0, 0, 0, 0.6); }
     section.people div.person div.person_name {
       position: absolute;
       height: 60px;
       bottom: 0;
-      background-color: rgba(0, 79, 177, 0.6);
+      background-color: rgba(0, 0, 0, 0.6);
       width: 100%;
       padding: 0 1em; }
       section.people div.person div.person_name h1 {
@@ -1436,7 +1438,7 @@ section.people {
         color: #fff;
         text-decoration: none; }
     section.people div.person div.person_name:hover {
-      background-color: rgba(0, 0, 0, 0.6); }
+      background-color: #004fb1; }
 
 /* --------------- Single person people grid - mobile -----*/
 /* --------------- Single person people grid - mobile -----*/
@@ -1492,7 +1494,7 @@ section.people-single {
       position: absolute;
       height: 60px;
       bottom: 0;
-      background-color: rgba(0, 79, 177, 0.6);
+      /*background-color: rgba(black, 0.6);*/
       width: 100%;
       padding: 0 1em; }
       section.people-single div.person-single div.person_name-single h1 {
@@ -1526,7 +1528,7 @@ section.people-single {
         color: #fff;
         text-decoration: none; }
     section.people-single div.person-single div.person_name:hover {
-      background-color: rgba(0, 0, 0, 0.6); }
+      /*background-color: rgba($blue, 0.6);*/ }
 
 div.band-container-gray {
   background-color: #eee;

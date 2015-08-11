@@ -1016,7 +1016,7 @@ section.process_list {
 
 
 .your_color_class {
-    background-color: #000;
+    background-color: black;
 }
 
 section.people {
@@ -1038,16 +1038,16 @@ section.people {
             @include omega(4n);
         }
         
-        img.person_headshot:hover + div#person_name {
-            background-color: rgba(#000, 0.6);
+        /*img.person_headshot:hover + div#person_name {
+            background-color: rgba($blue, 0.6);
            
-        }
+        }*/
 
         div.person_name {
             position: absolute;
             height: 60px;
             bottom: 0;
-            background-color: rgba($blue, 0.6);
+            background-color: rgba(black, 0.6);
             width: 100%;
             @include pad(0 1em);
             h1 {
@@ -1074,7 +1074,7 @@ section.people {
             }
         }
         div.person_name:hover {
-            background-color: rgba(black, 0.6);
+            background-color: #004fb1;
         }
     }
 }
@@ -1121,7 +1121,7 @@ section.people-single {
             position: absolute;
             height: 60px;
             bottom: 0;
-            background-color: rgba($blue, 0.6);
+            /*background-color: rgba(black, 0.6);*/
             width: 100%;
             @include pad(0 1em);
             h1 {
@@ -1157,7 +1157,7 @@ section.people-single {
             }
         }
         div.person_name:hover {
-            background-color: rgba(black, 0.6);
+            /*background-color: rgba($blue, 0.6);*/
         }
     }
 }
