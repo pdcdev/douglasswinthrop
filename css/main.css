@@ -92,6 +92,9 @@ html, body {
   color: #2775F6; }
 
 /*----------------- HOME PAGE -----------*/
+/*----------------- HOME PAGE -----------*/
+/*----------------- HOME PAGE -----------*/
+/*----------------- HOME PAGE -----------*/
 header {
   z-index: 999;
   position: relative;
@@ -368,6 +371,9 @@ div.overlay-mobile {
   display: none; }
 
 /* ----------------------------HOME PAGE BUTTONS ---------------*/
+/* ----------------------------HOME PAGE BUTTONS ---------------*/
+/* ----------------------------HOME PAGE BUTTONS ---------------*/
+/* ----------------------------HOME PAGE BUTTONS ---------------*/
 .buttons-btn {
   float: left;
   display: block;
@@ -444,6 +450,9 @@ div.overlay-mobile {
       color: #2775F6; } }
 
 /* -----------------------------END BUTTONS ------------------------*/
+/* -----------------------------END BUTTONS ------------------------*/
+/* -----------------------------END BUTTONS ------------------------*/
+/* -----------------------------END BUTTONS ------------------------*/
 button {
   display: none; }
   button span {
@@ -465,52 +474,15 @@ ul.btn-mobile li {
 hr {
   display: none; }
 
-/*@media (max-width: 480px) {
-    div.overlay-mobile {
-        div.inner_banner-mobile {
-            height: 175px;
-            padding: 10%;
-            background-color: rgba($blue, 0.6);
-        }
-    }
-}*/
-/* --------------Letters mobile list -----------*/
-section.letters_list-mob {
-  background-color: #fff; }
-  section.letters_list-mob ul {
-    margin-left: 30px; }
-    section.letters_list-mob ul li.number-one-mob {
-      margin-bottom: 30px;
-      display: block;
-      background: url(../images/letter-1-s.png) no-repeat;
-      width: 305px;
-      height: 205px;
-      background-size: 300px 410px; }
-    section.letters_list-mob ul li.number-two-mob {
-      margin-bottom: 30px;
-      display: block;
-      background: url(../images/letter-2-s.png) no-repeat;
-      width: 305px;
-      height: 205px;
-      background-size: 300px 410px; }
-    section.letters_list-mob ul li.number-three-mob {
-      margin-bottom: 30px;
-      display: block;
-      background: url(../images/letter-3-s.png) no-repeat;
-      width: 305px;
-      height: 205px;
-      background-size: 300px 410px; }
-    section.letters_list-mob ul li.number-four-mob {
-      margin-bottom: 30px;
-      display: block;
-      background: url(../images/letter-4-s.png) no-repeat;
-      width: 305px;
-      height: 205px;
-      background-size: 300px 410px; }
-
+/* ------------ MEDIA QUERIES ---------*/
+/* ------------ MEDIA QUERIES ---------*/
+/* ------------ MEDIA QUERIES ---------*/
+/* ------------ MEDIA QUERIES ---------*/
+/* ------------ MEDIA QUERIES ---------*/
 @media only screen and (min-device-width: 220px) and (max-device-width: 480px) {
   .content-value {
-    display: none; } }
+    display: none;
+    background-color: white; } }
 @media only screen and (min-device-width: 220px) and (max-device-width: 480px) and (max-width: 768px) {
   .mobile-column {
     float: left;
@@ -539,10 +511,7 @@ section.letters_list-mob {
   button {
     position: fixed;
     top: 0;
-    right: 0; }
-
-  /* --------------HAMBURGER STARTS -----------*/ }
-/* ---media one ends ---*/
+    right: 0; } }
 /*------------- hiding and showing banner imgs ------*/
 @media screen and (max-width: 480px) {
   div.actual-banner img {
@@ -556,22 +525,12 @@ section.letters_list-mob {
 
   section.letters_list-mob {
     display: none; } }
-/* --- media two ends ---*/
+/* ----------- ABOUT PAGE -----------------------*/
+/* ----------- ABOUT PAGE -----------------------*/
+/* ----------- ABOUT PAGE -----------------------*/
 /* ----------- ABOUT PAGE -----------------------*/
 .page_banner {
-  position: relative;
-  /*div.actual-banner img {
-      position: relative;
-      display: block;
-      height: auto;
-      margin: 0 auto;
-      background-position: top;
-          @include media($tablet) {
-          }
-          @include media($mobile) {
-              display: none;
-      }
-  }*/ }
+  position: relative; }
   .page_banner div.intro-box {
     width: 100%;
     height: 200px;
@@ -663,106 +622,6 @@ div.actual-banner-about {
   @media screen and (max-width: 480px) {
     div.actual-banner-about {
       background: url("../images/DW_About-mob.jpg") no-repeat;
-      background-size: 100%;
-      height: 190px; } }
-
-div.actual-banner-value {
-  max-width: 75em;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #eee;
-  position: relative;
-  height: 550px;
-  margin: 0 auto;
-  background: url("../images/DW_Value5.jpg") center center no-repeat;
-  background-size: cover; }
-  div.actual-banner-value::after {
-    clear: both;
-    content: "";
-    display: table; }
-  @media screen and (max-width: 768px) {
-    div.actual-banner-value {
-      background: url("../images/DW_Value-mob.jpg") no-repeat;
-      background-size: 100%;
-      height: 300px; } }
-  @media screen and (max-width: 480px) {
-    div.actual-banner-value {
-      background: url("../images/DW_Value-mob.jpg") no-repeat;
-      background-size: 100%;
-      height: 190px; } }
-
-div.actual-banner-process {
-  max-width: 75em;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #eee;
-  position: relative;
-  height: 550px;
-  margin: 0 auto;
-  background: url("../images/DW_Process4.jpg") center center no-repeat;
-  background-size: cover; }
-  div.actual-banner-process::after {
-    clear: both;
-    content: "";
-    display: table; }
-  @media screen and (max-width: 768px) {
-    div.actual-banner-process {
-      background: url("../images/DW_Process-mob.jpg") no-repeat;
-      background-size: 100%;
-      height: 300px; } }
-  @media screen and (max-width: 480px) {
-    div.actual-banner-process {
-      background: url("../images/DW_Process-mob.jpg") no-repeat;
-      background-size: 100%;
-      height: 190px; } }
-
-div.actual-banner-process-bottom {
-  max-width: 75em;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #eee;
-  position: relative;
-  height: 550px;
-  margin: 0 auto;
-  background: url("../images/DW_Process-bottom.jpg") center center no-repeat;
-  background-size: cover; }
-  div.actual-banner-process-bottom::after {
-    clear: both;
-    content: "";
-    display: table; }
-  @media screen and (max-width: 768px) {
-    div.actual-banner-process-bottom {
-      background: url("../images/DW_Process-bottom-mob.jpg") no-repeat;
-      background-size: 100%;
-      height: 300px; } }
-  @media screen and (max-width: 480px) {
-    div.actual-banner-process-bottom {
-      background: url("../images/DW_Process-bottom-mob.jpg") no-repeat;
-      background-size: 100%;
-      height: 190px; } }
-
-div.actual-banner-letters {
-  max-width: 75em;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #eee;
-  position: relative;
-  height: 550px;
-  margin: 0 auto;
-  background: url("../images/DW_Letters5.jpg") center center no-repeat;
-  background-size: cover; }
-  div.actual-banner-letters::after {
-    clear: both;
-    content: "";
-    display: table; }
-  @media screen and (max-width: 768px) {
-    div.actual-banner-letters {
-      background: url("../images/DW_Letters-mob.jpg") no-repeat;
-      background-size: 100%;
-      height: 300px; } }
-  @media screen and (max-width: 480px) {
-    div.actual-banner-letters {
-      background: url("../images/DW_Letters-mob.jpg") no-repeat;
       background-size: 100%;
       height: 190px; } }
 
@@ -1008,6 +867,34 @@ section.philosophy {
             margin-right: 0; } }
 
 /* ----------- VALUE PAGE -----------------------*/
+/* ----------- VALUE PAGE -----------------------*/
+/* ----------- VALUE PAGE -----------------------*/
+/* ----------- VALUE PAGE -----------------------*/
+div.actual-banner-value {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eee;
+  position: relative;
+  height: 550px;
+  margin: 0 auto;
+  background: url("../images/DW_Value5.jpg") center center no-repeat;
+  background-size: cover; }
+  div.actual-banner-value::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 768px) {
+    div.actual-banner-value {
+      background: url("../images/DW_Value-mob.jpg") no-repeat;
+      background-size: 100%;
+      height: 300px; } }
+  @media screen and (max-width: 480px) {
+    div.actual-banner-value {
+      background: url("../images/DW_Value-mob.jpg") no-repeat;
+      background-size: 100%;
+      height: 190px; } }
+
 section.value {
   max-width: 75em;
   margin-left: auto;
@@ -1240,7 +1127,60 @@ section.detail-layout-value {
 .band-container-gray-letters {
   border-bottom: 1px solid #828282; }
 
-/* ----------- Process PAGE -----------------------*/
+/* ----------- PROCESS PAGE -----------------------*/
+/* ----------- PROCESS PAGE -----------------------*/
+/* ----------- PROCESS PAGE -----------------------*/
+/* ----------- PROCESS PAGE -----------------------*/
+div.actual-banner-process {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eee;
+  position: relative;
+  height: 550px;
+  margin: 0 auto;
+  background: url("../images/DW_Process4.jpg") center center no-repeat;
+  background-size: cover; }
+  div.actual-banner-process::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 768px) {
+    div.actual-banner-process {
+      background: url("../images/DW_Process-mob.jpg") no-repeat;
+      background-size: 100%;
+      height: 300px; } }
+  @media screen and (max-width: 480px) {
+    div.actual-banner-process {
+      background: url("../images/DW_Process-mob.jpg") no-repeat;
+      background-size: 100%;
+      height: 190px; } }
+
+div.actual-banner-process-bottom {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eee;
+  position: relative;
+  height: 550px;
+  margin: 0 auto;
+  background: url("../images/DW_Process-bottom.jpg") center center no-repeat;
+  background-size: cover; }
+  div.actual-banner-process-bottom::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 768px) {
+    div.actual-banner-process-bottom {
+      background: url("../images/DW_Process-bottom-mob.jpg") no-repeat;
+      background-size: 100%;
+      height: 300px; } }
+  @media screen and (max-width: 480px) {
+    div.actual-banner-process-bottom {
+      background: url("../images/DW_Process-bottom-mob.jpg") no-repeat;
+      background-size: 100%;
+      height: 190px; } }
+
 section.process {
   max-width: 75em;
   margin-left: auto;
@@ -1411,6 +1351,9 @@ section.process_list {
             margin-right: 0; } }
 
 /* ----------- PEOPLE PAGE -----------------------*/
+/* ----------- PEOPLE PAGE -----------------------*/
+/* ----------- PEOPLE PAGE -----------------------*/
+/* ----------- PEOPLE PAGE -----------------------*/
 .your_color_class {
   background-color: #000; }
 
@@ -1495,7 +1438,10 @@ section.people {
     section.people div.person div.person_name:hover {
       background-color: rgba(0, 0, 0, 0.6); }
 
-/* ----------------------------- Single person people grid - mobile -----*/
+/* --------------- Single person people grid - mobile -----*/
+/* --------------- Single person people grid - mobile -----*/
+/* --------------- Single person people grid - mobile -----*/
+/* --------------- Single person people grid - mobile -----*/
 section.person-info {
   max-width: 75em;
   margin-left: auto;
@@ -1588,6 +1534,34 @@ div.band-container-gray {
   height: auto; }
 
 /* ----------- LETTERS PAGE -----------------------*/
+/* ----------- LETTERS PAGE -----------------------*/
+/* ----------- LETTERS PAGE -----------------------*/
+/* ----------- LETTERS PAGE -----------------------*/
+div.actual-banner-letters {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eee;
+  position: relative;
+  height: 550px;
+  margin: 0 auto;
+  background: url("../images/DW_Letters5.jpg") center center no-repeat;
+  background-size: cover; }
+  div.actual-banner-letters::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 768px) {
+    div.actual-banner-letters {
+      background: url("../images/DW_Letters-mob.jpg") no-repeat;
+      background-size: 100%;
+      height: 300px; } }
+  @media screen and (max-width: 480px) {
+    div.actual-banner-letters {
+      background: url("../images/DW_Letters-mob.jpg") no-repeat;
+      background-size: 100%;
+      height: 190px; } }
+
 section.letters_list {
   max-width: 75em;
   margin-left: auto;
@@ -1682,6 +1656,46 @@ section.letters_list {
         section.letters_list ul li.number-four:hover {
           visibility: hidden; } }
 
+/* --------------Letters mobile list -----------*/
+/* --------------Letters mobile list -----------*/
+/* --------------Letters mobile list -----------*/
+/* --------------Letters mobile list -----------*/
+section.letters_list-mob {
+  background-color: #fff; }
+  section.letters_list-mob ul {
+    margin-left: 30px; }
+    section.letters_list-mob ul li.number-one-mob {
+      margin-bottom: 30px;
+      display: block;
+      background: url(../images/letter-1-s.png) no-repeat;
+      width: 305px;
+      height: 205px;
+      background-size: 300px 410px; }
+    section.letters_list-mob ul li.number-two-mob {
+      margin-bottom: 30px;
+      display: block;
+      background: url(../images/letter-2-s.png) no-repeat;
+      width: 305px;
+      height: 205px;
+      background-size: 300px 410px; }
+    section.letters_list-mob ul li.number-three-mob {
+      margin-bottom: 30px;
+      display: block;
+      background: url(../images/letter-3-s.png) no-repeat;
+      width: 305px;
+      height: 205px;
+      background-size: 300px 410px; }
+    section.letters_list-mob ul li.number-four-mob {
+      margin-bottom: 30px;
+      display: block;
+      background: url(../images/letter-4-s.png) no-repeat;
+      width: 305px;
+      height: 205px;
+      background-size: 300px 410px; }
+
+/* ----------- CONTACT PAGE -----------------------*/
+/* ----------- CONTACT PAGE -----------------------*/
+/* ----------- CONTACT PAGE -----------------------*/
 /* ----------- CONTACT PAGE -----------------------*/
 section.contact_list {
   max-width: 75em;
@@ -1825,6 +1839,10 @@ section.credits {
       section.credits ul.credits li:last-child {
         margin-right: 0; }
 
+/* ----------- TERMS OF USE PAGE -----------------------*/
+/* ----------- TERMS OF USE PAGE -----------------------*/
+/* ----------- TERMS OF USE PAGE -----------------------*/
+/* ----------- TERMS OF USE PAGE -----------------------*/
 section.terms {
   max-width: 75em;
   margin-left: auto;
@@ -1879,6 +1897,10 @@ section.terms {
           section.terms ul.terms li:last-child {
             margin-right: 0; } }
 
+/* ----------- FOOTER PAGE -----------------------*/
+/* ----------- FOOTER PAGE -----------------------*/
+/* ----------- FOOTER PAGE -----------------------*/
+/* ----------- FOOTER PAGE -----------------------*/
 footer {
   background-color: #000;
   width: 100%;
