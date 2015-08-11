@@ -13,11 +13,11 @@
                 </div>
             </div>
         </div><!-- end blue intro box -->
-        <div class="actual-banner">
-            <img src="images/DW_About.jpg">
+        <div class="actual-banner-about">
+            <!-- <img src="images/DW_About4.jpg"> -->
         </div>
         <div class="actual-banner-mob">
-            <img src="images/DW_About-mob.jpg">
+            <!-- <img src="images/DW_About-mob.jpg"> -->
         </div>
     </aside>
     <!-- <div class="overlay-mobile">
@@ -27,7 +27,7 @@
             </div>
         </div>
     </div> -->
-    <div class="band-container-gray">
+    
     <section class="firm">
             <div class="block">
                 <h2 class="title"> Firm </h2>
@@ -59,7 +59,7 @@
                 </div>
             </div>
     </section>
-    </div>
+    <div class="band-container-gray">
     <section class="history">    
             <div class="block">
                 <h2 class="title"> History </h2>
@@ -74,4 +74,5 @@
                 </div>
             </div>
     </section>
+    </div>
 <?php include 'footer.php'; ?>

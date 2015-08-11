@@ -217,7 +217,7 @@ aside.page_banner_home {
     min-height: 88%;
     height: auto !important;
     display: block;
-    background: url('../images/DW_Home2.jpg') center center no-repeat;
+    background: url('../images/DW_Home3.jpg') center center no-repeat;
     -webkit-background-size: auto cover;
     -moz-background-size: auto cover;
     -o-background-size: auto cover;
@@ -579,17 +579,112 @@ section.letters_list-mob {
             }
         }
     }
-    div.actual-banner img {
+    /*div.actual-banner img {
         position: relative;
         display: block;
         height: auto;
-        background-size: 100%;
+        margin: 0 auto;
         background-position: top;
             @include media($tablet) {
             }
             @include media($mobile) {
                 display: none;
         }
+    }*/
+}
+div.actual-banner-about {
+@include outer-container;
+    background-color: #eee;
+    position: relative;
+    height: 550px;
+    margin: 0 auto;
+    background: url('../images/DW_About5.jpg') center center no-repeat;
+    background-size: cover;
+    @include media($tablet) {
+        background: url('../images/DW_About-mob.jpg') no-repeat;
+        background-size: 100%;
+        height: 300px;
+    }
+    @include media($mobile) {
+        background: url('../images/DW_About-mob.jpg') no-repeat;
+        background-size: 100%;
+        height: 190px;
+    }
+}
+div.actual-banner-value {
+@include outer-container;
+    background-color: #eee;
+    position: relative;
+    height: 550px;
+    margin: 0 auto;
+    background: url('../images/DW_Value5.jpg') center center no-repeat;
+    background-size: cover;
+    @include media($tablet) {
+        background: url('../images/DW_Value-mob.jpg') no-repeat;
+        background-size: 100%;
+        height: 300px;
+    }
+    @include media($mobile) {
+        background: url('../images/DW_Value-mob.jpg') no-repeat;
+        background-size: 100%;
+        height: 190px;
+    }
+}
+div.actual-banner-process {
+@include outer-container;
+    background-color: #eee;
+    position: relative;
+    height: 550px;
+    margin: 0 auto;
+    background: url('../images/DW_Process4.jpg') center center no-repeat;
+    background-size: cover;
+    @include media($tablet) {
+        background: url('../images/DW_Process-mob.jpg') no-repeat;
+        background-size: 100%;
+        height: 300px;
+    }
+    @include media($mobile) {
+        background: url('../images/DW_Process-mob.jpg') no-repeat;
+        background-size: 100%;
+        height: 190px;
+    }
+}
+div.actual-banner-process-bottom {
+@include outer-container;
+    background-color: #eee;
+    position: relative;
+    height: 550px;
+    margin: 0 auto;
+    background: url('../images/DW_Process-bottom.jpg') center center no-repeat;
+    background-size: cover;
+    @include media($tablet) {
+        background: url('../images/DW_Process-mob.jpg') no-repeat;
+        background-size: 100%;
+        height: 300px;
+    }
+    @include media($mobile) {
+        background: url('../images/DW_Process-bottom-mob.jpg') no-repeat;
+        background-size: 100%;
+        height: 190px;
+    }
+}
+div.actual-banner-letters {
+@include outer-container;
+    background-color: #eee;
+    position: relative;
+    height: 550px;
+    margin: 0 auto;
+    background: url('../images/DW_Letters5.jpg') center center no-repeat;
+    background-size: cover;
+    @include media($tablet) {
+        background: url('../images/DW_Letters-mob.jpg') no-repeat;
+        background-size: 100%;
+        height: 300px;
+    }
+    @include media($mobile) {
+        background: url('../images/DW_Letters-mob.jpg') no-repeat;
+        background-size: 100%;
+        height: 190px;
     }
 }
 
@@ -649,7 +744,7 @@ section.history {
     @include outer-container;
     @extend .global_pad;
     position: relative;
-    padding-bottom: 0;
+    padding-bottom: 60px;
     div.block {
         @include span-columns(12);
         top: 0;
@@ -693,7 +788,7 @@ section.philosophy {
     @include outer-container;
     @extend .global_pad;
     position: relative;
-    padding-bottom: 0;
+    padding-bottom: 60px;
     div.block {
         @include span-columns(12);
         top: 0;
@@ -742,7 +837,7 @@ section.value {
     @include outer-container;
     @extend .global_pad;
     position: relative;
-    padding-bottom: 0px;
+    padding-bottom: 60px;
     div.block-value {
         @include span-columns(12);
         top: 0;
@@ -885,7 +980,7 @@ section.process {
     @include outer-container;
     @extend .global_pad;
     position: relative;
-    padding-bottom: 0;
+    padding-bottom: 60px;
     div.block {
         @include span-columns(12);
         top: 0;
@@ -929,7 +1024,7 @@ section.process_list {
     @include outer-container;
     @extend .global_pad;
     position: relative;
-    padding-bottom: 0;
+    padding-bottom: 60px;
     div.block {
         @include span-columns(12);
         top: 0;
@@ -1143,6 +1238,7 @@ section.letters_list {
     @include outer-container;
     @extend .global_pad;
     ul {
+        padding-bottom: 60px;
         @include span-columns(12);
         @include media($tablet) {
         }
@@ -1267,7 +1363,7 @@ section.contact_list {
             padding: 0 30px 30px 0;
             h3.city-name {
                 font-family: $frutigerLightCond;
-                font-size: 2em;
+                font-size: 1.5em;;
                 color: $gray;
                 padding-bottom: 30px;
             }
@@ -1292,7 +1388,7 @@ section.contact_list {
 }
 
 #map-canvas {
-    min-height: 340px;
+    min-height: 500px;
     width: 100%;
     @include media($mobile) {
        min-height: 150px
@@ -1300,7 +1396,7 @@ section.contact_list {
 }
 
 #map-canvas2 {
-    min-height: 340px;
+    min-height: 500px;
     width: 100%;
     @include media($mobile) {
        min-height: 150px
@@ -1308,7 +1404,7 @@ section.contact_list {
 }
 
 #map-canvas3 {
-    min-height: 340px;
+    min-height: 500px;
     width: 100%;
     @include media($mobile) {
        min-height: 150px

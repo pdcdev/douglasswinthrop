@@ -14,14 +14,14 @@
             </div>
         </div><!-- end blue intro box -->
     </aside>
-    <div class="actual-banner">
-        <img src="images/DW_Value.jpg">
+    <div class="actual-banner-value">
+        <!-- <img src="images/DW_Value.jpg"> -->
     </div>
     <div class="actual-banner-mob">
-            <img src="images/DW_Value-mob.jpg">
+            <!-- <img src="images/DW_Value-mob.jpg"> -->
         </div>
     <div class="content-value">
-    <div class="band-container-gray">
+    <div class="band-container-white">
         <section class="value">
             <div class="block-value">
                 <section class="description-text-left">
@@ -54,7 +54,7 @@
         
         
     </div><!-- gray -->
-    <div class="band-container-white">
+    <div class="band-container-gray">
         <section class="value">
             <div class="block-value">
                 <section class="description-text-left">

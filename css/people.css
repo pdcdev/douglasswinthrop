@@ -160,6 +160,7 @@ div.intro-box {
     margin-left: auto;
     margin-right: auto;
     padding-top: 50px;
+    padding-bottom: 50px;
     position: relative;
     height: 100%; }
     div.intro-box div.inner_banner::after {
@@ -176,8 +177,17 @@ div.intro-box {
       div.intro-box div.inner_banner div.page-name h1 {
         font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
         font-size: 1.5em;
+        line-height: 15px;
         color: #b2b2b2;
         padding-bottom: 50px; }
+      @media screen and (max-width: 480px) {
+        div.intro-box div.inner_banner div.page-name h1.terms {
+          float: left;
+          display: block;
+          margin-right: 10%;
+          width: 210%; }
+          div.intro-box div.inner_banner div.page-name h1.terms:last-child {
+            margin-right: 0; } }
     div.intro-box div.inner_banner div p {
       float: left;
       display: block;
@@ -390,7 +400,10 @@ section.sliderContainer {
   border-right: 0.2em solid #004fb1;
   border-top: 0.2em solid #004fb1;
   margin: 60px 60px 0 0;
-  transform: rotate(225deg); }
+  -ms-transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -o-transform: rotate(225deg); }
 
 #leftArrow:hover {
   top: 2pt;
@@ -399,7 +412,10 @@ section.sliderContainer {
   border-right: 0.2em solid #b2b2b2;
   border-top: 0.2em solid #b2b2b2;
   margin: 60px 60px 0 0;
-  transform: rotate(225deg); }
+  -ms-transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -o-transform: rotate(225deg); }
 
 #rightArrow {
   top: 2pt;
@@ -408,7 +424,10 @@ section.sliderContainer {
   border-right: 0.2em solid #004fb1;
   border-top: 0.2em solid #004fb1;
   margin: 60px 60px 0 0;
-  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
   position: absolute;
   right: 0; }
 
@@ -419,7 +438,10 @@ section.sliderContainer {
   border-right: 0.2em solid #b2b2b2;
   border-top: 0.2em solid #b2b2b2;
   margin: 60px 60px 0 0;
-  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
   position: absolute;
   right: 0; }
 

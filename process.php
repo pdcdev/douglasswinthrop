@@ -13,14 +13,14 @@
                 </div>
             </div>
         </div><!-- end blue intro box -->
-        <div class="actual-banner">
-            <img src="images/DW_Process.jpg">
+        <div class="actual-banner-process">
+            <!-- <img src="images/DW_Process.jpg"> -->
         </div>
         <div class="actual-banner-mob">
-            <img src="images/DW_Process-mob.jpg">
+            <!-- <img src="images/DW_Process-mob.jpg"> -->
         </div>
     </aside>
-    <div class="band-container-gray">
+    <div class="band-container-white">
     <section class="process">
             <div class="block">
                 <h2 class="title"> Process </h2>
@@ -35,7 +35,10 @@
                 </div>
             </div>
     </section>
-    </div>
+    </div>      
+        
+    <div class="band-container-gray">
+    <div class="actual-banner-process-bottom"></div>
     <section class="process_list">    
             <div class="block">
                 <h2 class="title"> Fundamental and quantitative criteria include: </h2>
@@ -60,4 +63,5 @@
                 </div>
             </div>
     </section>
+    </div>
 <?php include 'footer.php'; ?>

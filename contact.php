@@ -25,7 +25,7 @@
                 </div>  
             </div>
     </section>
-        <div id="map-canvas"></div>
+    <div id="map-canvas"></div>
     <section class="contact_list">
             <div class="contact dc">
                 <div class="city-address">
