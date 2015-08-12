@@ -1,7 +1,7 @@
     <footer>
         <div class="inner_footer">
             <ul>
-                <li class="copyright">© 1997 - 2015 Douglass Winthrop  All rights reserved</li>
+                <li class="copyright">© 1997-2015 Douglass Winthrop  All rights reserved</li>
                 <li><a href ="terms.php">Terms of Use</a></li>
                 <li>LinkedIn</li>
             </ul>

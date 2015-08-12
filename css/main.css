@@ -121,7 +121,7 @@ header {
         margin-right: 0; }
       header div.inner_header h1 a {
         text-decoration: none;
-        color: #b2b2b2; }
+        color: #fff; }
       @media screen and (max-width: 480px) {
         header div.inner_header h1 {
           font-size: 1rem; } }
@@ -316,7 +316,7 @@ aside.page_banner_home {
       aside.page_banner_home div.overlay_home div.inner_banner_home div.home-logo h1.home-logo-name {
         font-size: 3em;
         font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
-        color: #A3A9AC; }
+        color: #fff; }
         @media screen and (max-width: 768px) {
           aside.page_banner_home div.overlay_home div.inner_banner_home div.home-logo h1.home-logo-name {
             float: left;
@@ -343,7 +343,7 @@ aside.page_banner_home {
         margin-right: 2.3255813953%;
         width: 57.3643410853%;
         font-size: 3em;
-        color: #A3A9AC;
+        color: #fff;
         font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
         aside.page_banner_home div.overlay_home div.home-message p:last-child {
           margin-right: 0; }
@@ -365,7 +365,7 @@ aside.page_banner_home {
             aside.page_banner_home div.overlay_home div.home-message p:last-child {
               margin-right: 0; } }
     aside.page_banner_home div.overlay_home button {
-      border: 1px solid #b2b2b2; }
+      border: 1px solid #fff; }
 
 div.overlay-mobile {
   display: none; }
@@ -413,8 +413,8 @@ div.overlay-mobile {
     text-align: center; }
 
 .btn {
-  margin-left: -5px;
-  color: #A3A9AC;
+  margin-left: -5.3px;
+  color: #b2b2b2;
   cursor: pointer;
   font-size: 1em;
   line-height: 60px;
@@ -438,7 +438,7 @@ div.overlay-mobile {
       text-align: center;
       margin: 0 auto; }
       .btn-4 a {
-        border-bottom: 1px solid #A3A9AC; } }
+        border-bottom: 1px solid #fff; } }
 
 .btn-4:hover {
   background: #2775F6; }
@@ -622,6 +622,31 @@ div.actual-banner-about {
   @media screen and (max-width: 480px) {
     div.actual-banner-about {
       background: url("../images/DW_About-mob.jpg") no-repeat;
+      background-size: 100%;
+      height: 190px; } }
+
+div.actual-banner-about-history {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eee;
+  position: relative;
+  height: 550px;
+  margin: 0 auto;
+  background: url("../images/DW_History.jpg") center center no-repeat;
+  background-size: cover; }
+  div.actual-banner-about-history::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 768px) {
+    div.actual-banner-about-history {
+      background: url("../images/DW_History-mob.jpg") no-repeat;
+      background-size: 100%;
+      height: 300px; } }
+  @media screen and (max-width: 480px) {
+    div.actual-banner-about-history {
+      background: url("../images/DW_History-mob.jpg") no-repeat;
       background-size: 100%;
       height: 190px; } }
 
@@ -1657,6 +1682,8 @@ section.letters_list {
       @media screen and (max-width: 480px) {
         section.letters_list ul li.number-four:hover {
           visibility: hidden; } }
+  section.letters_list a.three {
+    text-decoration: none; }
 
 /* --------------Letters mobile list -----------*/
 /* --------------Letters mobile list -----------*/
@@ -1704,7 +1731,7 @@ section.contact_list {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  height: 200px; }
+  height: 450px; }
   section.contact_list::after {
     clear: both;
     content: "";
@@ -1714,7 +1741,7 @@ section.contact_list {
     display: block;
     margin-right: 2.3255813953%;
     width: 100%;
-    padding: 30px 0 30px 0;
+    padding: 50px 0 30px 0;
     display: block; }
     section.contact_list div.contact:last-child {
       margin-right: 0; }

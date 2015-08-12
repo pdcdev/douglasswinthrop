@@ -60,6 +60,9 @@
             </div>
     </section>
     <div class="band-container-gray">
+        <div class="actual-banner-about-history">
+            <!-- <img src="images/DW_About4.jpg"> -->
+        </div>
     <section class="history">    
             <div class="block">
                 <h2 class="title"> History </h2>
