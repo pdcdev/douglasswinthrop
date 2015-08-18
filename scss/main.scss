@@ -1498,7 +1498,7 @@ section.terms {
     padding-bottom: 100px;
     ul.design-dev {
         @include span-columns(12);
-        padding-top:30px;
+        
         color: $gray;
         height: 100%;
         border-bottom: 1px solid $gray;
