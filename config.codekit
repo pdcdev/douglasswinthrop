@@ -368,6 +368,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/letter-1-s2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8203,
+		"inputAbbreviatedPath": "\/images\/letter-1-s2.png",
+		"outputAbbreviatedPath": "\/images\/letter-1-s2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/letter-1.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -386,6 +397,17 @@
 		"initialSize": 11954,
 		"inputAbbreviatedPath": "\/images\/letter-2-s.png",
 		"outputAbbreviatedPath": "\/images\/letter-2-s.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/letter-2-s2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10567,
+		"inputAbbreviatedPath": "\/images\/letter-2-s2.png",
+		"outputAbbreviatedPath": "\/images\/letter-2-s2.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -412,13 +434,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/letter-3-S.png": {
+	"\/images\/letter-3-s.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 10950,
-		"inputAbbreviatedPath": "\/images\/letter-3-S.png",
-		"outputAbbreviatedPath": "\/images\/letter-3-S.png",
+		"inputAbbreviatedPath": "\/images\/letter-3-s.png",
+		"outputAbbreviatedPath": "\/images\/letter-3-s.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/letter-3-s2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13365,
+		"inputAbbreviatedPath": "\/images\/letter-3-s2.png",
+		"outputAbbreviatedPath": "\/images\/letter-3-s2.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -441,6 +474,17 @@
 		"initialSize": 13778,
 		"inputAbbreviatedPath": "\/images\/letter-4-s.png",
 		"outputAbbreviatedPath": "\/images\/letter-4-s.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/letter-4-s2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13365,
+		"inputAbbreviatedPath": "\/images\/letter-4-s2.png",
+		"outputAbbreviatedPath": "\/images\/letter-4-s2.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

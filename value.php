@@ -25,7 +25,7 @@
         <section class="value">
             <div class="block-value">
                 <section class="description-text-left">
-                    <h3 class="title"> Client is first </h3>
+                    <h3 class="title"> Client is First </h3>
                     <p>Douglass Winthrop Advisors is proud of the strong value propositionits investment management services hold for 
                         clients which includes the following attributes.
                     </p>

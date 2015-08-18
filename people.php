@@ -48,7 +48,7 @@
         <div class="person">
             <a href="luke.php"><img class="person_headshot" src="images/people/Luke_Headshot.jpg"></a>
             <div class="person_name">
-                <a href="#"><h1>Luke Fowler</h1></a>
+                <a href="luke.php"><h1>Luke Fowler</h1></a>
                 <p>Principal</p>
             </div>
         </div>

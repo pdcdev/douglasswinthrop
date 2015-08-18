@@ -67,7 +67,7 @@
             <div class="block">
                 <h2 class="title"> History </h2>
                 <div class="description">
-                    <p class="description-text-left">Douglass Winthrop Advisors, LLC was founded in 2000 by Robert Douglass and Jay Winthrop to manage assets for high-net-worth individuals, families, trusts and endowments.  From a modest beginning with only a few clients the firm now 
+                    <p class="description-text-left">Douglass Winthrop Advisors, LLC was founded in 2000 by Robert Douglass and Jay Winthrop to manage assets for high-net-worth individuals, families, trusts and endowments.   From a modest beginning with only a few clients the firm now 
                         manages approximately $1 billion across more than 200 accounts. 
                         Our professional staff has grown to include Lea Paine Highet, a Certified Financial Planner with considerable wealth management expertise, as well as investment committee members Charlie Howard, Chars Crane, Bryce O’Brien, Grant Winthrop, Josh Huffard, Bowdy Train and Oak Strawbridge. Our professional team brings more than 150 years of collective investment experience to the daily rigors of overseeing our clients’ portfolios.
                     </p>

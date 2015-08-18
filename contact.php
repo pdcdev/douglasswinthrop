@@ -17,8 +17,8 @@
             <div class="contact nyc">
                 <div class="city-address">
                     <h3 class="city-name">New York City</h3>
-                    <p class="address-info">535 Fifth Avenue,22nd Floor<br>
-                    New York, NY 10017<br>Telephone: 212 557 7680<br>Telefax: 212 557 7683</p>
+                    <p class="address-info">535 Fifth Avenue, 22nd Floor<br>
+                    New York, NY 10017<br>Telephone 212 557 7680<br>Telefax 212 557 7683</p>
                 </div>
                 <div class="city-img">
                     <img src="images/dw-nyc.jpg">
@@ -31,7 +31,7 @@
                 <div class="city-address">
                     <h3 class="city-name">Washington, D.C.</h3>
                     <p class="address-info">888 17th Street NW, Suite 205<br>Washington, DC 20006<br>
-                    Telephone: 202 887 6812<br>Telefax: 202 861 5653</p>
+                    Telephone 202 887 6812<br>Telefax 202 861 5653</p>
                 </div>
                 <div class="city-img">
                    <img src="images/dw-dc.jpg">
@@ -44,7 +44,7 @@
                 <div class="city-address">
                     <h3 class="city-name">Boston</h3>
                     <p class="address-info">121 Mt. Vernon Street<br>Boston, MA 02108<br>
-                    Telephone: 617 379 5952<br>Telefax: 617 249 0648 </p>
+                    Telephone 617 379 5952<br>Telefax 617 249 0648 </p>
                 </div>
                 <div class="city-img">
                    <img src="images/dw-boston.jpg">

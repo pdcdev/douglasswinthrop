@@ -338,8 +338,14 @@ div.overlay-mobile {
     width: 100%;
     @include media($mobile) {
         border-top: 1px solid;
+        border-bottom: 1px solid;
         max-width: 100%;
+        margin: 0 0 -1px 0;
     }
+}
+
+.btn p:hover {
+    color: #fff;
 }
 
 .btn-4 {
@@ -1111,13 +1117,16 @@ section.people {
 section.person-info {
     @include outer-container;
     @extend .global_pad;
-    div.description-person-single {
+    div {
         h2.title-person-single {
             font-family: $frutigerBoldCond;
+            font-size: 1.5em;
             p.sub-header {
 
 
             }
+        }
+        div.description-person-single {
         }
     }
 }
@@ -1341,7 +1350,7 @@ section.letters_list-mob {
         li.number-one-mob {
             margin-bottom: 30px;
             display: block;
-            background: url(../images/letter-1-s.png) no-repeat;
+            background: url(../images/letter-2-s.png) no-repeat;
             width: 305px;
             height: 205px;
             background-size: 300px 410px;
@@ -1349,7 +1358,7 @@ section.letters_list-mob {
         li.number-two-mob {
             margin-bottom: 30px;
             display: block;
-            background: url(../images/letter-2-s.png) no-repeat;
+            background: url(../images/letter-1-s.png) no-repeat;
             width: 305px;
             height: 205px;
             background-size: 300px 410px;
@@ -1487,19 +1496,36 @@ section.terms {
     @include outer-container;
     @extend .global_pad;
     padding-bottom: 100px;
-    ul.terms {
+    ul.design-dev {
         @include span-columns(12);
         padding-top:30px;
         color: $gray;
         height: 100%;
+        border-bottom: 1px solid $gray;
         @include media($mobile) {
             @include span-columns(3);
         }
-        li.terms {
+        li.design-dev {
             @include span-columns(6);
             font-family: $frutigerBoldCond;
             padding-bottom: 30px;
-            
+            @include media($mobile) {
+                @include span-columns(3);
+            }
+        }
+        li.pdc {
+            @include span-columns(6);
+            font-family: $frutigerLightCond;
+            padding-bottom: 30px;
+        } 
+    }
+    ul.terms {
+        @include span-columns(12);
+        color: $gray;
+        padding-top: 30px;
+        li.legal {
+            font-family: $frutigerBoldCond;
+            padding-bottom: 30px;
         }
         li {
             @include span-columns(6);

@@ -483,6 +483,27 @@ section.sliderContainer {
 
 }
 
+.page_banner_luke {
+    @include outer-container;
+    background-color: #eee;
+    position: relative;
+    height:550px;
+    margin: 0 auto;
+    /*background: url('../images/people/single/lea-banner.jpg') center center no-repeat;
+    background-size: cover;*/
+    @include media($tablet) {
+        /*background: url('../images/people/single/lea-banner.jpg') no-repeat;
+        background-size: 100%;*/
+        height: 300px;
+    }
+    @include media($mobile) {
+        /*background: url('../images/people/single/lea-banner.jpg') no-repeat;
+        background-size: 100%;*/
+        height: 190px;
+    }
+
+}
+
 .page_banner_charlie {
     @include outer-container;
     background-color: #eee;

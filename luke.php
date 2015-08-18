@@ -11,22 +11,24 @@
             </div>
         </div>
     </div><!-- end blue intro box -->
-    <aside class="page_banner_lea">
+    <aside class="page_banner_luke">
         
     </aside>
     
     <section class="person-info">
     <div>
-        <h2 class="title-person-single">Lea Paine Highet<br><p>Principal</p><br></h2>
+        <h2 class="title-person-single">Luke Fowler<br><p>Principal</p><br></h2>
         <div class="description-person-single">
             <p class="sub-header">  
-            Lea is a principal in Douglass Winthrop Advisors LLC. Previously, Lea was a Vice President in the Private Banking Group at U.S. Trust Company, where she served as a trust and custody specialist for high net worth individuals and families. Her experience also includes two years as an Alumnae Coordinator in the Radcliffe Alumnae Office. 
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
             <br><br>
-            Lea is on the board of The Chapin School. She serves on the Dean’s Advisory Council of the Radcliffe Institute for Advanced Study at Harvard University. Lea is the Co-Chair of the National Coalition for Girls’ Schools Alumnae Network and is the Treasurer of the Coby Foundation. She is a past trustee of the St. Bernard’s School and The Museum of the City of New York. 
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            <br>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
             <br><br>
-            Lea graduated magna cum laude from Harvard College in 1988 and received her CERTIFIED FINANCIAL PLANNER™ certification in 1994.
-            <br><br>
-            <h4 style="font-size: 10pt">Certified Financial Planner Board of Standards Inc. owns the certification marks CFP®, CERTIFIED FINANCIAL PLANNER™ and CFP® (with flame design) in the U.S., which it awards to individuals who successfully complete CFP Board’s initial and ongoing certification requirements. Lea is the Co-Chair of the National Coalition for Girls” Schools Alumnae Network. She is the Treasurer of the Coby Foundation, and she is a Trustee of the Harvard Club of New York Foundation.</h4></p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            <br>
+            </p>
         </div>
     </div>
     </section>

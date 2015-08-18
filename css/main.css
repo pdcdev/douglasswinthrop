@@ -426,7 +426,12 @@ div.overlay-mobile {
   @media screen and (max-width: 480px) {
     .btn {
       border-top: 1px solid;
-      max-width: 100%; } }
+      border-bottom: 1px solid;
+      max-width: 100%;
+      margin: 0 0 -1px 0; } }
+
+.btn p:hover {
+  color: #fff; }
 
 .btn-4 {
   border: 1px solid; }
@@ -1477,8 +1482,9 @@ section.person-info {
     clear: both;
     content: "";
     display: table; }
-  section.person-info div.description-person-single h2.title-person-single {
-    font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif; }
+  section.person-info div h2.title-person-single {
+    font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
+    font-size: 1.5em; }
 
 section.people-single {
   max-width: 75em;
@@ -1696,14 +1702,14 @@ section.letters_list-mob {
     section.letters_list-mob ul li.number-one-mob {
       margin-bottom: 30px;
       display: block;
-      background: url(../images/letter-1-s.png) no-repeat;
+      background: url(../images/letter-2-s.png) no-repeat;
       width: 305px;
       height: 205px;
       background-size: 300px 410px; }
     section.letters_list-mob ul li.number-two-mob {
       margin-bottom: 30px;
       display: block;
-      background: url(../images/letter-2-s.png) no-repeat;
+      background: url(../images/letter-1-s.png) no-repeat;
       width: 305px;
       height: 205px;
       background-size: 300px 410px; }
@@ -1869,33 +1875,63 @@ section.terms {
     clear: both;
     content: "";
     display: table; }
-  section.terms ul.terms {
+  section.terms ul.design-dev {
     float: left;
     display: block;
     margin-right: 2.3255813953%;
     width: 100%;
     padding-top: 30px;
     color: #A3A9AC;
-    height: 100%; }
-    section.terms ul.terms:last-child {
+    height: 100%;
+    border-bottom: 1px solid #A3A9AC; }
+    section.terms ul.design-dev:last-child {
       margin-right: 0; }
     @media screen and (max-width: 480px) {
-      section.terms ul.terms {
+      section.terms ul.design-dev {
         float: left;
         display: block;
         margin-right: 10%;
         width: 100%; }
-        section.terms ul.terms:last-child {
+        section.terms ul.design-dev:last-child {
           margin-right: 0; } }
-    section.terms ul.terms li.terms {
+    section.terms ul.design-dev li.design-dev {
       float: left;
       display: block;
       margin-right: 2.3255813953%;
       width: 48.8372093023%;
       font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
       padding-bottom: 30px; }
-      section.terms ul.terms li.terms:last-child {
+      section.terms ul.design-dev li.design-dev:last-child {
         margin-right: 0; }
+      @media screen and (max-width: 480px) {
+        section.terms ul.design-dev li.design-dev {
+          float: left;
+          display: block;
+          margin-right: 10%;
+          width: 100%; }
+          section.terms ul.design-dev li.design-dev:last-child {
+            margin-right: 0; } }
+    section.terms ul.design-dev li.pdc {
+      float: left;
+      display: block;
+      margin-right: 2.3255813953%;
+      width: 48.8372093023%;
+      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
+      padding-bottom: 30px; }
+      section.terms ul.design-dev li.pdc:last-child {
+        margin-right: 0; }
+  section.terms ul.terms {
+    float: left;
+    display: block;
+    margin-right: 2.3255813953%;
+    width: 100%;
+    color: #A3A9AC;
+    padding-top: 30px; }
+    section.terms ul.terms:last-child {
+      margin-right: 0; }
+    section.terms ul.terms li.legal {
+      font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
+      padding-bottom: 30px; }
     section.terms ul.terms li {
       float: left;
       display: block;
