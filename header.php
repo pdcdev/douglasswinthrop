@@ -12,6 +12,7 @@
   <link href='http://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'>
 </head>
 
+
 <body>
     <header>
         <div class="inner_header">
@@ -27,13 +28,13 @@
 
             <nav class="open">
               <ul class="overlay">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="firm.php">About</a></li>
-                <li><a href="value.php">Value</a></li>
-                <li><a href="process.php">Process</a></li>
-                <li><a href="people.php">People</a></li>
-                <li><a href="letters.php">Letters</a></li>
-                <li><a href="contact.php">Contact</a></li>
+                <li><a class="menu-mob" href="index.php">Home</a></li>
+                <li><a class="menu-mob" href="firm.php">About</a></li>
+                <li><a class="menu-mob" href="value.php">Value</a></li>
+                <li><a class="menu-mob" href="process.php">Process</a></li>
+                <li><a class="menu-mob" href="people.php">People</a></li>
+                <li><a class="menu-mob" href="letters.php">Letters</a></li>
+                <li><a class="menu-mob" href="contact.php">Contact</a></li>
               </ul>
             </nav>
 

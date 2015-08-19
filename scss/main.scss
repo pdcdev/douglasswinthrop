@@ -200,8 +200,8 @@ nav {
 
 #nav-icon4 {
   position: absolute;
-    width: 30px;
-    height:40px;
+    width: 20px;
+    height:70px;
     cursor: pointer;
     top:15px;
     right:30px;
@@ -219,7 +219,7 @@ nav {
 #nav-icon4 span {
   display: block;
   position: absolute;
-  height: 4px;
+  height: 3px;
   width: 100%;
   background: $gray;
   opacity: 1;
@@ -285,25 +285,22 @@ nav {
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  top: 25px;
+  top: 20px !important;
   left: 8px;
 }
 
 
 nav.open {
-    display: none;
-    ul.overlay {
-        
-        li {
-            
-                font-family: $frutigerLightCond !important;
-                @include media($tablet) {
-                    font-family: $frutigerLightCond !important;
-                }
-                @include media($mobile) {
-                    font-family: $frutigerLightCond !important;
-                }
-             
+    display: none; 
+    li {
+        a.menu-mob {
+            font-family: $frutigerLightCond;
+            @include media($tablet) {
+                font-family: $frutigerLightCond;
+            }
+            @include media($mobile) {
+                font-family: $frutigerLightCond;
+            }
         }
     }
 }
@@ -354,7 +351,8 @@ nav.open {
             li.copyright {
                 @include span-columns(6);
                 @include media($mobile) {
-                    @include span-columns(5);
+                    @include span-columns(3);
+                    font-size: 0.8em;
                 }
             }
             li {
@@ -366,7 +364,7 @@ nav.open {
                 @include media($mobile) {
                     @include span-columns(3);
                     padding-bottom: 20px;
-                    font-size: 0.7em;
+                    font-size: 0.8em;
                 }
             }
             a {
@@ -782,6 +780,12 @@ section.firm {
                 font-size: 21px;
                 line-height: 27px;
                 font-family: $frutigerLightCond;
+                @include media($tablet) {
+                    @include span-columns(5);
+                    font-size: 21px;
+                    line-height: 27px;
+                    @include shift(0);
+                }
                  @include media($mobile) {
                     @include span-columns(3);
                     font-size: 16px;
@@ -797,6 +801,12 @@ section.firm {
                 font-size: 21px;
                 line-height: 27px;
                 font-family: $frutigerLightCond;
+                @include media($tablet) {
+                    @include span-columns(5);
+                    font-size: 21px;
+                    line-height: 27px;
+                    @include shift(0);
+                }
                  @include media($mobile) {
                     @include span-columns(3);
                     @include shift(0);
@@ -825,6 +835,7 @@ section.history {
             }
         }
         div.description {
+
             p.description-text-left {
                 @include span-columns(5);
                 @include type($small, #b2b2b2);
@@ -833,6 +844,12 @@ section.history {
                 font-size: 21px;
                 line-height: 27px;
                 font-family: $frutigerLightCond;
+                @include media($tablet) {
+                    @include span-columns(5);
+                    font-size: 21px;
+                    line-height: 27px;
+                    @include shift(0);
+                }
                  @include media($mobile) {
                     @include span-columns(3);
                     font-size: 16px;
@@ -849,6 +866,12 @@ section.history {
                 font-size: 21px;
                 line-height: 27px;
                 font-family: $frutigerLightCond;
+                @include media($tablet) {
+                    @include span-columns(5);
+                    font-size: 21px;
+                    line-height: 27px;
+                    @include shift(0);
+                }
                  @include media($mobile) {
                     @include span-columns(3);
                     @include shift(0);
@@ -885,6 +908,12 @@ section.philosophy {
                 font-size: 21px;
                 line-height: 27px;
                 font-family: $frutigerLightCond;
+                @include media($tablet) {
+                    @include span-columns(5);
+                    font-size: 21px;
+                    line-height: 27px;
+                    @include shift(0);
+                }
                  @include media($mobile) {
                     @include span-columns(3);
                     font-size: 16px;
@@ -901,6 +930,12 @@ section.philosophy {
                 font-size: 21px;
                 line-height: 27px;
                 font-family: $frutigerLightCond;
+                @include media($tablet) {
+                    @include span-columns(5);
+                    font-size: 21px;
+                    line-height: 27px;
+                    @include shift(0);
+                }
                  @include media($mobile) {
                     @include span-columns(3);
                     @include shift(0);
@@ -1195,6 +1230,12 @@ section.process {
                 font-size: 21px;
                 line-height: 27px;
                 font-family: $frutigerLightCond;
+                @include media($tablet) {
+                    @include span-columns(5);
+                    font-size: 21px;
+                    line-height: 27px;
+                    @include shift(0);
+                }
                  @include media($mobile) {
                     @include span-columns(3);
                     font-size: 16px;
@@ -1211,6 +1252,12 @@ section.process {
                 font-size: 21px;
                 line-height: 27px;
                 font-family: $frutigerLightCond;
+                @include media($tablet) {
+                    @include span-columns(5);
+                    font-size: 21px;
+                    line-height: 27px;
+                    @include shift(0);
+                }
                  @include media($mobile) {
                     @include span-columns(3);
                     @include shift(0);
@@ -1236,6 +1283,12 @@ section.process_list {
             font-size: 1.5em;
             color: $blue;
             font-family: $frutigerLightCond;
+            @include media($tablet) {
+                    @include span-columns(5);
+                    font-size: 21px;
+                    line-height: 27px;
+                    @include shift(0);
+                }
             @include media ($tablet) {
             }
         }
@@ -1251,9 +1304,17 @@ section.process_list {
                     list-style-type: disc;
                     line-height: 27px;
                 }
+                @include media($tablet) {
+                    @include span-columns(3);
+                    font-size: 21px;
+                    line-height: 27px;
+                    @include shift(0);
+                }
                 @include media($mobile) {
                     @include span-columns(3);
                     margin-left: 20px;
+                    font-size: 16px;
+                    line-height: 20px;
 
                     
                 }
@@ -1266,6 +1327,12 @@ section.process_list {
                 font-size: 21px;
                 
                 font-family: $frutigerLightCond;
+                @include media($tablet) {
+                    @include span-columns(3);
+                    font-size: 21px;
+                    line-height: 27px;
+                    @include shift(0);
+                }
                 li {
                     list-style-type: disc;
                     line-height: 27px;
@@ -1273,6 +1340,8 @@ section.process_list {
                 @include media($mobile) {
                     @include span-columns(3);
                     margin-left: 20px;
+                    font-size: 16px;
+                    line-height: 20px;
 
                     
                 }
@@ -1803,7 +1872,8 @@ footer {
                 @include span-columns(6);
                 @include media($mobile) {
                     padding-top: 30px;
-                    @include span-columns(5);
+                    @include span-columns(3);
+                    font-size: 0.8em;
                 }
             }
             li {
@@ -1814,7 +1884,7 @@ footer {
                 @include media($mobile) {
                     @include span-columns(3);
                     padding-bottom: 20px;
-                    font-size: 0.7em;
+                    font-size: 0.8em;
                 }
             }
             a {
@@ -1844,6 +1914,7 @@ footer.value {
                 @include span-columns(6);
                 @include media($mobile) {
                     @include span-columns(5);
+                    font-size: 1em;
                 }
             }
             li {
@@ -1854,7 +1925,7 @@ footer.value {
                 @include media($mobile) {
                     @include span-columns(3);
                     padding-bottom: 20px;
-                    font-size: 0.7em;
+                    font-size: 1em;
                 }
             }
             a {

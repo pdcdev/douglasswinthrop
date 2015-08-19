@@ -240,8 +240,8 @@ nav {
 
 #nav-icon4 {
   position: absolute;
-  width: 30px;
-  height: 40px;
+  width: 20px;
+  height: 70px;
   cursor: pointer;
   top: 15px;
   right: 30px;
@@ -258,7 +258,7 @@ nav {
 #nav-icon4 span {
   display: block;
   position: absolute;
-  height: 4px;
+  height: 3px;
   width: 100%;
   background: #A3A9AC;
   opacity: 1;
@@ -314,19 +314,19 @@ nav {
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  top: 25px;
+  top: 20px !important;
   left: 8px; }
 
 nav.open {
   display: none; }
-  nav.open ul.overlay li {
-    font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif !important; }
+  nav.open li a.menu-mob {
+    font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
     @media screen and (max-width: 768px) {
-      nav.open ul.overlay li {
-        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif !important; } }
+      nav.open li a.menu-mob {
+        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; } }
     @media screen and (max-width: 480px) {
-      nav.open ul.overlay li {
-        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif !important; } }
+      nav.open li a.menu-mob {
+        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; } }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
   nav ul {
@@ -383,7 +383,8 @@ nav.open {
             float: left;
             display: block;
             margin-right: 10%;
-            width: 173.3333333333%; }
+            width: 100%;
+            font-size: 0.8em; }
             #footer div.inner_footer ul li.copyright:last-child {
               margin-right: 0; } }
       #footer div.inner_footer ul li {
@@ -404,7 +405,7 @@ nav.open {
             margin-right: 10%;
             width: 100%;
             padding-bottom: 20px;
-            font-size: 0.7em; }
+            font-size: 0.8em; }
             #footer div.inner_footer ul li:last-child {
               margin-right: 0; } }
       #footer div.inner_footer ul a {
@@ -835,6 +836,17 @@ section.firm {
       @media screen and (max-width: 480px) {
         section.firm div.block div.description p.description-text-left {
           font-size: 0.9375rem; } }
+      @media screen and (max-width: 768px) {
+        section.firm div.block div.description p.description-text-left {
+          float: left;
+          display: block;
+          margin-right: 4.7619047619%;
+          width: 82.5396825397%;
+          font-size: 21px;
+          line-height: 27px;
+          margin-left: 0%; }
+          section.firm div.block div.description p.description-text-left:last-child {
+            margin-right: 0; } }
       @media screen and (max-width: 480px) {
         section.firm div.block div.description p.description-text-left {
           float: left;
@@ -866,6 +878,17 @@ section.firm {
       @media screen and (max-width: 480px) {
         section.firm div.block div.description p.description-text-right {
           font-size: 0.9375rem; } }
+      @media screen and (max-width: 768px) {
+        section.firm div.block div.description p.description-text-right {
+          float: left;
+          display: block;
+          margin-right: 4.7619047619%;
+          width: 82.5396825397%;
+          font-size: 21px;
+          line-height: 27px;
+          margin-left: 0%; }
+          section.firm div.block div.description p.description-text-right:last-child {
+            margin-right: 0; } }
       @media screen and (max-width: 480px) {
         section.firm div.block div.description p.description-text-right {
           float: left;
@@ -921,6 +944,17 @@ section.history {
       @media screen and (max-width: 480px) {
         section.history div.block div.description p.description-text-left {
           font-size: 0.9375rem; } }
+      @media screen and (max-width: 768px) {
+        section.history div.block div.description p.description-text-left {
+          float: left;
+          display: block;
+          margin-right: 4.7619047619%;
+          width: 82.5396825397%;
+          font-size: 21px;
+          line-height: 27px;
+          margin-left: 0%; }
+          section.history div.block div.description p.description-text-left:last-child {
+            margin-right: 0; } }
       @media screen and (max-width: 480px) {
         section.history div.block div.description p.description-text-left {
           float: left;
@@ -952,6 +986,17 @@ section.history {
       @media screen and (max-width: 480px) {
         section.history div.block div.description p.description-text-right {
           font-size: 0.9375rem; } }
+      @media screen and (max-width: 768px) {
+        section.history div.block div.description p.description-text-right {
+          float: left;
+          display: block;
+          margin-right: 4.7619047619%;
+          width: 82.5396825397%;
+          font-size: 21px;
+          line-height: 27px;
+          margin-left: 0%; }
+          section.history div.block div.description p.description-text-right:last-child {
+            margin-right: 0; } }
       @media screen and (max-width: 480px) {
         section.history div.block div.description p.description-text-right {
           float: left;
@@ -1007,6 +1052,17 @@ section.philosophy {
       @media screen and (max-width: 480px) {
         section.philosophy div.block div.description p.description-text-left {
           font-size: 0.9375rem; } }
+      @media screen and (max-width: 768px) {
+        section.philosophy div.block div.description p.description-text-left {
+          float: left;
+          display: block;
+          margin-right: 4.7619047619%;
+          width: 82.5396825397%;
+          font-size: 21px;
+          line-height: 27px;
+          margin-left: 0%; }
+          section.philosophy div.block div.description p.description-text-left:last-child {
+            margin-right: 0; } }
       @media screen and (max-width: 480px) {
         section.philosophy div.block div.description p.description-text-left {
           float: left;
@@ -1038,6 +1094,17 @@ section.philosophy {
       @media screen and (max-width: 480px) {
         section.philosophy div.block div.description p.description-text-right {
           font-size: 0.9375rem; } }
+      @media screen and (max-width: 768px) {
+        section.philosophy div.block div.description p.description-text-right {
+          float: left;
+          display: block;
+          margin-right: 4.7619047619%;
+          width: 82.5396825397%;
+          font-size: 21px;
+          line-height: 27px;
+          margin-left: 0%; }
+          section.philosophy div.block div.description p.description-text-right:last-child {
+            margin-right: 0; } }
       @media screen and (max-width: 480px) {
         section.philosophy div.block div.description p.description-text-right {
           float: left;
@@ -1456,6 +1523,17 @@ section.process {
       @media screen and (max-width: 480px) {
         section.process div.block div.description p.description-text-left {
           font-size: 0.9375rem; } }
+      @media screen and (max-width: 768px) {
+        section.process div.block div.description p.description-text-left {
+          float: left;
+          display: block;
+          margin-right: 4.7619047619%;
+          width: 82.5396825397%;
+          font-size: 21px;
+          line-height: 27px;
+          margin-left: 0%; }
+          section.process div.block div.description p.description-text-left:last-child {
+            margin-right: 0; } }
       @media screen and (max-width: 480px) {
         section.process div.block div.description p.description-text-left {
           float: left;
@@ -1487,6 +1565,17 @@ section.process {
       @media screen and (max-width: 480px) {
         section.process div.block div.description p.description-text-right {
           font-size: 0.9375rem; } }
+      @media screen and (max-width: 768px) {
+        section.process div.block div.description p.description-text-right {
+          float: left;
+          display: block;
+          margin-right: 4.7619047619%;
+          width: 82.5396825397%;
+          font-size: 21px;
+          line-height: 27px;
+          margin-left: 0%; }
+          section.process div.block div.description p.description-text-right:last-child {
+            margin-right: 0; } }
       @media screen and (max-width: 480px) {
         section.process div.block div.description p.description-text-right {
           float: left;
@@ -1528,6 +1617,17 @@ section.process_list {
       font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
       section.process_list div.block h2.title:last-child {
         margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        section.process_list div.block h2.title {
+          float: left;
+          display: block;
+          margin-right: 4.7619047619%;
+          width: 82.5396825397%;
+          font-size: 21px;
+          line-height: 27px;
+          margin-left: 0%; }
+          section.process_list div.block h2.title:last-child {
+            margin-right: 0; } }
     section.process_list div.block div.description ul.left {
       float: left;
       display: block;
@@ -1549,13 +1649,26 @@ section.process_list {
       section.process_list div.block div.description ul.left li {
         list-style-type: disc;
         line-height: 27px; }
+      @media screen and (max-width: 768px) {
+        section.process_list div.block div.description ul.left {
+          float: left;
+          display: block;
+          margin-right: 4.7619047619%;
+          width: 47.619047619%;
+          font-size: 21px;
+          line-height: 27px;
+          margin-left: 0%; }
+          section.process_list div.block div.description ul.left:last-child {
+            margin-right: 0; } }
       @media screen and (max-width: 480px) {
         section.process_list div.block div.description ul.left {
           float: left;
           display: block;
           margin-right: 10%;
           width: 100%;
-          margin-left: 20px; }
+          margin-left: 20px;
+          font-size: 16px;
+          line-height: 20px; }
           section.process_list div.block div.description ul.left:last-child {
             margin-right: 0; } }
     section.process_list div.block div.description ul.right {
@@ -1577,6 +1690,17 @@ section.process_list {
       @media screen and (max-width: 480px) {
         section.process_list div.block div.description ul.right {
           font-size: 0.9375rem; } }
+      @media screen and (max-width: 768px) {
+        section.process_list div.block div.description ul.right {
+          float: left;
+          display: block;
+          margin-right: 4.7619047619%;
+          width: 47.619047619%;
+          font-size: 21px;
+          line-height: 27px;
+          margin-left: 0%; }
+          section.process_list div.block div.description ul.right:last-child {
+            margin-right: 0; } }
       section.process_list div.block div.description ul.right li {
         list-style-type: disc;
         line-height: 27px; }
@@ -1586,7 +1710,9 @@ section.process_list {
           display: block;
           margin-right: 10%;
           width: 100%;
-          margin-left: 20px; }
+          margin-left: 20px;
+          font-size: 16px;
+          line-height: 20px; }
           section.process_list div.block div.description ul.right:last-child {
             margin-right: 0; } }
 
@@ -2198,7 +2324,8 @@ footer {
             float: left;
             display: block;
             margin-right: 10%;
-            width: 173.3333333333%; }
+            width: 100%;
+            font-size: 0.8em; }
             footer div.inner_footer ul li.copyright:last-child {
               margin-right: 0; } }
       footer div.inner_footer ul li {
@@ -2218,7 +2345,7 @@ footer {
             margin-right: 10%;
             width: 100%;
             padding-bottom: 20px;
-            font-size: 0.7em; }
+            font-size: 0.8em; }
             footer div.inner_footer ul li:last-child {
               margin-right: 0; } }
       footer div.inner_footer ul a {
@@ -2260,7 +2387,8 @@ footer.value {
             float: left;
             display: block;
             margin-right: 10%;
-            width: 173.3333333333%; }
+            width: 173.3333333333%;
+            font-size: 1em; }
             footer.value div.inner_footer-value ul li.copyright:last-child {
               margin-right: 0; } }
       footer.value div.inner_footer-value ul li {
@@ -2280,7 +2408,7 @@ footer.value {
             margin-right: 10%;
             width: 100%;
             padding-bottom: 20px;
-            font-size: 0.7em; }
+            font-size: 1em; }
             footer.value div.inner_footer-value ul li:last-child {
               margin-right: 0; } }
       footer.value div.inner_footer-value ul a {

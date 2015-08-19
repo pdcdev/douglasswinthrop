@@ -1028,6 +1028,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/people\/single\/luke-banner.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 70583,
+		"inputAbbreviatedPath": "\/images\/people\/single\/luke-banner.jpg",
+		"outputAbbreviatedPath": "\/images\/people\/single\/luke-banner.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/people\/single\/oak-banner.jpg": {
 		"fileType": 16384,
 		"ignore": 0,

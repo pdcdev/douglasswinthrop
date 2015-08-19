@@ -609,21 +609,21 @@ section.sliderContainer {
   position: relative;
   height: 550px;
   margin: 0 auto;
-  /*background: url('../images/people/single/lea-banner.jpg') center center no-repeat;
-  background-size: cover;*/ }
+  background: url("../images/people/single/luke-banner.jpg") center center no-repeat;
+  background-size: cover; }
   .page_banner_luke::after {
     clear: both;
     content: "";
     display: table; }
   @media screen and (max-width: 768px) {
     .page_banner_luke {
-      /*background: url('../images/people/single/lea-banner.jpg') no-repeat;
-      background-size: 100%;*/
+      background: url("../images/people/single/luke-banner.jpg") no-repeat;
+      background-size: 100%;
       height: 300px; } }
   @media screen and (max-width: 480px) {
     .page_banner_luke {
-      /*background: url('../images/people/single/lea-banner.jpg') no-repeat;
-      background-size: 100%;*/
+      background: url("../images/people/single/luke-banner.jpg") no-repeat;
+      background-size: 100%;
       height: 190px; } }
 
 .page_banner_charlie {
