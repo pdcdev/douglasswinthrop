@@ -2,7 +2,7 @@
         <div class="inner_footer">
             <ul>
                 <li class="copyright">© 1997-2015 Douglass Winthrop  All rights reserved</li>
-                <li><a href ="terms.php">Terms of Use</a></li>
+                <li><a href ="terms.php">Credits / Legal</a></li>
                 <li><a href ="contact.php">Contact</a></li>
             </ul>
         </div>
