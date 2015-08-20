@@ -76,7 +76,7 @@ do_something(list_of_stuff, "blue");*/
       margin-right: 0; } }
 
 h2.title-person-single {
-  color: #A3A9AC;
+  color: #004FB1;
   font-size: 1rem;
   float: left;
   display: block;
@@ -92,7 +92,8 @@ h2.title-person-single {
   h2.title-person-single:last-child {
     margin-right: 0; }
   h2.title-person-single p {
-    font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+    font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
+    color: #b2b2b2; }
   @media screen and (max-width: 768px) {
     h2.title-person-single {
       float: left;

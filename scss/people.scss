@@ -45,11 +45,12 @@
 }
 
 h2.title-person-single {
-    @include type($small, $gray);
+    @include type($small, $blue);
     @include span-columns(6);
     font-family: $frutigerBoldCond;
     p{
         font-family:$frutigerLightCond;
+        color: #b2b2b2;
     }
     @include media($tablet) {
         @include span-columns(12);
