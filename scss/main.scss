@@ -511,10 +511,19 @@ button.clicked:after {
 
 /* ---------- nav 5 ----------*/
 
-* {
-  transition: all ease-in-out 0.4s;
-  -webkit-transition: all ease-in-out 0.4s;
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) { 
+    .nav-tab{
+        visibility: visible;
+    } 
 }
+
+
+@media screen and (min-width: 768px) {
+    .nav-tab{
+        display: none;
+    } 
+}
+
 
 .nav-tab {
   width: 30px;
@@ -551,6 +560,8 @@ button.clicked:after {
   margin-top: 11px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+  transition: all ease-in-out 0.4s;
+  -webkit-transition: all ease-in-out 0.4s;
 }
 .mob-nav.clicked .nav-tab span.second-child {
   width: 0px;
@@ -565,6 +576,8 @@ button.clicked:after {
   margin-top: -21px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+  transition: all ease-in-out 0.4s;
+  -webkit-transition: all ease-in-out 0.4s;
 }
 
 
@@ -784,7 +797,7 @@ div.overlay-mobile {
 .btn-4:hover {
   background: #2775F6;
   @include media($mobile) {
-    background: $blue;
+    background: $gray;
 
   }
   p:hover {
@@ -1028,8 +1041,8 @@ section.firm {
         h2.title {
             padding-bottom: 30px;
             font-size: 1.5em;
-            color: $blue;
-            font-family: $frutigerLightCond;
+            color: $gray;
+            font-family: $frutigerBoldCond;
             @include media ($tablet) {
             }
         }
@@ -1091,8 +1104,8 @@ section.history {
         h2.title {
             padding-bottom: 30px;
             font-size: 1.5em;
-            color: $blue;
-            font-family: $frutigerLightCond;
+            color: $gray;
+            font-family: $frutigerBoldCond;
             @include media ($tablet) {
             }
         }
@@ -1156,8 +1169,8 @@ section.philosophy {
         h2.title {
             padding-bottom: 30px;
             font-size: 1.5em;
-            color: $blue;
-            font-family: $frutigerLightCond;
+            color: $gray;   
+            font-family: $frutigerBoldCond;
             @include media ($tablet) {
             }
         }
@@ -1257,8 +1270,8 @@ section.value {
                 padding-bottom: 30px;
                 line-height: 1.2em;
                 font-size: 1.5em;
-                color: $blue;
-                font-family: $frutigerLightCond;
+                color: $gray;
+                font-family: $frutigerBoldCond;
                 @include media ($tablet) {
                 }   
             }
@@ -1288,8 +1301,8 @@ section.value {
                 padding-bottom: 30px;
                 line-height: 1.2em;
                 font-size: 1.5em;
-                color: $blue;
-                font-family: $frutigerLightCond;
+                color: $gray;
+                font-family: $frutigerBoldCond;
                 @include media ($tablet) {
                 }    
             }
@@ -1331,8 +1344,8 @@ div.band-container-white {
                 padding-bottom: 30px;
                 line-height: 1.2em;
                 font-size: 1.5em;
-                color: $blue;
-                font-family: $frutigerLightCond;
+                color: $gray;
+                font-family: $frutigerBoldCond;
                 @include media ($tablet) {
                 }   
             }
@@ -1364,8 +1377,8 @@ div.band-container-white {
                 padding-bottom: 30px;
                 line-height: 1.2em;
                 font-size: 1.5em;
-                color: $blue;
-                font-family: $frutigerLightCond;
+                color: $gray;
+                font-family: $frutigerBoldCond;
                 @include media ($tablet) {
                 }    
             }
@@ -1479,8 +1492,8 @@ section.process {
         h2.title {
             padding-bottom: 30px;
             font-size: 1.5em;
-            color: $blue;
-            font-family: $frutigerLightCond;
+            color: $gray;
+            font-family: $frutigerBoldCond;
             @include media ($tablet) {
             }
         }
@@ -1543,8 +1556,8 @@ section.process_list {
             @include span-columns(12);
             padding-bottom: 30px;
             font-size: 1.5em;
-            color: $blue;
-            font-family: $frutigerLightCond;
+            color: $gray;
+            font-family: $frutigerBoldCond;
             @include media($tablet) {
                     @include span-columns(5);
                     font-size: 21px;
@@ -1655,15 +1668,14 @@ section.people {
             width: 100%;
             @include pad(0 1em);
             h1 {
-                line-height: 40px;
+                line-height: 35px;
                 color: #fff;
                 @include type($small, #fff);
-                font-family: $frutigerLightCond;
+                font-family: $frutigerBoldCond;
             }
             p {
                 line-height: 5px;
-                color:#fff;
-                font-size: 10pt;
+                @include type($small, #fff);
                 font-family: $frutigerLightCond;
             }
             p:hover {
@@ -1990,7 +2002,8 @@ section.contact_list {
             }
 
             p.address-info {
-                font-size: 1em;
+                font-size: 21px;
+                line-height: 27px;
                 font-family: $frutigerLightCond;
                 color: $gray;
             }
@@ -2070,33 +2083,11 @@ section.terms {
     @include outer-container;
     @extend .global_pad;
     padding-bottom: 100px;
-    ul.design-dev {
-        @include span-columns(12);
-        
-        color: $gray;
-        height: 100%;
-        border-bottom: 1px solid $gray;
-        @include media($mobile) {
-            @include span-columns(3);
-        }
-        li.design-dev {
-            @include span-columns(6);
-            font-family: $frutigerBoldCond;
-            padding-bottom: 30px;
-            @include media($mobile) {
-                @include span-columns(3);
-            }
-        }
-        li.pdc {
-            @include span-columns(6);
-            font-family: $frutigerLightCond;
-            padding-bottom: 30px;
-        } 
-    }
     ul.terms {
         @include span-columns(12);
         color: $gray;
-        padding-top: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid $gray;
         li.legal {
             font-family: $frutigerBoldCond;
             padding-bottom: 30px;
@@ -2110,6 +2101,30 @@ section.terms {
             }
         }
     }
+    ul.design-dev {
+        @include span-columns(12);
+        
+        color: $gray;
+        height: 100%;
+        
+        @include media($mobile) {
+            @include span-columns(3);
+        }
+        li.design-dev {
+            @include span-columns(6);
+            font-family: $frutigerBoldCond;
+            padding-top: 30px;
+            @include media($mobile) {
+                @include span-columns(3);
+            }
+        }
+        li.pdc {
+            @include span-columns(6);
+            font-family: $frutigerLightCond;
+            padding-top: 30px;
+        } 
+    }
+
 }
 
 /* ----------- FOOTER PAGE -----------------------*/
