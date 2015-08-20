@@ -45,7 +45,7 @@
 }
 
 h2.title-person-single {
-    @include type($small, $blue);
+    @include type($small, $gray);
     @include span-columns(6);
     font-family: $frutigerBoldCond;
     p{

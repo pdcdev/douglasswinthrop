@@ -25,7 +25,7 @@
 
             <ul class="design-dev">
                 <li class="design-dev">Website Design and Development</li>
-                <li class="pdc">Piscatello Design Centre</li>
+                <a href="http://www.piscatello.com" target="_blank"><li class="pdc">Piscatello Design Centre</li></a>
             </ul>
         </section>
         

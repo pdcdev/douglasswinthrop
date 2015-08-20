@@ -1039,8 +1039,8 @@ section.firm {
         @include span-columns(12);
         top: 0;
         h2.title {
-            padding-bottom: 30px;
-            font-size: 1.5em;
+            padding-bottom: 20px;
+            font-size: 19px;
             color: $gray;
             font-family: $frutigerBoldCond;
             @include media ($tablet) {
@@ -1052,13 +1052,13 @@ section.firm {
                 @include type($small, #b2b2b2);
                 line-height: 20px;
                 padding-bottom: 30px;
-                font-size: 21px;
-                line-height: 27px;
+                font-size: 19px;
+                line-height: 25px;
                 font-family: $frutigerLightCond;
                 @include media($tablet) {
                     @include span-columns(5);
-                    font-size: 21px;
-                    line-height: 27px;
+                    font-size: 19px;
+                    line-height: 25px;
                     @include shift(0);
                 }
                  @include media($mobile) {
@@ -1073,13 +1073,13 @@ section.firm {
                 @include type($small, #b2b2b2);
                 line-height: 20px;
                 padding-bottom: 30px;
-                font-size: 21px;
-                line-height: 27px;
+                font-size: 19px;
+                line-height: 25px;
                 font-family: $frutigerLightCond;
                 @include media($tablet) {
                     @include span-columns(5);
-                    font-size: 21px;
-                    line-height: 27px;
+                    font-size: 19px;
+                    line-height: 25px;
                     @include shift(0);
                 }
                  @include media($mobile) {
@@ -1102,8 +1102,8 @@ section.history {
         @include span-columns(12);
         top: 0;
         h2.title {
-            padding-bottom: 30px;
-            font-size: 1.5em;
+            padding-bottom: 20px;
+            font-size: 19px;
             color: $gray;
             font-family: $frutigerBoldCond;
             @include media ($tablet) {
@@ -1116,13 +1116,13 @@ section.history {
                 @include type($small, #b2b2b2);
                 line-height: 20px;
                 padding-bottom: 30px;
-                font-size: 21px;
-                line-height: 27px;
+                font-size: 19px;
+                line-height: 25px;
                 font-family: $frutigerLightCond;
                 @include media($tablet) {
                     @include span-columns(5);
-                    font-size: 21px;
-                    line-height: 27px;
+                    font-size: 19px;
+                    line-height: 25px;
                     @include shift(0);
                 }
                  @include media($mobile) {
@@ -1138,13 +1138,13 @@ section.history {
                 @include type($small, #b2b2b2);
                 line-height: 20px;
                 padding-bottom: 30px;
-                font-size: 21px;
-                line-height: 27px;
+                font-size: 19px;
+                line-height: 25px;
                 font-family: $frutigerLightCond;
                 @include media($tablet) {
                     @include span-columns(5);
-                    font-size: 21px;
-                    line-height: 27px;
+                    font-size: 19px;
+                    line-height: 25px;
                     @include shift(0);
                 }
                  @include media($mobile) {
@@ -1167,8 +1167,8 @@ section.philosophy {
         @include span-columns(12);
         top: 0;
         h2.title {
-            padding-bottom: 30px;
-            font-size: 1.5em;
+            padding-bottom: 20px;
+            font-size: 19px;
             color: $gray;   
             font-family: $frutigerBoldCond;
             @include media ($tablet) {
@@ -1180,13 +1180,13 @@ section.philosophy {
                 @include type($small, #b2b2b2);
                 line-height: 20px;
                 padding-bottom: 30px;
-                font-size: 21px;
-                line-height: 27px;
+                font-size: 19px;
+                line-height: 25px;
                 font-family: $frutigerLightCond;
                 @include media($tablet) {
                     @include span-columns(5);
-                    font-size: 21px;
-                    line-height: 27px;
+                    font-size: 19px;
+                    line-height: 25px;
                     @include shift(0);
                 }
                  @include media($mobile) {
@@ -1202,13 +1202,13 @@ section.philosophy {
                 @include type($small, #b2b2b2);
                 line-height: 20px;
                 padding-bottom: 30px;
-                font-size: 21px;
-                line-height: 27px;
+                font-size: 19px;
+                line-height: 25px;
                 font-family: $frutigerLightCond;
                 @include media($tablet) {
                     @include span-columns(5);
-                    font-size: 21px;
-                    line-height: 27px;
+                    font-size: 19px;
+                    line-height: 25px;
                     @include shift(0);
                 }
                  @include media($mobile) {
@@ -1267,17 +1267,17 @@ section.value {
                 @include span-columns(3);
             }
             h3.title {
-                padding-bottom: 30px;
+                padding-bottom: 20px;
                 line-height: 1.2em;
-                font-size: 1.5em;
+                font-size: 19px;
                 color: $gray;
                 font-family: $frutigerBoldCond;
                 @include media ($tablet) {
                 }   
             }
             p.value {
-                font-size: 21px;
-                line-height: 27px;
+                font-size: 19px;
+                line-height: 25px;
                 @include media($mobile) {
                     
                     font-size: 16px;
@@ -1298,23 +1298,22 @@ section.value {
                 @include shift(0);
             }
             h3.title {
-                padding-bottom: 30px;
+                padding-bottom: 20px;
                 line-height: 1.2em;
-                font-size: 1.5em;
+                font-size: 19px;
                 color: $gray;
                 font-family: $frutigerBoldCond;
                 @include media ($tablet) {
-                }    
+                }   
             }
             p.value {
-                font-size: 21px;
-                line-height: 27px;
+                font-size: 19px;
+                line-height: 25px;
                 @include media($mobile) {
-                    @include span-columns(3);
-                    @include shift(0);
+                    
                     font-size: 16px;
                     line-height: 20px;
-                    
+                
                 }
             }
 
@@ -1341,23 +1340,22 @@ div.band-container-white {
                 @include span-columns(3);
             }
             h3.title {
-                padding-bottom: 30px;
+                padding-bottom: 20px;
                 line-height: 1.2em;
-                font-size: 1.5em;
+                font-size: 19px;
                 color: $gray;
                 font-family: $frutigerBoldCond;
                 @include media ($tablet) {
                 }   
             }
             p.value {
-                font-size: 21px;
-                line-height: 27px;
+                font-size: 19px;
+                line-height: 25px;
                 @include media($mobile) {
-                    @include span-columns(3);
-                    @include shift(0);
+                    
                     font-size: 16px;
                     line-height: 20px;
-                    
+                
                 }
             }
             
@@ -1374,23 +1372,22 @@ div.band-container-white {
                 @include shift(0);
             }
             h3.title {
-                padding-bottom: 30px;
+                padding-bottom: 20px;
                 line-height: 1.2em;
-                font-size: 1.5em;
+                font-size: 19px;
                 color: $gray;
                 font-family: $frutigerBoldCond;
                 @include media ($tablet) {
-                }    
+                }   
             }
             p.value {
-                font-size: 21px;
-                line-height: 27px;
+                font-size: 19px;
+                line-height: 25px;
                 @include media($mobile) {
-                    @include span-columns(3);
-                    @include shift(0);
+                    
                     font-size: 16px;
                     line-height: 20px;
-                    
+                
                 }
             }
         } 
@@ -1490,8 +1487,8 @@ section.process {
         @include span-columns(12);
         top: 0;
         h2.title {
-            padding-bottom: 30px;
-            font-size: 1.5em;
+            padding-bottom: 20px;
+            font-size: 19px;
             color: $gray;
             font-family: $frutigerBoldCond;
             @include media ($tablet) {
@@ -1502,13 +1499,13 @@ section.process {
                 @include span-columns(5);
                 @include type($small, #b2b2b2);
                 padding-bottom: 30px;
-                font-size: 21px;
-                line-height: 27px;
+                font-size: 19px;
+                line-height: 25px;
                 font-family: $frutigerLightCond;
                 @include media($tablet) {
                     @include span-columns(5);
-                    font-size: 21px;
-                    line-height: 27px;
+                    font-size: 19px;
+                    line-height: 25px;
                     @include shift(0);
                 }
                  @include media($mobile) {
@@ -1524,13 +1521,13 @@ section.process {
                 @include type($small, #b2b2b2);
                 line-height: 20px;
                 padding-bottom: 30px;
-                font-size: 21px;
-                line-height: 27px;
+                font-size: 19px;
+                line-height: 25px;
                 font-family: $frutigerLightCond;
                 @include media($tablet) {
                     @include span-columns(5);
-                    font-size: 21px;
-                    line-height: 27px;
+                    font-size: 19px;
+                    line-height: 25px;
                     @include shift(0);
                 }
                  @include media($mobile) {
@@ -1554,14 +1551,14 @@ section.process_list {
         top: 0;
         h2.title {
             @include span-columns(12);
-            padding-bottom: 30px;
-            font-size: 1.5em;
+            padding-bottom: 20px;
+            font-size: 19px;
             color: $gray;
             font-family: $frutigerBoldCond;
             @include media($tablet) {
                     @include span-columns(5);
-                    font-size: 21px;
-                    line-height: 27px;
+                    font-size: 19px;
+                    line-height: 25px;;
                     @include shift(0);
                 }
             @include media ($tablet) {
@@ -1572,8 +1569,7 @@ section.process_list {
                 @include span-columns(5);
                 @include type($small, #b2b2b2);
                 padding-bottom: 30px;
-                font-size: 21px;
-                
+                font-size: 19px;
                 font-family: $frutigerLightCond;
                 li {
                     list-style-type: disc;
@@ -1581,8 +1577,8 @@ section.process_list {
                 }
                 @include media($tablet) {
                     @include span-columns(3);
-                    font-size: 21px;
-                    line-height: 27px;
+                    font-size: 19px;
+                    line-height: 25px;
                     @include shift(0);
                 }
                 @include media($mobile) {
@@ -1599,13 +1595,12 @@ section.process_list {
                 @include shift(1);
                 @include type($small, #b2b2b2);
                 padding-bottom: 30px;
-                font-size: 21px;
-                
+                font-size: 19px;
                 font-family: $frutigerLightCond;
                 @include media($tablet) {
                     @include span-columns(3);
-                    font-size: 21px;
-                    line-height: 27px;
+                    font-size: 19px;
+                    line-height: 25px;
                     @include shift(0);
                 }
                 li {
@@ -1996,14 +1991,14 @@ section.contact_list {
             padding: 0 30px 30px 0;
             h3.city-name {
                 font-family: $frutigerBoldCond;
-                font-size: 1.5em;;
-                color: $blue;
-                padding-bottom: 30px;
+                font-size: 19px;
+                color: $gray;
+                padding-bottom: 25px;
             }
 
             p.address-info {
-                font-size: 21px;
-                line-height: 27px;
+                font-size: 19px;
+                line-height: 25px;
                 font-family: $frutigerLightCond;
                 color: $gray;
             }
@@ -2122,7 +2117,14 @@ section.terms {
             @include span-columns(6);
             font-family: $frutigerLightCond;
             padding-top: 30px;
+        }
+        a {
+            color: $gray;
         } 
+        a:hover {
+            color: $blue;
+            font-family: $frutigerBoldCond;
+        }
     }
 
 }
