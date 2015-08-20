@@ -76,24 +76,19 @@ do_something(list_of_stuff, "blue");*/
       margin-right: 0; } }
 
 h2.title-person-single {
-  color: #A3A9AC;
-  font-size: 1rem;
   float: left;
   display: block;
   margin-right: 2.3255813953%;
   width: 48.8372093023%;
+  color: #A3A9AC;
+  font-size: 19px !important;
   font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif; }
-  @media screen and (max-width: 768px) {
-    h2.title-person-single {
-      font-size: 1rem; } }
-  @media screen and (max-width: 480px) {
-    h2.title-person-single {
-      font-size: 0.9375rem; } }
   h2.title-person-single:last-child {
     margin-right: 0; }
   h2.title-person-single p {
     font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
-    color: #b2b2b2; }
+    color: #b2b2b2;
+    font-size: 19px; }
   @media screen and (max-width: 768px) {
     h2.title-person-single {
       float: left;
@@ -119,16 +114,11 @@ div.description-person-single {
   margin-right: 2.3255813953%;
   width: 40.3100775194%;
   color: #A3A9AC;
-  font-size: 1rem;
+  font-size: 19px !important;
+  line-height: 25px;
   font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
   div.description-person-single:last-child {
     margin-right: 0; }
-  @media screen and (max-width: 768px) {
-    div.description-person-single {
-      font-size: 1rem; } }
-  @media screen and (max-width: 480px) {
-    div.description-person-single {
-      font-size: 0.9375rem; } }
   @media screen and (max-width: 768px) {
     div.description-person-single {
       float: left;
@@ -283,7 +273,7 @@ section.people-single-mobile {
         @media screen and (max-width: 768px) {
           section.people-single-mobile div.person-single div.person_name-single h1 {
             line-height: 25px;
-            font-size: 10pt; } }
+            font-size: 16px; } }
         @media screen and (max-width: 480px) {
           section.people-single-mobile div.person-single div.person_name-single h1 {
             line-height: 20px;
@@ -296,7 +286,7 @@ section.people-single-mobile {
         @media screen and (max-width: 768px) {
           section.people-single-mobile div.person-single div.person_name-single p {
             line-height: 15px;
-            font-size: 9pt; } }
+            font-size: 16px; } }
         @media screen and (max-width: 480px) {
           section.people-single-mobile div.person-single div.person_name-single p {
             line-height: 15px;

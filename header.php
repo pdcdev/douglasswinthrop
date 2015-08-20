@@ -23,11 +23,11 @@
 
             <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
 
-            <!-- <div id="nav-icon4">
+            <div id="nav-icon4">
               <span></span>
               <span></span>
               <span></span>
-            </div> -->
+            </div>
 
             <!-- <a class="burgWrapper" href="##">
               <div class="burg"></div>
@@ -38,7 +38,7 @@
             <!-- <div class="Trigger">
               <div class="Trigger-lines"></div>
             </div> -->
-            <div class="mob-nav">
+            <!-- <div class="mob-nav">
               <div class="nav-tab">
                 <a id="hamburger">
                   <span class="first-child">&nbsp;</span>
@@ -47,10 +47,10 @@
                   
                 </a>
               </div>
-            </div>
+            </div> -->
             
 
-            <!-- <nav class="open">
+            <nav class="open">
               <ul class="overlay">
                 <li><a class="menu-mob" href="index.php">Home</a></li>
                 <li><a class="menu-mob" href="firm.php">About</a></li>
@@ -60,7 +60,7 @@
                 <li><a class="menu-mob" href="letters.php">Letters</a></li>
                 <li><a class="menu-mob" href="contact.php">Contact</a></li>
               </ul>
-            </nav> -->
+            </nav>
 
             <div class="main-nav">
                 <ul>
