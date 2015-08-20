@@ -4,6 +4,9 @@
   <link href="http://fast.fonts.net/cssapi/c0791320-eb3a-41c7-8868-c0ceb0eb6a90.css" type="text/css" rel="stylesheet"/>
   <meta charset="UTF-8"> 
   <title>Douglass Winthrop</title>
+
+  <link rel="shortcut icon" type="image/x-icon" href="images/fav-dw.ico">
+
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
   <link href="css/reset.css" rel="stylesheet" type="text/css">
   <link href="css/main.css" rel="stylesheet" type="text/css">

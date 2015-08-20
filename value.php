@@ -9,7 +9,7 @@
                     </h1>
                 </div>
                 <div>
-                    <p>We are committed to providing our clientswith responsive service and proactive management of their financial affairs.</p>
+                    <p>We are committed to providing our clients with responsive service and proactive management of their financial affairs.</p>
                 </div>
             </div>
         </div><!-- end blue intro box -->

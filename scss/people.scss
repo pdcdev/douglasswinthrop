@@ -163,7 +163,7 @@ section.people-single-mobile {
             position: absolute;
             height: 60px;
             bottom: 0;
-            background-color: rgba($blue, 0.6);
+            background-color: rgba(black, 0.6);
             width: 100%;
             @include pad(0 1em);
             h1 {
@@ -207,7 +207,7 @@ section.people-single-mobile {
             }
         }
         div.person_name:hover {
-            background-color: rgba(black, 0.6);
+            background-color: #004fb1;
         }
     }
 }
