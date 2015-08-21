@@ -62,13 +62,13 @@ html, body {
   align-items: center;
   /*justify-content: center;*/ }
 
-.global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, .page_banner div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.people-single, section.letters_list, section.contact_list, section.terms, footer div.inner_footer, footer.value div.inner_footer-value {
+.global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.letters_list, section.contact_list, section.terms, footer div.inner_footer, footer.value div.inner_footer-value {
   padding: 1.5em 40px; }
   @media screen and (max-width: 768px) {
-    .global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, .page_banner div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.people-single, section.letters_list, section.contact_list, section.terms, footer div.inner_footer, footer.value div.inner_footer-value {
+    .global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.letters_list, section.contact_list, section.terms, footer div.inner_footer, footer.value div.inner_footer-value {
       padding: 2em 40px; } }
   @media screen and (max-width: 480px) {
-    .global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, .page_banner div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.people-single, section.letters_list, section.contact_list, section.terms, footer div.inner_footer, footer.value div.inner_footer-value {
+    .global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.letters_list, section.contact_list, section.terms, footer div.inner_footer, footer.value div.inner_footer-value {
       padding: 2em 30px; } }
 
 .sidepad, .inner_header {
@@ -627,7 +627,8 @@ button.clicked:after {
             display: block;
             margin-right: 10%;
             width: 100%;
-            font-size: 0.8em; }
+            font-size: 19px;
+            line-height: 25px; }
             #footer div.inner_footer ul li.copyright:last-child {
               margin-right: 0; } }
       #footer div.inner_footer ul li {
@@ -648,7 +649,8 @@ button.clicked:after {
             margin-right: 10%;
             width: 100%;
             padding-bottom: 20px;
-            font-size: 0.8em; }
+            font-size: 19px;
+            line-height: 25px; }
             #footer div.inner_footer ul li:last-child {
               margin-right: 0; } }
       #footer div.inner_footer ul a {
@@ -820,17 +822,36 @@ div.overlay-mobile {
         border-bottom: 1px solid #fff; } }
 
 .btn-4:hover {
-  background: #2775F6; }
+  background: #A3A9AC; }
+  @media screen and (max-width: 768px) {
+    .btn-4:hover {
+      background: #A3A9AC;
+      -webkit-tap-highlight-color: #A3A9AC; } }
   @media screen and (max-width: 480px) {
     .btn-4:hover {
-      background: #A3A9AC; } }
+      background: #A3A9AC;
+      -webkit-tap-highlight-color: #A3A9AC; } }
   @media screen and (max-width: 480px) {
     .btn-4:hover p:hover {
       color: #fff; } }
 
+@media screen and (max-width: 768px) {
+  .btn:active {
+    background-color: #A3A9AC;
+    -webkit-tap-highlight-color: #A3A9AC; } }
+@media screen and (max-width: 480px) {
+  .btn:active {
+    background-color: #A3A9AC;
+    -webkit-tap-highlight-color: #A3A9AC; } }
+
+@media screen and (max-width: 768px) {
+  .btn a:active {
+    background-color: #fff;
+    -webkit-tap-highlight-color: #fff; } }
 @media screen and (max-width: 480px) {
   .btn a:active {
-    color: #004FB1; } }
+    background-color: #fff;
+    -webkit-tap-highlight-color: #fff; } }
 
 /* -----------------------------END BUTTONS ------------------------*/
 /* -----------------------------END BUTTONS ------------------------*/
@@ -908,81 +929,82 @@ hr {
 
   section.letters_list-mob {
     display: none; } }
-/* ----------- ABOUT PAGE -----------------------*/
-/* ----------- ABOUT PAGE -----------------------*/
-/* ----------- ABOUT PAGE -----------------------*/
-/* ----------- ABOUT PAGE -----------------------*/
-.page_banner {
-  position: relative; }
-  .page_banner div.intro-box {
-    width: 100%;
-    height: 200px;
-    background-color: #004FB1; }
-    @media screen and (max-width: 768px) {
-      .page_banner div.intro-box {
-        height: 250px; } }
-    .page_banner div.intro-box div.inner_banner {
-      max-width: 75em;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      position: relative;
-      height: 100%; }
-      .page_banner div.intro-box div.inner_banner::after {
-        clear: both;
-        content: "";
-        display: table; }
-      .page_banner div.intro-box div.inner_banner div.page-name {
-        float: left;
-        display: block;
-        margin-right: 2.3255813953%;
-        width: 48.8372093023%; }
-        .page_banner div.intro-box div.inner_banner div.page-name:last-child {
-          margin-right: 0; }
-        .page_banner div.intro-box div.inner_banner div.page-name h1 {
-          font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
-          font-size: 1.5em;
-          line-height: 15px;
-          color: #b2b2b2;
-          padding-bottom: 50px; }
-        @media screen and (max-width: 480px) {
-          .page_banner div.intro-box div.inner_banner div.page-name h1.terms {
-            float: left;
-            display: block;
-            margin-right: 10%;
-            width: 210%; }
-            .page_banner div.intro-box div.inner_banner div.page-name h1.terms:last-child {
-              margin-right: 0; } }
-      .page_banner div.intro-box div.inner_banner div p {
-        float: left;
-        display: block;
-        margin-right: 2.3255813953%;
-        width: 40.3100775194%;
-        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
+/*--------- blue intro box -----*/
+div.intro-box {
+  width: 100%;
+  height: 200px;
+  background-color: #004FB1; }
+  @media screen and (max-width: 768px) {
+    div.intro-box {
+      height: 250px; } }
+  div.intro-box div.inner_banner {
+    max-width: 75em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    height: 100%; }
+    div.intro-box div.inner_banner::after {
+      clear: both;
+      content: "";
+      display: table; }
+    div.intro-box div.inner_banner div.page-name {
+      float: left;
+      display: block;
+      margin-right: 2.3255813953%;
+      width: 48.8372093023%; }
+      div.intro-box div.inner_banner div.page-name:last-child {
+        margin-right: 0; }
+      div.intro-box div.inner_banner div.page-name h1 {
+        font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
         font-size: 1.5em;
-        line-height: 1.2;
-        color: #b2b2b2; }
-        .page_banner div.intro-box div.inner_banner div p:last-child {
-          margin-right: 0; }
-        @media screen and (max-width: 768px) {
-          .page_banner div.intro-box div.inner_banner div p {
-            float: left;
-            display: block;
-            margin-right: 4.7619047619%;
-            width: 47.619047619%; }
-            .page_banner div.intro-box div.inner_banner div p:last-child {
-              margin-right: 0; } }
-        @media screen and (max-width: 480px) {
-          .page_banner div.intro-box div.inner_banner div p {
-            float: left;
-            display: block;
-            margin-right: 10%;
-            width: 100%;
-            font-size: 1em; }
-            .page_banner div.intro-box div.inner_banner div p:last-child {
-              margin-right: 0; } }
+        line-height: 15px;
+        color: #b2b2b2;
+        padding-bottom: 50px; }
+      @media screen and (max-width: 480px) {
+        div.intro-box div.inner_banner div.page-name h1.terms {
+          float: left;
+          display: block;
+          margin-right: 10%;
+          width: 210%;
+          font-size: 19px !important; }
+          div.intro-box div.inner_banner div.page-name h1.terms:last-child {
+            margin-right: 0; } }
+    div.intro-box div.inner_banner div p {
+      float: left;
+      display: block;
+      margin-right: 2.3255813953%;
+      width: 40.3100775194%;
+      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
+      font-size: 1.5em;
+      line-height: 1.2;
+      color: #b2b2b2; }
+      div.intro-box div.inner_banner div p:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        div.intro-box div.inner_banner div p {
+          float: left;
+          display: block;
+          margin-right: 4.7619047619%;
+          width: 47.619047619%; }
+          div.intro-box div.inner_banner div p:last-child {
+            margin-right: 0; } }
+      @media screen and (max-width: 480px) {
+        div.intro-box div.inner_banner div p {
+          float: left;
+          display: block;
+          margin-right: 10%;
+          width: 100%;
+          font-size: 19px;
+          line-height: 25px; }
+          div.intro-box div.inner_banner div p:last-child {
+            margin-right: 0; } }
 
+/* ----------- ABOUT PAGE -----------------------*/
+/* ----------- ABOUT PAGE -----------------------*/
+/* ----------- ABOUT PAGE -----------------------*/
+/* ----------- ABOUT PAGE -----------------------*/
 div.actual-banner-about {
   max-width: 75em;
   margin-left: auto;
@@ -1100,8 +1122,8 @@ section.firm {
           display: block;
           margin-right: 10%;
           width: 100%;
-          font-size: 16px;
-          line-height: 20px; }
+          font-size: 19px;
+          line-height: 25px; }
           section.firm div.block div.description p.description-text-left:last-child {
             margin-right: 0; } }
     section.firm div.block div.description p.description-text-right {
@@ -1143,8 +1165,8 @@ section.firm {
           margin-right: 10%;
           width: 100%;
           margin-left: 0%;
-          font-size: 16px;
-          line-height: 20px; }
+          font-size: 19px;
+          line-height: 25px; }
           section.firm div.block div.description p.description-text-right:last-child {
             margin-right: 0; } }
 
@@ -1208,8 +1230,8 @@ section.history {
           display: block;
           margin-right: 10%;
           width: 100%;
-          font-size: 16px;
-          line-height: 20px; }
+          font-size: 19px;
+          line-height: 25px; }
           section.history div.block div.description p.description-text-left:last-child {
             margin-right: 0; } }
     section.history div.block div.description p.description-text-right {
@@ -1251,8 +1273,8 @@ section.history {
           margin-right: 10%;
           width: 100%;
           margin-left: 0%;
-          font-size: 16px;
-          line-height: 20px; }
+          font-size: 19px;
+          line-height: 25px; }
           section.history div.block div.description p.description-text-right:last-child {
             margin-right: 0; } }
 
@@ -1316,8 +1338,8 @@ section.philosophy {
           display: block;
           margin-right: 10%;
           width: 100%;
-          font-size: 16px;
-          line-height: 20px; }
+          font-size: 19px;
+          line-height: 25px; }
           section.philosophy div.block div.description p.description-text-left:last-child {
             margin-right: 0; } }
     section.philosophy div.block div.description p.description-text-right {
@@ -1359,8 +1381,8 @@ section.philosophy {
           margin-right: 10%;
           width: 100%;
           margin-left: 0%;
-          font-size: 16px;
-          line-height: 20px; }
+          font-size: 19px;
+          line-height: 25px; }
           section.philosophy div.block div.description p.description-text-right:last-child {
             margin-right: 0; } }
 
@@ -1448,8 +1470,8 @@ section.value {
         line-height: 25px; }
         @media screen and (max-width: 480px) {
           section.value div.block-value section.description-text-left p.value {
-            font-size: 16px;
-            line-height: 20px; } }
+            font-size: 19px;
+            line-height: 25px; } }
     section.value div.block-value section.description-text-right {
       float: left;
       display: block;
@@ -1489,8 +1511,8 @@ section.value {
         line-height: 25px; }
         @media screen and (max-width: 480px) {
           section.value div.block-value section.description-text-right p.value {
-            font-size: 16px;
-            line-height: 20px; } }
+            font-size: 19px;
+            line-height: 25px; } }
 
 div.band-container-white {
   background-color: #fff;
@@ -1543,8 +1565,8 @@ div.band-container-white {
         line-height: 25px; }
         @media screen and (max-width: 480px) {
           div.band-container-white div.block-value section.description-text-left p.value {
-            font-size: 16px;
-            line-height: 20px; } }
+            font-size: 19px;
+            line-height: 25px; } }
     div.band-container-white div.block-value section.description-text-right {
       float: left;
       display: block;
@@ -1584,8 +1606,8 @@ div.band-container-white {
         line-height: 25px; }
         @media screen and (max-width: 480px) {
           div.band-container-white div.block-value section.description-text-right p.value {
-            font-size: 16px;
-            line-height: 20px; } }
+            font-size: 19px;
+            line-height: 25px; } }
 
 div.band-container-gray .white {
   background-color: white; }
@@ -1766,8 +1788,8 @@ section.process {
           display: block;
           margin-right: 10%;
           width: 100%;
-          font-size: 16px;
-          line-height: 20px; }
+          font-size: 19px;
+          line-height: 25px; }
           section.process div.block div.description p.description-text-left:last-child {
             margin-right: 0; } }
     section.process div.block div.description p.description-text-right {
@@ -1809,8 +1831,8 @@ section.process {
           margin-right: 10%;
           width: 100%;
           margin-left: 0%;
-          font-size: 16px;
-          line-height: 20px; }
+          font-size: 19px;
+          line-height: 25px; }
           section.process div.block div.description p.description-text-right:last-child {
             margin-right: 0; } }
 
@@ -1854,6 +1876,10 @@ section.process_list {
           margin-left: 0%; }
           section.process_list div.block h2.title:last-child {
             margin-right: 0; } }
+      @media screen and (max-width: 480px) {
+        section.process_list div.block h2.title {
+          font-size: 19px;
+          line-height: 25px; } }
     section.process_list div.block div.description ul.left {
       float: left;
       display: block;
@@ -1893,8 +1919,8 @@ section.process_list {
           margin-right: 10%;
           width: 100%;
           margin-left: 20px;
-          font-size: 16px;
-          line-height: 20px; }
+          font-size: 19px;
+          line-height: 25px; }
           section.process_list div.block div.description ul.left:last-child {
             margin-right: 0; } }
     section.process_list div.block div.description ul.right {
@@ -1937,8 +1963,8 @@ section.process_list {
           margin-right: 10%;
           width: 100%;
           margin-left: 20px;
-          font-size: 16px;
-          line-height: 20px; }
+          font-size: 19px;
+          line-height: 25px; }
           section.process_list div.block div.description ul.right:last-child {
             margin-right: 0; } }
 
@@ -2054,81 +2080,72 @@ section.person-info {
     font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
     font-size: 1.5em; }
 
-section.people-single {
-  max-width: 75em;
-  margin-left: auto;
-  margin-right: auto; }
-  section.people-single::after {
-    clear: both;
-    content: "";
-    display: table; }
-  section.people-single div.person-single {
-    float: left;
-    display: block;
-    margin-right: 2.3255813953%;
-    width: 23.2558139535%;
-    background-color: #eee;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    position: relative; }
-    section.people-single div.person-single:last-child {
-      margin-right: 0; }
-    section.people-single div.person-single:nth-child(4n) {
-      margin-right: 0; }
-    section.people-single div.person-single:nth-child(4n+1) {
-      clear: left; }
-    @media screen and (max-width: 768px) {
-      section.people-single div.person-single {
-        float: left;
-        display: block;
-        margin-right: 4.7619047619%;
-        width: 47.619047619%; }
-        section.people-single div.person-single:last-child {
-          margin-right: 0; }
-        section.people-single div.person-single:nth-child(2n) {
-          margin-right: 0; }
-        section.people-single div.person-single:nth-child(2n+1) {
-          clear: left; } }
-    section.people-single div.person-single div.person_name-single {
-      position: absolute;
-      height: 60px;
-      bottom: 0;
-      /*background-color: rgba(black, 0.6);*/
-      width: 100%;
-      padding: 0 1em; }
-      section.people-single div.person-single div.person_name-single h1 {
-        line-height: 35px;
-        color: #fff;
-        color: #fff;
-        font-size: 1rem;
-        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
-        @media screen and (max-width: 768px) {
-          section.people-single div.person-single div.person_name-single h1 {
-            font-size: 1rem; } }
-        @media screen and (max-width: 480px) {
-          section.people-single div.person-single div.person_name-single h1 {
-            font-size: 0.9375rem; } }
-        @media screen and (max-width: 768px) {
-          section.people-single div.person-single div.person_name-single h1 {
-            line-height: 25px;
-            font-size: 10pt; } }
-      section.people-single div.person-single div.person_name-single p {
-        line-height: 20px;
-        color: #fff;
-        font-size: 10pt;
-        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
-        @media screen and (max-width: 768px) {
-          section.people-single div.person-single div.person_name-single p {
-            line-height: 15px;
-            font-size: 9pt; } }
-      section.people-single div.person-single div.person_name-single p:hover {
-        opacity: 1; }
-      section.people-single div.person-single div.person_name-single a {
-        color: #fff;
-        text-decoration: none; }
-    section.people-single div.person-single div.person_name:hover {
-      /*background-color: rgba($blue, 0.6);*/ }
+/*section.people-single {
+    @include outer-container;
+    @extend .global_pad;
+    div.person-single {
+        @include span-columns(3);
+        @include omega(4n);
+        background-color: #eee;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        position: relative;
+        @include media($tablet) {
+            @include span-columns(3);
+            @include omega(2n);
+        }
+        
+        img.person_headshot:hover {
+           
+        }
 
+        div.person_name-single {
+            position: absolute;
+            height: 60px;
+            bottom: 0;
+            
+            width: 100%;
+            @include pad(0 1em);
+            h1 {
+                line-height: 35px;
+                color: #fff;
+                @include type($small, #fff);
+                font-family: $frutigerLightCond;
+                @include media($tablet) {
+                    line-height: 20px;
+                    font-size: 10pt;
+                }
+                @include media($mobile) {
+                    line-height: 15px;
+                    font-size: 10pt;
+                }
+            }
+            p {
+                line-height: 20px;
+                color:#fff;
+                font-size: 10pt;
+                font-family: $frutigerLightCond;
+                @include media($tablet) {
+                    line-height: 15px;
+                    font-size:9pt;
+                }
+            }
+            p:hover {
+                opacity: 1;
+            }
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+            a:hover{
+                
+            }
+        }
+        div.person_name:hover {
+            
+        }
+    }
+}*/
 div.band-container-gray {
   background-color: #eee;
   width: 100%;
@@ -2385,6 +2402,8 @@ section.contact_list {
           width: 100%; }
           section.contact_list div.contact div.city-img:last-child {
             margin-right: 0; } }
+    section.contact_list div.contact a.contact {
+      text-decoration: none; }
 
 #map-canvas {
   min-height: 500px;
@@ -2563,7 +2582,8 @@ footer {
             display: block;
             margin-right: 10%;
             width: 100%;
-            font-size: 0.8em; }
+            font-size: 19px;
+            line-height: 25px; }
             footer div.inner_footer ul li.copyright:last-child {
               margin-right: 0; } }
       footer div.inner_footer ul li {
@@ -2583,7 +2603,8 @@ footer {
             margin-right: 10%;
             width: 100%;
             padding-bottom: 20px;
-            font-size: 0.8em; }
+            font-size: 19px;
+            line-height: 25px; }
             footer div.inner_footer ul li:last-child {
               margin-right: 0; } }
       footer div.inner_footer ul a {
@@ -2646,7 +2667,8 @@ footer.value {
             margin-right: 10%;
             width: 100%;
             padding-bottom: 20px;
-            font-size: 1em; }
+            font-size: 19px;
+            line-height: 25px; }
             footer.value div.inner_footer-value ul li:last-child {
               margin-right: 0; } }
       footer.value div.inner_footer-value ul a {

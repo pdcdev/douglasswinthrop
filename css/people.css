@@ -48,13 +48,13 @@ do_something(list_of_stuff, "blue");*/
   align-items: center;
   /*justify-content: center;*/ }
 
-.global_pad, div.intro-box div.inner_banner, section.people-single-mobile, section.sliderContainer {
+.global_pad, section.people-single-mobile, section.sliderContainer {
   padding: 2em 40px; }
   @media screen and (max-width: 768px) {
-    .global_pad, div.intro-box div.inner_banner, section.people-single-mobile, section.sliderContainer {
+    .global_pad, section.people-single-mobile, section.sliderContainer {
       padding: 2em 40px; } }
   @media screen and (max-width: 480px) {
-    .global_pad, div.intro-box div.inner_banner, section.people-single-mobile, section.sliderContainer {
+    .global_pad, section.people-single-mobile, section.sliderContainer {
       padding: 2em 30px; } }
 
 .sidepad, .inner_header {
@@ -138,76 +138,6 @@ div.description-person-single {
       div.description-person-single:last-child {
         margin-right: 0; } }
 
-/*--------- blue intro box -----*/
-div.intro-box {
-  width: 100%;
-  height: 200px;
-  background-color: #004FB1; }
-  @media screen and (max-width: 768px) {
-    div.intro-box {
-      height: 250px; } }
-  div.intro-box div.inner_banner {
-    max-width: 75em;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    position: relative;
-    height: 100%; }
-    div.intro-box div.inner_banner::after {
-      clear: both;
-      content: "";
-      display: table; }
-    div.intro-box div.inner_banner div.page-name {
-      float: left;
-      display: block;
-      margin-right: 2.3255813953%;
-      width: 48.8372093023%; }
-      div.intro-box div.inner_banner div.page-name:last-child {
-        margin-right: 0; }
-      div.intro-box div.inner_banner div.page-name h1 {
-        font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
-        font-size: 1.5em;
-        line-height: 15px;
-        color: #b2b2b2;
-        padding-bottom: 50px; }
-      @media screen and (max-width: 480px) {
-        div.intro-box div.inner_banner div.page-name h1.terms {
-          float: left;
-          display: block;
-          margin-right: 10%;
-          width: 210%; }
-          div.intro-box div.inner_banner div.page-name h1.terms:last-child {
-            margin-right: 0; } }
-    div.intro-box div.inner_banner div p {
-      float: left;
-      display: block;
-      margin-right: 2.3255813953%;
-      width: 40.3100775194%;
-      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
-      font-size: 1.5em;
-      line-height: 1.2;
-      color: #b2b2b2; }
-      div.intro-box div.inner_banner div p:last-child {
-        margin-right: 0; }
-      @media screen and (max-width: 768px) {
-        div.intro-box div.inner_banner div p {
-          float: left;
-          display: block;
-          margin-right: 4.7619047619%;
-          width: 47.619047619%; }
-          div.intro-box div.inner_banner div p:last-child {
-            margin-right: 0; } }
-      @media screen and (max-width: 480px) {
-        div.intro-box div.inner_banner div p {
-          float: left;
-          display: block;
-          margin-right: 10%;
-          width: 100%;
-          font-size: 1em; }
-          div.intro-box div.inner_banner div p:last-child {
-            margin-right: 0; } }
-
 @media screen and (max-width: 768px) {
   section.sliderContainer {
     display: none !important; } }
@@ -259,7 +189,7 @@ section.people-single-mobile {
       width: 100%;
       padding: 0 1em; }
       section.people-single-mobile div.person-single div.person_name-single h1 {
-        line-height: 35px;
+        line-height: 25px;
         color: #fff;
         color: #fff;
         font-size: 1rem;
@@ -272,25 +202,12 @@ section.people-single-mobile {
             font-size: 0.9375rem; } }
         @media screen and (max-width: 768px) {
           section.people-single-mobile div.person-single div.person_name-single h1 {
-            line-height: 25px;
-            font-size: 16px; } }
+            line-height: 45px;
+            font-size: 0.9em !important; } }
         @media screen and (max-width: 480px) {
           section.people-single-mobile div.person-single div.person_name-single h1 {
-            line-height: 20px;
-            font-size: 8pt; } }
-      section.people-single-mobile div.person-single div.person_name-single p {
-        line-height: 20px;
-        color: #fff;
-        font-size: 10pt;
-        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
-        @media screen and (max-width: 768px) {
-          section.people-single-mobile div.person-single div.person_name-single p {
-            line-height: 15px;
-            font-size: 16px; } }
-        @media screen and (max-width: 480px) {
-          section.people-single-mobile div.person-single div.person_name-single p {
-            line-height: 15px;
-            font-size: 8pt; } }
+            padding-top: 10px;
+            line-height: 20px; } }
       section.people-single-mobile div.person-single div.person_name-single p:hover {
         opacity: 1; }
       section.people-single-mobile div.person-single div.person_name-single a {

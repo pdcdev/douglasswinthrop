@@ -620,7 +620,8 @@ button.clicked:after {
                 @include span-columns(6);
                 @include media($mobile) {
                     @include span-columns(3);
-                    font-size: 0.8em;
+                    font-size: 19px;
+                    line-height: 25px;
                 }
             }
             li {
@@ -632,7 +633,8 @@ button.clicked:after {
                 @include media($mobile) {
                     @include span-columns(3);
                     padding-bottom: 20px;
-                    font-size: 0.8em;
+                    font-size: 19px;
+                    line-height: 25px;
                 }
             }
             a {
@@ -795,9 +797,14 @@ div.overlay-mobile {
 }
 
 .btn-4:hover {
-  background: #2775F6;
+  background: $gray;
+  @include media($tablet) {
+    background: $gray;
+    -webkit-tap-highlight-color: $gray;
+  }
   @include media($mobile) {
     background: $gray;
+    -webkit-tap-highlight-color: $gray;
 
   }
   p:hover {
@@ -806,10 +813,25 @@ div.overlay-mobile {
         }
     }
 }
+.btn:active {
+    @include media($tablet) {
+        background-color: $gray;
+        -webkit-tap-highlight-color: $gray;
+    }
+    @include media($mobile) {
+        background-color: $gray;
+        -webkit-tap-highlight-color: $gray;
+    }
+}
 
 .btn a:active {
+    @include media($tablet) {
+        background-color: #fff;
+        -webkit-tap-highlight-color: #fff;
+    }
     @include media($mobile) {
-        color: $blue;
+        background-color: #fff;
+        -webkit-tap-highlight-color: #fff;
     }
 }
 
@@ -925,63 +947,67 @@ hr {
 
 }
 
-/* ----------- ABOUT PAGE -----------------------*/
-/* ----------- ABOUT PAGE -----------------------*/
-/* ----------- ABOUT PAGE -----------------------*/
-/* ----------- ABOUT PAGE -----------------------*/
+
+/*--------- blue intro box -----*/
 
 
-.page_banner {
-    position: relative;
-    div.intro-box {
-        width: 100%;
-        height: 200px;
-        background-color: $blue;
-        @include media($tablet) {
-            height: 250px;
-        }
-        
-        div.inner_banner {
-            @include outer-container;
-            @extend .global_pad;
-            padding-top: 50px;
-            padding-bottom: 50px;
-            position: relative;
-            height: 100%;
-            div.page-name {
-                @include span-columns(6);
-                h1 {
-                    font-family: $frutigerBoldCond;
-                    font-size: 1.5em; 
-                    line-height: 15px;
-                    color: #b2b2b2;
-                    padding-bottom: 50px;
-                }
-                 @include media($mobile) {
-                    h1.terms {
-                        @include span-columns(6);
-                    }
+div.intro-box {
+    width: 100%;
+    height: 200px;
+    background-color: $blue;
+    @include media($tablet) {
+        height: 250px;
+    }
+    
+    div.inner_banner {
+        @include outer-container;
+        @extend .global_pad;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        position: relative;
+        height: 100%;
+        div.page-name {
+            @include span-columns(6);
+            h1 {
+                font-family: $frutigerBoldCond;
+                font-size: 1.5em; 
+                line-height: 15px;
+                color: #b2b2b2;
+                padding-bottom: 50px;
+            }
+             @include media($mobile) {
+                h1.terms {
+                    @include span-columns(6);
+                    font-size: 19px !important; 
                 }
             }
-            div {
-                p {
-                    @include span-columns(5);
-                    font-family: $frutigerLightCond;
-                    font-size: 1.5em;
-                    line-height: 1.2;
-                    color: #b2b2b2;
-                    @include media($tablet) {
-                        @include span-columns(3);
-                    }
-                    @include media($mobile) {
-                        @include span-columns(3);
-                        font-size: 1em;
-                    }
+        }
+        div {
+            p {
+                @include span-columns(5);
+                font-family: $frutigerLightCond;
+                font-size: 1.5em;
+                line-height: 1.2;
+                color: #b2b2b2;
+                @include media($tablet) {
+                    @include span-columns(3);
+                }
+                @include media($mobile) {
+                    @include span-columns(3);
+                    font-size: 19px;
+                    line-height: 25px;
                 }
             }
         }
     }
 }
+
+
+/* ----------- ABOUT PAGE -----------------------*/
+/* ----------- ABOUT PAGE -----------------------*/
+/* ----------- ABOUT PAGE -----------------------*/
+/* ----------- ABOUT PAGE -----------------------*/
+
 
 div.actual-banner-about {
 @include outer-container;
@@ -1063,8 +1089,8 @@ section.firm {
                 }
                  @include media($mobile) {
                     @include span-columns(3);
-                    font-size: 16px;
-                    line-height: 20px;
+                    font-size: 19px;
+                    line-height: 25px;
                 }
             }
             p.description-text-right {
@@ -1085,8 +1111,8 @@ section.firm {
                  @include media($mobile) {
                     @include span-columns(3);
                     @include shift(0);
-                    font-size: 16px;
-                    line-height: 20px;
+                    font-size: 19px;
+                    line-height: 25px;
                     
                 }
             }
@@ -1127,8 +1153,8 @@ section.history {
                 }
                  @include media($mobile) {
                     @include span-columns(3);
-                    font-size: 16px;
-                    line-height: 20px;
+                     font-size: 19px;
+                    line-height: 25px;
                     
                 }
             }
@@ -1150,8 +1176,8 @@ section.history {
                  @include media($mobile) {
                     @include span-columns(3);
                     @include shift(0);
-                    font-size: 16px;
-                    line-height: 20px;
+                     font-size: 19px;
+                    line-height: 25px;
                     
                 }
             }
@@ -1191,8 +1217,8 @@ section.philosophy {
                 }
                  @include media($mobile) {
                     @include span-columns(3);
-                    font-size: 16px;
-                    line-height: 20px;
+                     font-size: 19px;
+                    line-height: 25px;
                     
                 }
             }
@@ -1214,8 +1240,8 @@ section.philosophy {
                  @include media($mobile) {
                     @include span-columns(3);
                     @include shift(0);
-                    font-size: 16px;
-                    line-height: 20px;
+                     font-size: 19px;
+                    line-height: 25px;  
                     
                 }
             }
@@ -1279,10 +1305,8 @@ section.value {
                 font-size: 19px;
                 line-height: 25px;
                 @include media($mobile) {
-                    
-                    font-size: 16px;
-                    line-height: 20px;
-                
+                    font-size: 19px;
+                    line-height: 25px;
                 }
             }
         }
@@ -1310,9 +1334,8 @@ section.value {
                 font-size: 19px;
                 line-height: 25px;
                 @include media($mobile) {
-                    
-                    font-size: 16px;
-                    line-height: 20px;
+                    font-size: 19px;
+                    line-height: 25px; 
                 
                 }
             }
@@ -1352,9 +1375,8 @@ div.band-container-white {
                 font-size: 19px;
                 line-height: 25px;
                 @include media($mobile) {
-                    
-                    font-size: 16px;
-                    line-height: 20px;
+                    font-size: 19px;
+                    line-height: 25px; 
                 
                 }
             }
@@ -1384,9 +1406,8 @@ div.band-container-white {
                 font-size: 19px;
                 line-height: 25px;
                 @include media($mobile) {
-                    
-                    font-size: 16px;
-                    line-height: 20px;
+                    font-size: 19px;
+                    line-height: 25px; 
                 
                 }
             }
@@ -1510,8 +1531,8 @@ section.process {
                 }
                  @include media($mobile) {
                     @include span-columns(3);
-                    font-size: 16px;
-                    line-height: 20px;
+                    font-size: 19px;
+                    line-height: 25px; 
                     
                 }
             }
@@ -1533,8 +1554,8 @@ section.process {
                  @include media($mobile) {
                     @include span-columns(3);
                     @include shift(0);
-                    font-size: 16px;
-                    line-height: 20px;
+                    font-size: 19px;
+                    line-height: 25px; 
                     
                 }
             }
@@ -1561,7 +1582,9 @@ section.process_list {
                     line-height: 25px;;
                     @include shift(0);
                 }
-            @include media ($tablet) {
+            @include media ($mobile) {
+                font-size: 19px;
+                line-height: 25px; 
             }
         }
         div.description {
@@ -1584,8 +1607,8 @@ section.process_list {
                 @include media($mobile) {
                     @include span-columns(3);
                     margin-left: 20px;
-                    font-size: 16px;
-                    line-height: 20px;
+                    font-size: 19px;
+                    line-height: 25px; 
 
                     
                 }
@@ -1610,8 +1633,8 @@ section.process_list {
                 @include media($mobile) {
                     @include span-columns(3);
                     margin-left: 20px;
-                    font-size: 16px;
-                    line-height: 20px;
+                    font-size: 19px;
+                    line-height: 25px; 
 
                     
                 }
@@ -1712,7 +1735,7 @@ section.person-info {
     }
 }
 
-section.people-single {
+/*section.people-single {
     @include outer-container;
     @extend .global_pad;
     div.person-single {
@@ -1735,7 +1758,7 @@ section.people-single {
             position: absolute;
             height: 60px;
             bottom: 0;
-            /*background-color: rgba(black, 0.6);*/
+            
             width: 100%;
             @include pad(0 1em);
             h1 {
@@ -1744,10 +1767,13 @@ section.people-single {
                 @include type($small, #fff);
                 font-family: $frutigerLightCond;
                 @include media($tablet) {
-                    line-height: 25px;
+                    line-height: 20px;
                     font-size: 10pt;
                 }
-                
+                @include media($mobile) {
+                    line-height: 15px;
+                    font-size: 10pt;
+                }
             }
             p {
                 line-height: 20px;
@@ -1771,10 +1797,10 @@ section.people-single {
             }
         }
         div.person_name:hover {
-            /*background-color: rgba($blue, 0.6);*/
+            
         }
     }
-}
+}*/
 
 
 div.band-container-gray {
@@ -2001,7 +2027,10 @@ section.contact_list {
                 line-height: 25px;
                 font-family: $frutigerLightCond;
                 color: $gray;
+
+                
             }
+            
         }
         div.city-img {
             @include span-columns(6);
@@ -2013,6 +2042,9 @@ section.contact_list {
                @include span-columns(3); 
             }
         }
+        a.contact {
+                    text-decoration: none;
+                }
     }
 }
 
@@ -2152,7 +2184,8 @@ footer {
                 @include media($mobile) {
                     padding-top: 30px;
                     @include span-columns(3);
-                    font-size: 0.8em;
+                     font-size: 19px;
+                    line-height: 25px;
                 }
             }
             li {
@@ -2163,7 +2196,8 @@ footer {
                 @include media($mobile) {
                     @include span-columns(3);
                     padding-bottom: 20px;
-                    font-size: 0.8em;
+                    font-size: 19px;
+                    line-height: 25px;
                 }
             }
             a {
@@ -2204,7 +2238,8 @@ footer.value {
                 @include media($mobile) {
                     @include span-columns(3);
                     padding-bottom: 20px;
-                    font-size: 1em;
+                    font-size: 19px;
+                    line-height: 25px;
                 }
             }
             a {
