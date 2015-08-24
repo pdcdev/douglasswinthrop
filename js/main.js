@@ -1,26 +1,3 @@
-openMobileNav = function(e) {
-  $("body").toggleClass("open");
-};
-
-$(".nav-tab").click(openMobileNav);
-
-$(document).ready(function(){
-  $('#nav-icon4').click(function(){
-    $(this).toggleClass('open');
-  });
-});
-
-$(document).ready(function(){
-  $('.burgWrapper').bind('click', function(){
-    $('.burg').toggleClass('activeBurg');
-  });
-});
-
-$('button').click(function() {
-  $(this).toggleClass('clicked');
-});
-
-
 
 
 //people hover 

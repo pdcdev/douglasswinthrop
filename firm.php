@@ -1,4 +1,4 @@
-<?php $thisPage="About"; ?>
+
 <?php include 'header.php'; ?>
     <aside class="page_banner">
         <div class="intro-box">

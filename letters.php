@@ -1,4 +1,4 @@
-<?php $thisPage="Letters"; ?>
+
 <?php include 'header.php'; ?>
     <aside class="page_banner">
         <div class="intro-box">

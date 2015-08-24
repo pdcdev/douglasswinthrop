@@ -15,12 +15,13 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-
+    overflow-x: hidden;
     @include media($mobile) {
         overflow-x: hidden;
     }
 
 }
+
 
 .vertical_center_parent {
     display: -ms-flexbox;
@@ -97,6 +98,9 @@ header {
                 color: #fff;
             }
         }
+        
+        
+
         div.main-nav {
             ul {
                 @include span-columns(6);
@@ -169,427 +173,174 @@ nav,  #nav-icon4 {
     user-select: none;
 }
 
-nav {
-    position: fixed;
-    left: 0;
-    z-index: 10;
-    background-color: #000;
-    opacity: 0.8;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    ul {
-        padding-top: 60px;
-        vertical-align: middle;
-        padding-left: 0 !important;
-        height: 500px;
-        overflow: scroll;
-        li {
-            list-style: none;
-            margin-bottom: 20px;
-            a {
-                font-size: 25px;
-                color: #b2b2b2;
-                text-decoration: none;
-            }
-        }
-    }
-}
-
-
-
 #nav-icon4 {
-  position: absolute;
-    width: 20px;
-    height:70px;
+    visibility: hidden;
+    @include media($tablet) {
+        visibility: visible;
+    position: absolute;
+    z-index: 99;
+    width: 30px;
+    height:25px;
     cursor: pointer;
     top:15px;
     right:30px;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  cursor: pointer;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    }
+   
 }
 
 #nav-icon4 span {
-  display: block;
-  position: absolute;
-  height: 3px;
-  width: 100%;
-  background: $gray;
-  opacity: 1;
-  left: 0;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 80%;
+    background: $gray;
+
+    /*-webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;*/
 }
 
 
-
-
-#nav-icon4 {
-  height:50px;
-  z-index: 99;
-}
 
 #nav-icon4 span:nth-child(1) {
-  top: 0px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
+    top: 8px;
+   /* -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;*/
 }
 
 #nav-icon4 span:nth-child(2) {
-  top: 23px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
+    top: 18px;
+    /*-webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;*/
 }
 
 #nav-icon4 span:nth-child(3) {
-  top: 11px;
-  -webkit-transform-origin: left center;
+  top: 36px;
+  /*-webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
-  transform-origin: left center;
-}
-
-#nav-icon4.open span:nth-child(1) {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  top:5px;
-  left: 8px;
-}
-
-#nav-icon4.open span:nth-child(2) {
-  width: 0%;
-  opacity: 0;
-}
-
-#nav-icon4.open span:nth-child(3) {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  top: 20px !important;
-  left: 8px;
+  transform-origin: left center;*/
 }
 
 
-nav.open {
-    display: none; 
+.open {
+    visibility: hidden;
+    ul.overlay {
+        margin: 0 auto;
+    }
 }
 
-nav.open {
-    li {
-        a.menu-mob {
+li.mm {
+    list-style: none;
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+    a.menu-mob  {
+            font-size: 25px;
+            color: #fff;
+            text-decoration: none;
             @include media($tablet) {
                 font-family: $frutigerLightCond !important;
+                list-style: none;
             }
             @include media($mobile) {
                 font-family: $frutigerLightCond !important;
             }
         }
     }
-}
+    .mm a.menu-mob:active {
+        color: #004fb1;
+    }
+
+
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) { 
-    nav ul {
+    nav.nav ul.overlay {
         padding-top: 100px;
         vertical-align: middle;
         padding-left: 0 !important;
         height: 300px;
         overflow: scroll;
+        -webkit-overflow-scrolling: touch;
     }
 }
 
 
 @media screen and (min-width: 768px) {
-    #nav-icon4{
+    #container {
         display: none;
-    } 
+    }
+
+    ul.overlay{
+        display: none;
+    }
+
+    #mobile-menu-button {
+        display: none;
+    }
+    
 }
 
+/*---------/*---------/*---------/*---------*/
 
-/*-------------nav 2 ----------------*/
 
-/*.burgWrapper {
-    padding:20px 0;
-    display:block;
+#container {
+
+    width:100%;
+    height: auto;
+}
+.nav {
+    margin-top: 50px;
+    display: none;
+    position: relative;
+    float: right;
+}
+#mobile-menu-button {
+    z-index: 99;
+    cursor: pointer;
+    display: block;
+    width: 4em;
+    height: 4em;
     position: absolute;
-    right: 30px;
-    top: 7px;
-    -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+    top: 0;
+    right: 0;
 }
+#mobile-menu-button a {
+    margin-top: 10.5px;
+    display: block; 
+    position: relative;
+}
+#mobile-menu-button a:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.25em;
+    width: 1.5em;
+    height: 0.18em;
+    box-shadow: 0 0.6em 0 0 #fff, 0 1.2em 0 0 #fff;
+}
+#mobile-menu-button.active a:before {
 
-.burg {
-  display:block;
-  height:5px;
-  width:30px;
-  background:black;
-  position:relative;
-  @include transition(.2s);  
-  &:before {
-    content:'';
-    position:absolute;
-    top:-10px;
-    width:30px;
-    height:5px;
-    background:#000;
-    @include transition(.2s);
-  }
-  &:after {
-    content:'';
-    position:absolute;
-    top:10px;
-    width:30px;
-    height:5px;
-    background:#000;
-    @include transition(.2s);
-  }
+  box-shadow: 0 0.6em 0 0 #fff, 0 1.2em 0 0 #fff;
 }
-
-
-.activeBurg {
-  background:transparent;
-  &:before {
-    -webkit-transform:rotate(45deg);
-    top:0;
-  }
-  &:after {
-    -webkit-transform:rotate(-45deg);
-    top:0;
-  }
-}*/
-
-/*------------nav 3 -----------*/
-
-/*button span,
-button:before,
-button:after {
-  height: 4px;
-  width: 40px;
-  background: #000;
-  display: block;
-  position: absolute;
-  left: 0;
-  content: '';
-  margin: auto;
-  -webkit-transition: all 400ms ease;
-          transition: all 400ms ease;
-  border-radius: 999px;
-}
-button {
-    visibility: visible;
-  position: fixed;
-  border: none;
-  text-indent: -9999px;
-  top: 30px;
-  right: 30px;
-  display: block;
-  width: 40px;
-  height: 40px;
-  padding: 5px;
-  background: none;
-  outline: none;
-}
-button span {
-  top: 0;
-  bottom: 0;
-  -webkit-transition: all 800ms ease;
-          transition: all 800ms ease;
-}
-button:before {
-  top: 0;
-}
-button:after {
-  bottom: 0;
-}
-button.clicked span {
-  opacity: 0;
-}
-button.clicked:before {
-  top: 15px;
-  width: 60px;
-  left: -10px;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-button.clicked:after {
-  top: -5px;
-  width: 60px;
-  left: -10px;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}*/
-
-/*----------- nav 4 -----------*/
-
-/*.Trigger-lines, .Trigger-lines:before, .Trigger-lines:after {
-  background: #b2b2b2;
-  height: 4px;
-  width: 30px;
-}
-
-.Trigger {
-  cursor: pointer;
-  margin: auto;
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  height: 20px;
-  width: 30px;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.Trigger-lines {
-  position: absolute;
-  top: 8px;
-}
-.Trigger-lines:before {
-  content: '';
-  position: absolute;
-  top: -8px;
-  -webkit-transition: top 0.075s linear;
-  -moz-transition: top 0.075s linear;
-   -ms-transform: top 0.075s linear;
-  -o-transform: top 0.075s linear;
-  transition: top 0.075s linear;
-}
-.Trigger-lines:after {
-  content: '';
-  position: absolute;
-  top: 8px;
-  -webkit-transition: top 0.075s linear;
-  -moz-transition: top 0.075s linear;
-   -ms-transform: top 0.075s linear;
-  -o-transform: top 0.075s linear;
-  transition: top 0.075s linear;
-}
-
-.Trigger .Trigger-lines:before {
-  top: -12px;
-}
-.Trigger .Trigger-lines:after {
-  top: 12px;
-}
-
-.Trigger.open .Trigger-lines:before {
-  top: 0px;
-}
-.Trigger.open .Trigger-lines:after {
-  top: 0px;
-}*/
-
-
-/* ---------- nav 5 ----------*/
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) { 
-    .nav-tab{
-        visibility: visible;
-    } 
-}
-
-
-@media screen and (min-width: 768px) {
-    .nav-tab{
-        display: none;
-    } 
-}
-
-
-.nav-tab {
-  width: 30px;
-  height: 40px;
-}
-.nav-tab a {
-  cursor: pointer;
-  display: block;
-  height: 100%;
-  width: 100%;
-}
-.nav-tab span {
-  background: #e1e7f4;
-  display: block;
-  width: 30px;
-  height: 4px;
-  margin-bottom: 3px;
-}
-/*.nav-tab:hover span.first-child {
-  width: 26px;
-}
-.nav-tab:hover span.second-child {
-  width: 18px;
-}
-.nav-tab:hover span.third-child {
-  width: 22px;
-}
-.nav-tab:hover span.fourth-child {
-  width: 24px;
-}*/
-
-.mob-nav.clicked .nav-tab span.first-child {
-  width: 30px;
-  margin-top: 11px;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  transition: all ease-in-out 0.4s;
-  -webkit-transition: all ease-in-out 0.4s;
-}
-.mob-nav.clicked .nav-tab span.second-child {
-  width: 0px;
-  opacity: 0;
-}
-.mob-nav.clicked .nav-tab span.third-child {
-  width: 0px;
-  opacity: 0;
-}
-.mob-nav.clicked .nav-tab span.fourth-child {
-  width: 30px;
-  margin-top: -21px;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transition: all ease-in-out 0.4s;
-  -webkit-transition: all ease-in-out 0.4s;
-}
-
-
-.nav-tab {
-  position: absolute;
-  left: 50%;
-  margin-left: -20px;
-  top: 50%;
-  margin-top: -15px;
-}
-
-
 
 /*------------INDEX FOOTER ---------*/
 
@@ -620,8 +371,8 @@ button.clicked:after {
                 @include span-columns(6);
                 @include media($mobile) {
                     @include span-columns(3);
-                    font-size: 19px;
-                    line-height: 25px;
+                    font-size: 16px;
+                    line-height: 20px;
                 }
             }
             li {
@@ -633,8 +384,8 @@ button.clicked:after {
                 @include media($mobile) {
                     @include span-columns(3);
                     padding-bottom: 20px;
-                    font-size: 19px;
-                    line-height: 25px;
+                    font-size: 16px;
+                    line-height: 20px;
                 }
             }
             a {
@@ -657,6 +408,7 @@ aside.page_banner_home {
     z-index: 0;
     min-height: 88%;
     height: auto !important;
+    padding-bottom: 200px;
     display: block;
     background: url('../images/DW_Home.jpg') center center no-repeat;
     -webkit-background-size: auto cover;
@@ -665,7 +417,7 @@ aside.page_banner_home {
     background-size: auto cover;
     
     @include media($mobile) {
-           
+        -webkit-overflow-scrolling: touch;       
     }
     div.overlay_home {
         @include outer-container;
@@ -752,6 +504,7 @@ div.overlay-mobile {
 .container-button { 
     @include span-columns(12);
     display: block;
+
     p {
         font-family: $frutigerLightCond;
         font-size: 1.5em;
@@ -770,11 +523,23 @@ div.overlay-mobile {
     text-decoration: none;
     vertical-align: middle;
     width: 100%;
+
     @include media($mobile) {
         border-top: 1px solid;
         border-bottom: 1px solid;
         max-width: 100%;
-        margin: 0 0 -1px 0;
+        margin: 0 0 -2px 0;
+    }
+}
+
+h5.btn-contact {
+    margin: 2px 0 -1px 0;
+    @include media($mobile) {
+    
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        max-width: 100%;
+        margin: 1px 0 -1px 0;
     }
 }
 
@@ -783,7 +548,7 @@ div.overlay-mobile {
 }
 
 .btn-4 {
-  border: 1px solid;
+  border: 1px solid $gray;
   @include media($mobile) {
         border: none;
         width: 100%;
@@ -791,16 +556,16 @@ div.overlay-mobile {
         text-align: center;
         margin: 0 auto;
         a {
-            border-bottom: 1px solid #fff;
+            /*border-bottom: 1px solid #fff;*/
         }
     }
 }
 
 .btn-4:hover {
-  background: $gray;
+  background: #2775F6;
   @include media($tablet) {
-    background: $gray;
-    -webkit-tap-highlight-color: $gray;
+    background: #2775F6;
+    -webkit-tap-highlight-color: #2775F6;
   }
   @include media($mobile) {
     background: $gray;
@@ -957,6 +722,7 @@ div.intro-box {
     background-color: $blue;
     @include media($tablet) {
         height: 250px;
+        -webkit-overflow-scrolling: touch;
     }
     
     div.inner_banner {
@@ -1070,6 +836,7 @@ section.firm {
             color: $gray;
             font-family: $frutigerBoldCond;
             @include media ($tablet) {
+                -webkit-overflow-scrolling: touch;
             }
         }
         div.description {
@@ -1133,6 +900,7 @@ section.history {
             color: $gray;
             font-family: $frutigerBoldCond;
             @include media ($tablet) {
+                -webkit-overflow-scrolling: touch;
             }
         }
         div.description {
@@ -1198,6 +966,7 @@ section.philosophy {
             color: $gray;   
             font-family: $frutigerBoldCond;
             @include media ($tablet) {
+                -webkit-overflow-scrolling: touch;
             }
         }
         div.description {
@@ -1291,6 +1060,7 @@ section.value {
             font-family: $frutigerLightCond;
             @include media($mobile) {
                 @include span-columns(3);
+                -webkit-overflow-scrolling: touch;
             }
             h3.title {
                 padding-bottom: 20px;
@@ -1513,6 +1283,7 @@ section.process {
             color: $gray;
             font-family: $frutigerBoldCond;
             @include media ($tablet) {
+                -webkit-overflow-scrolling: touch;
             }
         }
         div.description {
@@ -1667,10 +1438,12 @@ section.people {
         @include media($tablet) {
             @include span-columns(3);
             @include omega(2n);
+            -webkit-overflow-scrolling: touch;
         }
         @include media($mobile) {
             @include span-columns(3);
             @include omega(4n);
+            -webkit-overflow-scrolling: touch;
         }
         
         /*img.person_headshot:hover + div#person_name {
@@ -1735,72 +1508,7 @@ section.person-info {
     }
 }
 
-/*section.people-single {
-    @include outer-container;
-    @extend .global_pad;
-    div.person-single {
-        @include span-columns(3);
-        @include omega(4n);
-        background-color: #eee;
-        margin-top: 1em;
-        margin-bottom: 1em;
-        position: relative;
-        @include media($tablet) {
-            @include span-columns(3);
-            @include omega(2n);
-        }
-        
-        img.person_headshot:hover {
-           
-        }
 
-        div.person_name-single {
-            position: absolute;
-            height: 60px;
-            bottom: 0;
-            
-            width: 100%;
-            @include pad(0 1em);
-            h1 {
-                line-height: 35px;
-                color: #fff;
-                @include type($small, #fff);
-                font-family: $frutigerLightCond;
-                @include media($tablet) {
-                    line-height: 20px;
-                    font-size: 10pt;
-                }
-                @include media($mobile) {
-                    line-height: 15px;
-                    font-size: 10pt;
-                }
-            }
-            p {
-                line-height: 20px;
-                color:#fff;
-                font-size: 10pt;
-                font-family: $frutigerLightCond;
-                @include media($tablet) {
-                    line-height: 15px;
-                    font-size:9pt;
-                }
-            }
-            p:hover {
-                opacity: 1;
-            }
-            a {
-                color: #fff;
-                text-decoration: none;
-            }
-            a:hover{
-                
-            }
-        }
-        div.person_name:hover {
-            
-        }
-    }
-}*/
 
 
 div.band-container-gray {
@@ -1852,7 +1560,7 @@ section.letters_list {
             margin-right: 80px;
             width: 460px;
             height: 300px;
-            background: url(../images/letter-2.png) no-repeat 0 0;
+            background: url(../images/letter-23.png) no-repeat 0 0;
             @include media($mobile) {
                 width: 305px;
                 height: 205px;
@@ -1862,7 +1570,7 @@ section.letters_list {
         }
 
         li.number-one:hover {
-            background: url(../images/letter-2.png) no-repeat;
+            background: url(../images/letter-23.png) no-repeat;
             background-position:1px -295px;
             z-index: 999;
             @include media($mobile) {
@@ -1874,7 +1582,7 @@ section.letters_list {
             display: inline-block;
             width: 460px;
             height: 300px;
-            background: url(../images/letter-1.png) no-repeat 0 0;
+            background: url(../images/letter-1-2345.png) no-repeat 0 0;
             @include media($mobile) {
                 width: 305px;
                 height: 205px;
@@ -1885,7 +1593,7 @@ section.letters_list {
         }
 
         li.number-two:hover {
-            background: url(../images/letter-1.png) no-repeat;
+            background: url(../images/letter-1-2345.png) no-repeat;
             background-position:0 -294px;
             z-index: 999;
             @include media($mobile) {
@@ -1898,7 +1606,7 @@ section.letters_list {
             margin-right: 80px;
             width: 460px;
             height: 300px;
-            background: url(../images/letter-3.png) no-repeat 0 0;
+            background: url(../images/letter-33.png) no-repeat 0 0;
             @include media($mobile) {
                 width: 305px;
                 height: 205px;
@@ -1908,7 +1616,7 @@ section.letters_list {
         }
 
         li.number-three:hover {
-            background: url(../images/letter-3.png) no-repeat;
+            background: url(../images/letter-33.png) no-repeat;
             background-position:0 -294px;
             z-index: 999;
             @include media($mobile) {
@@ -1920,7 +1628,7 @@ section.letters_list {
             display: inline-block;
             width: 460px;
             height: 300px;
-            background: url(../images/letter-4.png) no-repeat 0 0;
+            background: url(../images/letter-4-2345.png) no-repeat 0 0;
             @include media($mobile) {
                 width: 305px;
                 height: 205px;
@@ -1930,7 +1638,7 @@ section.letters_list {
         }
 
         li.number-four:hover {
-            background: url(../images/letter-4.png) no-repeat;
+            background: url(../images/letter-4-2345.png) no-repeat;
             background-position:0 -292px;
             z-index: 999;
             @include media($mobile) {
@@ -1957,7 +1665,7 @@ section.letters_list-mob {
         li.number-one-mob {
             margin-bottom: 30px;
             display: block;
-            background: url(../images/letter-2-s.png) no-repeat;
+            background: url(../images/letter-2-s234.png) no-repeat;
             width: 305px;
             height: 205px;
             background-size: 300px 410px;
@@ -1965,7 +1673,7 @@ section.letters_list-mob {
         li.number-two-mob {
             margin-bottom: 30px;
             display: block;
-            background: url(../images/letter-1-s.png) no-repeat;
+            background: url(../images/letter-1-s234.png) no-repeat;
             width: 305px;
             height: 205px;
             background-size: 300px 410px;
@@ -1973,7 +1681,7 @@ section.letters_list-mob {
         li.number-three-mob {
             margin-bottom: 30px;
             display: block;
-            background: url(../images/letter-3-s.png) no-repeat;
+            background: url(../images/letter-3-s234.png) no-repeat;
             width: 305px;
             height: 205px;
             background-size: 300px 410px;
@@ -1981,7 +1689,7 @@ section.letters_list-mob {
         li.number-four-mob {
             margin-bottom: 30px;
             display: block;
-            background: url(../images/letter-4-s.png) no-repeat;
+            background: url(../images/letter-4-s234.png) no-repeat;
             width: 305px;
             height: 205px;
             background-size: 300px 410px;
@@ -2052,7 +1760,8 @@ section.contact_list {
     min-height: 500px;
     width: 100%;
     @include media($mobile) {
-       min-height: 150px
+       min-height: 150px;
+       -webkit-overflow-scrolling: touch;
     }
 }
 
@@ -2060,7 +1769,8 @@ section.contact_list {
     min-height: 500px;
     width: 100%;
     @include media($mobile) {
-       min-height: 150px
+       min-height: 150px;
+       -webkit-overflow-scrolling: touch;
     }
 }
 
@@ -2068,7 +1778,8 @@ section.contact_list {
     min-height: 500px;
     width: 100%;
     @include media($mobile) {
-       min-height: 150px
+       min-height: 150px;
+       -webkit-overflow-scrolling: touch;
     }
 }
 
@@ -2109,7 +1820,8 @@ section.contact_list {
 section.terms {
     @include outer-container;
     @extend .global_pad;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
+    -webkit-overflow-scrolling: touch;
     ul.terms {
         @include span-columns(12);
         color: $gray;
@@ -2133,7 +1845,7 @@ section.terms {
         
         color: $gray;
         height: 100%;
-        
+        padding-bottom: 300px;
         @include media($mobile) {
             @include span-columns(3);
         }
@@ -2184,8 +1896,8 @@ footer {
                 @include media($mobile) {
                     padding-top: 30px;
                     @include span-columns(3);
-                     font-size: 19px;
-                    line-height: 25px;
+                    font-size: 16px;
+                    line-height: 20px;
                 }
             }
             li {
@@ -2196,8 +1908,8 @@ footer {
                 @include media($mobile) {
                     @include span-columns(3);
                     padding-bottom: 20px;
-                    font-size: 19px;
-                    line-height: 25px;
+                    font-size: 16px;
+                    line-height: 20px;
                 }
             }
             a {
@@ -2212,43 +1924,3 @@ footer {
     } 
 }
 
-footer.value {
-    background-color: #000;
-    width: 100%;
-    z-index: 999;
-    height: auto;
-    font-family: $frutigerLightCond;
-    div.inner_footer-value {
-        @include outer-container;
-        @extend .global_pad;
-        ul {
-            @include span-columns(12);
-            li.copyright {
-                @include span-columns(6);
-                @include media($mobile) {
-                    @include span-columns(5);
-                    font-size: 1em;
-                }
-            }
-            li {
-                @include span-columns(3);
-                display: inline-block;
-                font-size: 1em;
-                color: #b2b2b2;
-                @include media($mobile) {
-                    @include span-columns(3);
-                    padding-bottom: 20px;
-                    font-size: 19px;
-                    line-height: 25px;
-                }
-            }
-            a {
-                text-decoration: none;
-                color: #b2b2b2;
-            }
-            a:hover {
-                color: $blue;
-            }
-        }   
-    } 
-}

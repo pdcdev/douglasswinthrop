@@ -5,7 +5,7 @@
             <div class="inner_banner">
                 <div class="page-name">
                     <h1 class="terms">
-                        Credits | Legal
+                        Legal / Credits
                     </h1>
                 </div>
                 <div>
@@ -33,7 +33,7 @@
     <div class="inner_footer">
         <ul>
             <li class="copyright">© 1997-2015 Douglass Winthrop  All rights reserved</li>
-            <li><a href ="terms.php">Legal   &nbsp;l&nbsp;   Credits</a></li>
+            <li><a href ="terms.php">Legal/Credits</a></li>
             <li><a href ="contact.php">Contact</a></li>
         </ul>
     </div>
