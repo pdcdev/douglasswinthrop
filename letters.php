@@ -22,7 +22,7 @@
     </aside>
     <section class="letters-text">
             <div class="block">
-                
+                <h2 class="title">Staying Informed</h2>
                 <div class="description">   
                     <p class="description-text-left">Communication is integral to our advisory service. Our clients receive quarterly reports including our investment commentary, an account statement, performance history and a gains/losses report. 
                     </p>
@@ -31,7 +31,7 @@
                     </p>
                 </div>
             </div>
-            <h2 class="title">View our recent quarterly letters:</h2>
+            <h2 class="title">View our Recent Quarterly Letters:</h2>
     </section>
 
     

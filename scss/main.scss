@@ -330,7 +330,7 @@ li.mm {
     right: 0;
 }
 #mobile-menu-button a {
-    margin-top: 10.5px;
+    margin-top: 12.5px;
     display: block; 
     position: relative;
     background-color: #fff;
@@ -343,11 +343,15 @@ li.mm {
     width: 1.5em;
     height: 0.04em;
     background-color: #fff;
+    -mox-background-color: #fff;
     box-shadow: 0 0.4em 0 0 #fff, 0 0.8em 0 0 #fff;
+    -mox-box-shadow: 0 0.4em 0 0 #fff, 0 0.8em 0 0 #fff;
 }
 #mobile-menu-button.active a:before {
     background-color: #004fb1;
-  box-shadow: 0 0.4em 0 0 #004fb1, 0 0.8em 0 0 #004fb1;
+    -moz-background-color: #004fb1;
+    box-shadow: 0 0.4em 0 0 #004fb1, 0 0.8em 0 0 #004fb1;
+    -mox-box-shadow: 0 0.4em 0 0 #004fb1, 0 0.8em 0 0 #004fb1;
 }
 
 /*------------INDEX FOOTER ---------*/
@@ -416,7 +420,7 @@ aside.page_banner_home {
     z-index: 0;
     min-height: 88%;
     height: auto !important;
-    padding-bottom: 200px;
+    padding-bottom: 400px;
     display: block;
     background: url('../images/DW_Home.jpg') center center no-repeat;
     -webkit-background-size: auto cover;
@@ -532,23 +536,20 @@ div.overlay-mobile {
     text-decoration: none;
     vertical-align: middle;
     width: 100%;
-
     @include media($mobile) {
         border-top: 1px solid;
-        border-bottom: 1px solid;
         max-width: 100%;
-        margin: 0 0 -2px 0;
+        margin: 0;
     }
 }
 
 h5.btn-contact {
     margin: 2px 0 -1px 0;
     @include media($mobile) {
-    
         border-top: 1px solid;
         border-bottom: 1px solid;
         max-width: 100%;
-        margin: 1px 0 -1px 0;
+        margin: 0;
     }
 }
 
@@ -1060,9 +1061,10 @@ section.value {
     @extend .global_pad;
     position: relative;
     padding-bottom: 0;
-    div.block-value {
+    div.block-value-2 {
         @include span-columns(12);
         top: 0;
+        margin-bottom: 100px;
         section.description-text-left {
             @include span-columns(5);
             @include type($small, #b2b2b2);
@@ -1564,6 +1566,16 @@ section.letters-text {
         top: 0;
         border-bottom: 1px solid $gray;
         margin-bottom: 30px;
+        padding-bottom: 50px;
+        h2.title {
+            font-size: 19px;
+            padding-bottom: 30px;
+            color: $gray;
+            font-family: $frutigerBoldCond;
+            @include media ($tablet) {
+                -webkit-overflow-scrolling: touch;
+            }
+        }
         div.description {
             p.description-text-left {
                 @include span-columns(5);
@@ -1959,21 +1971,30 @@ section.terms {
 
 
 footer {
-    background-color: #000;
+background-color: #000;
+    position: fixed;
     width: 100%;
-    z-index: 999;
     height: auto;
-    font-family: $frutigerLightCond;
-    div.inner_footer {
+    bottom: 0;
+    display: block;
+    clear: both;
+    @include media($mobile) {
+        background-color: #000;
+        position: relative;
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        display: block;
+        clear: both;
+    }
+        div.inner_footer {
         @include outer-container;
         @extend .global_pad;
         ul {
             @include span-columns(12);
-            padding-top: 0;
             li.copyright {
                 @include span-columns(6);
                 @include media($mobile) {
-                    padding-top: 30px;
                     @include span-columns(3);
                     font-size: 16px;
                     line-height: 20px;
@@ -1981,6 +2002,7 @@ footer {
             }
             li {
                 @include span-columns(3);
+                font-family: $frutigerLightCond;
                 display: inline-block;
                 font-size: 1em;
                 color: #b2b2b2;
@@ -2001,5 +2023,85 @@ footer {
             }
         }   
     } 
+
 }
 
+
+/*
+footer {
+    background-color: #000;
+    width: 100%;
+    z-index: 999;
+    height: auto;
+    font-family: $frutigerLightCond;
+    div.inner_footer {
+        @include outer-container;
+        @extend .global_pad;
+        div.left-footer {
+
+            @include media($mobile) {
+                    display: block;
+                    @include span-columns(6);
+                }
+            ul {
+                @include span-columns(6);
+                padding-top: 0;
+                
+                li {
+                    
+                    display: inline-block;
+                    font-size: 1em;
+                    color: #b2b2b2;
+                    @include media($mobile) {
+                        @include span-columns(3);
+                        padding-bottom: 20px;
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    color: #b2b2b2;
+                    
+                }
+                a:hover {
+                    color: $blue;
+                }
+            }   
+        }
+        div.right-footer {
+            
+            @include media($mobile) {
+                    display: block;
+                    @include span-columns(6);
+                }
+            ul {
+                @include span-columns(6);
+                padding-top: 0;
+                
+                li {
+                    
+                    display: inline-block;
+                    font-size: 1em;
+                    color: #b2b2b2;
+                    @include media($mobile) {
+                        @include span-columns(3);
+                        padding-bottom: 20px;
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    color: #b2b2b2;
+                    
+                }
+                a:hover {
+                    color: $blue;
+                }
+            }   
+        }
+        
+    }
+}
+*/

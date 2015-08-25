@@ -25,6 +25,24 @@
             
         </div>
         </aside>
+        <!-- <div id="footer">
+            <div class="inner_footer">
+                <div class="left-footer">
+                    <ul>
+                        <li class="copyright">© 1997-2015 Douglass Winthrop  All rights reserved</li>
+                    </ul>
+                </div>
+                <div class="right-footer">
+                    <ul>
+                        
+                        <li class="disc">Disclaimer: Nothing on this site may be deemed investment advice.</li>
+                        <li><a href ="terms.php">Legal&nbsp;/&nbsp;Credits</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+       
+
         <div id="footer">
             <div class="inner_footer">
                 <ul>
@@ -34,6 +52,3 @@
                 </ul>
             </div>
         </div>
-       
-
-    

@@ -56,7 +56,7 @@
     </div><!-- gray -->
     <div class="band-container-gray">
         <section class="value">
-            <div class="block-value">
+            <div class="block-value-2">
                 <section class="description-text-left">
                     <h3 class="title"> Wealth Management </h3>
                     <p class="value">Douglass Winthrop helps clients review, create and monitor comprehensive wealth management programs, including all aspects of trusts and estate planning. 

@@ -1,11 +1,27 @@
     <footer>
-        <div class="inner_footer">
-            <ul>
-                <li class="copyright">© 1997-2015 Douglass Winthrop  All rights reserved</li>
-                <li><a href ="terms.php">Legal&nbsp;/&nbsp;Credits</a></li>
-                <li><a href ="contact.php">Contact</a></li>
-            </ul>
-        </div>
+        <!-- <div class="inner_footer">
+            <div class="left-footer">
+                <ul>
+                    <li class="copyright">© 1997-2015 Douglass Winthrop  All rights reserved</li>
+                </ul>
+            </div>
+            <div class="right-footer">
+                <ul>
+                    
+                    <li class="disc">Disclaimer: Nothing on this site may be deemed investment advice.</li>
+                    <li><a href ="terms.php">Legal&nbsp;/&nbsp;Credits</a></li>
+                </ul>
+            </div>
+        </div> -->
+
+            <div class="inner_footer">
+                <ul>
+                    <li class="copyright">© 1997-2015 Douglass Winthrop  All rights reserved</li>
+                    <li><a href ="terms.php">Legal&nbsp;/&nbsp;Credits</a></li>
+                    <li><a href ="contact.php">Contact</a></li>
+                </ul>
+            </div>
+        
     </footer>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
