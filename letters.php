@@ -20,6 +20,19 @@
             <!-- <img src="images/DW_Letters-mob.jpg"> -->
         </div>
     </aside>
+    <section class="letters-text">
+            <div class="block">
+                
+                <div class="description">   
+                    <p class="description-text-left">Communication is integral to our advisory service. Our clients receive quarterly reports including our investment commentary, an account statement, performance history and a gains/losses report. 
+                    </p>
+                    <p class="description-text-right">
+                        We stay in frequent contact with our clients via telephone and email, and in the course of scheduled personal meetings. We are delighted to see our clients, and encourage them to stop by our office any time.
+                    </p>
+                </div>
+            </div>
+            <h2 class="title">View our recent quarterly letters:</h2>
+    </section>
 
     
     <section class="letters_list">    

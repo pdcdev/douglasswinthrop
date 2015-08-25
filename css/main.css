@@ -63,13 +63,13 @@ html, body {
   align-items: center;
   /*justify-content: center;*/ }
 
-.global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.letters_list, section.contact_list, section.terms, footer div.inner_footer {
+.global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.letters-text, section.letters_list, section.contact_list, section.terms, footer div.inner_footer {
   padding: 1.5em 40px; }
   @media screen and (max-width: 768px) {
-    .global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.letters_list, section.contact_list, section.terms, footer div.inner_footer {
+    .global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.letters-text, section.letters_list, section.contact_list, section.terms, footer div.inner_footer {
       padding: 2em 40px; } }
   @media screen and (max-width: 480px) {
-    .global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.letters_list, section.contact_list, section.terms, footer div.inner_footer {
+    .global_pad, #footer div.inner_footer, aside.page_banner_home div.overlay_home, div.intro-box div.inner_banner, section.firm, section.history, section.philosophy, section.value, section.detail-layout-value, section.process, section.process_list, section.people, section.person-info, section.letters-text, section.letters_list, section.contact_list, section.terms, footer div.inner_footer {
       padding: 2em 30px; } }
 
 .sidepad, .inner_header {
@@ -101,6 +101,10 @@ header {
   position: relative;
   background-color: #004FB1;
   border-bottom: 1px solid #b2b2b2; }
+  @media screen and (max-width: 768px) {
+    header {
+      position: fixed;
+      width: 100%; } }
   header div.inner_header {
     max-width: 75em;
     margin-left: auto;
@@ -340,19 +344,22 @@ li.mm {
 #mobile-menu-button a {
   margin-top: 10.5px;
   display: block;
-  position: relative; }
+  position: relative;
+  background-color: #fff; }
 
 #mobile-menu-button a:before {
   content: "";
   position: absolute;
   left: 0;
-  top: 0.25em;
+  top: 0.6em;
   width: 1.5em;
-  height: 0.18em;
-  box-shadow: 0 0.6em 0 0 #fff, 0 1.2em 0 0 #fff; }
+  height: 0.04em;
+  background-color: #fff;
+  box-shadow: 0 0.4em 0 0 #fff, 0 0.8em 0 0 #fff; }
 
 #mobile-menu-button.active a:before {
-  box-shadow: 0 0.6em 0 0 #fff, 0 1.2em 0 0 #fff; }
+  background-color: #004fb1;
+  box-shadow: 0 0.4em 0 0 #004fb1, 0 0.8em 0 0 #004fb1; }
 
 /*------------INDEX FOOTER ---------*/
 #footer {
@@ -445,7 +452,8 @@ aside.page_banner_home {
   background-size: auto cover; }
   @media screen and (max-width: 480px) {
     aside.page_banner_home {
-      -webkit-overflow-scrolling: touch; } }
+      -webkit-overflow-scrolling: touch;
+      padding-top: 50px; } }
   aside.page_banner_home div.overlay_home {
     max-width: 75em;
     margin-left: auto;
@@ -723,6 +731,8 @@ div.intro-box {
   @media screen and (max-width: 768px) {
     div.intro-box {
       height: 250px;
+      padding-top: 50px;
+      height: auto;
       -webkit-overflow-scrolling: touch; } }
   div.intro-box div.inner_banner {
     max-width: 75em;
@@ -1915,6 +1925,118 @@ div.actual-banner-letters {
       background: url("../images/DW_Letters-mob.jpg") no-repeat;
       background-size: 100%;
       height: 190px; } }
+
+section.letters-text {
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding-bottom: 0; }
+  section.letters-text::after {
+    clear: both;
+    content: "";
+    display: table; }
+  section.letters-text div.block {
+    float: left;
+    display: block;
+    margin-right: 2.3255813953%;
+    width: 100%;
+    top: 0;
+    border-bottom: 1px solid #A3A9AC;
+    margin-bottom: 30px; }
+    section.letters-text div.block:last-child {
+      margin-right: 0; }
+    section.letters-text div.block div.description p.description-text-left {
+      float: left;
+      display: block;
+      margin-right: 2.3255813953%;
+      width: 40.3100775194%;
+      color: #b2b2b2;
+      font-size: 1rem;
+      line-height: 20px;
+      padding-bottom: 30px;
+      font-size: 19px;
+      line-height: 25px;
+      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+      section.letters-text div.block div.description p.description-text-left:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        section.letters-text div.block div.description p.description-text-left {
+          font-size: 1rem; } }
+      @media screen and (max-width: 480px) {
+        section.letters-text div.block div.description p.description-text-left {
+          font-size: 0.9375rem; } }
+      @media screen and (max-width: 768px) {
+        section.letters-text div.block div.description p.description-text-left {
+          float: left;
+          display: block;
+          margin-right: 4.7619047619%;
+          width: 82.5396825397%;
+          font-size: 19px;
+          line-height: 25px;
+          margin-left: 0%; }
+          section.letters-text div.block div.description p.description-text-left:last-child {
+            margin-right: 0; } }
+      @media screen and (max-width: 480px) {
+        section.letters-text div.block div.description p.description-text-left {
+          float: left;
+          display: block;
+          margin-right: 10%;
+          width: 100%;
+          font-size: 19px;
+          line-height: 25px; }
+          section.letters-text div.block div.description p.description-text-left:last-child {
+            margin-right: 0; } }
+    section.letters-text div.block div.description p.description-text-right {
+      float: left;
+      display: block;
+      margin-right: 2.3255813953%;
+      width: 40.3100775194%;
+      margin-left: 8.5271317829%;
+      color: #b2b2b2;
+      font-size: 1rem;
+      line-height: 20px;
+      padding-bottom: 30px;
+      font-size: 19px;
+      line-height: 25px;
+      font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
+      section.letters-text div.block div.description p.description-text-right:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        section.letters-text div.block div.description p.description-text-right {
+          font-size: 1rem; } }
+      @media screen and (max-width: 480px) {
+        section.letters-text div.block div.description p.description-text-right {
+          font-size: 0.9375rem; } }
+      @media screen and (max-width: 768px) {
+        section.letters-text div.block div.description p.description-text-right {
+          float: left;
+          display: block;
+          margin-right: 4.7619047619%;
+          width: 82.5396825397%;
+          font-size: 19px;
+          line-height: 25px;
+          margin-left: 0%; }
+          section.letters-text div.block div.description p.description-text-right:last-child {
+            margin-right: 0; } }
+      @media screen and (max-width: 480px) {
+        section.letters-text div.block div.description p.description-text-right {
+          float: left;
+          display: block;
+          margin-right: 10%;
+          width: 100%;
+          margin-left: 0%;
+          font-size: 19px;
+          line-height: 25px; }
+          section.letters-text div.block div.description p.description-text-right:last-child {
+            margin-right: 0; } }
+  section.letters-text h2.title {
+    font-size: 19px;
+    color: #A3A9AC;
+    font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif; }
+    @media screen and (max-width: 768px) {
+      section.letters-text h2.title {
+        -webkit-overflow-scrolling: touch; } }
 
 section.letters_list {
   max-width: 75em;
