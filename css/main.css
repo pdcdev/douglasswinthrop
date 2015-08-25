@@ -978,7 +978,7 @@ section.history {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  padding-bottom: 60px; }
+  padding-bottom: 200px; }
   section.history::after {
     clear: both;
     content: "";
@@ -1240,7 +1240,7 @@ section.value {
     margin-right: 2.3255813953%;
     width: 100%;
     top: 0;
-    margin-bottom: 100px; }
+    margin-bottom: 150px; }
     section.value div.block-value-2:last-child {
       margin-right: 0; }
     section.value div.block-value-2 section.description-text-left {
@@ -1655,7 +1655,7 @@ section.process_list {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  padding-bottom: 60px; }
+  padding-bottom: 200px; }
   section.process_list::after {
     clear: both;
     content: "";
@@ -1792,7 +1792,8 @@ section.process_list {
 section.people {
   max-width: 75em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding-bottom: 200px; }
   section.people::after {
     clear: both;
     content: "";
@@ -2054,7 +2055,8 @@ section.letters-text {
 section.letters_list {
   max-width: 75em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding-bottom: 200px; }
   section.letters_list::after {
     clear: both;
     content: "";

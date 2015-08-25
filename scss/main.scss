@@ -902,7 +902,7 @@ section.history {
     @include outer-container;
     @extend .global_pad;
     position: relative;
-    padding-bottom: 60px;
+    padding-bottom: 200px;
     div.block {
         @include span-columns(12);
         top: 0;
@@ -1064,7 +1064,7 @@ section.value {
     div.block-value-2 {
         @include span-columns(12);
         top: 0;
-        margin-bottom: 100px;
+        margin-bottom: 150px;
         section.description-text-left {
             @include span-columns(5);
             @include type($small, #b2b2b2);
@@ -1350,7 +1350,7 @@ section.process_list {
     @include outer-container;
     @extend .global_pad;
     position: relative;
-    padding-bottom: 60px;
+    padding-bottom: 200px;
     div.block {
         @include span-columns(12);
         top: 0;
@@ -1441,6 +1441,7 @@ section.process_list {
 section.people {
     @include outer-container;
     @extend .global_pad;
+    padding-bottom: 200px;
     div.person {
         @include span-columns(3);
         @include omega(4n);
@@ -1637,6 +1638,7 @@ section.letters-text {
 section.letters_list {
     @include outer-container;
     @extend .global_pad;
+    padding-bottom: 200px;
     ul {
         padding-bottom: 60px;
         @include span-columns(12);
