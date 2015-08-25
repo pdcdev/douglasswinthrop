@@ -32,20 +32,20 @@ $(document).ready(function() {
 //scroll side to side single person page .animate({'opacity':'0.8'}, 200)
 
 var view = $("#insideContainer");
-var move = "100px";
+var move = "50px";
 var sliderLimit = -1700
 
 $("#rightArrow").click(function(){
     
     var currentPosition = parseInt(view.css("left"));
-    if (currentPosition >= sliderLimit) view.stop(false,true).animate({left:"-="+move},{ duration: 400})
+    if (currentPosition >= sliderLimit) view.stop(false,true).animate({left:"-="+move},{ duration: 60})
 
 });
 
 $("#leftArrow").click(function(){
 
     var currentPosition = parseInt(view.css("left"));
-    if (currentPosition < 0) view.stop(false,true).animate({left:"+="+move},{ duration: 400})
+    if (currentPosition < 0) view.stop(false,true).animate({left:"+="+move},{ duration: 60})
 
 });
 
