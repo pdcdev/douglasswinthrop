@@ -20,7 +20,7 @@
         <h2 class="title-person-single">W. Oak Strawbridge<br><p>Principal</p><br></h2>
         <div class="description-person-single">
             <p class="sub-header">  
-            Oak is a principal in Douglass Winthrop Advisors LLC, working in the firm’s Washington, DC office. He has served as Chief Financial Officer and Partner at the Grosvenor Funds, a Washington, DC- based venture capital firm where he made and managed venture investments primarily in early-stage technology and healthcare companies. In addition to his role as an investment professional, Oak managed investor relations, audit, tax and compliance activities for the firm. Oak is also a Founder and Principal of BlueWing Asset Management, a firm which makes direct investments in mortgage backed securities and their derivatives. Previously he worked for IGOR Communications as a marketing consultant to technology companies and trade associations in Washington, DC. Prior to IGOR, he was a systems analyst for Subsystems Technologies, Inc. a Washington, DC-based provider of technology services to the Federal Government.
+            Oak is a principal in Douglass Winthrop Advisors LLC, working in the firm’s Washington, DC office. Prior to joining Douglass Winthrop he served as Chief Financial Officer and Partner at the Grosvenor Funds, a Washington, DC- based venture capital firm where he made and managed venture investments primarily in early-stage technology and healthcare companies. In addition to his role as an investment professional, Oak managed investor relations, audit, tax and compliance activities for the firm. Oak is also a Founder and Principal of BlueWing Asset Management, a firm which makes direct investments in mortgage backed securities and their derivatives. Previously he worked for IGOR Communications as a marketing consultant to technology companies and trade associations in Washington, DC. Prior to IGOR, he was a systems analyst for Subsystems Technologies, Inc. a Washington, DC-based provider of technology services to the Federal Government.
             <br><br>
             Oak is a board member of the Washington Home and Community Hospices, a 125 year old Washington-based charity providing hospice services, long term care and rehabilitation to area residents. He serves as Treasurer and chairs the Finance, Investment and Compensation Committees of the board. He also serves on the Jr. Executive Board of the Sibley Memorial Hospital Foundation. 
             <br><br>
@@ -95,7 +95,7 @@
                     <div class="person-single">
                         <a href="oak.php"><img class="person_headshot" src="images/people/OakStrawbridge_Headshot.jpg"></a>
                         <div class="person_name-single">
-                            <h1><a href="oak.php">W. Oak Strawgridge</a></h1>
+                            <h1><a href="oak.php">W. Oak Strawbridge</a></h1>
                             
                         </div>
                     </div>
@@ -228,7 +228,7 @@
         <div class="person-single">
             <a href="oak.php"><img class="person_headshot" src="images/people/OakStrawbridge_Headshot.jpg"></a>
             <div class="person_name-single">
-                <h1><a href="oak.php">W. Oak Strawgridge</a></h1>
+                <h1><a href="oak.php">W. Oak Strawbridge</a></h1>
                 
             </div>
         </div>

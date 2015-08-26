@@ -94,7 +94,7 @@
                     <div class="person-single">
                         <a href="oak.php"><img class="person_headshot" src="images/people/OakStrawbridge_Headshot.jpg"></a>
                         <div class="person_name-single">
-                            <h1><a href="oak.php">W. Oak Strawgridge</a></h1>
+                            <h1><a href="oak.php">W. Oak Strawbridge</a></h1>
                             
                         </div>
                     </div>
@@ -227,7 +227,7 @@
         <div class="person-single">
             <a href="oak.php"><img class="person_headshot" src="images/people/OakStrawbridge_Headshot.jpg"></a>
             <div class="person_name-single">
-                <h1><a href="oak.php">W. Oak Strawgridge</a></h1>
+                <h1><a href="oak.php">W. Oak Strawbridge</a></h1>
                 
             </div>
         </div>

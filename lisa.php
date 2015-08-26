@@ -17,7 +17,7 @@
     
     <section class="person-info">
     <div>
-        <h2 class="title-person-single">Lisa Wade<br><p>Client Relations Manager</p><br></h2>
+        <h2 class="title-person-single">Lisa Wade<br><p>Senior Client Administration Officer</p><br></h2>
         <div class="description-person-single">
             <p class="sub-header">  
             Lisa joined Douglass Winthrop Advisors LLC in 2007 as the firm’s Client Relations Manager. In addition to her work with its clients, Lisa oversees the firm’s portfolio reporting system and manages the office. 
@@ -94,7 +94,7 @@
                     <div class="person-single">
                         <a href="oak.php"><img class="person_headshot" src="images/people/OakStrawbridge_Headshot.jpg"></a>
                         <div class="person_name-single">
-                            <h1><a href="oak.php">W. Oak Strawgridge</a></h1>
+                            <h1><a href="oak.php">W. Oak Strawbridge</a></h1>
                             
                         </div>
                     </div>
@@ -227,7 +227,7 @@
         <div class="person-single">
             <a href="oak.php"><img class="person_headshot" src="images/people/OakStrawbridge_Headshot.jpg"></a>
             <div class="person_name-single">
-                <h1><a href="oak.php">W. Oak Strawgridge</a></h1>
+                <h1><a href="oak.php">W. Oak Strawbridge</a></h1>
                 
             </div>
         </div>

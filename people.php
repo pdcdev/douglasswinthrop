@@ -76,7 +76,7 @@
         <div class="person">
             <a href="oak.php"><img class="person_headshot" src="images/people/OakStrawbridge_Headshot.jpg"></a>
             <div class="person_name">
-                <a href="oak.php"><h1>W. Oak Strawgridge</h1></a>
+                <a href="oak.php"><h1>W. Oak Strawbridge</h1></a>
                 <p>Principal</p>
             </div>
         </div>
@@ -140,7 +140,7 @@
             <a href="lisa.php"><img class="person_headshot" src="images/people/LisaWade_Headshot.jpg"></a>
             <div class="person_name">
                 <a href="lisa.php"><h1>Lisa Wade</h1></a>
-                <p>Client Relations Manager </p>
+                <p>Senior Client Administration Officer </p>
             </div>
         </div>
         

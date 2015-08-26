@@ -20,13 +20,9 @@
         <h2 class="title-person-single">Lea Paine Highet<br><p>Principal</p><br></h2>
         <div class="description-person-single">
             <p class="sub-header">  
-            Lea is a principal in Douglass Winthrop Advisors LLC. Previously, Lea was a Vice President in the Private Banking Group at U.S. Trust Company, where she served as a trust and custody specialist for high net worth individuals and families. Her experience also includes two years as an Alumnae Coordinator in the Radcliffe Alumnae Office. 
+            Lea is a principal in Douglass Winthrop Advisors LLC. Previously, Lea was a Vice President in the Private Banking Group at U.S. Trust Company, where she served as a trust and custody specialist for high net worth individuals and families. Her experience also includes two years as an Alumnae Coordinator in the Radcliffe Alumnae Office.
             <br><br>
-            Lea is on the board of The Chapin School. She serves on the Dean’s Advisory Council of the Radcliffe Institute for Advanced Study at Harvard University. Lea is the Co-Chair of the National Coalition for Girls’ Schools Alumnae Network and is the Treasurer of the Coby Foundation. She is a past trustee of the St. Bernard’s School and The Museum of the City of New York. 
-            <br><br>
-            Lea graduated magna cum laude from Harvard College in 1988 and received her CERTIFIED FINANCIAL PLANNER™ certification in 1994.
-            <br><br>
-            <h4 style="font-size: 16px">Certified Financial Planner Board of Standards Inc. owns the certification marks CFP®, CERTIFIED FINANCIAL PLANNER™ and CFP® (with flame design) in the U.S., which it awards to individuals who successfully complete CFP Board’s initial and ongoing certification requirements. Lea is the Co-Chair of the National Coalition for Girls” Schools Alumnae Network. She is the Treasurer of the Coby Foundation, and she is a Trustee of the Harvard Club of New York Foundation.</h4></p>
+            Lea is a on the board of The Chapin School and The Harvard Club of New York Foundation. She serves on the Dean’s Advisory Council of the Radcliffe Institute for Advanced Study at Harvard University and the Advisory Council of the Adirondack Foundation. Lea is the President of the Board of The Essex Farm Institute and is the Treasurer of the Coby Foundation. She is a past trustee of the St. Bernard’s School and The Museum of the City of New York. Lea graduated magna cum laude from Harvard College in 1988 and received her CERTIFIED FINANCIAL PLANNER™ certification.</p>
         </div>
     </div>
     </section>
@@ -96,7 +92,7 @@
                     <div class="person-single">
                         <a href="oak.php"><img class="person_headshot" src="images/people/OakStrawbridge_Headshot.jpg"></a>
                         <div class="person_name-single">
-                            <h1><a href="oak.php">W. Oak Strawgridge</a></h1>
+                            <h1><a href="oak.php">W. Oak Strawbridge</a></h1>
                             
                         </div>
                     </div>
@@ -229,7 +225,7 @@
         <div class="person-single">
             <a href="oak.php"><img class="person_headshot" src="images/people/OakStrawbridge_Headshot.jpg"></a>
             <div class="person_name-single">
-                <h1><a href="oak.php">W. Oak Strawgridge</a></h1>
+                <h1><a href="oak.php">W. Oak Strawbridge</a></h1>
                 
             </div>
         </div>

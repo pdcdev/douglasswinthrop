@@ -41,7 +41,7 @@
     <div class="actual-banner-process-bottom"></div>
     <section class="process_list">    
             <div class="block">
-                <h2 class="title"> <li class="fund">Fundamental and Quantitative</li><li class="fund">Citeria Include:</li></h2>
+                <h2 class="title"> <li class="fund">Fundamental and Quantitative</li><li class="fund">Criteria Include:</li></h2>
                 <div class="description">
                     
                     <ul class="left">
@@ -54,7 +54,7 @@
                 
                 
                     <ul class="right">
-                        <li>Growth tangible book value</li>
+                        <li>Growth in tangible book value</li>
                         <li>Earnings/cash flow quality and potential</li>
                         <li>Balance sheet strength</li>
                         <li>Corporate governance    </li>
