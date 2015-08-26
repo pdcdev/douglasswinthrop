@@ -504,7 +504,8 @@ jQuery(document).ready(function($) {
         url: "https://www.google.com/maps/place/535+5th+Ave,+New+York,+NY+10017/@40.7549469,-73.9795346,17z/data=!3m1!4b1!4m2!3m1!1s0x89c258fe2eb4f14f:0xd42764f3a3d7ff94",
         map: map,
         title:"Douglass Winthrop",
-        icon: 'http://i.imgur.com/HI1UiKn.png'
+        icon: 'http://roccopiscatello.com/douglasswinthrop/images/dw2.png'
+        
     });
 
     var marker2 = new google.maps.Marker({
@@ -512,7 +513,7 @@ jQuery(document).ready(function($) {
         url: "https://www.google.com/maps/place/888+17th+St+NW+%23205,+Washington,+DC+20006/@38.9011035,-77.0396397,17z/data=!3m1!4b1!4m2!3m1!1s0x89b7b7bbfbb76e45:0x75ff110aaae0d26d",
         map: map2,
         title:"Douglass Winthrop",
-        icon: 'http://i.imgur.com/HI1UiKn.png'
+        icon: 'http://roccopiscatello.com/douglasswinthrop/images/dw2.png'
     });
 
     var marker3 = new google.maps.Marker({
@@ -520,7 +521,8 @@ jQuery(document).ready(function($) {
         url: "https://www.google.com/maps/place/121+Mt+Vernon+St,+Boston,+MA+02108/@42.3579214,-71.0707528,17z/data=!3m1!4b1!4m2!3m1!1s0x89e3709ee1df6781:0x3f69e428397bc2ce",
         map: map3,
         title:"Douglass Winthrop",
-        icon: 'http://i.imgur.com/HI1UiKn.png'
+        icon: 'http://roccopiscatello.com/douglasswinthrop/images/dw2.png'
+
     });
 
     map.mapTypes.set(MY_MAPTYPE_ID, customMapType);

@@ -41,7 +41,7 @@
     <div class="actual-banner-process-bottom"></div>
     <section class="process_list">    
             <div class="block">
-                <h2 class="title"> Fundamental and quantitative criteria include: </h2>
+                <h2 class="title"> <li class="fund">Fundamental and Quantitative</li><li class="fund">Citeria Include:</li></h2>
                 <div class="description">
                     
                     <ul class="left">

@@ -23,7 +23,7 @@
     <div class="content-value">
     <div class="band-container-white">
         <section class="value">
-            <div class="block-value">
+            <div class="block-value-2">
                 <section class="description-text-left">
                     <h3 class="title"> Client is First </h3>
                     <p class="value">Douglass Winthrop Advisors is proud of the strong value propositionits investment management services hold for 
@@ -56,7 +56,7 @@
     </div><!-- gray -->
     <div class="band-container-gray">
         <section class="value">
-            <div class="block-value-2">
+            <div class="block-value">
                 <section class="description-text-left">
                     <h3 class="title"> Wealth Management </h3>
                     <p class="value">Douglass Winthrop helps clients review, create and monitor comprehensive wealth management programs, including all aspects of trusts and estate planning. 

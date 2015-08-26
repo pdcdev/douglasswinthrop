@@ -1,24 +1,10 @@
     <footer>
-        <!-- <div class="inner_footer">
-            <div class="left-footer">
-                <ul>
-                    <li class="copyright">© 1997-2015 Douglass Winthrop  All rights reserved</li>
-                </ul>
-            </div>
-            <div class="right-footer">
-                <ul>
-                    
-                    <li class="disc">Disclaimer: Nothing on this site may be deemed investment advice.</li>
-                    <li><a href ="terms.php">Legal&nbsp;/&nbsp;Credits</a></li>
-                </ul>
-            </div>
-        </div> -->
 
             <div class="inner_footer">
                 <ul>
-                    <li class="copyright">© 1997-2015 Douglass Winthrop  All rights reserved</li>
-                    <li><a href ="terms.php">Legal&nbsp;/&nbsp;Credits</a></li>
-                    <li><a href ="contact.php">Contact</a></li>
+                    <li class="copyright">© 1997-2015 Douglass Winthrop All rights reserved</li>
+                    <li class="legal"><a class="legal" href ="terms.php">Legal&nbsp;/&nbsp;Credits</a></li>
+                    <!-- <li><a href ="contact.php">Contact</a></li> -->
                 </ul>
             </div>
         
@@ -28,6 +14,7 @@
     <script type="text/javascript" src="js/map.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/min/main-min.js"></script>
+    <script type="text/javascript" src="js/retina.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script type="text/javascript" src="http://fast.fonts.net/jsapi/c0791320-eb3a-41c7-8868-c0ceb0eb6a90.js"></script>
 </body>

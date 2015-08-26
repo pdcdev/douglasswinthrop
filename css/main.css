@@ -211,78 +211,6 @@ header {
         header div.inner_header div.main-nav ul li .main-nav li.current {
           border-bottom: 1px #333 solid; }
 
-/* ---------hamburger --------------*/
-nav, #nav-icon4 {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-#nav-icon4 {
-  visibility: hidden; }
-  @media screen and (max-width: 768px) {
-    #nav-icon4 {
-      visibility: visible;
-      position: absolute;
-      z-index: 99;
-      width: 30px;
-      height: 25px;
-      cursor: pointer;
-      top: 15px;
-      right: 30px;
-      -webkit-transform: rotate(0deg);
-      -moz-transform: rotate(0deg);
-      -o-transform: rotate(0deg);
-      transform: rotate(0deg);
-      -webkit-transition: .5s ease-in-out;
-      -moz-transition: .5s ease-in-out;
-      -o-transition: .5s ease-in-out;
-      transition: .5s ease-in-out;
-      cursor: pointer; } }
-
-#nav-icon4 span {
-  display: block;
-  position: absolute;
-  height: 3px;
-  width: 80%;
-  background: #A3A9AC;
-  /*-webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;*/ }
-
-#nav-icon4 span:nth-child(1) {
-  top: 8px;
-  /* -webkit-transform-origin: left center;
-   -moz-transform-origin: left center;
-   -o-transform-origin: left center;
-   transform-origin: left center;*/ }
-
-#nav-icon4 span:nth-child(2) {
-  top: 18px;
-  /*-webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;*/ }
-
-#nav-icon4 span:nth-child(3) {
-  top: 36px;
-  /*-webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;*/ }
-
-.open {
-  visibility: hidden; }
-  .open ul.overlay {
-    margin: 0 auto; }
-
 li.mm {
   list-style: none;
   margin-bottom: 20px;
@@ -303,14 +231,14 @@ li.mm {
 .mm a.menu-mob:active {
   color: #004fb1; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
-  nav.nav ul.overlay {
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
+  #container nav.nav ul.overlay {
     padding-top: 100px;
     vertical-align: middle;
     padding-left: 0 !important;
-    height: 300px;
+    min-height: 300px;
     overflow: scroll;
-    -webkit-overflow-scrolling: touch; } }
+    background-color: red; } }
 @media screen and (min-width: 768px) {
   #container {
     display: none; }
@@ -374,6 +302,15 @@ li.mm {
   bottom: 0;
   display: block;
   clear: both; }
+  @media screen and (max-width: 768px) {
+    #footer {
+      background-color: #000;
+      position: relative;
+      width: 100%;
+      height: auto;
+      bottom: 0;
+      display: block;
+      clear: both; } }
   @media screen and (max-width: 480px) {
     #footer {
       background-color: #000;
@@ -399,12 +336,25 @@ li.mm {
       #footer div.inner_footer ul:last-child {
         margin-right: 0; }
       #footer div.inner_footer ul li.copyright {
+        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
+        display: inline-block;
+        font-size: 1em;
+        color: #7c7c7c;
         float: left;
         display: block;
         margin-right: 2.3255813953%;
         width: 48.8372093023%; }
         #footer div.inner_footer ul li.copyright:last-child {
           margin-right: 0; }
+        @media screen and (max-width: 768px) {
+          #footer div.inner_footer ul li.copyright {
+            float: left;
+            display: block;
+            margin-right: 4.7619047619%;
+            width: 47.619047619%;
+            padding: 0 0 20px 0; }
+            #footer div.inner_footer ul li.copyright:last-child {
+              margin-right: 0; } }
         @media screen and (max-width: 480px) {
           #footer div.inner_footer ul li.copyright {
             float: left;
@@ -415,7 +365,7 @@ li.mm {
             line-height: 20px; }
             #footer div.inner_footer ul li.copyright:last-child {
               margin-right: 0; } }
-      #footer div.inner_footer ul li {
+      #footer div.inner_footer ul li.legal {
         float: left;
         display: block;
         margin-right: 2.3255813953%;
@@ -423,25 +373,25 @@ li.mm {
         font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
         display: inline-block;
         font-size: 1em;
-        color: #b2b2b2; }
-        #footer div.inner_footer ul li:last-child {
+        color: #7c7c7c; }
+        #footer div.inner_footer ul li.legal:last-child {
           margin-right: 0; }
         @media screen and (max-width: 480px) {
-          #footer div.inner_footer ul li {
+          #footer div.inner_footer ul li.legal {
             float: left;
             display: block;
             margin-right: 10%;
             width: 100%;
-            padding-bottom: 20px;
+            padding: 0 0 20px 0;
             font-size: 16px;
             line-height: 20px; }
-            #footer div.inner_footer ul li:last-child {
+            #footer div.inner_footer ul li.legal:last-child {
               margin-right: 0; } }
-      #footer div.inner_footer ul a {
-        text-decoration: none;
-        color: #b2b2b2; }
-      #footer div.inner_footer ul a:hover {
-        color: #004FB1; }
+        #footer div.inner_footer ul li.legal a.legal {
+          text-decoration: none;
+          color: #7c7c7c; }
+        #footer div.inner_footer ul li.legal a:hover {
+          color: #fff; }
 
 aside.page_banner_home {
   z-index: 0;
@@ -1234,16 +1184,16 @@ section.value {
     clear: both;
     content: "";
     display: table; }
-  section.value div.block-value-2 {
+  section.value div.block-value {
     float: left;
     display: block;
     margin-right: 2.3255813953%;
     width: 100%;
     top: 0;
     margin-bottom: 150px; }
-    section.value div.block-value-2:last-child {
+    section.value div.block-value:last-child {
       margin-right: 0; }
-    section.value div.block-value-2 section.description-text-left {
+    section.value div.block-value section.description-text-left {
       float: left;
       display: block;
       margin-right: 2.3255813953%;
@@ -1253,37 +1203,37 @@ section.value {
       line-height: 20px;
       padding-bottom: 80px;
       font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
-      section.value div.block-value-2 section.description-text-left:last-child {
+      section.value div.block-value section.description-text-left:last-child {
         margin-right: 0; }
       @media screen and (max-width: 768px) {
-        section.value div.block-value-2 section.description-text-left {
+        section.value div.block-value section.description-text-left {
           font-size: 1rem; } }
       @media screen and (max-width: 480px) {
-        section.value div.block-value-2 section.description-text-left {
+        section.value div.block-value section.description-text-left {
           font-size: 0.9375rem; } }
       @media screen and (max-width: 480px) {
-        section.value div.block-value-2 section.description-text-left {
+        section.value div.block-value section.description-text-left {
           float: left;
           display: block;
           margin-right: 10%;
           width: 100%;
           -webkit-overflow-scrolling: touch; }
-          section.value div.block-value-2 section.description-text-left:last-child {
+          section.value div.block-value section.description-text-left:last-child {
             margin-right: 0; } }
-      section.value div.block-value-2 section.description-text-left h3.title {
+      section.value div.block-value section.description-text-left h3.title {
         padding-bottom: 20px;
         line-height: 1.2em;
         font-size: 19px;
         color: #A3A9AC;
         font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif; }
-      section.value div.block-value-2 section.description-text-left p.value {
+      section.value div.block-value section.description-text-left p.value {
         font-size: 19px;
         line-height: 25px; }
         @media screen and (max-width: 480px) {
-          section.value div.block-value-2 section.description-text-left p.value {
+          section.value div.block-value section.description-text-left p.value {
             font-size: 19px;
             line-height: 25px; } }
-    section.value div.block-value-2 section.description-text-right {
+    section.value div.block-value section.description-text-right {
       float: left;
       display: block;
       margin-right: 2.3255813953%;
@@ -1294,34 +1244,34 @@ section.value {
       line-height: 20px;
       padding-bottom: 80px;
       font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
-      section.value div.block-value-2 section.description-text-right:last-child {
+      section.value div.block-value section.description-text-right:last-child {
         margin-right: 0; }
       @media screen and (max-width: 768px) {
-        section.value div.block-value-2 section.description-text-right {
+        section.value div.block-value section.description-text-right {
           font-size: 1rem; } }
       @media screen and (max-width: 480px) {
-        section.value div.block-value-2 section.description-text-right {
+        section.value div.block-value section.description-text-right {
           font-size: 0.9375rem; } }
       @media screen and (max-width: 480px) {
-        section.value div.block-value-2 section.description-text-right {
+        section.value div.block-value section.description-text-right {
           float: left;
           display: block;
           margin-right: 10%;
           width: 100%;
           margin-left: 0%; }
-          section.value div.block-value-2 section.description-text-right:last-child {
+          section.value div.block-value section.description-text-right:last-child {
             margin-right: 0; } }
-      section.value div.block-value-2 section.description-text-right h3.title {
+      section.value div.block-value section.description-text-right h3.title {
         padding-bottom: 20px;
         line-height: 1.2em;
         font-size: 19px;
         color: #A3A9AC;
         font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif; }
-      section.value div.block-value-2 section.description-text-right p.value {
+      section.value div.block-value section.description-text-right p.value {
         font-size: 19px;
         line-height: 25px; }
         @media screen and (max-width: 480px) {
-          section.value div.block-value-2 section.description-text-right p.value {
+          section.value div.block-value section.description-text-right p.value {
             font-size: 19px;
             line-height: 25px; } }
 
@@ -1331,15 +1281,15 @@ div.band-container-white {
   height: auto;
   position: relative;
   padding-bottom: 0; }
-  div.band-container-white div.block-value {
+  div.band-container-white div.block-value-2 {
     float: left;
     display: block;
     margin-right: 2.3255813953%;
     width: 100%;
     top: 0; }
-    div.band-container-white div.block-value:last-child {
+    div.band-container-white div.block-value-2:last-child {
       margin-right: 0; }
-    div.band-container-white div.block-value section.description-text-left {
+    div.band-container-white div.block-value-2 section.description-text-left {
       float: left;
       display: block;
       margin-right: 2.3255813953%;
@@ -1349,36 +1299,36 @@ div.band-container-white {
       line-height: 20px;
       padding-bottom: 80px;
       font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
-      div.band-container-white div.block-value section.description-text-left:last-child {
+      div.band-container-white div.block-value-2 section.description-text-left:last-child {
         margin-right: 0; }
       @media screen and (max-width: 768px) {
-        div.band-container-white div.block-value section.description-text-left {
+        div.band-container-white div.block-value-2 section.description-text-left {
           font-size: 1rem; } }
       @media screen and (max-width: 480px) {
-        div.band-container-white div.block-value section.description-text-left {
+        div.band-container-white div.block-value-2 section.description-text-left {
           font-size: 0.9375rem; } }
       @media screen and (max-width: 480px) {
-        div.band-container-white div.block-value section.description-text-left {
+        div.band-container-white div.block-value-2 section.description-text-left {
           float: left;
           display: block;
           margin-right: 10%;
           width: 100%; }
-          div.band-container-white div.block-value section.description-text-left:last-child {
+          div.band-container-white div.block-value-2 section.description-text-left:last-child {
             margin-right: 0; } }
-      div.band-container-white div.block-value section.description-text-left h3.title {
+      div.band-container-white div.block-value-2 section.description-text-left h3.title {
         padding-bottom: 20px;
         line-height: 1.2em;
         font-size: 19px;
         color: #A3A9AC;
         font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif; }
-      div.band-container-white div.block-value section.description-text-left p.value {
+      div.band-container-white div.block-value-2 section.description-text-left p.value {
         font-size: 19px;
         line-height: 25px; }
         @media screen and (max-width: 480px) {
-          div.band-container-white div.block-value section.description-text-left p.value {
+          div.band-container-white div.block-value-2 section.description-text-left p.value {
             font-size: 19px;
             line-height: 25px; } }
-    div.band-container-white div.block-value section.description-text-right {
+    div.band-container-white div.block-value-2 section.description-text-right {
       float: left;
       display: block;
       margin-right: 2.3255813953%;
@@ -1389,34 +1339,34 @@ div.band-container-white {
       line-height: 20px;
       padding-bottom: 80px;
       font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif; }
-      div.band-container-white div.block-value section.description-text-right:last-child {
+      div.band-container-white div.block-value-2 section.description-text-right:last-child {
         margin-right: 0; }
       @media screen and (max-width: 768px) {
-        div.band-container-white div.block-value section.description-text-right {
+        div.band-container-white div.block-value-2 section.description-text-right {
           font-size: 1rem; } }
       @media screen and (max-width: 480px) {
-        div.band-container-white div.block-value section.description-text-right {
+        div.band-container-white div.block-value-2 section.description-text-right {
           font-size: 0.9375rem; } }
       @media screen and (max-width: 480px) {
-        div.band-container-white div.block-value section.description-text-right {
+        div.band-container-white div.block-value-2 section.description-text-right {
           float: left;
           display: block;
           margin-right: 10%;
           width: 100%;
           margin-left: 0%; }
-          div.band-container-white div.block-value section.description-text-right:last-child {
+          div.band-container-white div.block-value-2 section.description-text-right:last-child {
             margin-right: 0; } }
-      div.band-container-white div.block-value section.description-text-right h3.title {
+      div.band-container-white div.block-value-2 section.description-text-right h3.title {
         padding-bottom: 20px;
         line-height: 1.2em;
         font-size: 19px;
         color: #A3A9AC;
         font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif; }
-      div.band-container-white div.block-value section.description-text-right p.value {
+      div.band-container-white div.block-value-2 section.description-text-right p.value {
         font-size: 19px;
         line-height: 25px; }
         @media screen and (max-width: 480px) {
-          div.band-container-white div.block-value section.description-text-right p.value {
+          div.band-container-white div.block-value-2 section.description-text-right p.value {
             font-size: 19px;
             line-height: 25px; } }
 
@@ -1694,6 +1644,9 @@ section.process_list {
         section.process_list div.block h2.title {
           font-size: 19px;
           line-height: 25px; } }
+    section.process_list div.block li.fund {
+      list-style: none !important;
+      line-height: 27px; }
     section.process_list div.block div.description ul.left {
       float: left;
       display: block;
@@ -2181,7 +2134,7 @@ section.letters_list-mob {
     section.letters_list-mob ul li.number-four-mob {
       margin-bottom: 30px;
       display: block;
-      background: url(../images/letter-4-s234.png) no-repeat;
+      background: url(../images/letter-4-s23456.png) no-repeat;
       width: 305px;
       height: 205px;
       background-size: 300px 410px; }
@@ -2200,82 +2153,82 @@ section.contact_list {
     clear: both;
     content: "";
     display: table; }
-  section.contact_list div.contact {
+  section.contact_list div.city {
     float: left;
     display: block;
     margin-right: 2.3255813953%;
     width: 100%;
     padding: 50px 0 30px 0;
     display: block; }
-    section.contact_list div.contact:last-child {
+    section.contact_list div.city:last-child {
       margin-right: 0; }
-    section.contact_list div.contact div.city-address {
+    section.contact_list div.city div.city-address {
       float: left;
       display: block;
       margin-right: 2.3255813953%;
       width: 48.8372093023%;
       float: left;
       padding: 0 30px 30px 0; }
-      section.contact_list div.contact div.city-address:last-child {
+      section.contact_list div.city div.city-address:last-child {
         margin-right: 0; }
       @media screen and (max-width: 768px) {
-        section.contact_list div.contact div.city-address {
+        section.contact_list div.city div.city-address {
           float: left;
           display: block;
           margin-right: 4.7619047619%;
           width: 100%; }
-          section.contact_list div.contact div.city-address:last-child {
+          section.contact_list div.city div.city-address:last-child {
             margin-right: 0; }
-          section.contact_list div.contact div.city-address:nth-child(2n) {
+          section.contact_list div.city div.city-address:nth-child(2n) {
             margin-right: 0; }
-          section.contact_list div.contact div.city-address:nth-child(2n+1) {
+          section.contact_list div.city div.city-address:nth-child(2n+1) {
             clear: left; } }
       @media screen and (max-width: 480px) {
-        section.contact_list div.contact div.city-address {
+        section.contact_list div.city div.city-address {
           float: left;
           display: block;
           margin-right: 10%;
           width: 100%; }
-          section.contact_list div.contact div.city-address:last-child {
+          section.contact_list div.city div.city-address:last-child {
             margin-right: 0; } }
-      section.contact_list div.contact div.city-address h3.city-name {
+      section.contact_list div.city div.city-address h3.city-name {
         font-family: "FrutigerLTW01-67BoldCn", helvetica, sans serif;
         font-size: 19px;
         color: #A3A9AC;
         padding-bottom: 25px; }
-      section.contact_list div.contact div.city-address p.address-info {
+      section.contact_list div.city div.city-address p.address-info {
         font-size: 19px;
         line-height: 25px;
         font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
         color: #A3A9AC; }
-    section.contact_list div.contact div.city-img {
+    section.contact_list div.city div.city-img {
       float: left;
       display: block;
       margin-right: 2.3255813953%;
       width: 48.8372093023%; }
-      section.contact_list div.contact div.city-img:last-child {
+      section.contact_list div.city div.city-img:last-child {
         margin-right: 0; }
       @media screen and (max-width: 768px) {
-        section.contact_list div.contact div.city-img {
+        section.contact_list div.city div.city-img {
           float: left;
           display: block;
           margin-right: 4.7619047619%;
           width: 100%; }
-          section.contact_list div.contact div.city-img:last-child {
+          section.contact_list div.city div.city-img:last-child {
             margin-right: 0; }
-          section.contact_list div.contact div.city-img:nth-child(2n) {
+          section.contact_list div.city div.city-img:nth-child(2n) {
             margin-right: 0; }
-          section.contact_list div.contact div.city-img:nth-child(2n+1) {
+          section.contact_list div.city div.city-img:nth-child(2n+1) {
             clear: left; } }
       @media screen and (max-width: 480px) {
-        section.contact_list div.contact div.city-img {
+        section.contact_list div.city div.city-img {
           float: left;
           display: block;
           margin-right: 10%;
           width: 100%; }
-          section.contact_list div.contact div.city-img:last-child {
+          section.contact_list div.city div.city-img:last-child {
             margin-right: 0; } }
-    section.contact_list div.contact a.contact {
+    section.contact_list div.city a.contact-info {
       text-decoration: none; }
 
 #map-canvas {
@@ -2283,24 +2236,21 @@ section.contact_list {
   width: 100%; }
   @media screen and (max-width: 480px) {
     #map-canvas {
-      min-height: 150px;
-      -webkit-overflow-scrolling: touch; } }
+      min-height: 150px; } }
 
 #map-canvas2 {
   min-height: 500px;
   width: 100%; }
   @media screen and (max-width: 480px) {
     #map-canvas2 {
-      min-height: 150px;
-      -webkit-overflow-scrolling: touch; } }
+      min-height: 150px; } }
 
 #map-canvas3 {
   min-height: 500px;
   width: 100%; }
   @media screen and (max-width: 480px) {
     #map-canvas3 {
-      min-height: 150px;
-      -webkit-overflow-scrolling: touch; } }
+      min-height: 150px; } }
 
 .gmnoprint-nyc img {
   max-width: none; }
@@ -2311,21 +2261,6 @@ section.contact_list {
 .gmnoprint-boston img {
   max-width: none; }
 
-/*section.credits {
-    @include outer-container;
-    @extend .global_pad;
-    ul.credits {
-        color: $gray;
-        @include span-columns(12);
-        li.credits {
-            font-family: $frutigerBoldCond;
-        }
-        li {
-            @include span-columns(6);
-            font-family: $frutigerLightCond;
-        }
-    }
-}*/
 /* ----------- TERMS OF USE PAGE -----------------------*/
 /* ----------- TERMS OF USE PAGE -----------------------*/
 /* ----------- TERMS OF USE PAGE -----------------------*/
@@ -2432,6 +2367,15 @@ footer {
   bottom: 0;
   display: block;
   clear: both; }
+  @media screen and (max-width: 768px) {
+    footer {
+      background-color: #000;
+      position: relative;
+      width: 100%;
+      height: auto;
+      bottom: 0;
+      display: block;
+      clear: both; } }
   @media screen and (max-width: 480px) {
     footer {
       background-color: #000;
@@ -2457,12 +2401,25 @@ footer {
       footer div.inner_footer ul:last-child {
         margin-right: 0; }
       footer div.inner_footer ul li.copyright {
+        font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
+        display: inline-block;
+        font-size: 1em;
+        color: #7c7c7c;
         float: left;
         display: block;
         margin-right: 2.3255813953%;
         width: 48.8372093023%; }
         footer div.inner_footer ul li.copyright:last-child {
           margin-right: 0; }
+        @media screen and (max-width: 768px) {
+          footer div.inner_footer ul li.copyright {
+            float: left;
+            display: block;
+            margin-right: 4.7619047619%;
+            width: 47.619047619%;
+            padding: 0 0 20px 0; }
+            footer div.inner_footer ul li.copyright:last-child {
+              margin-right: 0; } }
         @media screen and (max-width: 480px) {
           footer div.inner_footer ul li.copyright {
             float: left;
@@ -2473,7 +2430,7 @@ footer {
             line-height: 20px; }
             footer div.inner_footer ul li.copyright:last-child {
               margin-right: 0; } }
-      footer div.inner_footer ul li {
+      footer div.inner_footer ul li.legal {
         float: left;
         display: block;
         margin-right: 2.3255813953%;
@@ -2481,101 +2438,22 @@ footer {
         font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif;
         display: inline-block;
         font-size: 1em;
-        color: #b2b2b2; }
-        footer div.inner_footer ul li:last-child {
+        color: #7c7c7c; }
+        footer div.inner_footer ul li.legal:last-child {
           margin-right: 0; }
         @media screen and (max-width: 480px) {
-          footer div.inner_footer ul li {
+          footer div.inner_footer ul li.legal {
             float: left;
             display: block;
             margin-right: 10%;
             width: 100%;
-            padding-bottom: 20px;
+            padding: 0 0 20px 0;
             font-size: 16px;
             line-height: 20px; }
-            footer div.inner_footer ul li:last-child {
+            footer div.inner_footer ul li.legal:last-child {
               margin-right: 0; } }
-      footer div.inner_footer ul a {
-        text-decoration: none;
-        color: #b2b2b2; }
-      footer div.inner_footer ul a:hover {
-        color: #004FB1; }
-
-/*
-footer {
-    background-color: #000;
-    width: 100%;
-    z-index: 999;
-    height: auto;
-    font-family: $frutigerLightCond;
-    div.inner_footer {
-        @include outer-container;
-        @extend .global_pad;
-        div.left-footer {
-
-            @include media($mobile) {
-                    display: block;
-                    @include span-columns(6);
-                }
-            ul {
-                @include span-columns(6);
-                padding-top: 0;
-                
-                li {
-                    
-                    display: inline-block;
-                    font-size: 1em;
-                    color: #b2b2b2;
-                    @include media($mobile) {
-                        @include span-columns(3);
-                        padding-bottom: 20px;
-                        font-size: 16px;
-                        line-height: 20px;
-                    }
-                }
-                a {
-                    text-decoration: none;
-                    color: #b2b2b2;
-                    
-                }
-                a:hover {
-                    color: $blue;
-                }
-            }   
-        }
-        div.right-footer {
-            
-            @include media($mobile) {
-                    display: block;
-                    @include span-columns(6);
-                }
-            ul {
-                @include span-columns(6);
-                padding-top: 0;
-                
-                li {
-                    
-                    display: inline-block;
-                    font-size: 1em;
-                    color: #b2b2b2;
-                    @include media($mobile) {
-                        @include span-columns(3);
-                        padding-bottom: 20px;
-                        font-size: 16px;
-                        line-height: 20px;
-                    }
-                }
-                a {
-                    text-decoration: none;
-                    color: #b2b2b2;
-                    
-                }
-                a:hover {
-                    color: $blue;
-                }
-            }   
-        }
-        
-    }
-}
-*/
+        footer div.inner_footer ul li.legal a.legal {
+          text-decoration: none;
+          color: #7c7c7c; }
+        footer div.inner_footer ul li.legal a:hover {
+          color: #fff; }

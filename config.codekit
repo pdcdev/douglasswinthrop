@@ -212,6 +212,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/dw2@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4928,
+		"inputAbbreviatedPath": "\/images\/dw2@2x.png",
+		"outputAbbreviatedPath": "\/images\/dw2@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/DW_About-mob.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -597,17 +608,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/letter-4-234.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 14587,
-		"inputAbbreviatedPath": "\/images\/letter-4-234.png",
-		"outputAbbreviatedPath": "\/images\/letter-4-234.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/letter-4-2345.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -615,17 +615,6 @@
 		"initialSize": 16726,
 		"inputAbbreviatedPath": "\/images\/letter-4-2345.png",
 		"outputAbbreviatedPath": "\/images\/letter-4-2345.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/letter-4-s.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 13778,
-		"inputAbbreviatedPath": "\/images\/letter-4-s.png",
-		"outputAbbreviatedPath": "\/images\/letter-4-s.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -648,6 +637,39 @@
 		"initialSize": 11412,
 		"inputAbbreviatedPath": "\/images\/letter-4-s23.png",
 		"outputAbbreviatedPath": "\/images\/letter-4-s23.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/letter-4-s234.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13778,
+		"inputAbbreviatedPath": "\/images\/letter-4-s234.png",
+		"outputAbbreviatedPath": "\/images\/letter-4-s234.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/letter-4-s2345.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14587,
+		"inputAbbreviatedPath": "\/images\/letter-4-s2345.png",
+		"outputAbbreviatedPath": "\/images\/letter-4-s2345.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/letter-4-s23456.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7484,
+		"inputAbbreviatedPath": "\/images\/letter-4-s23456.png",
+		"outputAbbreviatedPath": "\/images\/letter-4-s23456.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1477,6 +1499,28 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/min\/menu-min.js",
 		"outputAbbreviatedPath": "\/js\/min\/min\/menu-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/retina.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/retina.js",
+		"outputAbbreviatedPath": "\/js\/min\/retina-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/retina.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/retina.min.js",
+		"outputAbbreviatedPath": "\/js\/min\/retina.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
