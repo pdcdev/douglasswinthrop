@@ -20,9 +20,9 @@
         <h2 class="title-person-single">Lisa Wade<br><p>Senior Client Administration Officer</p><br></h2>
         <div class="description-person-single">
             <p class="sub-header">  
-            Lisa joined Douglass Winthrop Advisors LLC in 2007 as the firm’s Client Relations Manager. In addition to her work with its clients, Lisa oversees the firm’s portfolio reporting system and manages the office. 
+            Lisa joined Douglass Winthrop Advisors LLC in 2007 as the firm’s Client Relations Manager. In addition to her work with clients, Lisa oversees the firm’s portfolio reporting system and manages the office. 
             <br><br>
-            Prior to joining Douglass Winthrop, Lisa worked for eighteen years at Brick Church School in Manhattan, where she was a teacher and senior office administrator. 
+            Prior to joining Douglass Winthrop, Lisa worked for eighteen years at the Brick Church School in Manhattan, where she was a teacher and senior office administrator. 
             <br><br>
             Lisa graduated with a BS in Psychology from Wagner College.
             </p>

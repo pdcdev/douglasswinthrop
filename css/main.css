@@ -229,7 +229,8 @@ li.mm {
         font-family: "FrutigerLTW01-47LightCn", helvetica, sans serif !important; } }
 
 .mm a.menu-mob:active {
-  color: #004fb1; }
+  color: #004fb1;
+  z-index: 100; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
   #container nav.nav ul.overlay {
@@ -278,6 +279,7 @@ li.mm {
 #mobile-menu-button a:before {
   content: "";
   position: absolute;
+  z-index: 99;
   left: 0;
   top: 0.6em;
   width: 1.5em;
@@ -1666,8 +1668,12 @@ section.process_list {
         section.process_list div.block div.description ul.left {
           font-size: 0.9375rem; } }
       section.process_list div.block div.description ul.left li {
-        list-style-type: disc;
-        line-height: 27px; }
+        /*list-style-type: disc;
+        line-height: 27px;*/
+        line-height: 47px;
+        border-top: 1px solid #b2b2b2; }
+      section.process_list div.block div.description ul.left li.process-bottom {
+        border-bottom: 1px solid #b2b2b2 !important; }
       @media screen and (max-width: 768px) {
         section.process_list div.block div.description ul.left {
           float: left;
@@ -1721,8 +1727,12 @@ section.process_list {
           section.process_list div.block div.description ul.right:last-child {
             margin-right: 0; } }
       section.process_list div.block div.description ul.right li {
-        list-style-type: disc;
-        line-height: 27px; }
+        /*list-style-type: disc;
+        line-height: 27px;*/
+        line-height: 47px;
+        border-top: 1px solid #b2b2b2; }
+      section.process_list div.block div.description ul.right li.process-bottom {
+        border-bottom: 1px solid #b2b2b2 !important; }
       @media screen and (max-width: 480px) {
         section.process_list div.block div.description ul.right {
           float: left;

@@ -49,7 +49,7 @@
                         <li>Management track record</li>
                         <li>Level of inside ownership</li>
                         <li>Return on invested capital</li>
-                        <li>Internal rate of return estimates</li>
+                        <li class="process-bottom">Internal rate of return estimates</li>
                     </ul>
                 
                 
@@ -57,7 +57,7 @@
                         <li>Growth in tangible book value</li>
                         <li>Earnings/cash flow quality and potential</li>
                         <li>Balance sheet strength</li>
-                        <li>Corporate governance    </li>
+                        <li class="process-bottom">Corporate governance</li>
                     </ul>
                     
                 </div>

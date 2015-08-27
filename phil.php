@@ -20,10 +20,10 @@
         <h2 class="title-person-single">Philip Warner<br><p>Managing Director</p><br></h2>
         <div class="description-person-single">
             <p class="sub-header">  
-            Phil is a Managing Director at Douglass Winthrop Advisors LLC. He has almost 50 years of experience in the investment management industry. Prior to joining Douglass Winthrop Phil was a Senior Managing Director at Dominick & Dominick. He began his career at Drexel & Co. and also worked at Warfield Associates, Neuberger Berman, Forstman-Leff, and Morgan Stanley. Phil specializes in stock selection and portfolio management for high net worth individuals, families, trusts and charitable organizations.
+            Phil is a Managing Director at Douglass Winthrop Advisors LLC. He has almost 5 decades of experience in the investment management industry. Prior to joining Douglass Winthrop, Phil was a Senior Managing Director at Dominick & Dominick. He began his career at Drexel & Co. and subsequently worked at Warfield Associates, Neuberger Berman, Forstman-Leff, and Morgan Stanley where he was in charge of the Investment Advisory Group. Phil specializes in stock selection and portfolio management for high net worth individuals, families, trusts and charitable organizations. 
             <br><br>
             Phil graduated cum laude from Yale University in 1964 with a degree in Economics and received an MBA from Harvard Business School in 1966.
-            </p>
+        </p>
         </div>
     </div>
     </section>
