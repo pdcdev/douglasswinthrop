@@ -244,7 +244,8 @@ section.sliderContainer {
       position: absolute;
       left: 430px;
       margin-left: -360px;
-      overflow: scroll; }
+      /*overflow:scroll; */
+      overflow: hidden; }
       section.sliderContainer .slider #viewContainer:last-child {
         margin-right: 0; }
       section.sliderContainer .slider #viewContainer #insideContainer {

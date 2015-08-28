@@ -1327,9 +1327,13 @@ section.process_list {
                     line-height: 47px;
                     border-top: 1px solid #b2b2b2;
                 }
-                li.process-bottom {
+                li.process-bottom-left {
                     border-bottom: 1px solid #b2b2b2 !important;
+                    @include media($mobile) { 
+                        border-bottom:none !important;
+                    }
                 }
+                
                 
                 @include media($tablet) {
                     @include span-columns(3);
@@ -1339,7 +1343,8 @@ section.process_list {
                 }
                 @include media($mobile) {
                     @include span-columns(3);
-                    margin-left: 20px;
+                    margin-left: 0;
+                    padding-bottom: 0;
                     font-size: 19px;
                     line-height: 25px; 
 
@@ -1367,12 +1372,14 @@ section.process_list {
                 }
                 li.process-bottom {
                     border-bottom: 1px solid #b2b2b2 !important;
+                    
                 }
                 @include media($mobile) {
                     @include span-columns(3);
-                    margin-left: 20px;
+                    margin-left: 0;
                     font-size: 19px;
                     line-height: 25px; 
+                    padding-bottom: 0;
 
                     
                 }
@@ -1824,8 +1831,10 @@ section.contact_list {
 #map-canvas3 {
     min-height: 500px;
     width: 100%;
+    margin-bottom: 150px;
     @include media($mobile) {
        min-height: 150px;
+       margin-bottom: 90px;
        
     }
 }

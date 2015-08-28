@@ -45,11 +45,11 @@
                 <div class="description">
                     
                     <ul class="left">
-                        <li>Quality of the business model</li>
+                        <li>Quality of the business Model</li>
                         <li>Management track record</li>
                         <li>Level of inside ownership</li>
                         <li>Return on invested capital</li>
-                        <li class="process-bottom">Internal rate of return estimates</li>
+                        <li class="process-bottom-left">Internal rate of return estimates</li>
                     </ul>
                 
                 

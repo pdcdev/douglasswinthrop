@@ -1672,8 +1672,11 @@ section.process_list {
         line-height: 27px;*/
         line-height: 47px;
         border-top: 1px solid #b2b2b2; }
-      section.process_list div.block div.description ul.left li.process-bottom {
+      section.process_list div.block div.description ul.left li.process-bottom-left {
         border-bottom: 1px solid #b2b2b2 !important; }
+        @media screen and (max-width: 480px) {
+          section.process_list div.block div.description ul.left li.process-bottom-left {
+            border-bottom: none !important; } }
       @media screen and (max-width: 768px) {
         section.process_list div.block div.description ul.left {
           float: left;
@@ -1691,7 +1694,8 @@ section.process_list {
           display: block;
           margin-right: 10%;
           width: 100%;
-          margin-left: 20px;
+          margin-left: 0;
+          padding-bottom: 0;
           font-size: 19px;
           line-height: 25px; }
           section.process_list div.block div.description ul.left:last-child {
@@ -1739,9 +1743,10 @@ section.process_list {
           display: block;
           margin-right: 10%;
           width: 100%;
-          margin-left: 20px;
+          margin-left: 0;
           font-size: 19px;
-          line-height: 25px; }
+          line-height: 25px;
+          padding-bottom: 0; }
           section.process_list div.block div.description ul.right:last-child {
             margin-right: 0; } }
 
@@ -2257,10 +2262,12 @@ section.contact_list {
 
 #map-canvas3 {
   min-height: 500px;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 150px; }
   @media screen and (max-width: 480px) {
     #map-canvas3 {
-      min-height: 150px; } }
+      min-height: 150px;
+      margin-bottom: 90px; } }
 
 .gmnoprint-nyc img {
   max-width: none; }
