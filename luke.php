@@ -19,10 +19,10 @@
     <div>
         <h2 class="title-person-single">Luke Fowler<br><p>Principal</p><br></h2>
         <div class="description-person-single">
-            <p class="sub-header"> Luke is a principal in Douglass Winthrop Advisors LLC.  Previously, Luke was Vice Chairman of Fiduciary Trust International, where he headed Fiduciary’s business development, marketing and custody services groups as well as overseeing the firm’s efforts to expand its business in the Pacific Rim.  As head of business development at Fiduciary, Luke oversaw the development of new investment management and trust relationships with individuals, families and private foundations.  He was on the Board of Directors of Fiduciary for 22 years.  <br><br>
-                Prior to Fiduciary, Luke served for 12 years as chairman and CEO of Northcott Hospitality International LLC (NHI), where he developed the AmericInn franchise from fewer than 20 hotels to more than 220.  His experience also includes 12 years at J.P. Morgan & Co.
-Luke served on the board of directors of the Minnesota Landscape Arboretum and the board of the Indian Mountain School of Lakeville, Connecticut.  He currently serves on the Board of Franklin University in Lugano, Switzerland and the Island Community Center of Fishers Island, New York.  
-Luke received a BS from Tufts University in 1978.  
+            <p class="sub-header"> Luke is a principal in Douglass Winthrop Advisors LLC. Previously, Luke was Vice Chairman of Fiduciary Trust International, where he headed Fiduciary’s business development, marketing and custody services groups as well as overseeing the firm’s efforts to expand its business in the Pacific Rim. As head of business development at Fiduciary, Luke oversaw the development of new investment management and trust relationships with individuals, families and private foundations. He was on the Board of Directors of Fiduciary for 22 years. Prior to Fiduciary, Luke served for 12 years as chairman and CEO of Northcott Hospitality International LLC (NHI), where he developed the AmericInn franchise from fewer than 20 hotels to more than 220. His experience also includes 12 years at J.P. Morgan & Co. 
+                <br><br>
+Luke served on the board of directors of the Minnesota Landscape Arboretum and the board of the Indian Mountain School of Lakeville, Connecticut. He currently serves on the Board of Franklin University in Lugano, Switzerland and the Island Community Center of Fishers Island, New York.   
+<br><br>Luke received a BS from Tufts University in 1978. 
             </p>
         </div>
     </div>

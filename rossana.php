@@ -21,6 +21,7 @@
         <div class="description-person-single">
             <p class="sub-header">  
             Rossana joined Douglass Winthrop Advisors LLC as the firm’s Client Relations Manager in 2000. Prior to joining Douglass Winthrop, Rossana worked at PricewaterhouseCoopers, Sakura Global Capital and JPMorgan Chase. 
+            <br><br>
             Rossana has a BA in Psychology from Queens College.
             </p>
         </div>
