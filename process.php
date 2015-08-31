@@ -45,7 +45,7 @@
                 <div class="description">
                     
                     <ul class="left">
-                        <li>Quality of the business Model</li>
+                        <li>Quality of the business model</li>
                         <li>Management track record</li>
                         <li>Level of inside ownership</li>
                         <li>Return on invested capital</li>
@@ -55,7 +55,7 @@
                 
                     <ul class="right">
                         <li>Growth in tangible book value</li>
-                        <li>Earnings/cash flow quality and potential</li>
+                        <li class="earnings">Earnings/cash flow quality and potential</li>
                         <li>Balance sheet strength</li>
                         <li class="process-bottom">Corporate governance</li>
                     </ul>

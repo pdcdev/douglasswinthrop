@@ -37,13 +37,13 @@
     
     <section class="letters_list">    
             <ul class="block-row1">
-                <a class="one" href="July2015.pdf"><li class="number-one"></li></a>
-                <a class="two" href="April2015.pdf"><li class="number-two"></li></a>
+                <a class="one" href="July2015.pdf" target="_blank"><li class="number-one"></li></a>
+                <a class="two" href="April2015.pdf" target="_blank"><li class="number-two"></li></a>
             </ul>
 
             <ul class="block-row2">
-                <a class="three" href="January2015.pdf"><li class="number-three"></li>
-                <a class="four" href="October2014.pdf"><li class="number-four"></li></a>
+                <a class="three" href="January2015.pdf" target="_blank"><li class="number-three"></li>
+                <a class="four" href="October2014.pdf" target="_blank"><li class="number-four"></li></a>
             </ul>
     </section>
     

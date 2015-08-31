@@ -15,9 +15,14 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow-x: hidden;
+    
+    /*overflow-y: hidden;*/
+    @include media($tablet) {
+        overflow-y: scroll;
+    }
     @include media($mobile) {
         overflow-x: hidden;
+        overflow-y: scroll;
     }
 
 }
@@ -203,7 +208,7 @@ li.mm {
                 padding-left: 0 !important;
                 min-height: 300px;
                 overflow: scroll;
-                background-color: red;
+                
             }
         }
     }   
@@ -353,50 +358,72 @@ li.mm {
     
 }
 
+div.wrapper {
+    background: url('../images/DW_Home.jpg') no-repeat center center fixed;
+    -webkit-background-size:  cover;
+    -moz-background-size:  cover;
+    -o-background-size:  cover;
+    background-size:  cover;
+    height: 100%;
 
-aside.page_banner_home {
-    z-index: 0;
-    min-height: 88%;
-    height: auto !important;
-    padding-bottom: 400px;
-    display: block;
-    background: url('../images/DW_Home.jpg') center center no-repeat;
-    -webkit-background-size: auto cover;
-    -moz-background-size: auto cover;
-    -o-background-size: auto cover;
-    background-size: auto cover;
-    
-    @include media($mobile) {
-        -webkit-overflow-scrolling: touch; 
-        padding-top: 50px;     
-    }
-    div.overlay_home {
-        @include outer-container;
-        @extend .global_pad;
-        padding-bottom: 50px;
-        div.inner_banner_home {
-            padding: 100px 0 0 0;
-            position: relative; 
-            
-            /* equal to footer height */
-            margin-bottom: -142px; 
-            @include media($tablet) {
-                padding-top: 100px;
-            }
-            @include media($mobile) {
-                padding-top: 30px;
-            }
-            @include media($tiny) {
+        aside.page_banner_home {
+        z-index: 0;
+        /*min-height: 88%;*/
+        /*height: 100%;*/
+        /*padding-bottom: 1000px;*/
+        display: block;
+        
+        
+        @include media($mobile) {
+            -webkit-overflow-scrolling: touch; 
+            padding-top: 50px;     
+        }
+        div.overlay_home {
+            @include outer-container;
+            @extend .global_pad;
+            padding-bottom: 50px;
+            div.inner_banner_home {
+                padding: 100px 0 0 0;
+                position: relative; 
                 
-            }
-            div.home-logo{
-                    @extend .vertical_center_parent;
-                    h1.home-logo-name {
+                /* equal to footer height */
+                margin-bottom: -142px; 
+                @include media($tablet) {
+                    padding-top: 100px;
+                }
+                @include media($mobile) {
+                    padding-top: 30px;
+                }
+                @include media($tiny) {
+                    
+                }
+                div.home-logo{
+                        @extend .vertical_center_parent;
+                        h1.home-logo-name {
+                            font-size: 3em;
+                            font-family: $frutigerBoldCond;
+                            color: #fff;
+                            @include media($tablet) {
+                                @include span-columns(3);
+                            }
+                            @include media($mobile) {
+                                @include span-columns(3);
+                                font-size: 1.5em;
+                            }
+                        }
+                    }
+                }
+
+                div.home-message {
+                    padding-top:30px;
+                    display: block;
+                    p{
+                        @include span-columns(7);
                         font-size: 3em;
-                        font-family: $frutigerBoldCond;
                         color: #fff;
+                        font-family: $frutigerLightCond;
                         @include media($tablet) {
-                            @include span-columns(3);
+                            @include span-columns(5);
                         }
                         @include media($mobile) {
                             @include span-columns(3);
@@ -404,34 +431,18 @@ aside.page_banner_home {
                         }
                     }
                 }
-            }
-
-            div.home-message {
-                padding-top:30px;
-                display: block;
-                p{
-                    @include span-columns(7);
-                    font-size: 3em;
-                    color: #fff;
-                    font-family: $frutigerLightCond;
-                    @include media($tablet) {
-                        @include span-columns(5);
-                    }
-                    @include media($mobile) {
-                        @include span-columns(3);
-                        font-size: 1.5em;
-                    }
+                button {
+                    border: 1px solid #fff; 
                 }
             }
-            button {
-                border: 1px solid #fff; 
-            }
         }
+
+    div.overlay-mobile {
+        display: none;
     }
 
-div.overlay-mobile {
-    display: none;
 }
+
 
 
 /* ----------------------------HOME PAGE BUTTONS ---------------*/
@@ -464,7 +475,7 @@ div.overlay-mobile {
 }
 
 .btn {
-    margin-left: -5.3px;
+    margin-left: -5.4px;
     color: #b2b2b2;
     cursor: pointer;
     font-size:1em;
@@ -682,6 +693,7 @@ div.intro-box {
         padding-bottom: 50px;
         position: relative;
         height: 100%;
+        
         div.page-name {
             @include span-columns(6);
             h1 {
@@ -717,6 +729,100 @@ div.intro-box {
         }
     }
 }
+
+/*---- individual ----*/
+
+div.intro-box-indiv {
+    width: 100%;
+    height: 200px;
+    background-color: $blue;
+    @include media($tablet) {
+        height: 250px;
+        padding-top: 50px; 
+        height: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    
+    div.inner_banner-indiv {
+        @include outer-container;
+        @extend .global_pad;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        position: relative;
+        height: 100%;
+        @include media($mobile) {
+            display: none;
+        }
+            
+        div.page-name-indiv {
+            @include span-columns(6);
+            @include media($mobile) {
+                display: none;
+            }
+            h1 {
+                font-family: $frutigerBoldCond;
+                font-size: 1.5em; 
+                line-height: 15px;
+                color: #b2b2b2;
+                padding-bottom: 50px;
+                @include media($mobile) {
+                    display: none;
+                }
+            }
+             @include media($mobile) {
+                h1.terms {
+                    @include span-columns(6);
+                    font-size: 19px !important; 
+                }
+            }
+        }
+        div {
+            p {
+                @include span-columns(5);
+                font-family: $frutigerLightCond;
+                font-size: 1.5em;
+                line-height: 1.2;
+                color: #b2b2b2;
+                @include media($tablet) {
+                    @include span-columns(3);
+                }
+                @include media($mobile) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+/*
+@media only screen and (max-device-width : 480px) {
+div.intro-box {
+    display: none;
+    
+    div.inner_banner {
+        
+        
+        div.page-name {
+            
+            h1 {
+               
+            }
+            
+                h1.terms {
+                    
+                }
+            }
+        }
+        div {
+            p {
+                
+            }
+        }
+    }
+}*/
+
 
 
 /* ----------- ABOUT PAGE -----------------------*/
@@ -1007,7 +1113,7 @@ section.value {
             @include span-columns(5);
             @include type($small, #b2b2b2);
             line-height: 20px;
-            padding-bottom: 80px;
+            padding-bottom: 50px;
             font-family: $frutigerLightCond;
             @include media($mobile) {
                 @include span-columns(3);
@@ -1036,7 +1142,7 @@ section.value {
             @include shift(1);
             @include type($small, #b2b2b2);
             line-height: 20px;
-            padding-bottom: 80px;
+            padding-bottom: 50px;
             font-family: $frutigerLightCond;
             @include media($mobile) {
                 @include span-columns(3);
@@ -1079,7 +1185,7 @@ div.band-container-white {
             @include span-columns(5);
             @include type($small, #b2b2b2);
             line-height: 20px;
-            padding-bottom: 80px;
+            padding-bottom: 50px;
             font-family: $frutigerLightCond;
             @include media($mobile) {
                 @include span-columns(3);
@@ -1109,7 +1215,7 @@ div.band-container-white {
             @include shift(1);
             @include type($small, #b2b2b2);
             line-height: 20px;
-            padding-bottom: 80px;
+            padding-bottom: 50px;
             font-family: $frutigerLightCond;
             @include media($mobile) {
                 @include span-columns(3);
@@ -1305,14 +1411,23 @@ section.process_list {
                     line-height: 25px;;
                     @include shift(0);
                 }
-            @include media ($mobile) {
+            @include media($mobile) {
+                
                 font-size: 19px;
                 line-height: 25px; 
             }
+
+             
         }
         li.fund {
             list-style: none !important;
             line-height: 27px;
+            font-size: 19px;
+            @include media($tiny) {
+                @include span-columns(10);
+                font-size: 16px !important;
+                line-height: 23px;
+             }
         }
         div.description {
             ul.left {
@@ -1326,6 +1441,9 @@ section.process_list {
                     line-height: 27px;*/
                     line-height: 47px;
                     border-top: 1px solid #b2b2b2;
+                    /*@include media($tiny) {
+                        font-size: 0.9em;
+                    } */
                 }
                 li.process-bottom-left {
                     border-bottom: 1px solid #b2b2b2 !important;
@@ -1369,10 +1487,21 @@ section.process_list {
                     line-height: 27px;*/
                     line-height: 47px;
                     border-top: 1px solid #b2b2b2;
+                    /*@include media($tiny) {
+                        font-size: 0.9em;
+                    } */
                 }
                 li.process-bottom {
                     border-bottom: 1px solid #b2b2b2 !important;
                     
+                }
+
+                li.earnings {
+                    @include media($mobile) {
+                        padding-top: 10px !important;
+                        padding-bottom: 10px !important;
+                        line-height: 30px !important;
+                    }
                 }
                 @include media($mobile) {
                     @include span-columns(3);
@@ -1428,7 +1557,7 @@ section.people {
 
         div.person_name {
             position: absolute;
-            height: 60px;
+            height: 80px;
             bottom: 0;
             background-color: rgba(black, 0.6);
             width: 100%;
@@ -1440,7 +1569,7 @@ section.people {
                 font-family: $frutigerBoldCond;
             }
             p {
-                line-height: 5px;
+                line-height: 20px;
                 @include type($small, #fff);
                 font-family: $frutigerLightCond;
             }
@@ -1898,7 +2027,7 @@ section.terms {
             }
         }
         li.pdc {
-            @include span-columns(6);
+            @include span-columns(10);
             font-family: $frutigerLightCond;
             padding-top: 30px;
         }
@@ -1921,7 +2050,7 @@ section.terms {
 
 footer {
 background-color: #000;
-    position: fixed;
+    /*position: fixed;*/
     width: 100%;
     height: auto;
     bottom: 0;

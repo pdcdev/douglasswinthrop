@@ -1,5 +1,6 @@
 
 <?php include 'header.php'; ?>
+    <div class="wrapper">
     <aside class="page_banner_home">
         <div class="overlay_home">
             <div class="inner_banner_home">
@@ -43,7 +44,9 @@
         </div> -->
        
 
-        <div id="footer">
+        
+    </div><!-- end wrapper -->
+    <div id="footer">
             <div class="inner_footer">
                 <ul>
                     <li class="copyright">© 1997-2015 Douglass Winthrop All rights reserved</li>

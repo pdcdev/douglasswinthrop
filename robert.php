@@ -1,7 +1,7 @@
 <?php include 'header.php'; ?>
-    <div class="intro-box">
-        <div class="inner_banner">
-            <div class="page-name">
+<div class="intro-box-indiv">
+        <div class="inner_banner-indiv">
+            <div class="page-name-indiv">
                 <h1>
                     People
                 </h1>
